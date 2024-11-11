@@ -1,0 +1,37 @@
+{
+	"name": "tomflidr.cz/web",
+	"type": "project",
+	"description": "Personal website on tomflidr.cz",
+	"keywords": [],
+	"license": ["BSD-3-Clause"],
+	"authors": [{
+		"name": "Tom Flidr",
+		"homepage": "https://github.com/tomFlidr"
+	}],
+	"require": {
+		"php": ">=5.4.0",
+		"mvccore/mvccore": "^5.2.48",
+		"mvccore/ext-cache-redis": "^5.2.9",
+		"mvccore/ext-config-cached": "^5.2.2",
+		"mvccore/ext-router-media-localization": "^5.2.0",
+		"mvccore/ext-translator-csv": "^5.2.2",
+		"mvccore/ext-tool-locale": "^5.2.2",
+		"mvccore/ext-tool-csp": "^5.0.5",
+		"mvccore/ext-tool-cli-winfork": "^5.0.0",
+		"mvccore/ext-view-helper-assets": "^5.2.7",
+		"mvccore/ext-debug-tracy": "^5.2",
+		"mvccore/ext-debug-tracy-mvccore": "^5.2",
+		"mvccore/ext-debug-tracy-routing": "^5.2.2",
+		"mvccore/ext-debug-tracy-session": "^5.2"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"extra": {
+		"compile-mode": "all"
+	},
+	"config": {
+		"allow-plugins": {
+			"civicrm/composer-compile-plugin": true
+		}
+	}
+}

@@ -1,0 +1,30 @@
+<?php
+	/**
+	 * @var \App\Views\Layouts\standard $this
+	 * @var \App\Routers\MediaAndLocalization $router
+	 * @var \MvcCore\Request $request
+	 */
+	$router = $controller->GetRouter();
+	$request = $controller->GetRequest();
+	$mediaSiteKeysAndUrlPrefixes = $router->GetAllowedMediaVersionsAndUrlValues();
+	$mediaVersionsCount = count($mediaSiteKeysAndUrlPrefixes);
+	if ($mediaVersionsCount > 1):
+		$fullUrl = $request->GetFullUrl();
+		$mediaVersionUrlParam = \MvcCore\Ext\Routers\IMedia::URL_PARAM_MEDIA_VERSION;
+		$index = 0;
+	?><div class="footer-navigation footer-navigation-media document"><?php
+		echo __('Display:') . ' ';
+		foreach ($mediaSiteKeysAndUrlPrefixes as $mediaVersion => $urlPrefix):
+			if ($mediaVersion == $mediaSiteVersion):
+				?><span><?=__('Media: ' . $mediaVersion)?></span><?php
+			else:
+				?><a href="<?php echo $this->Url(
+					'self',
+					[$mediaVersionUrlParam  => $mediaVersion]
+				); ?>"><?=__('Media: ' . $mediaVersion)?></a><?php
+			endif;
+			if (++$index > 0 && $index < $mediaVersionsCount) echo ', ';
+		endforeach;
+	?></div><?php
+	endif;
+?>

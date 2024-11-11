@@ -1,0 +1,18 @@
+<?php
+	/** @var \App\Views\Layouts\standard $this */
+?><meta charset="UTF-8" />
+<title><?php
+	echo $this->title;
+	if (mb_strpos($this->title, $this->appName) === FALSE) {
+		echo ' | ', $this->appName;
+	}
+?></title>
+<base href="<?=$this->basePath?>" />
+<link rel="shortcut icon" href="<?=$this->basePath?>/favicon.ico" />
+<link rel="apple-touch-icon" href="<?=$this->basePath?>/static/img/favicons-apple/256.png" />
+<meta name="apple-mobile-web-app-title" content="tomflidr.cz" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="robots" content="index,follow,archive" />
+<script nonce="<?=$nonce?>">var timestamp = +new Date;document.documentElement.setAttribute('data-browser',navigator.userAgent);</script>

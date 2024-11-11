@@ -1,0 +1,26 @@
+<?php
+	/** @var \App\Views\Layouts\standard $this */
+?><!DOCTYPE HTML>
+<html lang="<?=$this->localization?>">
+	<head>
+		<?=$this->RenderLayout('head/common-tags')?>
+		<?=$this->RenderLayout('head/preloading')?>
+		<?=$this->RenderLayout('head/metrics')?>
+		<?=$this->Css('headAll')->Render()?>
+		<?=$this->Css('headPage')->Render()?>
+		<?=$this->Js('headAll')->Render()?>
+		<?=$this->Js('headPage')->Render()?>
+	</head>
+	<body>
+		<?=$this->RenderLayout('body/old-browser-warning')?>
+		<div class="bg"></div>
+		<div class="container">
+			<div class="content"><?=$this->GetContent()?></div>
+			<div class="foot">
+				<?=$this->RenderLayout('foot/navigation-localization')?>
+				<?=$this->RenderLayout('foot/navigation-media')?>
+			</div>
+		</div>
+	</body>
+	<?=$this->Js('foot')?>
+</html>

@@ -1,0 +1,10 @@
+Options -Indexes
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+	RewriteRule .* - [E=REDIRECT_PATH:]
+
+	RewriteCond %{HTTP_HOST} ^(.*)$
+	RewriteRule (.*) www/$1 [DPI,E=REDIRECT_PATH:/domains/tomflidr.cz/www,L]
+
+</IfModule>

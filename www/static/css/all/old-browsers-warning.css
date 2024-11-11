@@ -1,0 +1,81 @@
+body.old-browser-warning{
+	overflow:hidden;
+}
+body.old-browser-warning div.layout{
+	width:450px;
+	margin:0 auto;
+	filter:blur(2px);
+    -ms-filter:blur(2px);
+    filter:progid:DXImageTransform.Microsoft.Blur(pixelradius='2', shadowopacity='0.0');
+}
+body.old-browser-warning div.layout *{
+	position:static;
+}
+div.old-browser-warning{
+	position:absolute;
+	z-index:999999999;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#fff;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+	text-align:center !important;
+	font-size:30px !important;
+	font-family:arial !important;
+}
+div.old-browser-warning p{
+	position:relative;
+	top:30%;
+	color:#000 !important;
+	line-height:1.5em;
+	padding:0 100px;
+}
+div.old-browser-warning p b{
+	color:#000 !important;
+	font-weight:bold !important;
+}
+div.old-browser-warning p a{
+	display:inline-block;
+	position:relative;
+	padding-left:35px;
+	white-space:nowrap;
+	text-decoration:none;
+	line-height:1.5em;
+	color:#0078d7;
+	border-bottom:1px solid #0078d7;
+	text-shadow:none;
+}
+div.old-browser-warning p a[target=_blank]:before,
+div.old-browser-warning p a[target=_blank]::before{
+	content:'';
+}
+div.old-browser-warning p a span{
+	position:absolute;
+	top:8px;
+    left:0px;
+	width:30px;
+	height:30px;
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	text-decoration:none;
+	border:0;
+	overflow:hidden;
+}
+div.old-browser-warning p a:hover,
+div.old-browser-warning p a:focus,
+div.old-browser-warning p a:active{
+	border-bottom:1px solid transparent;
+}
+div.old-browser-warning p a:hover span,
+div.old-browser-warning p a:focus span,
+div.old-browser-warning p a:active span{
+	top:9px;
+}
+div.old-browser-warning p a.chrome span{background-image:url('/static/img/content/old-browser-warning/chrome.gif');}
+div.old-browser-warning p a.safari span{background-image:url('/static/img/content/old-browser-warning/safari.gif');}
+div.old-browser-warning p a.firefox span{background-image:url('/static/img/content/old-browser-warning/firefox.gif');}
+div.old-browser-warning p a.edge span{background-image:url('/static/img/content/old-browser-warning/edge.gif');}
+div.old-browser-warning p a.opera span{background-image:url('/static/img/content/old-browser-warning/opera.gif');}

@@ -1,0 +1,54 @@
+.document a{
+	color:var(--color-link-normal);
+	cursor:pointer;
+	display:inline-block;
+	color:var(--color-link-normal);
+	border-bottom:1px solid var(--color-link-normal);
+	text-decoration:none;
+	padding-left:1px;
+	padding-right:1px;
+}
+.document a:hover,
+.document a:focus,
+.document a:active{
+	color:var(--color-front);
+	border-bottom:1px solid transparent;
+	text-decoration:none;
+	background-color:var(--color-link-normal);
+}
+
+.document a:visited{
+	color:var(--color-link-visited);
+	border-bottom:1px solid var(--color-link-visited);
+}
+.document a:visited:hover,
+.document a:visited:focus,
+.document a:visited:active{
+	color:var(--color-front);
+	background-color:var(--color-link-visited);
+}
+
+a[target=_blank]{
+	position:relative;
+	padding-right:calc(1em + 5px);
+}
+a[target=_blank]:before,
+a[target=_blank]::before{
+	position:absolute;
+	font-family:'icons';
+	font-style:normal;
+	font-weight:normal;
+	display:inline-block;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+
+	content:'\e803';
+	
+	right:3px;
+	width:1em;
+	height:1em;
+	line-height:1.25em;
+    top:50%;
+    margin-top:-0.5em;
+    font-size:0.89em;
+}

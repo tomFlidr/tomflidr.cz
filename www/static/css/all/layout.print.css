@@ -1,0 +1,14 @@
+html,body{
+	font-size:12pt;
+	font-family:Arial,Helvetica,sans-serif;
+}
+.container{
+	width:100%;
+	margin:0;
+}
+.content{
+}
+.bg,
+.foot{
+	display:none;
+}

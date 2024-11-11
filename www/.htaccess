@@ -1,0 +1,55 @@
+# disable directory listing
+Options -Indexes
+
+Header unset Server
+ServerSignature Off
+
+# mod_expires:
+<IfModule mod_expires.c>
+	ExpiresActive on
+	# Images:
+		ExpiresByType image/jpg "access plus 365 days"
+		ExpiresByType image/jpeg "access plus 365 days"
+		ExpiresByType image/png "access plus 365 days"
+		ExpiresByType image/gif "access plus 365 days"
+	# Icons:
+		ExpiresByType image/x-icon "access plus 365 days"
+		ExpiresByType image/vnd.microsoft.icon "access plus 365 days"
+		ExpiresByType image/svg+xml "access plus 365 days"
+	# Fonts:
+		# woff, woff2:
+		ExpiresByType application/font-woff "access plus 365 days"
+		ExpiresByType application/font-woff2 "access plus 365 days"
+		# otf:
+		ExpiresByType font/opentype "access plus 365 days"
+		# ttf:
+		ExpiresByType application/x-font-ttf "access plus 365 days"
+		ExpiresByType application/x-font-truetype "access plus 365 days"
+		# eot:
+		ExpiresByType application/vnd.ms-fontobject "access plus 365 days"
+		# sfnt:
+		ExpiresByType application/font-sfnt "access plus 365 days"
+	# JS + CSS - always hashed by application into different names:
+		# CSS:
+		ExpiresByType text/css "access plus 365 days"
+		# JS scripts:
+		ExpiresByType text/javascript "access plus 365 days"
+		ExpiresByType application/x-javascript "access plus 365 days"
+		ExpiresByType application/javascript "access plus 365 days"
+	# PDF reports:
+		ExpiresByType application/pdf "access plus 1 day"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+	
+	# basic zend-framework setup see: http://framework.zend.com/manual/en/zend.controller.html
+	RewriteCond %{REQUEST_FILENAME} -s [OR]
+	RewriteCond %{REQUEST_FILENAME} -l [OR]
+	RewriteCond %{REQUEST_FILENAME} -f
+	RewriteRule ^(.*)$ $1 [NC,L]
+	
+	RewriteRule ^.*$ index.php [NC,L]
+
+</IfModule>

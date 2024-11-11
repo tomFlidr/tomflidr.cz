@@ -1,0 +1,32 @@
+.content blockquote{
+	padding:0;
+    margin:0;
+    font-size:70%;
+    font-style:italic;
+    line-height:1.5em;
+}
+.content .indent{
+	padding-left:15px;
+}
+table.os-projects{
+    border:0;
+	border-collapse:collapse;
+    margin:5px 0 20px 15px;
+}
+table.os-projects th,
+table.os-projects td{
+	font-size:70%;
+	padding:0;
+	vertical-align:top;
+	text-align:left;
+}
+table.os-projects th{
+	width:50px;
+}
+table.os-projects td{
+}
+table.os-projects td a{
+	border-bottom-width:1px !important;
+	padding-right:11px;
+	background-size:9px;
+}

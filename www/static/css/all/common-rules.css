@@ -1,0 +1,28 @@
+:root{
+	--color-link-normal:#0078d7;
+	--color-link-visited:#a036d2;
+
+	--color-front:#fff;
+	--color-bg:#000;
+
+	--color-selection-front:var(--color-bg);
+	--color-selection-bg:var(--color-front);
+
+}
+
+*::selection{
+	background:var(--color-selection-bg);
+	color:var(--color-selection-front);
+}
+
+.hidden{display:none !important;}
+.unvisible{visibility:hidden !important;}
+.hidden-unvisible{position:absolute !important;visibility:hidden !important;}
+.hidden-transparent{position:absolute !important;opacity:0 !important;}
+
+.align-left{text-align:left;}
+.align-center{text-align:center;}
+.align-right{text-align:right;}
+.valign-top{vertical-align:top;}
+.valign-middle{vertical-align:middle;}
+.valign-bottom{vertical-align:bottom;}

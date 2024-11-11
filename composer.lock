@@ -1,0 +1,1532 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5278770c84b1b684a590500ed8784208",
+    "packages": [
+        {
+            "name": "civicrm/composer-compile-plugin",
+            "version": "v0.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/civicrm/composer-compile-plugin.git",
+                "reference": "158be6061320c2f481e1aa8f821be5c7e0eea220"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/civicrm/composer-compile-plugin/zipball/158be6061320c2f481e1aa8f821be5c7e0eea220",
+                "reference": "158be6061320c2f481e1aa8f821be5c7e0eea220",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0",
+                "php": ">=7.2",
+                "totten/lurkerlite": "^1.3"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0",
+                "totten/process-helper": "^1.0.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Civi\\CompilePlugin\\CompilePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Civi\\CompilePlugin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Otten",
+                    "email": "info@civicrm.org"
+                }
+            ],
+            "description": "Define a 'compile' event for all packages in the dependency-graph",
+            "support": {
+                "issues": "https://github.com/civicrm/composer-compile-plugin/issues",
+                "source": "https://github.com/civicrm/composer-compile-plugin/tree/v0.18"
+            },
+            "time": "2022-04-01T08:01:29+00:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "2.8.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "96aaebcf4f50d3d2692ab81d2c5132e425bca266"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/96aaebcf4f50d3d2692ab81d2c5132e425bca266",
+                "reference": "96aaebcf4f50d3d2692ab81d2c5132e425bca266",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Detection": "namespaced/"
+                },
+                "classmap": [
+                    "Mobile_Detect.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "support": {
+                "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.45"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/serbanghita",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-07T21:57:25+00:00"
+        },
+        {
+            "name": "mvccore/ext-cache",
+            "version": "v5.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-cache.git",
+                "reference": "f35ea0c0c0fdb2518c64b64bf3ea83d2f955d619"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-cache/zipball/f35ea0c0c0fdb2518c64b64bf3ea83d2f955d619",
+                "reference": "f35ea0c0c0fdb2518c64b64bf3ea83d2f955d619",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/mvccore": "^5.2.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Cache - register and use cache instances, cache interface.",
+            "keywords": [
+                "cache",
+                "ext",
+                "extension",
+                "framework",
+                "interface",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "store"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-cache/issues",
+                "source": "https://github.com/mvccore/ext-cache/tree/v5.2.3"
+            },
+            "time": "2024-10-08T09:08:45+00:00"
+        },
+        {
+            "name": "mvccore/ext-cache-redis",
+            "version": "v5.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-cache-redis.git",
+                "reference": "08c2f8e3540ef843a5fdd5ec9b6b6ac0eb982ae5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-cache-redis/zipball/08c2f8e3540ef843a5fdd5ec9b6b6ac0eb982ae5",
+                "reference": "08c2f8e3540ef843a5fdd5ec9b6b6ac0eb982ae5",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-cache": "^5.2.2",
+                "mvccore/mvccore": "^5.1.19",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Cache - Redis - cache implementation extension for Redis.",
+            "keywords": [
+                "cache",
+                "ext",
+                "extension",
+                "framework",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "redis",
+                "store"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-cache-redis/issues",
+                "source": "https://github.com/mvccore/ext-cache-redis/tree/v5.2.9"
+            },
+            "time": "2024-10-08T09:49:49+00:00"
+        },
+        {
+            "name": "mvccore/ext-config-cached",
+            "version": "v5.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-config-cached.git",
+                "reference": "9bf9e1f859ffe5e5c28381b656145e223b5e4084"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-config-cached/zipball/9bf9e1f859ffe5e5c28381b656145e223b5e4084",
+                "reference": "9bf9e1f859ffe5e5c28381b656145e223b5e4084",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-cache": "^5.2",
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Config - Cached - extension to use cached configuration files across multiple environments.",
+            "keywords": [
+                "cache",
+                "config",
+                "configuration",
+                "environments",
+                "ext",
+                "extension",
+                "framework",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-config-cached/issues",
+                "source": "https://github.com/mvccore/ext-config-cached/tree/v5.2.2"
+            },
+            "time": "2024-10-08T09:50:50+00:00"
+        },
+        {
+            "name": "mvccore/ext-debug-tracy",
+            "version": "v5.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-debug-tracy.git",
+                "reference": "21aa24213a11731c612a02db7f11f2cfa22241db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-debug-tracy/zipball/21aa24213a11731c612a02db7f11f2cfa22241db",
+                "reference": "21aa24213a11731c612a02db7f11f2cfa22241db",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0",
+                "tomflidr/tracy": "^2.7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Debug - Tracy - adapter class for Nette Framework `tracy/tracy` library.",
+            "keywords": [
+                "debug",
+                "debug bar",
+                "ext",
+                "extension",
+                "framework",
+                "mvc",
+                "mvccore",
+                "nette",
+                "plug-in",
+                "plugin",
+                "tracy",
+                "var dumping"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-debug-tracy/issues",
+                "source": "https://github.com/mvccore/ext-debug-tracy/tree/v5.2.3"
+            },
+            "time": "2024-03-26T13:04:47+00:00"
+        },
+        {
+            "name": "mvccore/ext-debug-tracy-mvccore",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-debug-tracy-mvccore.git",
+                "reference": "d7165f20ec43aafb78cb9ee195cd32b6c1fd4bb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-debug-tracy-mvccore/zipball/d7165f20ec43aafb78cb9ee195cd32b6c1fd4bb6",
+                "reference": "d7165f20ec43aafb78cb9ee195cd32b6c1fd4bb6",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-debug-tracy": "^5.2",
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Debug - Tracy - Panel MvcCore - render and add into tracy debug panel current MvcCore application instance, printed by \\Tracy\\Dumper::toHtml(\\MvcCore\\Application::GetInstance()); to display main application objects used to render current page response. Rendered objects inside MvcCore app: \\MvcCore\\Request, \\MvcCore\\Response, \\MvcCore\\Router, \\MvcCore\\Controller, all preroute, predispatch and postdispatch configured handlers and many other internal application values.",
+            "keywords": [
+                "app overview",
+                "application",
+                "controller",
+                "debug",
+                "ext",
+                "extension",
+                "framework",
+                "handlers",
+                "instance",
+                "internals",
+                "mvc",
+                "mvccore",
+                "nette",
+                "plug-in",
+                "plugin",
+                "request",
+                "response",
+                "router",
+                "tracy"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-debug-tracy-mvccore/issues",
+                "source": "https://github.com/mvccore/ext-debug-tracy-mvccore/tree/v5.2.0"
+            },
+            "time": "2023-12-12T13:02:37+00:00"
+        },
+        {
+            "name": "mvccore/ext-debug-tracy-routing",
+            "version": "v5.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-debug-tracy-routing.git",
+                "reference": "29548e82eed41e40bb976bbb5c26cc230d8a0e6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-debug-tracy-routing/zipball/29548e82eed41e40bb976bbb5c26cc230d8a0e6b",
+                "reference": "29548e82eed41e40bb976bbb5c26cc230d8a0e6b",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-debug-tracy": "^5.2",
+                "mvccore/mvccore": "^5.2.33",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Debug - Tracy - Panel Routing - render and add into tracy debug panel all configured routes in current MvcCore application router and to display currently matched route.",
+            "keywords": [
+                "active route",
+                "current route",
+                "debug",
+                "ext",
+                "extension",
+                "framework",
+                "mvc",
+                "mvccore",
+                "nette",
+                "plug-in",
+                "plugin",
+                "route",
+                "router",
+                "routes",
+                "routing",
+                "tracy"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-debug-tracy-routing/issues",
+                "source": "https://github.com/mvccore/ext-debug-tracy-routing/tree/v5.2.2"
+            },
+            "time": "2024-03-14T13:51:54+00:00"
+        },
+        {
+            "name": "mvccore/ext-debug-tracy-session",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-debug-tracy-session.git",
+                "reference": "cba96b2f0c732f484bd46320330c71c5577244dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-debug-tracy-session/zipball/cba96b2f0c732f484bd46320330c71c5577244dd",
+                "reference": "cba96b2f0c732f484bd46320330c71c5577244dd",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-debug-tracy": "^5.2",
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Debug - Tracy - Panel Session - render and add into tracy debug panel $_SESSION content and \\MvcCore\\Session namespaces content.",
+            "keywords": [
+                "basic session",
+                "debug",
+                "ext",
+                "extension",
+                "framework",
+                "mvc",
+                "mvccore",
+                "nette",
+                "plug-in",
+                "plugin",
+                "session",
+                "session namespace",
+                "tracy"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-debug-tracy-session/issues",
+                "source": "https://github.com/mvccore/ext-debug-tracy-session/tree/v5.2.0"
+            },
+            "time": "2023-12-12T13:03:47+00:00"
+        },
+        {
+            "name": "mvccore/ext-router-extended",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-router-extended.git",
+                "reference": "4107a3eb8d8b6daa59eb16a1a70ccba65f96a680"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-router-extended/zipball/4107a3eb8d8b6daa59eb16a1a70ccba65f96a680",
+                "reference": "4107a3eb8d8b6daa59eb16a1a70ccba65f96a680",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Router - Extended - trait with additional properties, setters and getters required by extended router implementations - localized router and media site version router.",
+            "keywords": [
+                "ext",
+                "extended",
+                "extension",
+                "framework",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-router-extended/issues",
+                "source": "https://github.com/mvccore/ext-router-extended/tree/v5.2.0"
+            },
+            "time": "2023-12-12T13:04:47+00:00"
+        },
+        {
+            "name": "mvccore/ext-router-localization",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-router-localization.git",
+                "reference": "e8e432a8ac2ffe472505db8dfb2d5948f60442bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-router-localization/zipball/e8e432a8ac2ffe472505db8dfb2d5948f60442bb",
+                "reference": "e8e432a8ac2ffe472505db8dfb2d5948f60442bb",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-router-extended": "^5.2",
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Router - Media & Localization - extension to manage website localizations (language or language and locale). For any HTTP method, multi or single language (or lang. with locale) patterns and reverses, URL addresses like `/en/path` or `/en-US/path`, very configurable.",
+            "keywords": [
+                "ext",
+                "extension",
+                "framework",
+                "lang",
+                "language",
+                "language version",
+                "locale",
+                "locale version",
+                "localization",
+                "localized url",
+                "multi lang",
+                "multi language",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "router",
+                "routes",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-router-localization/issues",
+                "source": "https://github.com/mvccore/ext-router-localization/tree/v5.2.0"
+            },
+            "time": "2023-12-12T13:08:21+00:00"
+        },
+        {
+            "name": "mvccore/ext-router-media",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-router-media.git",
+                "reference": "1100227709c78577b5c4aa31a30bf2083d73a40e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-router-media/zipball/1100227709c78577b5c4aa31a30bf2083d73a40e",
+                "reference": "1100227709c78577b5c4aa31a30bf2083d73a40e",
+                "shasum": ""
+            },
+            "require": {
+                "mobiledetect/mobiledetectlib": "^2.8",
+                "mvccore/ext-router-extended": "^5.2",
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Router - Media - extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS files rendering, optionally contained in URL address in the beginning.",
+            "keywords": [
+                "address",
+                "ext",
+                "extension",
+                "flag",
+                "framework",
+                "full",
+                "media",
+                "mobile",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "router",
+                "routes",
+                "routing",
+                "site",
+                "tablet",
+                "version"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-router-media/issues",
+                "source": "https://github.com/mvccore/ext-router-media/tree/v5.2.0"
+            },
+            "time": "2023-12-12T13:07:52+00:00"
+        },
+        {
+            "name": "mvccore/ext-router-media-localization",
+            "version": "v5.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-router-media-localization.git",
+                "reference": "bfbfa83ddcc23bc7f33ee2c9684b53fa9186883b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-router-media-localization/zipball/bfbfa83ddcc23bc7f33ee2c9684b53fa9186883b",
+                "reference": "bfbfa83ddcc23bc7f33ee2c9684b53fa9186883b",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-router-extended": "^5.2",
+                "mvccore/ext-router-localization": "^5.2",
+                "mvccore/ext-router-media": "^5.2",
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Router - Media & Localization - extension to manage website media versions (full/tablet/mobile) for different templates/CSS/JS files rendering and to manage website localizations (language or language and locale), optionaly contained in url address in the beinning.",
+            "keywords": [
+                "address",
+                "ext",
+                "extension",
+                "flag",
+                "framework",
+                "full",
+                "lang",
+                "language",
+                "language version",
+                "locale",
+                "locale version",
+                "localization",
+                "localized url",
+                "media",
+                "mobile",
+                "multi lang",
+                "multi language",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "router",
+                "routes",
+                "routing",
+                "site",
+                "tablet",
+                "version"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-router-media-localization/issues",
+                "source": "https://github.com/mvccore/ext-router-media-localization/tree/v5.2.0"
+            },
+            "time": "2023-12-12T13:07:33+00:00"
+        },
+        {
+            "name": "mvccore/ext-tool-cli-winfork",
+            "version": "v5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-tool-cli-winfork.git",
+                "reference": "a73fd6029606865e8008749b8d5f5a79e641d4a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-tool-cli-winfork/zipball/a73fd6029606865e8008749b8d5f5a79e641d4a6",
+                "reference": "a73fd6029606865e8008749b8d5f5a79e641d4a6",
+                "shasum": ""
+            },
+            "require": {
+                "civicrm/composer-compile-plugin": "^0.18",
+                "mvccore/mvccore": "^5.1.23",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "compile": [
+                    {
+                        "run": "@php-script ./src/MvcCore/Ext/Tools/Clis/WinFork/Instalation.php"
+                    }
+                ]
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Tool - CLI - Windows Fork - .NET Framework 4 utility for CLI calls via PHP `shell_exec()` or `system()` to fork new process in background.",
+            "keywords": [
+                "background",
+                "cli",
+                "ext",
+                "extension",
+                "fork",
+                "framework",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "process",
+                "tool",
+                "win",
+                "windows"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-tool-cli-winfork/issues",
+                "source": "https://github.com/mvccore/ext-tool-cli-winfork/tree/v5.0.0"
+            },
+            "time": "2022-05-12T08:03:11+00:00"
+        },
+        {
+            "name": "mvccore/ext-tool-csp",
+            "version": "v5.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-tool-csp.git",
+                "reference": "cd42296b4c1f46d47fa200834734808bcfd7aad4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-tool-csp/zipball/cd42296b4c1f46d47fa200834734808bcfd7aad4",
+                "reference": "cd42296b4c1f46d47fa200834734808bcfd7aad4",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/mvccore": "^5.1.39",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "nette/tester": "<=2.4",
+                "php": ">=5.4.0",
+                "tomflidr/tracy": "<=2.5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Tool - Csp - utility to easilly complete `Content-Security-Policy` HTTP header.",
+            "keywords": [
+                "Policy",
+                "content",
+                "content-security-policy",
+                "csp",
+                "ext",
+                "extension",
+                "framework",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "security",
+                "tool"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-tool-csp/issues",
+                "source": "https://github.com/mvccore/ext-tool-csp/tree/v5.0.5"
+            },
+            "time": "2022-10-28T09:08:45+00:00"
+        },
+        {
+            "name": "mvccore/ext-tool-locale",
+            "version": "v5.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-tool-locale.git",
+                "reference": "a346247a0c7a8e2f420b92dd9e3da5bc8d3e1224"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-tool-locale/zipball/a346247a0c7a8e2f420b92dd9e3da5bc8d3e1224",
+                "reference": "a346247a0c7a8e2f420b92dd9e3da5bc8d3e1224",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Tool - Locale - properly set and get system locale settings by PHP ` setlocale();` across any system platform.",
+            "keywords": [
+                "ext",
+                "extension",
+                "framework",
+                "internationalization",
+                "languages",
+                "locales",
+                "localization",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "setlocale",
+                "teritories",
+                "tool"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-tool-locale/issues",
+                "source": "https://github.com/mvccore/ext-tool-locale/tree/v5.2.2"
+            },
+            "time": "2024-04-12T22:53:47+00:00"
+        },
+        {
+            "name": "mvccore/ext-translator",
+            "version": "v5.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-translator.git",
+                "reference": "2eedb4c7fa65e92b9020ed98679517d4193ecad7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-translator/zipball/2eedb4c7fa65e92b9020ed98679517d4193ecad7",
+                "reference": "2eedb4c7fa65e92b9020ed98679517d4193ecad7",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/mvccore": "^5.2.33",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Translator - abstract class and interface support code to create more sofisticated translators.",
+            "keywords": [
+                "abstract",
+                "ext",
+                "extension",
+                "framework",
+                "interface",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "translate",
+                "translator"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-translator/issues",
+                "source": "https://github.com/mvccore/ext-translator/tree/v5.2.7"
+            },
+            "time": "2024-04-02T12:51:54+00:00"
+        },
+        {
+            "name": "mvccore/ext-translator-csv",
+            "version": "v5.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-translator-csv.git",
+                "reference": "652686055002856ab31fc85005f58597bcd595e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-translator-csv/zipball/652686055002856ab31fc85005f58597bcd595e7",
+                "reference": "652686055002856ab31fc85005f58597bcd595e7",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-translator": "^5.2.6",
+                "mvccore/mvccore": "^5.2.33",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "nette/tester": "<=2.0",
+                "php": ">=5.4.0",
+                "tomflidr/tracy": "<=2.5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Translator - CSV - simple CSV translator implementation.",
+            "keywords": [
+                "Simple",
+                "csv",
+                "ext",
+                "extension",
+                "file",
+                "framework",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "translate",
+                "translator"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-translator-csv/issues",
+                "source": "https://github.com/mvccore/ext-translator-csv/tree/v5.2.1"
+            },
+            "time": "2024-03-14T14:46:24+00:00"
+        },
+        {
+            "name": "mvccore/ext-view-helper",
+            "version": "v5.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-view-helper.git",
+                "reference": "fcb706de4e8b35ef70f53581aea9a29f32d69094"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-view-helper/zipball/fcb706de4e8b35ef70f53581aea9a29f32d69094",
+                "reference": "fcb706de4e8b35ef70f53581aea9a29f32d69094",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/mvccore": "^5.2",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - View - Helper - abstract class code and interface support code to create more sofisticated view helpers with better setup and protected properties.",
+            "keywords": [
+                "abstract",
+                "ext",
+                "extension",
+                "framework",
+                "helper",
+                "interface",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "support",
+                "view",
+                "viewhelper"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-view-helper/issues",
+                "source": "https://github.com/mvccore/ext-view-helper/tree/v5.2.2"
+            },
+            "time": "2024-05-23T06:59:13+00:00"
+        },
+        {
+            "name": "mvccore/ext-view-helper-assets",
+            "version": "v5.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-view-helper-assets.git",
+                "reference": "3cccabcdb8c1bc1aa5ef763a9717b33c3f9e57a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-view-helper-assets/zipball/3cccabcdb8c1bc1aa5ef763a9717b33c3f9e57a8",
+                "reference": "3cccabcdb8c1bc1aa5ef763a9717b33c3f9e57a8",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-view-helper": "^5.2",
+                "mvccore/mvccore": "^5.2.45",
+                "php": ">=5.4.0",
+                "tedivm/jshrink": "^1.4",
+                "tubalmartin/cssmin": "^4.1"
+            },
+            "require-dev": {
+                "nette/tester": "<=2.4",
+                "phpstan/phpstan": "^1.10",
+                "tomflidr/tracy": "^2.7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - View - Helper - Assets - to group, render, minify and cache javascript and css files, to prepare all application assets for final application packing.",
+            "keywords": [
+                "JS",
+                "assets",
+                "assets caching",
+                "assets completion",
+                "css",
+                "ext",
+                "extension",
+                "framework",
+                "helper",
+                "javascript",
+                "mvc",
+                "mvccore",
+                "packing",
+                "plug-in",
+                "plugin",
+                "prepare",
+                "sheets",
+                "styles",
+                "view",
+                "viewhelper"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-view-helper-assets/issues",
+                "source": "https://github.com/mvccore/ext-view-helper-assets/tree/v5.2.7"
+            },
+            "time": "2024-07-08T13:49:48+00:00"
+        },
+        {
+            "name": "mvccore/mvccore",
+            "version": "v5.2.48",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/mvccore.git",
+                "reference": "45da6fba9df7d7ffe1dfd1cd10df2be511b07d9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/mvccore/zipball/45da6fba9df7d7ffe1dfd1cd10df2be511b07d9e",
+                "reference": "45da6fba9df7d7ffe1dfd1cd10df2be511b07d9e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "nette/tester": "<=2.4",
+                "phpstan/phpstan": "^1.10",
+                "tomflidr/tracy": "^2.7.4"
+            },
+            "suggest": {
+                "mvccore/ext-debug-tracy": "MvcCore Extension - Debug - Tracy (tracy/tracy) - adapter for better development."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/startup.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore is PHP MVC framework to develop and pack projects (partialy or completely) into super fast single file apps and tools.",
+            "keywords": [
+                "config",
+                "controller",
+                "core",
+                "debug",
+                "easy mvc",
+                "framework",
+                "model",
+                "mvc",
+                "mvccore",
+                "packed",
+                "packed app",
+                "packing",
+                "plugins",
+                "request",
+                "response",
+                "route",
+                "router",
+                "session",
+                "simple mvc",
+                "super fast app",
+                "tool",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/mvccore/issues",
+                "source": "https://github.com/mvccore/mvccore/tree/v5.2.48"
+            },
+            "time": "2024-11-01T12:11:26+00:00"
+        },
+        {
+            "name": "tedivm/jshrink",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tedious/JShrink.git",
+                "reference": "7a35f5a4651ca2ce77295eb8a3b4e133ba47e19e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tedious/JShrink/zipball/7a35f5a4651ca2ce77295eb8a3b4e133ba47e19e",
+                "reference": "7a35f5a4651ca2ce77295eb8a3b4e133ba47e19e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.14",
+                "php-coveralls/php-coveralls": "^2.5.0",
+                "phpunit/phpunit": "^9|^10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JShrink": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Hafner",
+                    "email": "tedivm@tedivm.com"
+                }
+            ],
+            "description": "Javascript Minifier built in PHP",
+            "homepage": "http://github.com/tedious/JShrink",
+            "keywords": [
+                "javascript",
+                "minifier"
+            ],
+            "support": {
+                "issues": "https://github.com/tedious/JShrink/issues",
+                "source": "https://github.com/tedious/JShrink/tree/v1.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tedivm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/tedivm/jshrink",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-10-04T17:23:23+00:00"
+        },
+        {
+            "name": "tomflidr/tracy",
+            "version": "v2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomFlidr/tracy.git",
+                "reference": "fcf094f395ed66fd00a9902c04a019c8753aab01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomFlidr/tracy/zipball/fcf094f395ed66fd00a9902c04a019c8753aab01",
+                "reference": "fcf094f395ed66fd00a9902c04a019c8753aab01",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-session": "*",
+                "php": ">=5.4.4"
+            },
+            "replace": {
+                "tracy/tracy": "<3.0"
+            },
+            "require-dev": {
+                "nette/di": "~2.3 || ~3.0.0",
+                "nette/tester": "~1.7 || ~2.0",
+                "nette/utils": "~2.3"
+            },
+            "suggest": {
+                "https://nette.org/donate": "Please support Tracy via a donation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/shortcuts.php"
+                ],
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "😎 Tracy: the addictive tool to ease debugging PHP code for cool developers. Friendly design, logging, profiler, advanced features like debugging AJAX calls or CLI support. You will love it.",
+            "homepage": "https://tracy.nette.org",
+            "keywords": [
+                "Xdebug",
+                "debug",
+                "debugger",
+                "nette",
+                "profiler"
+            ],
+            "support": {
+                "source": "https://github.com/tomFlidr/tracy/tree/v2.7.4"
+            },
+            "time": "2024-03-26T12:57:07+00:00"
+        },
+        {
+            "name": "totten/lurkerlite",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/totten/Lurker.git",
+                "reference": "a20c47142b486415b9117c76aa4c2117ff95b49a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/totten/Lurker/zipball/a20c47142b486415b9117c76aa4c2117ff95b49a",
+                "reference": "a20c47142b486415b9117c76aa4c2117ff95b49a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "replace": {
+                "henrikbjorn/lurker": "*"
+            },
+            "suggest": {
+                "ext-inotify": ">=0.1.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Lurker": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com"
+                },
+                {
+                    "name": "Yaroslav Kiliba",
+                    "email": "om.dattaya@gmail.com"
+                },
+                {
+                    "name": "Henrik Bjrnskov",
+                    "email": "henrik@bjrnskov.dk"
+                }
+            ],
+            "description": "Resource Watcher - Lightweight edition of henrikbjorn/lurker with no dependencies",
+            "keywords": [
+                "filesystem",
+                "resource",
+                "watching"
+            ],
+            "support": {
+                "source": "https://github.com/totten/Lurker/tree/1.3.0"
+            },
+            "time": "2020-09-01T10:01:01+00:00"
+        },
+        {
+            "name": "tubalmartin/cssmin",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git",
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tubalmartin/YUI-CSS-compressor-PHP-port/zipball/3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "cogpowered/finediff": "0.3.*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "bin": [
+                "cssmin"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tubalmartin\\CssMin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Túbal Martín",
+                    "homepage": "http://tubalmartin.me/"
+                }
+            ],
+            "description": "A PHP port of the YUI CSS compressor",
+            "homepage": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port",
+            "keywords": [
+                "compress",
+                "compressor",
+                "css",
+                "cssmin",
+                "minify",
+                "yui"
+            ],
+            "support": {
+                "issues": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/issues",
+                "source": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port"
+            },
+            "time": "2018-01-15T15:26:51+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
