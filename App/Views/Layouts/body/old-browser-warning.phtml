@@ -6,19 +6,18 @@
 		'edge'		=> 16.0,
 		'opera'		=> 44.0,
 	];
-?><script nonce="<?=$nonce?>">(function(a,b,c,d,e,f,g,h,j,k,m,n,o,p,q,r,s,i,l,t,u){c=b.body;q=a[f](' MSIE ')||a[f](' Trident/');if(!q){for(i=0,l=m[h];i<l;i++){t=m[i];if(a[f](t[0])){r=parseFloat(a[g](t[1],'$2'));q=!s(r)&&r<t[2];break}}u(b,j+'name',n[i][0]);u(b,j+'version',r.toFixed(1))}if(q){for(i=0,l=n[h];i<l;i++){t=n[i];p.push('<a'+k+t[0]+'" href="'+t[1]+'" target="_blank"><span>&nbsp;</span>'+t[2]+'</a>')}c[d]=c[d]+e;document.write('<div'+k+e+'"><p>'+o+'<br />'+p.join(', ')+'.</p></div>')}})(navigator.userAgent,document,null,'className',' old-browser-warning','match','replace','length','browser-',' class="',[[' Chrome/',/(.*) Chrome\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->chrome?>],[' Safari/',/(.*) Version\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->safari?>],[' Firefox/',/(.*) Firefox\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->firefox?>],[' Edge/',/(.*) Edge\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->edge?>],[' Opera/',/(.*) Version\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->opera?>]],[['chrome','https://www.google.com/chrome','Google Chrome'],['safari','https://www.apple.com/safari','Apple Safari'],['firefox','https://www.mozilla.org/en/firefox/new','Mozilla Firefox'],['edge','https://www.microsoft.com/edge','Microsoft Edge'],['opera','https://www.opera.com/','Opera']],'<?=addslashes($this->Nl2Br($this->translate("Your browser is too old. \nPlease install any supported browser:")))?>',[],false,0,Number.isNaN||isNaN,0,0,[],function(a,b,c){var d=a.createElement('meta');d.name=b;d.content=c;a.head.appendChild(d)});<?php /*
+?><script nonce="<?=$nonce?>">(function(a,b,c,d,e,f,g,h,j,k,m,n,o,p,q,r,i,l,s,t,u){c=b.body;p=a[f](' MSIE ')||a[f](' Trident/');if(!p){for(i=0,l=k[h];i<l;i++){s=k[i];if(a[f](s[0])){q=parseFloat(a[g](s[1],'$2'));p=!r(q)&&q<s[2];break}}t(b,j+'name',m[i][0]);t(b,j+'version',q.toFixed(1))}if(p){for(i=0,l=m[h];i<l;i++){s=m[i];o.push('<a class="'+s[0]+'" href="'+s[1]+'" target="_blank"><span>&nbsp;</span>'+s[2]+'</a>')}c[d]=c[d]+' '+e;b.write('<div id="'+e+'"><p>'+n+'<br />'+o.join(', ')+'.</p></div>');b.body.onload=function(){contentElm=b.getElementById(e).nextElementSibling;if(contentElm!=null)contentElm.style.position='absolute'}}})(navigator.userAgent,document,null,'className','old-browser-warning','match','replace','length','browser-',[[' Chrome/',/(.*) Chrome\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->chrome?>],[' Safari/',/(.*) Version\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->safari?>],[' Firefox/',/(.*) Firefox\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->firefox?>],[' Edge/',/(.*) Edge\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->edge?>],[' Opera/',/(.*) Version\/(\d+\.\d+)(.*)/g,<?=$supportedBrowsers->opera?>]],[['chrome','https://www.google.com/chrome','Google Chrome'],['safari','https://www.apple.com/safari','Apple Safari'],['firefox','https://www.mozilla.org/en/firefox/new','Mozilla Firefox'],['edge','https://www.microsoft.com/edge','Microsoft Edge'],['opera','https://www.opera.com/','Opera']],'<?=addslashes($this->Nl2Br($this->translate("Your browser is too old. \nPlease install any supported browser:")))?>',[],false,0,Number.isNaN||isNaN,0,0,[],function(a,b,c){var d=a.createElement('meta');d.name=b;d.content=c;a.head.appendChild(d)});<?php /*
 // source (packed by http://dean.edwards.name/packer/):
 (function (
 	userAgent,
 	doc,
 	body, 
 	className, 
-	oldBrowserClass, 
+	oldBrowserIdAndClass, 
 	match, 
 	replace, 
 	length,
 	browserAttrBegin,
-	tagCls,
 	matchesAndVersions,
 	data, 
 	text, 
@@ -29,7 +28,8 @@
 	i, 
 	l,
 	item,
-	addMeta
+	addMeta,
+	elm
 ) {
 	body = doc.body;
 	oldBrowser = userAgent[match](' MSIE ') || userAgent[match](' Trident/');
@@ -49,22 +49,26 @@
 	if (oldBrowser) {
 		for (i = 0, l = data[length]; i < l; i++) {
 			item = data[i];
-			codes.push('<a'+tagCls+item[0]+'" href="'+item[1]+'" target="_blank"><span>&nbsp;</span>'+item[2]+'</a>')
+			codes.push('<a class="'+item[0]+'" href="'+item[1]+'" target="_blank"><span>&nbsp;</span>'+item[2]+'</a>')
 		}
-		body[className] = body[className] + oldBrowserClass;
-		document.write('<div'+tagCls+ oldBrowserClass + '"><p>' + text + '<br />' + codes.join(', ') + '.</p></div>');
+		body[className] = body[className] + ' ' + oldBrowserIdAndClass;
+		doc.write('<div id="' + oldBrowserIdAndClass + '"><p>' + text + '<br />' + codes.join(', ') + '.</p></div>');
+		doc.body.onload = function () {
+			contentElm = doc.getElementById(oldBrowserIdAndClass).nextElementSibling;
+			if (contentElm != null)
+				contentElm.style.position = 'absolute';
+		}
 	}
 })(
 	navigator.userAgent,
 	document,
 	null,
 	'className',
-	' old-browser-warning',
+	'old-browser-warning',
 	'match',
 	'replace',
 	'length',
 	'browser-',
-	' class="',
 	[
 		[' Chrome/',	/(.*) Chrome\/(\d+\.\d+)(.*)/g,		<?=$supportedBrowsers->chrome?>],
 		[' Safari/',	/(.*) Version\/(\d+\.\d+)(.*)/g,	<?=$supportedBrowsers->safari?>],

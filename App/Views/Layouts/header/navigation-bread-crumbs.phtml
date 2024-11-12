@@ -4,8 +4,8 @@
 	 * @var $items \App\Models\Navigations\BreadCrumbs\Set
 	 */
 ?><div class="<?=implode(' ', $this->cssClasses)?>"><?php
-	foreach ($this->items as $index => $item):
-		$cssClass = 'bc-nav-item bc-nav-item-' . $index;
+	foreach ($this->items as $item):
+		$cssClass = 'nav-bc-item';
 		if ($item->GetIsFirst()) 
 			$cssClass .= ' first';
 		if ($item->GetIsLast()) 
@@ -22,7 +22,7 @@
 			?></span></span><?php
 		endif;
 		if (!$item->GetIsLast()):
-			?><span class="bc-nav-spacer"></span><?php
+			?><span class="nav-bc-spacer"></span><?php
 		endif;
 	endforeach; 
 ?></div>

@@ -7,28 +7,14 @@
 		<?=$this->RenderLayout('head/preloading')?>
 		<?=$this->RenderLayout('head/metrics')?>
 		<?=$this->Css('headAll')->Render()?>
+		<?=$this->Css('headAllPrint')->Render()?>
 		<?=$this->Css('headPage')->Render()?>
 		<?=$this->Js('headAll')->Render()?>
 		<?=$this->Js('headPage')->Render()?>
 	</head>
 	<body>
 		<?=$this->RenderLayout('body/old-browser-warning')?>
-		
-		<div class="bg"></div>
-		<div class="container">
-			<header>
-				<!-- heading -->
-				<?=$this->navigationMain?>
-				<?=$this->navigationBreadCrumbs?>
-			</header>
-			<main>
-				<?=$this->GetContent()?>
-			</main>
-			<footer>
-				<?=$this->RenderLayout('footer/navigation-localization')?>
-				<?=$this->RenderLayout('footer/navigation-media')?>
-			</footer>
-		</di
+		<?=$this->RenderLayout('body/layout.' . $this->mediaSiteVersion)?>
 	</body>
 	<?=$this->Js('foot')?>
 </html>

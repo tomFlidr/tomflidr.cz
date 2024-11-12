@@ -2,11 +2,13 @@
 
 namespace App\Controllers\Fronts;
 
+use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
+
 class Services extends \App\Controllers\Front {
 
     public function IndexAction (): void {
-		$this->view->title = 'Services';
-		$this->assets->Training();
+		$this->setUpTitleAndBreadCrumbs('Services');
+		$this->assets->Services();
     }
 	
 }

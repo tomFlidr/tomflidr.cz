@@ -1,0 +1,162 @@
+/*@font-face{
+	font-family:'ssp_extralight';
+	src:url('/static/fonts/sourcesanspro/extralight.eot');
+	src:url('/static/fonts/sourcesanspro/extralight.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/extralight.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/extralight.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/extralight.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/extralight.svg#ssp_extralight') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ssp_extralight_italic';
+	src:url('/static/fonts/sourcesanspro/extralightit.eot');
+	src:url('/static/fonts/sourcesanspro/extralightit.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/extralightit.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/extralightit.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/extralightit.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/extralightit.svg#ssp_extralight_italic') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ssp_light';
+	src:url('/static/fonts/sourcesanspro/light.eot');
+	src:url('/static/fonts/sourcesanspro/light.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/light.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/light.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/light.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/light.svg#ssp_light') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ssp_light_italic';
+	src:url('/static/fonts/sourcesanspro/lightit.eot');
+	src:url('/static/fonts/sourcesanspro/lightit.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/lightit.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/lightit.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/lightit.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/lightit.svg#ssp_light_italic') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}*/
+@font-face{
+	font-family:'ssp_regular';
+	src:url('/static/fonts/sourcesanspro/regular.eot');
+	src:url('/static/fonts/sourcesanspro/regular.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/regular.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/regular.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/regular.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/regular.svg#ssp_regular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ssp_regular_italic';
+	src:url('/static/fonts/sourcesanspro/it.eot');
+	src:url('/static/fonts/sourcesanspro/it.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/it.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/it.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/it.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/it.svg#ssp_regular_italic') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+/*@font-face{
+	font-family:'ssp_semibold';
+	src:url('/static/fonts/sourcesanspro/semibold.eot');
+	src:url('/static/fonts/sourcesanspro/semibold.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/semibold.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/semibold.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/semibold.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/semibold.svg#ssp_semibold') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ssp_semibold_italic';
+	src:url('/static/fonts/sourcesanspro/semiboldit.eot');
+	src:url('/static/fonts/sourcesanspro/semiboldit.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/semiboldit.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/semiboldit.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/semiboldit.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/semiboldit.svg#ssp_semibold_italic') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}*/
+@font-face{
+	font-family:'ssp_bold';
+	src:url('/static/fonts/sourcesanspro/bold.eot');
+	src:url('/static/fonts/sourcesanspro/bold.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/bold.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/bold.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/bold.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/bold.svg#ssp_bold') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ssp_bold_italic';
+	src:url('/static/fonts/sourcesanspro/boldit.eot');
+	src:url('/static/fonts/sourcesanspro/boldit.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/boldit.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/boldit.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/boldit.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/boldit.svg#ssp_bold_italic') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'ssp_black';
+	src:url('/static/fonts/sourcesanspro/black.eot');
+	src:url('/static/fonts/sourcesanspro/black.eot?#iefix') format('embedded-opentype'),
+		url('/static/fonts/sourcesanspro/black.woff2') format('woff2'),
+		url('/static/fonts/sourcesanspro/black.woff') format('woff'),
+		url('/static/fonts/sourcesanspro/black.ttf') format('truetype'),
+		url('/static/fonts/sourcesanspro/black.svg#ssp_black') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+h1,h2,h3,h4,h5,h6,th,
+strong,b,button{font-family:'ssp_bold';font-weight:normal;}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em,
+h1 i,
+h2 i,
+h3 i,
+h4 i,
+h5 i,
+h6 i,
+strong em,
+b em,
+th em,
+strong i,
+b i,
+th i,
+i strong,
+i b,
+em strong,
+em b{font-family:'ssp_bold_italic';font-weight:normal;font-style:normal;}
+
+html,body,p,table,td,label,select,input,textarea,legend{font-family:'ssp_regular',Arial,Helvetica,sans;}
+i,em,p i, p em,td i td em,textarea i,textarea em{font-family:'ssp_regular_italic';font-style:normal;}
+
+html,body{font-size:16px;line-height:1.3em;}
+
+h1{font-size:225%;line-height:1.4em;margin:1em 0 0.5em 0;}
+h2{font-size:180%;line-height:1.4em;margin:1em 0 0.5em 0;}
+h3{font-size:160%;line-height:1.4em;margin:1em 0 0.5em 0;}
+h4{font-size:140%;line-height:1.4em;margin:1em 0 0.5em 0;}
+h5{font-size:120%;line-height:1.4em;margin:1em 0 0.5em 0;}
+h6{font-size:110%;line-height:1.4em;margin:1em 0 0.5em 0;}
+p{font-size:100%;line-height:1.5em;margin:0.5em 0 0.5em 0;}
+
+p b,p strong,p th{font-size:100%;}

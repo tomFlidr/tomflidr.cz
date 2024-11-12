@@ -5,13 +5,13 @@ body.old-browser-warning div.layout{
 	width:450px;
 	margin:0 auto;
 	filter:blur(2px);
-    -ms-filter:blur(2px);
-    filter:progid:DXImageTransform.Microsoft.Blur(pixelradius='2', shadowopacity='0.0');
+	-ms-filter:blur(2px);
+	filter:progid:DXImageTransform.Microsoft.Blur(pixelradius='2', shadowopacity='0.0');
 }
 body.old-browser-warning div.layout *{
 	position:static;
 }
-div.old-browser-warning{
+#old-browser-warning{
 	position:absolute;
 	z-index:999999999;
 	top:0;
@@ -25,21 +25,22 @@ div.old-browser-warning{
 	font-size:30px !important;
 	font-family:arial !important;
 }
-div.old-browser-warning p{
+#old-browser-warning p{
 	position:relative;
-	top:30%;
+	top:50px;
 	color:#000 !important;
 	line-height:1.5em;
-	padding:0 100px;
+	padding:0 40px;
 }
-div.old-browser-warning p b{
+#old-browser-warning p b{
 	color:#000 !important;
 	font-weight:bold !important;
 }
-div.old-browser-warning p a{
+#old-browser-warning p a{
 	display:inline-block;
 	position:relative;
 	padding-left:35px;
+	padding-right:0;
 	white-space:nowrap;
 	text-decoration:none;
 	line-height:1.5em;
@@ -47,11 +48,11 @@ div.old-browser-warning p a{
 	border-bottom:1px solid #0078d7;
 	text-shadow:none;
 }
-div.old-browser-warning p a[target=_blank]:before,
-div.old-browser-warning p a[target=_blank]::before{
+#old-browser-warning p a[target=_blank]:before,
+#old-browser-warning p a[target=_blank]::before{
 	content:'';
 }
-div.old-browser-warning p a span{
+#old-browser-warning p a span{
 	position:absolute;
 	top:8px;
     left:0px;
@@ -64,18 +65,18 @@ div.old-browser-warning p a span{
 	border:0;
 	overflow:hidden;
 }
-div.old-browser-warning p a:hover,
-div.old-browser-warning p a:focus,
-div.old-browser-warning p a:active{
+#old-browser-warning p a:hover,
+#old-browser-warning p a:focus,
+#old-browser-warning p a:active{
 	border-bottom:1px solid transparent;
 }
-div.old-browser-warning p a:hover span,
-div.old-browser-warning p a:focus span,
-div.old-browser-warning p a:active span{
+#old-browser-warning p a:hover span,
+#old-browser-warning p a:focus span,
+#old-browser-warning p a:active span{
 	top:9px;
 }
-div.old-browser-warning p a.chrome span{background-image:url('/static/img/content/old-browser-warning/chrome.gif');}
-div.old-browser-warning p a.safari span{background-image:url('/static/img/content/old-browser-warning/safari.gif');}
-div.old-browser-warning p a.firefox span{background-image:url('/static/img/content/old-browser-warning/firefox.gif');}
-div.old-browser-warning p a.edge span{background-image:url('/static/img/content/old-browser-warning/edge.gif');}
-div.old-browser-warning p a.opera span{background-image:url('/static/img/content/old-browser-warning/opera.gif');}
+#old-browser-warning p a.chrome span{background-image:url('/static/img/content/old-browser-warning/chrome.gif');}
+#old-browser-warning p a.safari span{background-image:url('/static/img/content/old-browser-warning/safari.gif');}
+#old-browser-warning p a.firefox span{background-image:url('/static/img/content/old-browser-warning/firefox.gif');}
+#old-browser-warning p a.edge span{background-image:url('/static/img/content/old-browser-warning/edge.gif');}
+#old-browser-warning p a.opera span{background-image:url('/static/img/content/old-browser-warning/opera.gif');}

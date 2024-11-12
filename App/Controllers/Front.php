@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use \App\Controllers\Fronts\Navigations as CtrlNavigations,
-	\App\Models\Navigations as ModelNavigations;
+	\App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
 
 class Front extends Base {
 
@@ -25,12 +25,22 @@ class Front extends Base {
 		parent::PreDispatch();
 		if (!$this->viewEnabled) return;
 
-		$this->navigationBreadCrumbs->AddItem(new ModelNavigations\BreadCrumbs\Item(
+		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
 			text: $this->translate('Home'),
 			url: $this->Url('home'),
 		));
 		$this->view->navigationMain = $this->navigationMain;
 		$this->view->navigationBreadCrumbs = $this->navigationBreadCrumbs;
+	}
+
+	protected function setUpTitleAndBreadCrumbs (string $title): string {
+		$translatedTitle = $this->translate('CV');
+		$this->view->title = $translatedTitle;
+		$this->assets->Cv();
+		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
+			text: $translatedTitle,
+		));
+		return $translatedTitle;
 	}
 
 }

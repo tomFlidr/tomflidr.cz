@@ -2,10 +2,12 @@
 
 namespace App\Controllers\Fronts;
 
-class Projects extends \App\Controllers\Base {
+use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
+
+class Projects extends \App\Controllers\Front {
 
     public function IndexAction (): void {
-		$this->view->title = 'Open Source Projects';
+		$this->setUpTitleAndBreadCrumbs('Open Source Projects');
 		$this->assets->Projects();
     }
 	

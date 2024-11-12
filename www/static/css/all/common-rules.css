@@ -1,13 +1,18 @@
 :root{
-	--color-link-normal:#0078d7;
-	--color-link-visited:#a036d2;
+	--color-link-normal:#24adff;
+	--color-link-visited:#4e83a2;
 
 	--color-front:#fff;
 	--color-bg:#000;
 
 	--color-selection-front:var(--color-bg);
 	--color-selection-bg:var(--color-front);
-
+	
+	--layout-width:800px;
+	--layout-border-radius:7px;
+	--content-horizontal-padding:25px;
+	--content-vertical-padding:15px;
+	--glass-border-color:rgba(255,255,255,0.1);
 }
 
 *::selection{

@@ -9,6 +9,7 @@ class Assets extends \MvcCore\Controller {
 
 	public function __construct (\App\Controllers\Base $controller) {
 		$this->mediaSiteVersion = $controller->GetRequest()->GetMediaSiteVersion();
+		x($this->mediaSiteVersion);
 	}
 
 	public function PreDispatch () {
@@ -22,13 +23,17 @@ class Assets extends \MvcCore\Controller {
 		$this->view->Css('headAll')
 			->Append($static . '/css/all/resets.css')
 			->Append($static . '/css/all/old-browsers-warning.css')
+			->Append($static . '/css/all/fonts.css')
 			->Append($static . '/css/all/icons.css')
 			->Append($static . '/css/all/common-rules.css')
 			->Append($static . '/css/all/links.css')
-			->Append($static . '/css/all/layout.css')
-			->Append($static . '/css/all/common-rules.print.css', media: 'print')
-			->Append($static . '/css/all/links.print.css', media: 'print')
-			->Append($static . '/css/all/layout.print.css', media: 'print');
+			->Append($static . "/css/all/layout.{$this->mediaSiteVersion}.css")
+			->Append($static . '/css/all/document.css');
+		$this->view->Css('headAllPrint')
+			->Append(media: 'print', path: $static . '/css/print/common-rules.css')
+			->Append(media: 'print', path: $static . '/css/print/links.css')
+			->Append(media: 'print', path: $static . '/css/print/layout.css')
+			->Append(media: 'print', path: $static . '/css/print/document.css');
 	}
 	
 	public function Index (): void {

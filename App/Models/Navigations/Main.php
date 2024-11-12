@@ -15,7 +15,6 @@ class Main extends \App\Models\Base {
 		'home'			=> [
 			'title'			=> 'Home',
 			'description'	=> 'from beginning',
-			'class'			=> 'home',
 		],
 		'cv'			=> [
 			'title'			=> 'CV',

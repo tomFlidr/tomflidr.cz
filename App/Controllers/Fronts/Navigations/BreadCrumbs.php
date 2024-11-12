@@ -6,10 +6,12 @@ use \App\Models\Navigations\BreadCrumbs as ModelBreadCrumbs;
 
 class BreadCrumbs extends \MvcCore\Controller {
 	
+	public static int $minItems2Render = 3;
+
 	/** @var \App\Controllers\Front */
 	protected $parentController;
 
-	protected array $cssClasses = ['header-navigation-breadcrumbs'];
+	protected array $cssClasses = ['nav-breadcrumbs', 'glass', 'document'];
 
 	protected ModelBreadCrumbs\Set $items;
 
@@ -70,7 +72,8 @@ class BreadCrumbs extends \MvcCore\Controller {
 	 * @param string $actionNameDashed 
 	 */
 	public function Render ($controllerOrActionNameDashed = NULL, $actionNameDashed = NULL): string {
-		$itemsCount = count($this->items);
+		$itemsCount = $this->GetCount();
+		if ($itemsCount < static::$minItems2Render) return '';
 		$this->items[0]->SetIsFirst(TRUE);
 		$this->items[$itemsCount - 1]->SetIsLast(TRUE);
 		$this->view->items = $this->items;

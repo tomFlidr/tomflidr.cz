@@ -1,0 +1,30 @@
+<?php
+	/** @var \App\Views\Layouts\standard $this */
+	$homeUrl = $this->Url('home');
+?>
+<header>
+	<a href="#" class="hamburger">Navigation</a>
+	<a href="<?=$homeUrl?>" class="name">
+		<strong><?=$this->appName?></strong>
+	</a>
+</header>
+<div class="left-panel">
+	<div class="roof">
+		<a href="<?=$homeUrl?>" class="name">
+			<strong><?=$this->appName?></strong>
+		</a>
+		<strong class="position">
+			<?=$this->Translate('freelance web developer, trainer & consultant')?>,<br />
+			<?=$this->Translate('primary platforms')?>: JS/PHP/C#/VB.NET/MySQL/TSQL
+		</strong>
+	</div>
+	<?=$this->navigationBreadCrumbs?>
+	<?=$this->navigationMain?>
+	<footer class="glass">
+		<?=$this->RenderLayout('footer/navigation-localization')?>
+		<?=$this->RenderLayout('footer/navigation-media')?>
+	</footer>
+</div>
+<main>
+	<?=$this->GetContent()?>
+</main>

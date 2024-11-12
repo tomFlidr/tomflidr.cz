@@ -2,10 +2,12 @@
 
 namespace App\Controllers\Fronts;
 
+use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
+
 class References extends \App\Controllers\Front {
 
     public function IndexAction (): void {
-		$this->view->title = 'References';
+		$this->setUpTitleAndBreadCrumbs('References');
 		$this->assets->References();
     }
 	

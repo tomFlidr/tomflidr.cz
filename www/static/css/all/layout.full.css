@@ -1,0 +1,162 @@
+html,body{
+	margin:0;
+	color:var(--color-front);
+}
+
+/* glass efect definition */
+.container{
+	width:var(--layout-width);
+	margin:20px auto;
+	box-shadow:0 3px 30px #000;
+	border-radius:var(--layout-border-radius);
+}
+body,
+.glass::before{
+	background: url(/static/img/content/circuit.jpg) center top / cover fixed;
+}
+.glass{
+	position:relative;
+	border:1px solid var(--glass-border-color);
+	overflow:hidden;
+	/*backdrop-filter:blur(5px) brightness(200%) hue-rotate(6deg); - too modern */
+}
+.glass::before {
+	content: '';
+	margin:-35px;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	filter:blur(5px) brightness(120%) hue-rotate(10deg);
+	z-index:-1;
+}
+
+/* header */
+header div.glass:first-of-type{
+	border-top-left-radius:var(--layout-border-radius);
+    border-top-right-radius:var(--layout-border-radius);
+}
+header .roof{
+	height:80px;
+	display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.roof a.name{
+	color:var(--color-front);
+    text-decoration:none;
+    font-size:32px;
+    line-height:1.3em;
+    display:inline-block;
+	padding:0 8px;
+	border-radius:3px;
+}
+.roof a.name strong{
+    font-family: 'ssp_black';
+}
+.roof a.name:hover,
+.roof a.name:focus,
+.roof a.name:focus{
+    color:var(--color-front);
+	text-decoration:none;
+	background-color:var(--color-link-normal);
+}
+header .nav-main{
+}
+header .nav-main table{
+	border-collapse:collapse;
+	height:100%;
+    width:100%;
+}
+header .nav-main table thead tr th{
+	text-align:left;
+	padding:0;
+	border:0;
+}
+header .nav-main table thead tr th a{
+	display:flex;
+	flex-direction:column;
+	padding:3px 10px 0 10px;
+	text-decoration:none;
+	height:60px;
+	justify-content:center;
+	border:0;
+	border-right:1px solid var(--glass-border-color);
+}
+header .nav-main table thead tr th:first-of-type a{
+	border-left:1px solid var(--glass-border-color);
+}
+header .nav-main table thead tr th a b{
+	display:block;
+	white-space:nowrap;
+	font-family:'ssp_bold';
+    color:var(--color-front);
+	font-size:16px;
+}
+header .nav-main table thead tr th a span{
+	display:block;
+	white-space:nowrap;
+	font-family:'ssp_regular';
+    color:var(--color-front);
+	font-size:12px;
+}
+header .nav-main table thead tr th a:hover,
+header .nav-main table thead tr th a:focus,
+header .nav-main table thead tr th a:active,
+header .nav-main table thead tr th a.selected{
+	background: rgba(82, 203, 255, 0.7);
+}
+header .nav-main table thead tr th a:hover:before,
+header .nav-main table thead tr th a:focus:before,
+header .nav-main table thead tr th a:active:before,
+header .nav-main table thead tr th a.selected:before{
+	filter:blur(1px) brightness(800%) hue-rotate(-10deg) contrast(0.3) saturate(2);
+}
+header .nav-main table thead tr th a:hover		b,
+header .nav-main table thead tr th a:focus		b,
+header .nav-main table thead tr th a:active		b,
+header .nav-main table thead tr th a.selected	b{
+	color:var(--color-bg);
+	text-shadow: 0 0 5px #FFF, 0 0 15px #FFF, 0px 0px 7px rgba(255,255,255,0);
+}
+header .nav-main table thead tr th a:hover		span,
+header .nav-main table thead tr th a:focus		span,
+header .nav-main table thead tr th a:active		span,
+header .nav-main table thead tr th a.selected	span{
+	color:var(--color-bg);
+	text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF, 0 0 15px #FFF, 0px 0px 7px rgba(255,255,255,0);
+}
+
+/* main */
+main .nav-breadcrumbs{
+	display:flex;
+	flex-direction:row;
+	padding:10px;
+	gap:10px;
+	font-size:12px;
+	line-height:1.3em;
+	justify-content:flex-start;
+}
+main .nav-breadcrumbs .nav-bc-spacer:after{
+	content:'\00BB';
+}
+main > div.glass:not(.nav-breadcrumbs){
+	padding-top:var(--content-vertical-padding);
+	padding-bottom:var(--content-vertical-padding);
+	padding-left:var(--content-horizontal-padding);
+	padding-right:var(--content-horizontal-padding);
+	border-bottom:0 !important;
+}
+
+/* footer */
+footer{
+	border-bottom-left-radius:var(--layout-border-radius);
+	border-bottom-right-radius:var(--layout-border-radius);
+	padding-top:10px;
+	font-size:12px;
+	line-height:1.3em;
+	text-align:center;
+	padding-bottom:10px;
+}
