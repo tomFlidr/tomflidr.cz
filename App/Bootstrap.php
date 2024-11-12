@@ -44,7 +44,8 @@ class Bootstrap {
 		$app
 			->SetDebugClass(\MvcCore\Ext\Debugs\Tracy::class)
 			->SetConfigClass(\MvcCore\Ext\Configs\Cached::class)
-			->SetRouterClass(\App\Routers\MediaAndLocalization::class);
+			->SetRouterClass(\App\Routers\MediaAndLocalization::class)
+			->SetDefaultControllerName(\App\Controllers\Fronts\Index::class);
 	}
 	
 	protected static function getCache (\MvcCore\Request $req): \MvcCore\Ext\ICache {
@@ -57,7 +58,7 @@ class Bootstrap {
 			]*/
 		]);
 		\MvcCore\Ext\Cache::RegisterStore(
-			\MvcCore\Ext\Caches\Redis::class, $cache
+			\MvcCore\Ext\Caches\Redis::class, $cache, TRUE
 		);
 		$cache->Connect();
 		return $cache;

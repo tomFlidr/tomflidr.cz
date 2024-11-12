@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5278770c84b1b684a590500ed8784208",
+    "content-hash": "9315272a85b210fc6428afbec97e30a2",
     "packages": [
         {
             "name": "civicrm/composer-compile-plugin",
@@ -830,6 +830,69 @@
                 "source": "https://github.com/mvccore/ext-tool-cli-winfork/tree/v5.0.0"
             },
             "time": "2022-05-12T08:03:11+00:00"
+        },
+        {
+            "name": "mvccore/ext-tool-collections",
+            "version": "v5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-tool-collections.git",
+                "reference": "c88c3d6381b6d0bed281aab016453e95f1b005c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-tool-collections/zipball/c88c3d6381b6d0bed281aab016453e95f1b005c0",
+                "reference": "c88c3d6381b6d0bed281aab016453e95f1b005c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "nette/tester": "<=2.4",
+                "php": ">=5.4.0",
+                "tomflidr/tracy": "<=2.5.12"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - Tool - Collections - Collection classes for typed arrays in PHP.",
+            "keywords": [
+                "array",
+                "collection",
+                "dictionary",
+                "ext",
+                "extension",
+                "framework",
+                "list",
+                "map",
+                "mvc",
+                "mvccore",
+                "plug-in",
+                "plugin",
+                "set",
+                "tool",
+                "typed",
+                "vector"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-tool-collections/issues",
+                "source": "https://github.com/mvccore/ext-tool-collections/tree/v5.0.2"
+            },
+            "time": "2022-10-21T15:39:17+00:00"
         },
         {
             "name": "mvccore/ext-tool-csp",

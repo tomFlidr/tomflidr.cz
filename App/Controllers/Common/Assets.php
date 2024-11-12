@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Common;
 
 class Assets extends \MvcCore\Controller {
 	
@@ -32,14 +32,14 @@ class Assets extends \MvcCore\Controller {
 	}
 	
 	public function Index (): void {
-		/** @var $this \App\Controllers\Base */
+		/** @var $this \App\Controllers\Front */
 		$static = self::$staticPath;
 		$this->view->Css('headPage')
 			->Append($static . '/css/pages/index.css');
 	}
 	
 	public function Cv (): void {
-		/** @var $this \App\Controllers\Base */
+		/** @var $this \App\Controllers\Front */
 		$static = self::$staticPath;
 		$this->view->Css('headPage')
 			->Append($static . '/css/pages/cv.css')
@@ -47,13 +47,25 @@ class Assets extends \MvcCore\Controller {
 	}
 	
 	public function Projects (): void {
-		/** @var $this \App\Controllers\Base */
+		/** @var $this \App\Controllers\Front */
 		$static = self::$staticPath;
 		
 	}
 	
 	public function Training (): void {
-		/** @var $this \App\Controllers\Base */
+		/** @var $this \App\Controllers\Front */
+		$static = self::$staticPath;
+		
+	}
+	
+	public function Services (): void {
+		/** @var $this \App\Controllers\Front */
+		$static = self::$staticPath;
+		
+	}
+	
+	public function References (): void {
+		/** @var $this \App\Controllers\Front */
 		$static = self::$staticPath;
 		
 	}

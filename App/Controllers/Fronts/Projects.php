@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Fronts;
 
-class Projects extends \App\Controllers\Index {
+class Projects extends \App\Controllers\Base {
 
     public function IndexAction (): void {
 		$this->view->title = 'Open Source Projects';

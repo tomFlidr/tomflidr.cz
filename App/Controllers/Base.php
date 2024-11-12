@@ -9,13 +9,9 @@ class Base extends \MvcCore\Controller {
 
 	protected $layout = 'standard';
 	
-	protected ?\App\Controllers\Assets $assets = NULL;
+	protected ?\App\Controllers\Common\Assets $assets = NULL;
 
 	protected ?\MvcCore\Ext\Translators\Csv $translator = NULL;
-	
-	public function GetAssets (): ?\App\Controllers\Assets {
-		return $this->assets;
-	}
 	
 	public function GetTranslator (): ?\MvcCore\Ext\Translators\Csv {
 		return $this->translator;
@@ -23,16 +19,17 @@ class Base extends \MvcCore\Controller {
 	
 	public function Init () {
 		parent::Init();
-		$this->translator = \MvcCore\Ext\Translators\Csv::GetInstance(
-			$this->router->GetLocalization(TRUE)
-		);
+
+		$localization = implode('_', $this->router->GetLocalization(FALSE));
+
+		$this->translator = \MvcCore\Ext\Translators\Csv::GetInstance($localization);
+		$this->translator->SetCache(\MvcCore\Ext\Cache::GetStore());
 		
 		// set language and country locale
-		$sysCfg = $this->GetConfigSystem();
-		[$reqLang, $reqLocale] = [$this->request->GetLang(), $this->request->GetLocale()];
-		\MvcCore\Ext\Tools\Locale::SetLocale(LC_ALL, "{$reqLang}_{$reqLocale}.UTF-8");
+		\MvcCore\Ext\Tools\Locale::SetLocale(LC_ALL, "{$localization}.UTF-8");
 
 		// set date time zone
+		$sysCfg = $this->GetConfigSystem();
 		date_default_timezone_set($sysCfg->app->timezoneDefault);
 	}
 	
@@ -41,7 +38,7 @@ class Base extends \MvcCore\Controller {
 			$this->view = $this->createView(TRUE);
 			if ($this->assets === NULL)
 				$this->AddChildController(
-					$this->assets = new \App\Controllers\Assets($this)
+					$this->assets = new \App\Controllers\Common\Assets($this)
 				);
 			$this->_preDispatchSetUpAssetsHelper();
 		}

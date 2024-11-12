@@ -1,0 +1,28 @@
+<?php
+	/**
+	 * @var $this \MvcCore\View
+	 * @var $items \App\Models\Navigations\BreadCrumbs\Set
+	 */
+?><div class="<?=implode(' ', $this->cssClasses)?>"><?php
+	foreach ($this->items as $index => $item):
+		$cssClass = 'bc-nav-item bc-nav-item-' . $index;
+		if ($item->GetIsFirst()) 
+			$cssClass .= ' first';
+		if ($item->GetIsLast()) 
+			$cssClass .= ' last';
+		if ($item->GetUrl() !== NULL):
+			?><a class="<?=$cssClass?>" href="<?php
+				echo $this->EscapeAttr($item->GetUrl());
+			?>"><span><?php
+				echo $this->EscapeHtml($item->GetText());
+			?></span></a><?php
+		else:
+			?><span class="<?=$cssClass?>"><span><?php
+				echo $this->EscapeHtml($item->GetText());
+			?></span></span><?php
+		endif;
+		if (!$item->GetIsLast()):
+			?><span class="bc-nav-spacer"></span><?php
+		endif;
+	endforeach; 
+?></div>

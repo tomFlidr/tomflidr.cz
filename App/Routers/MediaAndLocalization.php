@@ -59,7 +59,7 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 
 	protected function setUpCachedRoutes (): static {
 		/** @var \MvcCore\Ext\ICache $cache */
-		$cache = \MvcCore\Ext\Cache::GetStore(\MvcCore\Ext\Caches\Redis::class);
+		$cache = \MvcCore\Ext\Cache::GetStore();
 		$cacheKey = 'routes';
 		$cacheEnabled = $cache->GetEnabled();
 		/** @var $routesGroups ?array */
@@ -105,18 +105,34 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 			'home'					=> [
 				'match'					=> "#^/(index.php)?$#",
 				'reverse'				=> '/',
-				'controllerAction'		=> 'Index:Index',
+				'controllerAction'		=> 'Fronts\Index:Index',
 			],
 			'cv'					=> [
-				'controllerAction'		=> 'Cv:Index',
+				'controllerAction'		=> 'Fronts\Cv:Index',
 				'pattern'				=> [
 					'en'				=> '/curriculum-vitae',
 					'de'				=> '/lebenslauf',
 					'cs'				=> '/životopis',
 				],
 			],
+			'services'				=> [
+				'controllerAction'		=> 'Fronts\Services:Index',
+				'pattern'				=> [
+					'en'				=> '/services',
+					'de'				=> '/dienste',
+					'cs'				=> '/služby',
+				],
+			],
+			'references'				=> [
+				'controllerAction'		=> 'Fronts\References:Index',
+				'pattern'				=> [
+					'en'				=> '/references',
+					'de'				=> '/referenzen',
+					'cs'				=> '/reference',
+				],
+			],
 			'training'				=> [
-				'controllerAction'		=> 'Training:Index',
+				'controllerAction'		=> 'Fronts\Training:Index',
 				'pattern'				=> [
 					'en'				=> '/courses-for-professionals',
 					'de'				=> '/kurse-für-fachkräfte',
@@ -124,7 +140,7 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 				],
 			],
 			'projects'				=> [
-				'controllerAction'		=> 'Projects:Index',
+				'controllerAction'		=> 'Fronts\Projects:Index',
 				'pattern'				=> [
 					'en'				=> '/projects',
 					'de'				=> '/projekte',
@@ -132,7 +148,7 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 				],
 			],
 			'contact'				=> [
-				'controllerAction'		=> 'Index:Contact',
+				'controllerAction'		=> 'Fronts\Index:Contact',
 				'pattern'				=> [
 					'en'				=> '/contact',
 					'de'				=> '/kontakt',
@@ -147,7 +163,7 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 		$this->AddRoutes([
 			new \MvcCore\Route([
 				'name'							=> 'status',
-				'controllerAction'				=> 'Index:Status',
+				'controllerAction'				=> 'Fronts\Index:Status',
 				'pattern'						=> '/status',
 			])
 		]);

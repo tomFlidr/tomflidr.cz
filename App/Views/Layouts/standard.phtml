@@ -13,14 +13,22 @@
 	</head>
 	<body>
 		<?=$this->RenderLayout('body/old-browser-warning')?>
+		
 		<div class="bg"></div>
 		<div class="container">
-			<div class="content"><?=$this->GetContent()?></div>
-			<div class="foot">
-				<?=$this->RenderLayout('foot/navigation-localization')?>
-				<?=$this->RenderLayout('foot/navigation-media')?>
-			</div>
-		</div>
+			<header>
+				<!-- heading -->
+				<?=$this->navigationMain?>
+				<?=$this->navigationBreadCrumbs?>
+			</header>
+			<main>
+				<?=$this->GetContent()?>
+			</main>
+			<footer>
+				<?=$this->RenderLayout('footer/navigation-localization')?>
+				<?=$this->RenderLayout('footer/navigation-media')?>
+			</footer>
+		</di
 	</body>
 	<?=$this->Js('foot')?>
 </html>

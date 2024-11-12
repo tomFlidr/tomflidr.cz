@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Fronts;
 
-class Training extends \App\Controllers\Index {
+class Training extends \App\Controllers\Front {
 
     public function IndexAction (): void {
 		$this->view->title = 'ICT Training';

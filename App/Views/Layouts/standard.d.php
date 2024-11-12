@@ -2,6 +2,8 @@
 
 namespace App\Views\Layouts;
 
+use \App\Controllers\Fronts\Navigations;
+
 abstract class standard extends \MvcCore\View {
 	
 	var string $appName;
@@ -21,6 +23,10 @@ abstract class standard extends \MvcCore\View {
 	var string $nonce;
 
 	var string $title;
+
+	var Navigations\BreadCrumbs $navigationBreadCrumbs;
+
+	var Navigations\Main $navigationMain;
 
 	public abstract function Translate (string $key, array $replacements = []): string;
 

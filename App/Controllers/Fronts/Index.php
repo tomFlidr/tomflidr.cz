@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Fronts;
 
 use \MvcCore\Request\IConstants as ReqConsts;
 
-class Index extends Base {
+class Index extends \App\Controllers\Front {
 
 	public function IndexInit (): void {
 		if ($this->request->HasParam('cron_job_org', ReqConsts::PARAM_TYPE_QUERY_STRING)) {
