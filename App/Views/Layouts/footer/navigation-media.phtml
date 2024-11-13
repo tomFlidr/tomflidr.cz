@@ -12,7 +12,7 @@
 		$fullUrl = $request->GetFullUrl();
 		$mediaVersionUrlParam = \MvcCore\Ext\Routers\IMedia::URL_PARAM_MEDIA_VERSION;
 		$index = 0;
-	?><div class="footer-navigation footer-navigation-media document"><?php
+	?><div class="document"><?php
 		echo __('Display:') . ' ';
 		foreach ($mediaSiteKeysAndUrlPrefixes as $mediaVersion => $urlPrefix):
 			if ($mediaVersion == $mediaSiteVersion):

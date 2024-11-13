@@ -5,22 +5,24 @@ html,body{
 
 /* glass efect definition */
 .container{
-	width:var(--layout-width);
+	width:var(--layout-full-width);
 	margin:20px auto;
 	box-shadow:0 3px 30px #000;
-	border-radius:var(--layout-border-radius);
+	border-radius:var(--layout-full-border-radius);
 }
 body,
 .glass::before{
-	background: url(/static/img/content/circuit.jpg) center top / cover fixed;
+	background:#03030f url(/static/img/content/circuit.jpg) center top / cover fixed;
+	/*background:#03030f url(/static/img/content/AnimatedMicrochip2.webp) center top / cover fixed;*/
 }
 .glass{
 	position:relative;
 	border:1px solid var(--glass-border-color);
 	overflow:hidden;
+	backdrop-filter:blur(5px) brightness(200%) hue-rotate(6deg);
 	/*backdrop-filter:blur(5px) brightness(200%) hue-rotate(6deg); - too modern */
 }
-.glass::before {
+.glass::before{
 	content: '';
 	margin:-35px;
 	position:absolute;
@@ -28,41 +30,48 @@ body,
 	right:0;
 	bottom:0;
 	left:0;
-	filter:blur(5px) brightness(120%) hue-rotate(10deg);
+	/*filter:blur(5px) brightness(120%) hue-rotate(10deg);*/
+	filter:blur(4px) contrast(0.7) hue-rotate(-10deg) saturate(6) brightness(30%);
 	z-index:-1;
+	/*opacity:0.5;*/
 }
 
 /* header */
 header div.glass:first-of-type{
-	border-top-left-radius:var(--layout-border-radius);
-    border-top-right-radius:var(--layout-border-radius);
+	border-top-left-radius:var(--layout-full-border-radius);
+	border-top-right-radius:var(--layout-full-border-radius);
 }
 header .roof{
-	height:80px;
+	height:var(--layout-full-header-height);
 	display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-evenly;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-evenly;
 }
 .roof a.name{
 	color:var(--color-front);
-    text-decoration:none;
-    font-size:32px;
-    line-height:1.3em;
-    display:inline-block;
-	padding:0 8px;
+	text-decoration:none;
+	font-size:32px;
+	line-height:1.3em;
+	display:inline-block;
+	padding:0 var(--layout-header-link-padding);
 	border-radius:3px;
 }
 .roof a.name strong{
-    font-family: 'ssp_black';
+	font-family:'ssp_black';
 }
 .roof a.name:hover,
 .roof a.name:focus,
 .roof a.name:focus{
-    color:var(--color-front);
+	color:var(--color-front);
 	text-decoration:none;
 	background-color:var(--color-link-normal);
 }
+.roof .position{
+	font-family:'ssp_regular';
+	font-size:14px;
+}
+
 header .nav-main{
 }
 header .nav-main table{
@@ -80,7 +89,7 @@ header .nav-main table thead tr th a{
 	flex-direction:column;
 	padding:3px 10px 0 10px;
 	text-decoration:none;
-	height:60px;
+	height:var(--layout-full-main-nav-height);
 	justify-content:center;
 	border:0;
 	border-right:1px solid var(--glass-border-color);
@@ -112,21 +121,20 @@ header .nav-main table thead tr th a:hover:before,
 header .nav-main table thead tr th a:focus:before,
 header .nav-main table thead tr th a:active:before,
 header .nav-main table thead tr th a.selected:before{
-	filter:blur(1px) brightness(800%) hue-rotate(-10deg) contrast(0.3) saturate(2);
+	/*filter:blur(1px) brightness(800%) hue-rotate(-10deg) contrast(0.3) saturate(2);*/
+	filter:contrast(0.5) sepia(80%) brightness(202%) hue-rotate(-201deg) saturate(4);
 }
 header .nav-main table thead tr th a:hover		b,
 header .nav-main table thead tr th a:focus		b,
 header .nav-main table thead tr th a:active		b,
 header .nav-main table thead tr th a.selected	b{
-	color:var(--color-bg);
-	text-shadow: 0 0 5px #FFF, 0 0 15px #FFF, 0px 0px 7px rgba(255,255,255,0);
+	text-shadow:0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd,0 0 10px #0078bd, 0 0 10px #0078bd;
 }
 header .nav-main table thead tr th a:hover		span,
 header .nav-main table thead tr th a:focus		span,
 header .nav-main table thead tr th a:active		span,
 header .nav-main table thead tr th a.selected	span{
-	color:var(--color-bg);
-	text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px #FFF, 0 0 15px #FFF, 0px 0px 7px rgba(255,255,255,0);
+	text-shadow:0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd,0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd;
 }
 
 /* main */
@@ -138,22 +146,23 @@ main .nav-breadcrumbs{
 	font-size:12px;
 	line-height:1.3em;
 	justify-content:flex-start;
+	border-bottom:0 !important;
 }
 main .nav-breadcrumbs .nav-bc-spacer:after{
 	content:'\00BB';
 }
 main > div.glass:not(.nav-breadcrumbs){
-	padding-top:var(--content-vertical-padding);
-	padding-bottom:var(--content-vertical-padding);
-	padding-left:var(--content-horizontal-padding);
-	padding-right:var(--content-horizontal-padding);
+	padding-top:var(--layout-full-content-vertical-padding);
+	padding-bottom:var(--layout-full-content-vertical-padding);
+	padding-left:var(--layout-full-content-horizontal-padding);
+	padding-right:var(--layout-full-content-horizontal-padding);
 	border-bottom:0 !important;
 }
 
 /* footer */
 footer{
-	border-bottom-left-radius:var(--layout-border-radius);
-	border-bottom-right-radius:var(--layout-border-radius);
+	border-bottom-left-radius:var(--layout-full-border-radius);
+	border-bottom-right-radius:var(--layout-full-border-radius);
 	padding-top:10px;
 	font-size:12px;
 	line-height:1.3em;

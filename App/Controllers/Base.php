@@ -74,6 +74,13 @@ class Base extends \MvcCore\Controller {
 		$this->view->basePath = $this->request->GetBasePath();
 		$this->view->localization = $this->router->GetLocalization(TRUE);
 		$this->view->mediaSiteVersion = $mediaSiteVersion;
+		$this->view->coreConfig = (object) [
+			'Environment'		=> $this->environment->GetName(),
+			'Layout'			=> $this->layout,
+			'MediaSiteVersion'	=> $mediaSiteVersion,
+			'Controller'		=> $this->controllerName,
+			'Action'			=> $this->actionName,
+		];
 		$this->view->isDevelopment = $this->environment->IsDevelopment();
 		$this->view->isProduction = $this->environment->IsProduction();
 		$this->view->gaTrackingId = $sysCfgApp->ga?->trackingId ?? '';

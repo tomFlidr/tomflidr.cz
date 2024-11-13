@@ -69,4 +69,10 @@ composer-update.*
 # Application tmp dirs
 Var/Tmp/*
 Var/Logs/*
-www/static/tmp
+www/static/tmp/*
+!www/static/tmp/.dummy
+www/static/js/build/*
+!www/static/js/build/.dummy
+www/static/ts/node_modules
+www/static/ts/types/build/*
+!www/static/ts/types/build/.dummy

@@ -1,1 +1,5 @@
 .document *:first-child{margin-top:0;}
+
+.document pre{
+	overflow-x:auto;
+}

@@ -1,0 +1,31 @@
+{
+    "name": "@tomflidr/web",
+    "version": "0.0.0",
+    "main": "./src/FrontPage.js",
+    "author": "",
+    "dependencies": {
+        "tslib": "^1.14.1",
+		"copy-files-from-to": "^3.9.1",
+        "intl-messageformat": "^10.5.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.4"
+    },
+    "scripts": {
+        "build": "tsc"
+    },
+    "copyFiles": [{
+        "from": "./node_modules/intl-messageformat/intl-messageformat.iife.js",
+        "to": "../js/libs/intl-messageformat.iife.js"
+    },{
+        "from": "./node_modules/reflect-metadata/Reflect.js",
+        "to": "../js/libs/reflect-lite.js"
+    }],
+    "copyFilesSettings": {
+        "whenFileExists": "overwrite",
+        "removeSourceMappingURL": false,
+        "uglifyJs": false,
+        "addReferenceToSourceOfOrigin": false,
+        "ignoreDotFilesAndFolders": true
+    }
+}

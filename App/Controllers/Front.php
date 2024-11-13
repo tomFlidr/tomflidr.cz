@@ -34,7 +34,7 @@ class Front extends Base {
 	}
 
 	protected function setUpTitleAndBreadCrumbs (string $title): string {
-		$translatedTitle = $this->translate('CV');
+		$translatedTitle = $this->translate($title);
 		$this->view->title = $translatedTitle;
 		$this->assets->Cv();
 		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(

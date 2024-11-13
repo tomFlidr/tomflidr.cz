@@ -24,6 +24,11 @@ class Index extends \App\Controllers\Front {
 		$this->assets->Index();
     }
 	
+	public function ContactAction (): void {
+		$this->setUpTitleAndBreadCrumbs('Contact');
+		$this->assets->Contact();
+	}
+	
 	public function StatusAction (): void {
 		if ($this->environment->IsProduction())
 			throw new \Exception("No route for request", 404);

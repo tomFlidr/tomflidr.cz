@@ -8,15 +8,12 @@
 	font-weight:normal;
 	font-style:normal;
 }
-
-[class^="icon-"],
-[class*=" icon-"]{
+.icon{
 	position:relative;
 	padding-left:calc(1em + 5px);
 }
-
-[class^="icon-"]::before,
-[class*=" icon-"]::before{
+.icon::before,
+.icon::before{
 	/* some rules also used at a[target=_blank]{ ... } selector */
 	position:absolute;
 	left:0;

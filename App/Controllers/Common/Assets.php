@@ -34,6 +34,34 @@ class Assets extends \MvcCore\Controller {
 			->Append(media: 'print', path: $static . '/css/print/links.css')
 			->Append(media: 'print', path: $static . '/css/print/layout.css')
 			->Append(media: 'print', path: $static . '/css/print/document.css');
+		$this->view->Js('headAll')
+			->Append($static . "/js/libs/prototype-extensions.js")
+			//->Append($static . "/js/libs/intl-messageformat.iife.js")
+			->Append($static . "/js/build/Core/Layouts/Name.js")
+			->Append($static . "/js/build/Core/Layout.js")
+			->Append($static . "/js/build/Core/MediaSiteVersions/Name.js")
+			->Append($static . "/js/build/Core/MediaSiteVersion.js")
+			->Append($static . "/js/build/Core/Environments/Name.js")
+			->Append($static . "/js/build/Core/Environment.js")
+			//->Append($static . "/js/build/Core/Translators/EnumTransform.js")
+			//->Append($static . "/js/build/Core/Translators/Record.js")
+			//->Append($static . "/js/build/Core/Translators/Replacements.js")
+			//->Append($static . "/js/build/Core/Translators/Translations.js")
+			//->Append($static . "/js/build/Core/Translator.js")
+			->Append($static . "/js/build/Core/Pages/Selectors.js")
+			->Append($static . "/js/build/Core/Page.js")
+			
+			->Append($static . '/js/build/Front/Navigations/Mobiles/Events/Base.js')
+			->Append($static . '/js/build/Front/Navigations/Mobiles/Events/ClickEvent.js')
+			->Append($static . '/js/build/Front/Navigations/Mobiles/Events/SelectChangeEvent.js')
+			->Append($static . '/js/build/Front/Navigations/Mobiles/EventHandler.js')
+			->Append($static . '/js/build/Front/Navigations/Mobiles/Elements.js')
+			->Append($static . '/js/build/Front/Navigations/Mobiles/Handlers.js')
+			->Append($static . '/js/build/Front/Navigations/Mobiles/TouchHandlers.js')
+			->Append($static . '/js/build/Front/Navigations/Mobile.js')
+			
+			->Append($static . "/js/build/Front/Pages/Selectors.js")
+			->Append($static . "/js/build/Front/Page.js");
 	}
 	
 	public function Index (): void {
@@ -49,6 +77,12 @@ class Assets extends \MvcCore\Controller {
 		$this->view->Css('headPage')
 			->Append($static . '/css/pages/cv.css')
 			->Append($static . '/css/pages/cv.print.css', media: 'print');
+	}
+	
+	public function Contact (): void {
+		/** @var $this \App\Controllers\Front */
+		$static = self::$staticPath;
+		
 	}
 	
 	public function Projects (): void {

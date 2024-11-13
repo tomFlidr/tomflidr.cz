@@ -16,6 +16,17 @@ abstract class standard extends \MvcCore\View {
 
 	var bool $isProduction;
 	
+	/** 
+	 * @var object{
+	 *		"Environment":string,
+	 *		"Layout":string,
+	 *		"Theme":string,
+	 *		"MediaSiteVersion":string,
+	 *		"Controller":string,
+	 *		"Action":string
+	 * } */
+	var \stdClass $coreConfig;
+
 	var string $localization;
 
 	var string $mediaSiteVersion;

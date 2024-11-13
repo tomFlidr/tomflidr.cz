@@ -4,21 +4,20 @@
 	 * @var $items \App\Models\Navigations\Set
 	 */
 	$itemsCount = count($items) + 1;
-	$cssClassesCodes = [];
 ?>
 <nav class="<?=implode(' ', $this->cssClasses)?>">
 	<ul>
 		<?php foreach ($items as $key1 => $itemLevel): ?>
-			<li>
-				<a<?php
-					$cssClasses = [];
-					if ($itemLevel->GetCssClass() !== NULL)
-						$cssClasses[] = $itemLevel->GetCssClass();
-					if ($itemLevel->GetSelected())
-						$cssClasses[] = 'selected';
-					if (count($cssClasses) > 0)
-						echo ' class="' . implode(' ', $cssClasses) . '"';
-				?>href="<?=$itemLevel->GetUrl()?>">
+			<li<?php
+				$cssClasses = [];
+				if ($itemLevel->GetCssClass() !== NULL)
+					$cssClasses[] = $itemLevel->GetCssClass();
+				if ($itemLevel->GetSelected())
+					$cssClasses[] = 'selected';
+				if (count($cssClasses) > 0)
+					echo ' class="' . implode(' ', $cssClasses) . '"';
+			?>>
+				<a href="<?=$itemLevel->GetUrl()?>">
 					<b><?=$itemLevel->GetTitle()?></b>
 					<?php $desc = $itemLevel->GetDescription(); ?>
 					<?php if ($desc !== NULL): ?>

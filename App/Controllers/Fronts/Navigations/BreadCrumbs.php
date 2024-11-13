@@ -6,7 +6,7 @@ use \App\Models\Navigations\BreadCrumbs as ModelBreadCrumbs;
 
 class BreadCrumbs extends \MvcCore\Controller {
 	
-	public static int $minItems2Render = 3;
+	public static int $minItems2Render = 2;
 
 	/** @var \App\Controllers\Front */
 	protected $parentController;
@@ -31,6 +31,12 @@ class BreadCrumbs extends \MvcCore\Controller {
 	public function AddItem (ModelBreadCrumbs\Item $item): static {
 		$this->items[] = $item;
 		return $this;
+	}
+
+	public function IsRendered (): bool {
+		$itemsCount = $this->GetCount();
+		if ($itemsCount < static::$minItems2Render) return FALSE;
+		return TRUE;
 	}
 
 	public function RemoveLastItem (): static {
@@ -72,10 +78,9 @@ class BreadCrumbs extends \MvcCore\Controller {
 	 * @param string $actionNameDashed 
 	 */
 	public function Render ($controllerOrActionNameDashed = NULL, $actionNameDashed = NULL): string {
-		$itemsCount = $this->GetCount();
-		if ($itemsCount < static::$minItems2Render) return '';
+		if (!$this->IsRendered()) return '';
 		$this->items[0]->SetIsFirst(TRUE);
-		$this->items[$itemsCount - 1]->SetIsLast(TRUE);
+		$this->items[$this->GetCount() - 1]->SetIsLast(TRUE);
 		$this->view->items = $this->items;
 		$this->dispatchState = \MvcCore\Controller\IConstants::DISPATCH_STATE_RENDERED;
 		return $this->view->RenderLayout('/header/navigation-bread-crumbs');

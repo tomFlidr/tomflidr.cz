@@ -49,7 +49,7 @@ a[target=_blank]::before{
 	width:1em;
 	height:1em;
 	line-height:1.25em;
-    top:50%;
-    margin-top:-0.5em;
-    font-size:0.89em;
+	top:50%;
+	margin-top:-0.5em;
+	font-size:0.89em;
 }

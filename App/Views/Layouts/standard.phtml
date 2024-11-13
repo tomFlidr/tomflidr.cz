@@ -13,6 +13,7 @@
 		<?=$this->Js('headPage')->Render()?>
 	</head>
 	<body>
+		<input type="hidden" id="core-config" value="<?=$this->EscapeAttrJs($this->coreConfig)?>" />
 		<?=$this->RenderLayout('body/old-browser-warning')?>
 		<?=$this->RenderLayout('body/layout.' . $this->mediaSiteVersion)?>
 	</body>

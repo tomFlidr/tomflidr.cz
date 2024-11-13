@@ -15,7 +15,7 @@
 	$fullUrl = $request->GetFullUrl();
 	$localizationUrlParam = \MvcCore\Ext\Routers\ILocalization::URL_PARAM_LOCALIZATION;
 
-?><div class="footer-navigation footer-navigation-localization document"><?php
+?><div class="document"><?php
 	echo '<label>' . __('Language:') . ' </label>';
 	foreach ($allowedLocalizations as $index => $allowedLocalization):
 		if ($index > 0 && $index < $localizationsCount) 

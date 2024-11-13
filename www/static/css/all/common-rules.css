@@ -1,6 +1,6 @@
 :root{
 	--color-link-normal:#24adff;
-	--color-link-visited:#4e83a2;
+	--color-link-visited:#0078bd;
 
 	--color-front:#fff;
 	--color-bg:#000;
@@ -8,10 +8,22 @@
 	--color-selection-front:var(--color-bg);
 	--color-selection-bg:var(--color-front);
 	
-	--layout-width:800px;
-	--layout-border-radius:7px;
-	--content-horizontal-padding:25px;
-	--content-vertical-padding:15px;
+	--layout-header-link-padding:8px;
+
+	--layout-full-width:800px;
+	--layout-full-header-height:80px;
+	--layout-full-main-nav-height:60px;
+	--layout-full-border-radius:7px;
+	--layout-full-content-horizontal-padding:25px;
+	--layout-full-content-vertical-padding:15px;
+
+	--layout-mobile-header-height:60px;
+	--layout-mobile-header-hamburger-padding:8px;
+	--layout-mobile-header-icon-size:calc(var(--layout-mobile-header-height) / 2);
+	--layout-mobile-content-horizontal-padding:20px;
+	--layout-mobile-content-vertical-padding:10px;
+	--layout-mobile-left-panel-time:0.5s;
+
 	--glass-border-color:rgba(255,255,255,0.1);
 }
 

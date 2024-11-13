@@ -2,14 +2,9 @@
 	/** @var \App\Views\Layouts\standard $this */
 	$homeUrl = $this->Url('home');
 ?>
-<header>
-	<a href="#" class="hamburger">Navigation</a>
-	<a href="<?=$homeUrl?>" class="name">
-		<strong><?=$this->appName?></strong>
-	</a>
-</header>
-<div class="left-panel">
+<div class="left-panel glass" id="left-panel">
 	<div class="roof">
+		<a href="#" class="icon icon-close" id="left-panel-close"></a>
 		<a href="<?=$homeUrl?>" class="name">
 			<strong><?=$this->appName?></strong>
 		</a>
@@ -18,13 +13,19 @@
 			<?=$this->Translate('primary platforms')?>: JS/PHP/C#/VB.NET/MySQL/TSQL
 		</strong>
 	</div>
-	<?=$this->navigationBreadCrumbs?>
 	<?=$this->navigationMain?>
-	<footer class="glass">
-		<?=$this->RenderLayout('footer/navigation-localization')?>
-		<?=$this->RenderLayout('footer/navigation-media')?>
-	</footer>
 </div>
-<main>
+<header class="glass">
+	<a href="#" class="icon icon-hamburger" id="left-panel-open"></a>
+	<a href="<?=$homeUrl?>" class="name">
+		<strong><?=$this->appName?></strong>
+	</a>
+</header>
+<?=$this->navigationBreadCrumbs?>
+<main class="glass">
 	<?=$this->GetContent()?>
 </main>
+<footer>
+	<?=$this->RenderLayout('footer/navigation-localization')?>
+	<?=$this->RenderLayout('footer/navigation-media')?>
+</footer>
