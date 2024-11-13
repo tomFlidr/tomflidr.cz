@@ -7,20 +7,12 @@ html,body{
 .container{
 	width:var(--layout-full-width);
 	margin:20px auto;
-	box-shadow:0 3px 30px #000;
 	border-radius:var(--layout-full-border-radius);
-}
-body,
-.glass::before{
-	background:#03030f url(/static/img/content/circuit.jpg) center top / cover fixed;
-	/*background:#03030f url(/static/img/content/AnimatedMicrochip2.webp) center top / cover fixed;*/
 }
 .glass{
 	position:relative;
 	border:1px solid var(--glass-border-color);
 	overflow:hidden;
-	backdrop-filter:blur(5px) brightness(200%) hue-rotate(6deg);
-	/*backdrop-filter:blur(5px) brightness(200%) hue-rotate(6deg); - too modern */
 }
 .glass::before{
 	content: '';
@@ -30,10 +22,7 @@ body,
 	right:0;
 	bottom:0;
 	left:0;
-	/*filter:blur(5px) brightness(120%) hue-rotate(10deg);*/
-	filter:blur(4px) contrast(0.7) hue-rotate(-10deg) saturate(6) brightness(30%);
 	z-index:-1;
-	/*opacity:0.5;*/
 }
 
 /* header */
@@ -70,6 +59,38 @@ header .roof{
 .roof .position{
 	font-family:'ssp_regular';
 	font-size:14px;
+}
+.roof form.themes{
+	border:0;
+	background:0;
+	padding:0;
+	margin:0;
+	display:block;
+}
+.roof form.themes button{
+	border:0;
+	background:transparent;
+	padding:0;
+	margin:0;
+	display:flex;
+	width:var(--layout-full-header-theme-btn-size);
+	height:var(--layout-full-header-theme-btn-size);
+	cursor:pointer;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	font-size:18px;
+	border-radius:3px;
+	color:var(--color-front);
+}
+.roof form.themes button::before {
+	left:unset;
+}
+.roof form.themes button:hover,
+.roof form.themes button:focus,
+.roof form.themes button:active{
+	color:var(--color-bg);
+	background:var(--color-link-normal);
 }
 
 header .nav-main{
@@ -115,26 +136,7 @@ header .nav-main table thead tr th a:hover,
 header .nav-main table thead tr th a:focus,
 header .nav-main table thead tr th a:active,
 header .nav-main table thead tr th a.selected{
-	background: rgba(82, 203, 255, 0.7);
-}
-header .nav-main table thead tr th a:hover:before,
-header .nav-main table thead tr th a:focus:before,
-header .nav-main table thead tr th a:active:before,
-header .nav-main table thead tr th a.selected:before{
-	/*filter:blur(1px) brightness(800%) hue-rotate(-10deg) contrast(0.3) saturate(2);*/
-	filter:contrast(0.5) sepia(80%) brightness(202%) hue-rotate(-201deg) saturate(4);
-}
-header .nav-main table thead tr th a:hover		b,
-header .nav-main table thead tr th a:focus		b,
-header .nav-main table thead tr th a:active		b,
-header .nav-main table thead tr th a.selected	b{
-	text-shadow:0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd,0 0 10px #0078bd, 0 0 10px #0078bd;
-}
-header .nav-main table thead tr th a:hover		span,
-header .nav-main table thead tr th a:focus		span,
-header .nav-main table thead tr th a:active		span,
-header .nav-main table thead tr th a.selected	span{
-	text-shadow:0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd,0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd;
+	background:rgba(82, 203, 255, 0.7);
 }
 
 /* main */

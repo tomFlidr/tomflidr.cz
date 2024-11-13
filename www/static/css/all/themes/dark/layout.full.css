@@ -1,0 +1,31 @@
+.container{
+	box-shadow:0 3px 30px #000;
+}
+body,
+.glass::before{
+	background:#03030f url(/static/img/content/circuit_dark.jpg) center top / cover fixed;
+}
+.glass{
+	backdrop-filter:blur(5px) brightness(200%) hue-rotate(6deg);
+}
+.glass::before{
+	filter:blur(4px) contrast(0.7) hue-rotate(-10deg) saturate(6) brightness(30%);
+}
+header .nav-main table thead tr th a:hover:before,
+header .nav-main table thead tr th a:focus:before,
+header .nav-main table thead tr th a:active:before,
+header .nav-main table thead tr th a.selected:before{
+	filter:contrast(0.5) sepia(80%) brightness(202%) hue-rotate(-201deg) saturate(4);
+}
+header .nav-main table thead tr th a:hover		b,
+header .nav-main table thead tr th a:focus		b,
+header .nav-main table thead tr th a:active		b,
+header .nav-main table thead tr th a.selected	b{
+	text-shadow:0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd,0 0 10px #0078bd, 0 0 10px #0078bd;
+}
+header .nav-main table thead tr th a:hover		span,
+header .nav-main table thead tr th a:focus		span,
+header .nav-main table thead tr th a:active		span,
+header .nav-main table thead tr th a.selected	span{
+	text-shadow:0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd,0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd;
+}

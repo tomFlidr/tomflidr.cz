@@ -5,7 +5,7 @@ html,body{
 
 html,body,
 .glass::before{
-	background:#03030f url(/static/img/content/circuit.jpg) center top / cover fixed;
+	background:#03030f url(/static/img/content/circuit_dark.jpg) center top / cover fixed;
 	background-repeat:repeat;
 }
 .glass{
@@ -48,7 +48,7 @@ header{
 	position:fixed;
 	z-index:1001;
 	top:0;
-	width:100%;
+	width:calc(100% - (var(--layout-mobile-content-horizontal-padding) * 2));
 	padding:0 var(--layout-mobile-content-horizontal-padding);
 	gap:var(--layout-mobile-header-icon-size);
 	border-bottom-width:2px !important;
@@ -100,6 +100,39 @@ header a.name:focus{
 	color:var(--color-front);
 	text-decoration:none;
 	background-color:var(--color-link-normal);
+}
+header form.themes{
+	border:0;
+	background:0;
+	padding:0;
+	margin:0;
+	display:block;
+	margin-left:auto;
+}
+header form.themes button{
+	border:0;
+	background:transparent;
+	padding:0;
+	margin:0;
+	display:flex;
+	width:var(--layout-full-header-theme-btn-size);
+	height:var(--layout-full-header-theme-btn-size);
+	cursor:pointer;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	font-size:18px;
+	border-radius:3px;
+	color:var(--color-front);
+}
+header form.themes button::before {
+	left:unset;
+}
+header form.themes button:hover,
+header form.themes button:focus,
+header form.themes button:active{
+	color:var(--color-bg);
+	background:var(--color-link-normal);
 }
 
 .left-panel{

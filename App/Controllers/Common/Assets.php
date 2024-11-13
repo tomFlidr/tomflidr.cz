@@ -3,15 +3,39 @@
 namespace App\Controllers\Common;
 
 class Assets extends \MvcCore\Controller {
+
+	public const THEME_SESSION_NAME = 'theme';
 	
 	protected string $mediaSiteVersion;
 	protected array  $assignedLibraries = [];
-
+	protected ?string $theme = NULL;
+	
 	public function __construct (\App\Controllers\Base $controller) {
+		$this->parentController = $controller;
 		$this->mediaSiteVersion = $controller->GetRequest()->GetMediaSiteVersion();
-		x($this->mediaSiteVersion);
+		// setup theme
+		$session = $this->GetSessionTheme();
+		if (isset($session->theme)) {
+			$this->theme = $session->theme;
+		} else {
+			$sysCfg = $this->parentController->GetConfigSystem();
+			$this->theme = $sysCfg->app->theme->default;
+			$session->theme = $this->theme;
+		}
 	}
 
+	public function GetSessionTheme (): \MvcCore\Session {
+		$this->application = $this->parentController->GetApplication();
+		$sysCfg = $this->parentController->GetConfigSystem();
+		$session = self::GetSessionNamespace(self::THEME_SESSION_NAME);
+		$session->SetExpirationSeconds($sysCfg->app->session->identity);
+		return $session;
+	}
+	
+	public function GetTheme (): ?string {
+		return $this->theme;
+	}
+	
 	public function PreDispatch () {
 		$this->viewEnabled = FALSE; // to not render this virtual controller
 		$this->view = $this->parentController->GetView();
@@ -21,14 +45,16 @@ class Assets extends \MvcCore\Controller {
 		/** @var $this \App\Controllers\Base */
 		$static = self::$staticPath;
 		$this->view->Css('headAll')
-			->Append($static . '/css/all/resets.css')
-			->Append($static . '/css/all/old-browsers-warning.css')
-			->Append($static . '/css/all/fonts.css')
-			->Append($static . '/css/all/icons.css')
-			->Append($static . '/css/all/common-rules.css')
-			->Append($static . '/css/all/links.css')
+			->Append($static . "/css/all/resets.css")
+			->Append($static . "/css/all/old-browsers-warning.css")
+			->Append($static . "/css/all/fonts.css")
+			->Append($static . "/css/all/icons.css")
+			->Append($static . "/css/all/common-rules.css")
+			->Append($static . "/css/all/themes/{$this->theme}/common-rules.css")
+			->Append($static . "/css/all/links.css")
 			->Append($static . "/css/all/layout.{$this->mediaSiteVersion}.css")
-			->Append($static . '/css/all/document.css');
+			->Append($static . "/css/all/themes/{$this->theme}/layout.{$this->mediaSiteVersion}.css")
+			->Append($static . "/css/all/document.css");
 		$this->view->Css('headAllPrint')
 			->Append(media: 'print', path: $static . '/css/print/common-rules.css')
 			->Append(media: 'print', path: $static . '/css/print/links.css')

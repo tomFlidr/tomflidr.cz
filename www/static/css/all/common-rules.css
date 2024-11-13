@@ -2,9 +2,6 @@
 	--color-link-normal:#24adff;
 	--color-link-visited:#0078bd;
 
-	--color-front:#fff;
-	--color-bg:#000;
-
 	--color-selection-front:var(--color-bg);
 	--color-selection-bg:var(--color-front);
 	
@@ -12,6 +9,7 @@
 
 	--layout-full-width:800px;
 	--layout-full-header-height:80px;
+	--layout-full-header-theme-btn-size:24px;
 	--layout-full-main-nav-height:60px;
 	--layout-full-border-radius:7px;
 	--layout-full-content-horizontal-padding:25px;
@@ -23,8 +21,6 @@
 	--layout-mobile-content-horizontal-padding:20px;
 	--layout-mobile-content-vertical-padding:10px;
 	--layout-mobile-left-panel-time:0.5s;
-
-	--glass-border-color:rgba(255,255,255,0.1);
 }
 
 *::selection{

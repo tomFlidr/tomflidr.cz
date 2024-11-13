@@ -26,9 +26,6 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	/** @var array<string> */
 	protected $allowedLocalizations = ['en-GB', 'de-DE', 'cs-CZ'];
 
-	/** @var int */
-	protected $sessionExpirationSeconds = 2592000;// 1 month
-
 	/** @var array */
 	protected $localizationEquivalents = [
 		'en-GB'    => ['en-US', 'en-CA', 'en-AU'],
@@ -54,6 +51,7 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	public static function Init (\MvcCore\IConfig $sysCfg): void {
 		/** @var \App\Routers\MediaAndLocalization $router */
 		$router = static::GetInstance();
+		$router->SetSessionExpirationSeconds($sysCfg->app->session->identity);
 		$router->setUpCachedRoutes();
 	}
 

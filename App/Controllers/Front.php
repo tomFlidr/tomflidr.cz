@@ -32,6 +32,21 @@ class Front extends Base {
 		$this->view->navigationMain = $this->navigationMain;
 		$this->view->navigationBreadCrumbs = $this->navigationBreadCrumbs;
 	}
+	
+	public function ThemeAction (): void {
+		$session = $this->assets->GetSessionTheme();
+		$session->theme = $session->theme === 'dark' ? 'light' : 'dark';
+		$sourceUrl = $this->GetParam('source', FALSE);
+		$redirectUrl = $this->Url('home');
+		if ($sourceUrl !== NULL) {
+			$sourceUrl = rawurldecode($sourceUrl);
+			$sourceHost = \MvcCore\Tool::ParseUrl($sourceUrl, PHP_URL_HOST);
+			if ($sourceHost === $this->request->GetHostName()) {
+				$redirectUrl = str_replace(["<", ">", "\n", "\r"], ["&lt;", "&gt;", "", ""], $sourceUrl);
+			}
+		}
+		self::Redirect($redirectUrl, \MvcCore\Response::SEE_OTHER);
+	}
 
 	protected function setUpTitleAndBreadCrumbs (string $title): string {
 		$translatedTitle = $this->translate($title);

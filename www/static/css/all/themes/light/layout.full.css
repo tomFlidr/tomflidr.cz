@@ -1,0 +1,31 @@
+.container{
+	box-shadow:0 3px 20px rgba(28,80,110,0.4);
+}
+body,
+.glass::before{
+	background:rgba(189,189,231,0.1) url(/static/img/content/circuit_light.jpg) center top / cover fixed;
+}
+.glass{
+	backdrop-filter:contrast(87%) blur(2px);
+}
+.glass::before{
+	filter:blur(3px) contrast(0.7) brightness(118%);
+}
+header .nav-main table thead tr th a:hover:before,
+header .nav-main table thead tr th a:focus:before,
+header .nav-main table thead tr th a:active:before,
+header .nav-main table thead tr th a.selected:before{
+	filter:contrast(0.5) sepia(80%) brightness(70%) hue-rotate(-201deg) saturate(4);
+}
+header .nav-main table thead tr th a:hover		b,
+header .nav-main table thead tr th a:focus		b,
+header .nav-main table thead tr th a:active		b,
+header .nav-main table thead tr th a.selected	b{
+	text-shadow:0 0 10px #8ad4ff, 0 0 10px #8ad4ff, 0 0 10px #8ad4ff, 0 0 10px #8ad4ff, 0 0 10px #8ad4ff;
+}
+header .nav-main table thead tr th a:hover		span,
+header .nav-main table thead tr th a:focus		span,
+header .nav-main table thead tr th a:active		span,
+header .nav-main table thead tr th a.selected	span{
+	text-shadow:0 0 10px #8ad4ff, 0 0 10px #8ad4ff, 0 0 10px #8ad4ff, 0 0 10px #8ad4ff, 0 0 10px #8ad4ff, 0 0 10px #8ad4ff;
+}
