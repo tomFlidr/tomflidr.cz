@@ -43,6 +43,6 @@
 .icon-maximalize::before{content:'\e80d';}
 .icon-close::before{content:'\e80e';}
 .icon-refresh::before{content:'\e80f';}
-.icon-theme-dark::before,
+.icon-theme-dark-static::before,
 .icon-theme-dark-animated::before{content:'\e810';}
 .icon-theme-light::before{content:'\e811';}

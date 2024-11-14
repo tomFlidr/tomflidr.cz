@@ -1,25 +1,6 @@
 .container{
 	box-shadow:0 3px 30px #000;
 }
-html{
-	height:100%;
-}
-html,
-.glass::before{
-	background:#03030f url(/static/img/content/circuit_dark_animated.webp) center top / cover fixed;
-}
-body{
-	background: linear-gradient(150deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 30%),
-				linear-gradient(195deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 30%);
-	padding-top: 1px;
-	height: 100%;
-}
-.glass{
-	backdrop-filter:blur(5px) brightness(200%) hue-rotate(6deg);
-}
-.glass::before{
-	filter:blur(4px) contrast(0.3) sepia(70) hue-rotate(161deg) saturate(5) brightness(12%);
-}
 header .nav-main table thead tr th a:hover:before,
 header .nav-main table thead tr th a:focus:before,
 header .nav-main table thead tr th a:active:before,

@@ -12,6 +12,9 @@ namespace Front {
 				this.mobileNavigation = new Front.Navigations.Mobile(this);
 			}
 		}
+		public HandleDocumentReady (): void {
+			super.HandleDocumentReady();
+		}
 		protected initWindowScroll (): this {
 			window.addEventListener('scroll', this.handleWindowScroll.bind(this));
 			this.handleWindowScroll();

@@ -1,0 +1,14 @@
+html,body,
+.glass::before{
+	background:#03030f url(/static/img/content/circuit_dark.jpg) center top / cover fixed;
+}
+.glass{
+	box-shadow:0 0 20px 10px rgba(3,9,21,1) inset !important;
+	backdrop-filter:blur(30px) brightness(500%) hue-rotate(6deg);
+}
+.glass::before{
+	filter:blur(4px) contrast(0.7) hue-rotate(-10deg) saturate(6) brightness(30%);
+}
+body.left-panel-opened .glass:not(.left-panel)::before{
+	filter:blur(0px) contrast(0.7) hue-rotate(-10deg) saturate(6) brightness(30%);
+}

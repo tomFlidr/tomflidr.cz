@@ -1,6 +1,7 @@
 namespace Front.Navigations.Mobiles {
 	export class TouchHandlers extends Handlers {
 		public static readonly HORIZONTAL_FULL_WIDTH_TOLERANCE = 0.5;
+		public static readonly HORIZONTAL_MIN_TOUCH_WIDTH = 40;
 		protected Static: typeof Mobiles.TouchHandlers; 
 		protected touchStartPositions: Interfaces.IMousePositions;
 		public constructor (main: Navigations.Mobile) {
@@ -33,13 +34,19 @@ namespace Front.Navigations.Mobiles {
 				},
 				startPageX = touchEndPositions.PageX,
 				startPageXtolerated = window.innerWidth * this.Static.HORIZONTAL_FULL_WIDTH_TOLERANCE,
-				horizontalDiff = this.touchStartPositions.PageX - startPageX,
-				verticalDiff = this.touchStartPositions.PageX - startPageX,
+				horizontalDiff = (this.touchStartPositions?.PageX ?? 0) - startPageX,
+				verticalDiff = (this.touchStartPositions?.PageX ?? 0) - startPageX,
+				horizontalDiffAbs = Math.abs(horizontalDiff),
 				toRight = horizontalDiff < 0;
+			if (this.touchStartPositions == null)
+				return; // some weird event handling caused by other page components
 			if (startPageX > startPageXtolerated) 
 				return; // touch start has been too much on right side of display
-			if (Math.abs(verticalDiff) > Math.abs(horizontalDiff))
+			if (horizontalDiffAbs < this.Static.HORIZONTAL_MIN_TOUCH_WIDTH)
+				return; // gesture was too short
+			if (Math.abs(verticalDiff) > horizontalDiffAbs)
 				return; // gesture was more vertical
+			this.touchStartPositions = null;
 			if (toRight) {
 				if (this.main.GetOpened()) 
 					return; // navigation already opening/opened

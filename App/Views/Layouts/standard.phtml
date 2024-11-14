@@ -7,6 +7,7 @@
 		<?=$this->RenderLayout('head/preloading')?>
 		<?=$this->RenderLayout('head/metrics')?>
 		<?=$this->Css('headAll')->Render()?>
+		<?=$this->Css('headMediaTheme')->Render()?>
 		<?=$this->Css('headAllPrint')->Render()?>
 		<?=$this->Css('headPage')->Render()?>
 		<?=$this->Js('headAll')->Render()?>
@@ -16,6 +17,6 @@
 		<input type="hidden" id="core-config" value="<?=$this->EscapeAttrJs($this->coreConfig)?>" />
 		<?=$this->RenderLayout('body/old-browser-warning')?>
 		<?=$this->RenderLayout('body/layout.' . $this->mediaSiteVersion)?>
+		<script type="text/javascript" nonce="<?$this->$nonce?>">Core.Page.GetPage();</script>
 	</body>
-	<?=$this->Js('foot')?>
 </html>

@@ -8,6 +8,7 @@
 		<a href="<?=$homeUrl?>" class="name">
 			<strong><?=$this->appName?></strong>
 		</a>
+		<?=$this->RenderLayout('body/themes')?>
 		<strong class="position">
 			<?=$this->Translate('freelance web developer, trainer & consultant')?>,<br />
 			<?=$this->Translate('primary platforms')?>: JS/PHP/C#/VB.NET/MySQL/TSQL
@@ -20,13 +21,12 @@
 	<a href="<?=$homeUrl?>" class="name">
 		<strong><?=$this->appName?></strong>
 	</a>
-	<?=$this->RenderLayout('body/themes')?>
 </header>
 <?=$this->navigationBreadCrumbs?>
 <main class="glass">
 	<?=$this->GetContent()?>
 </main>
-<footer>
+<footer class="glass">
 	<?=$this->RenderLayout('footer/navigation-localization')?>
 	<?=$this->RenderLayout('footer/navigation-media')?>
 </footer>

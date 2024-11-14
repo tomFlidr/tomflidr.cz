@@ -1,0 +1,39 @@
+footer.glass,
+.scrolled header,
+.left-panel{
+	box-shadow:0 0 10px 30px rgba(3,9,21,1) inset, 0 3px 20px #000, 0 3px 20px #000 !important;
+}
+header a.icon-hamburger:hover,
+header a.icon-hamburger:focus,
+header a.icon-hamburger:active{
+	color:var(--color-front);
+}
+header a.name:hover,
+header a.name:focus,
+header a.name:focus{
+	color:var(--color-front);
+}
+.roof .icon-close:hover,
+.roof .icon-close:focus,
+.roof .icon-close:active{
+	color:var(--color-front);
+}
+.roof a.name:hover,
+.roof a.name:focus,
+.roof a.name:focus{
+	color:var(--color-front);
+}
+.roof form.themes button:hover,
+.roof form.themes button:focus,
+.roof form.themes button:active{
+	color:var(--color-front);
+}
+.nav-main ul li.selected a b,
+.nav-main ul li a:hover b,
+.nav-main ul li a:focus b,
+.nav-main ul li a:active b{
+	color:var(--color-front);
+}
+.nav-breadcrumbs{
+	box-shadow:0 0 10px 30px rgba(3,9,21,1) inset !important;
+}

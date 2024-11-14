@@ -1,12 +1,20 @@
 .container{
+	background-color:#fff;
 	box-shadow:0 3px 20px rgba(28,80,110,0.4);
+}
+.doc-ready .container{
+	background-color:transparent;
 }
 body,
 .glass::before{
-	background:rgba(189,189,231,0.1) url(/static/img/content/circuit_light.jpg) center top / cover fixed;
+	background:#fff url(/static/img/content/circuit_light.jpg) center top / cover fixed;
+}
+.doc-ready body,
+.doc-ready .glass::before{
+	background-color:rgba(189,189,231,0.1);
 }
 .glass{
-	backdrop-filter:contrast(87%) blur(2px);
+	backdrop-filter:invert(1) grayscale(1) sepia(1) brightness(500%) blur(4px) contrast(0.75) sepia(1) brightness(410%) saturate(5) hue-rotate(150deg);
 }
 .glass::before{
 	filter:blur(3px) contrast(0.7) brightness(118%);

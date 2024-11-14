@@ -13,7 +13,7 @@ namespace Core {
 		public static GetPage (): Core.Page {
 			var ctx = Core.Page;
 			if (ctx._page == null) {
-				ctx._page = new this._pageType();
+				ctx._page = new ctx._pageType();
 			}
 			return ctx._page;
 		}
@@ -25,12 +25,12 @@ namespace Core {
 				return this;
 			ctx._pageCreationAdded = true;
 			ctx.AddDocReadyHandler(() => {
-				ctx.GetPage();
+				ctx.GetPage().HandleDocumentReady();
 			});
 			return this;
 		}
 		/** @summary Add any handler after document.readyState == 'interactive' event (or run handler immediately if current moment is after the event). */
-		public static AddDocReadyHandler (handler: Function): typeof Core.Page {
+		public static AddDocReadyHandler (handler: () => void): typeof Core.Page {
 			var ctx = Core.Page;
 			ctx._docReadyHandlers.push(handler);
 			if (ctx._docReadyInit === 3) {
@@ -42,6 +42,10 @@ namespace Core {
 			ctx._docReadyInit = 1;
 			document.addEventListener('readystatechange', this.handleReadyStateChange.bind(this));
 			return this;
+		}
+		/** @summary Called after document interactive ready state */
+		public HandleDocumentReady (): void {
+			document.body.addClass(this.Static.SELECTORS.DOC_READY_CLS);
 		}
 		protected static handleReadyStateChange (ev: Event): void {
 			var ctx = Core.Page;

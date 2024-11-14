@@ -1,6 +1,11 @@
 <?php
 	/** @var \App\Views\Layouts\standard $this */
+	$themeNextParts = explode('/', $this->themeNext);
+	$themeNextDashedCase = implode('-', $themeNextParts);
 ?><form class="themes" method="post" action="<?=$this->Url('Front:Theme')?>">
 	<input type="hidden" name="source" value="<?=rawurlencode($this->Url('self', ['absolute' => TRUE]))?>" />
-	<button name="change" type="submit" class="icon icon-theme-<?=$this->themeNext?>" title="<?=$this->Translate('Change theme')?>"></button>
+	<button name="change" type="submit" class="icon icon-theme-<?=$themeNextDashedCase?>" title="<?php
+		echo $this->Translate('Change theme to:'), ' ';
+		echo implode(' ', array_map(fn ($s) => ucfirst($s), $themeNextParts));
+	?>"></button>
 </form>

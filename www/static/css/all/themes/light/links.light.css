@@ -1,0 +1,10 @@
+.document a:hover,
+.document a:focus,
+.document a:active{
+	color:var(--color-bg);
+}
+.document a:visited:hover,
+.document a:visited:focus,
+.document a:visited:active{
+	color:var(--color-bg);
+}

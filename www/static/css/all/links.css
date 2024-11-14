@@ -11,7 +11,6 @@
 .document a:hover,
 .document a:focus,
 .document a:active{
-	color:var(--color-front);
 	border-bottom:1px solid transparent;
 	text-decoration:none;
 	background-color:var(--color-link-normal);
@@ -25,7 +24,6 @@
 .document a:visited:hover,
 .document a:visited:focus,
 .document a:visited:active{
-	color:var(--color-front);
 	background-color:var(--color-link-visited);
 }
 

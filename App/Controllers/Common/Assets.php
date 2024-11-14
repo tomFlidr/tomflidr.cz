@@ -59,22 +59,33 @@ class Assets extends \MvcCore\Controller {
 	public function Base (): void {
 		/** @var $this \App\Controllers\Base */
 		$static = self::$staticPath;
+		
 		$this->view->Css('headAll')
 			->Append($static . "/css/all/resets.css")
 			->Append($static . "/css/all/old-browsers-warning.css")
 			->Append($static . "/css/all/fonts.css")
 			->Append($static . "/css/all/icons.css")
 			->Append($static . "/css/all/common-rules.css")
-			->Append($static . "/css/all/themes/{$this->theme}/common-rules.css")
 			->Append($static . "/css/all/links.css")
-			->Append($static . "/css/all/layout.{$this->mediaSiteVersion}.css")
-			->Append($static . "/css/all/themes/{$this->theme}/layout.{$this->mediaSiteVersion}.css")
 			->Append($static . "/css/all/document.css");
+		
+		$themeParts = explode('/', $this->theme);
+		$themePartBase = $themeParts[0];
+		$themeFullSuffix = implode('.', $themeParts);
+		$this->view->Css('headMediaTheme')
+			->Append($static . "/css/all/themes/{$themePartBase}/common-rules.{$themePartBase}.css")
+			->Append($static . "/css/all/themes/{$themePartBase}/links.{$themePartBase}.css")
+			->Append($static . "/css/all/themes/{$themePartBase}/links.{$themePartBase}.css")
+			->Append($static . "/css/all/layout.{$this->mediaSiteVersion}.css")
+			->Append($static . "/css/all/themes/{$themePartBase}/layout.{$this->mediaSiteVersion}.{$themePartBase}.css")
+			->Append($static . "/css/all/themes/{$this->theme}/layout.{$this->mediaSiteVersion}.{$themeFullSuffix}.css");
+		
 		$this->view->Css('headAllPrint')
 			->Append(media: 'print', path: $static . '/css/print/common-rules.css')
 			->Append(media: 'print', path: $static . '/css/print/links.css')
 			->Append(media: 'print', path: $static . '/css/print/layout.css')
 			->Append(media: 'print', path: $static . '/css/print/document.css');
+		
 		$this->view->Js('headAll')
 			->Append($static . "/js/libs/prototype-extensions.js")
 			//->Append($static . "/js/libs/intl-messageformat.iife.js") // translations
