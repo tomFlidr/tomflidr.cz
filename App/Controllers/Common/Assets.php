@@ -14,26 +14,41 @@ class Assets extends \MvcCore\Controller {
 		$this->parentController = $controller;
 		$this->mediaSiteVersion = $controller->GetRequest()->GetMediaSiteVersion();
 		// setup theme
-		$session = $this->GetSessionTheme();
+		$session = $this->getSessionTheme();
 		if (isset($session->theme)) {
 			$this->theme = $session->theme;
 		} else {
 			$sysCfg = $this->parentController->GetConfigSystem();
-			$this->theme = $sysCfg->app->theme->default;
+			$this->theme = $sysCfg->app->themes->default;
 			$session->theme = $this->theme;
 		}
 	}
+	
+	public function GetThemeCurrent (): string {
+		return $this->theme;
+	}
 
-	public function GetSessionTheme (): \MvcCore\Session {
+	public function GetThemeNext (): string {
+		$themesCfg = $this->parentController->GetConfigSystem()->app->themes;
+		$themeIndex = array_search($this->theme, $themesCfg->list, TRUE);
+		$themeIndex++;
+		if ($themeIndex === count($themesCfg->list)) 
+			$themeIndex = 0;
+		return $themesCfg->list[$themeIndex];
+	}
+
+	public function Move2NextTheme (): string {
+		$session = $this->getSessionTheme();
+		$session->theme = $this->GetThemeNext();
+		return $session->theme;
+	}
+
+	protected function getSessionTheme (): \MvcCore\Session {
 		$this->application = $this->parentController->GetApplication();
 		$sysCfg = $this->parentController->GetConfigSystem();
 		$session = self::GetSessionNamespace(self::THEME_SESSION_NAME);
 		$session->SetExpirationSeconds($sysCfg->app->session->identity);
 		return $session;
-	}
-	
-	public function GetTheme (): ?string {
-		return $this->theme;
 	}
 	
 	public function PreDispatch () {
@@ -62,13 +77,14 @@ class Assets extends \MvcCore\Controller {
 			->Append(media: 'print', path: $static . '/css/print/document.css');
 		$this->view->Js('headAll')
 			->Append($static . "/js/libs/prototype-extensions.js")
-			//->Append($static . "/js/libs/intl-messageformat.iife.js")
+			//->Append($static . "/js/libs/intl-messageformat.iife.js") // translations
 			->Append($static . "/js/build/Core/Layouts/Name.js")
 			->Append($static . "/js/build/Core/Layout.js")
 			->Append($static . "/js/build/Core/MediaSiteVersions/Name.js")
 			->Append($static . "/js/build/Core/MediaSiteVersion.js")
 			->Append($static . "/js/build/Core/Environments/Name.js")
 			->Append($static . "/js/build/Core/Environment.js")
+			// translations:
 			//->Append($static . "/js/build/Core/Translators/EnumTransform.js")
 			//->Append($static . "/js/build/Core/Translators/Record.js")
 			//->Append($static . "/js/build/Core/Translators/Replacements.js")

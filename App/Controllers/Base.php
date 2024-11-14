@@ -83,6 +83,8 @@ class Base extends \MvcCore\Controller {
 		];
 		$this->view->isDevelopment = $this->environment->IsDevelopment();
 		$this->view->isProduction = $this->environment->IsProduction();
+		$this->view->themeCurrent = $this->assets->GetThemeCurrent();
+		$this->view->themeNext = $this->assets->GetThemeNext();
 		$this->view->gaTrackingId = $sysCfgApp->ga?->trackingId ?? '';
 	}
 

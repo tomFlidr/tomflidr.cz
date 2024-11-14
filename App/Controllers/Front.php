@@ -34,8 +34,7 @@ class Front extends Base {
 	}
 	
 	public function ThemeAction (): void {
-		$session = $this->assets->GetSessionTheme();
-		$session->theme = $session->theme === 'dark' ? 'light' : 'dark';
+		$this->assets->Move2NextTheme();
 		$sourceUrl = $this->GetParam('source', FALSE);
 		$redirectUrl = $this->Url('home');
 		if ($sourceUrl !== NULL) {

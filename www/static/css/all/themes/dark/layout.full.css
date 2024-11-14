@@ -29,3 +29,60 @@ header .nav-main table thead tr th a:active		span,
 header .nav-main table thead tr th a.selected	span{
 	text-shadow:0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd,0 0 10px #0078bd, 0 0 10px #0078bd, 0 0 10px #0078bd;
 }
+
+@keyframes moon {
+	0% { transform: scale(1.0); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1.0); }
+}
+@keyframes electron {
+	 0%  {top:   2px;left:  5px;}
+	10%  {top: 6.2px;left:6.2px;}
+	20%  {top: 9.2px;left:8.7px;}
+	30%  {top:  11px;left: 12px;}
+	40%  {top:  11px;left: 17px;}
+	50%  {top:  15px;left: 14px;}
+	60%  {top:16.5px;left:  9px;}
+	70%  {top:15.5px;left:  5px;}
+	80%  {top:11.5px;left:1.5px;}
+	90%  {top:   6px;left:  1px;}
+	100% {top: 2px;  left:  5px;}
+}
+button.icon-theme-dark-animated::before{
+	z-index:11;
+}
+button.icon-theme-dark-animated::after{
+	position:absolute;
+	z-index:10;
+	content:'';
+	height:6px;
+	width:6px;
+	filter:blur(1px);
+	background-color:var(--color-front);
+	border-radius:50%;
+	display:inline-block;
+	opacity:0;
+}
+button.icon-theme-dark-animated:hover::before,
+button.icon-theme-dark-animated:focus::before,
+button.icon-theme-dark-animated:active::before{
+	animation:
+		moon
+		0.5s
+		ease-in-out
+		0s
+		infinite
+		normal;
+}
+button.icon-theme-dark-animated:hover::after,
+button.icon-theme-dark-animated:focus::after,
+button.icon-theme-dark-animated:active::after{
+	opacity:1;
+	animation:
+		electron
+		1s
+		linear
+		0s
+		infinite
+		normal;
+}

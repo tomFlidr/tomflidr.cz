@@ -2,5 +2,5 @@
 	/** @var \App\Views\Layouts\standard $this */
 ?><form class="themes" method="post" action="<?=$this->Url('Front:Theme')?>">
 	<input type="hidden" name="source" value="<?=rawurlencode($this->Url('self', ['absolute' => TRUE]))?>" />
-	<button name="change" type="submit" class="icon icon-themes" title="<?=$this->Translate('Change theme')?>"></button>
+	<button name="change" type="submit" class="icon icon-theme-<?=$this->themeNext?>" title="<?=$this->Translate('Change theme')?>"></button>
 </form>

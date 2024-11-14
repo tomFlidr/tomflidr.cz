@@ -15,6 +15,10 @@ abstract class standard extends \MvcCore\View {
 	var bool $isDevelopment;
 
 	var bool $isProduction;
+
+	var string $themeCurrent;
+
+	var string $themeNext;
 	
 	/** 
 	 * @var object{
