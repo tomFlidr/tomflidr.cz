@@ -6,9 +6,9 @@ use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
 
 class Projects extends \App\Controllers\Front {
 
-    public function IndexAction (): void {
-		$this->setUpTitleAndBreadCrumbs('Open Source Projects');
+	public function IndexAction (): void {
+		$this->setUpTitleAndBreadCrumbs();
 		$this->assets->Projects();
-    }
+	}
 	
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doc:data xsi:schemaLocation="/doc ../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<doc:title>Tom Flídr | freelance web developer, trainer &amp; consultant</doc:title>
+	<doc:sequence>1</doc:sequence>
+	<doc:active>1</doc:active>
+	<doc:controller></doc:controller>
+	<doc:action></doc:action>
+	<doc:description></doc:description>
+	<doc:keywords></doc:keywords>
+	<doc:robots></doc:robots>
+	<doc:og-image></doc:og-image>
+	<doc:og-title></doc:og-title>
+	<doc:og-description></doc:og-description>
+	<doc:itemprop-name></doc:itemprop-name>
+	<doc:itemprop-description></doc:itemprop-description>
+	<doc:navigation-title>Home</doc:navigation-title>
+	<doc:navigation-subtitle>so from beginning</doc:navigation-subtitle>
+	<doc:perex></doc:perex>
+	<doc:body>
+		
+		<h1><?=$this->appName?></h1>
+	
+		<blockquote>
+			I love to create unusually specialized tools that make work-life easier for me, 
+			people around or people on my IT courses. Experience in IT has taught me, that time is money, 
+			therefore it decides about the developer quality, how well he can weigh these two things 
+			against his inappropriate precision of source code :-)
+		</blockquote>
+		
+	</doc:body>
+</doc:data>

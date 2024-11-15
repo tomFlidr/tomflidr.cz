@@ -5,6 +5,7 @@ namespace App\Models\Bases;
 trait AppObjects {
 	
 	private static ?\MvcCore\Application $_app = NULL;
+	private static ?\MvcCore\Request $_req = NULL;
 	private static ?\MvcCore\Ext\ICache $_cache = NULL;
 	private static ?\App\Routers\MediaAndLocalization $_router = NULL;
 	/** @var array<string,\MvcCore\Ext\ITranslator> */
@@ -21,7 +22,12 @@ trait AppObjects {
 			self::$_cache = \MvcCore\Ext\Cache::GetStore();
 		return self::$_cache;
 	}
-
+	
+	public static function GetRequest (): \MvcCore\Request {
+		if (self::$_req === NULL)
+			self::$_req = self::GetApp()->GetRequest();
+		return self::$_req;
+	}
 
 	public static function GetRouter (): \App\Routers\MediaAndLocalization {
 		if (self::$_router === NULL)

@@ -1,4 +1,4 @@
 <?php /** @var \App\Views\Scripts\front $this */ ?>
 <div class="document">
-	<h1><?=$title?></h1>
+	<?=$this->Evaluate($this->document->GetBody());?>
 </div>

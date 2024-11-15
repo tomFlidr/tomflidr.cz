@@ -47,10 +47,9 @@ class Front extends Base {
 		self::Redirect($redirectUrl, \MvcCore\Response::SEE_OTHER);
 	}
 
-	protected function setUpTitleAndBreadCrumbs (string $title): string {
-		$translatedTitle = $this->translate($title);
+	protected function setUpTitleAndBreadCrumbs (): string {
+		$translatedTitle = $this->document->GetTitle();
 		$this->view->title = $translatedTitle;
-		$this->assets->Cv();
 		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
 			text: $translatedTitle,
 		));

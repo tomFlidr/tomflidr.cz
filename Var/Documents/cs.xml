@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doc:data xsi:schemaLocation="/doc ../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<doc:title>Tom Flídr | freelance web developer, lektor &amp; konzultant</doc:title>
+	<doc:sequence>1</doc:sequence>
+	<doc:active>1</doc:active>
+	<doc:controller></doc:controller>
+	<doc:action></doc:action>
+	<doc:description></doc:description>
+	<doc:keywords></doc:keywords>
+	<doc:robots></doc:robots>
+	<doc:og-image></doc:og-image>
+	<doc:og-title></doc:og-title>
+	<doc:og-description></doc:og-description>
+	<doc:itemprop-name></doc:itemprop-name>
+	<doc:itemprop-description></doc:itemprop-description>
+	<doc:navigation-title>Úvod</doc:navigation-title>
+	<doc:navigation-subtitle>tak od začátku</doc:navigation-subtitle>
+	<doc:perex></doc:perex>
+	<doc:body>
+		<h1><?=$this->appName?> cs</h1>
+		
+		<blockquote>
+			Rád vytvářím neobvykle specializované nástroje, které mi usnadňují práci,
+			lidé v okolí nebo lidé na mých IT kurzech. Zkušenosti v IT mě naučily, že čas jsou peníze,
+			rozhoduje tedy o kvalitě vývojáře, jak dobře dokáže tyto dvě věci zvážit
+			proti jeho nevhodné přesnosti zdrojového kódu :-)
+		</blockquote>
+		
+	</doc:body>
+</doc:data>

@@ -3,6 +3,7 @@
 namespace App\Models\Navigations;
 
 use \App\Routers\MediaAndLocalization,
+	\App\Models\Xml\Document,
 	\App\Models\Navigations\Set,
 	\App\Models\Navigations\Item;
 
@@ -10,37 +11,6 @@ use \App\Routers\MediaAndLocalization,
 class Main extends \App\Models\Base {
 	
 	public const CACHE_TAGS = ['nav-main'];
-
-	protected static array $items = [
-		'home'			=> [
-			'title'			=> 'Home',
-			'description'	=> 'from beginning',
-		],
-		'cv'			=> [
-			'title'			=> 'CV',
-			'description'	=> 'all about me'
-		],
-		'services'		=> [
-			'title'			=> 'Services',
-			'description'	=> 'how useful I am'
-		],
-		'references'	=> [
-			'title'			=> 'References',
-			'description'	=> 'who chose me'
-		],
-		'training'		=> [
-			'title'			=> 'Training',
-			'description'	=> 'for professionals'
-		],
-		'projects'		=> [
-			'title'			=> 'Projects',
-			'description'	=> 'open source'
-		],
-		'contact'		=> [
-			'title'			=> 'Contact',
-			'description'	=> 'feel free to call',
-		],
-	];
 
 	public static function GetData (string $mediaSiteVersion, array $localization): Set {
 		$cacheKey = 'navigation_main_' . $mediaSiteVersion . '_' . implode('-', $localization);
@@ -51,7 +21,7 @@ class Main extends \App\Models\Base {
 			) use (
 				$mediaSiteVersion, $localization
 			) {
-				$data = self::completeDataWithUrls(
+				$data = self::loadData(
 					$mediaSiteVersion, $localization
 				);
 				$cache->Save($cacheKey, $data, NULL, static::CACHE_TAGS);
@@ -60,28 +30,33 @@ class Main extends \App\Models\Base {
 		);
 	}
 
-	protected static function completeDataWithUrls (
+	protected static function loadData (
 		string $mediaSiteVersion, array $localization
 	): Set {
 		$data = [];
 		$router = self::GetRouter();
 		$localizationWeb = implode('-', $localization);
-		$translator = self::GetTranslator(implode('_', $localization));
 		$mediaKey = $router::URL_PARAM_MEDIA_VERSION;
 		$localKey = $router::URL_PARAM_LOCALIZATION;
 		$urlParams = [
 			$mediaKey	=> $mediaSiteVersion,
 			$localKey	=> $localizationWeb,
 		];
-		foreach (self::$items as $routeName => $itemData) {
+		[$lang] = $localization;
+		$firstLevelDocsPath = '/' . $lang;
+		$firstLevelDocsInclHome = Document::GetByDirPath(
+			$firstLevelDocsPath, TRUE, ['sequence' => 'asc', 'title' => 'asc']
+		);
+		$docRoute = $router->GetRoute(Document::ROUTE_NAME);
+		foreach ($firstLevelDocsInclHome as $doc) {
+			$docCtrl = $doc->GetController() ?? $docRoute->GetController();
+			$docAction = $doc->GetAction() ?? $docRoute->GetAction();
+			$routeName = "{$docCtrl}:{$docAction}";
 			$data[] = new Item(
-				title		: $translator->Translate($itemData['title']),
-				description	: isset($itemData['description'])
-					? $translator->Translate($itemData['description'])
-					: NULL,
-				url			: self::Url($routeName, $urlParams),
-				routeName	: $routeName,
-				cssClass	: $itemData['class'] ?? NULL
+				title		: $doc->GetNavigationTitle(),
+				description	: $doc->GetNavigationSubtitle(),
+				url			: $doc->GetUrl($urlParams),
+				routeName	: $routeName
 			);
 		}
 		return new Set($data);

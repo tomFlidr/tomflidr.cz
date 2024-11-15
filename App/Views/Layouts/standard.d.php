@@ -2,7 +2,8 @@
 
 namespace App\Views\Layouts;
 
-use \App\Controllers\Fronts\Navigations;
+use \App\Controllers\Fronts\Navigations,
+	\App\Models\Xml\Document;
 
 abstract class standard extends \MvcCore\View {
 	
@@ -15,6 +16,8 @@ abstract class standard extends \MvcCore\View {
 	var bool $isDevelopment;
 
 	var bool $isProduction;
+
+	var ?Document $document;
 
 	var string $themeCurrent;
 

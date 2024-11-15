@@ -7,7 +7,7 @@ use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
 class References extends \App\Controllers\Front {
 
     public function IndexAction (): void {
-		$this->setUpTitleAndBreadCrumbs('References');
+		$this->setUpTitleAndBreadCrumbs();
 		$this->assets->References();
     }
 	

@@ -36,6 +36,7 @@ class Bootstrap {
 		if (!static::verifyHttpHost($app, $sysCfg)) return NULL;
 		
 		\App\Routers\MediaAndLocalization::Init($sysCfg);
+		$app->AddPostRouteHandler(fn () => \App\Controllers\Base::PostRouteHandler());
 
 		return $app;
 	}

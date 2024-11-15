@@ -2,13 +2,16 @@
 
 namespace App\Controllers\Fronts\Navigations;
 
-use App\Models\Navigations\Set;
+use \App\Models\Navigations\Set,
+	\App\Models\Navigations\Main as MainNavigationModel,
+	\App\Models\Xml\Document;
 
 class Main extends \MvcCore\Controller {
 
 	/** @var \App\Controllers\Front */
 	protected $parentController;
-
+	
+	protected string $requestPath;
 	protected string $mediaSiteVersion;
 	
 	protected array $cssClasses = ['nav-main'];
@@ -27,12 +30,13 @@ class Main extends \MvcCore\Controller {
 
 	public function PreDispatch (): void {
 		parent::PreDispatch();
-
+		
+		$this->requestPath = $this->request->GetOriginalPath();
 		$this->mediaSiteVersion = $this->request->GetMediaSiteVersion();
 		$localizationArr = $this->router->GetLocalization(FALSE);
 		
 		// Complete cached data with urls:
-		$mainItems = \App\Models\Navigations\Main::GetData(
+		$mainItems = MainNavigationModel::GetData(
 			$this->mediaSiteVersion, $localizationArr
 		);
 
@@ -41,15 +45,19 @@ class Main extends \MvcCore\Controller {
 	}
 
 	protected function completeItemsSelected (Set $mainItems): Set {
-		$currentRouteName = $this->router->GetCurrentRoute()?->GetName();
+		$currentRoute = $this->router->GetCurrentRoute();
+		[$crCtrl, $crAction] = [$currentRoute->GetController(), $currentRoute->GetAction()];
+		$currentRouteName = "{$crCtrl}:{$crAction}";
 		foreach ($mainItems as $groupItem) {
 			/** @var \App\Models\Navigations\Item $groupItem */
 			$subItems = $groupItem->GetItems();
 			if ($subItems !== NULL) {
 				foreach ($subItems as $subItem) {
 					if (
-						$currentRouteName === $subItem->GetRouteName() ||
-						in_array($currentRouteName, $subItem->GetSubRouteNames(), TRUE)		
+						mb_strpos($subItem->GetUrl(), $this->requestPath) === 0 && (
+							$currentRouteName === $subItem->GetRouteName() ||
+							in_array($currentRouteName, $subItem->GetSubRouteNames(), TRUE)
+						)
 					) {
 						$groupItem->SetSelected(TRUE);
 						$subItem->SetSelected(TRUE);
@@ -58,8 +66,10 @@ class Main extends \MvcCore\Controller {
 				}
 				if (!$groupItem->GetSelected()) {
 					if (
-						$currentRouteName === $groupItem->GetRouteName() ||
-						in_array($currentRouteName, $groupItem->GetSubRouteNames(), TRUE)	
+						mb_strpos($groupItem->GetUrl(), $this->requestPath) === 0 && (
+							$currentRouteName === $groupItem->GetRouteName() ||
+							in_array($currentRouteName, $groupItem->GetSubRouteNames(), TRUE)
+						)
 					) {
 						$groupItem->SetSelected(TRUE);
 						break;
@@ -67,8 +77,10 @@ class Main extends \MvcCore\Controller {
 				}
 			} else {
 				if (
-					$currentRouteName === $groupItem->GetRouteName() ||
-					in_array($currentRouteName, $groupItem->GetSubRouteNames(), TRUE)	
+					mb_strpos($groupItem->GetUrl(), $this->requestPath) === 0 && (
+						$currentRouteName === $groupItem->GetRouteName() ||
+						in_array($currentRouteName, $groupItem->GetSubRouteNames(), TRUE)
+					)
 				) {
 					$groupItem->SetSelected(TRUE);
 					break;

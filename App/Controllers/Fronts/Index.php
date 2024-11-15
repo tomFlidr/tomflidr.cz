@@ -14,20 +14,6 @@ class Index extends \App\Controllers\Front {
 			$this->Terminate();
 		}
 	}
-
-    public function IndexAction (): void {
-		$name = 'Tom Flídr';
-		$desc = 'Freelance developer, trainer & consultant';
-		$this->view->title = "{$name} | {$desc}";
-		$this->view->heading = $name;
-		$this->view->description = $desc;
-		$this->assets->Index();
-    }
-	
-	public function ContactAction (): void {
-		$this->setUpTitleAndBreadCrumbs('Contact');
-		$this->assets->Contact();
-	}
 	
 	public function StatusAction (): void {
 		if ($this->environment->IsProduction())
@@ -37,6 +23,26 @@ class Index extends \App\Controllers\Front {
 		$this->view->phpVersion = phpversion();
 		$git = new \App\Tools\Git($this->request->GetAppRoot());
 		$this->view->gitSummary = $git->GetHeadCommitSummary();
+	}
+	
+	// alias for router
+	public function HomeAction (): void {
+		$this->IndexAction();
+	}
+
+	public function IndexAction (): void {
+		$name = 'Tom Flídr';
+		$desc = 'Freelance developer, trainer & consultant';
+		$this->view->title = "{$name} | {$desc}";
+		$this->view->heading = $name;
+		$this->view->description = $desc;
+		$this->assets->Index();
+		$this->Render('index');
+	}
+	
+	public function ContactAction (): void {
+		$this->setUpTitleAndBreadCrumbs();
+		$this->assets->Contact();
 	}
 
 	public function NotFoundAction (): void {

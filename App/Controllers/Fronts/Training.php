@@ -7,7 +7,7 @@ use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
 class Training extends \App\Controllers\Front {
 
     public function IndexAction (): void {
-		$this->setUpTitleAndBreadCrumbs('Training');
+		$this->setUpTitleAndBreadCrumbs();
 		$this->assets->Training();
     }
 	

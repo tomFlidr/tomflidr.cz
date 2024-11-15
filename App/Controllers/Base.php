@@ -3,18 +3,96 @@
 namespace App\Controllers;
 
 use \MvcCore\Ext\Tools\Csp,
-	\MvcCore\Ext\Tools\Csp\IConstants as CspConsts;
+	\MvcCore\Ext\Tools\Csp\IConstants as CspConsts,
+	\MvcCore\Ext\Translators\Csv as CsvTranslator;
+
+use \App\Controllers\Common\Assets,
+	\App\Models\Xml\Document;
 
 class Base extends \MvcCore\Controller {
 
 	protected $layout = 'standard';
 	
-	protected ?\App\Controllers\Common\Assets $assets = NULL;
+	protected ?Assets $assets = NULL;
 
-	protected ?\MvcCore\Ext\Translators\Csv $translator = NULL;
+	protected ?CsvTranslator $translator = NULL;
 	
-	public function GetTranslator (): ?\MvcCore\Ext\Translators\Csv {
+	protected ?Document $document = NULL;
+
+	public function GetTranslator (): ?CsvTranslator {
 		return $this->translator;
+	}
+
+	public static function PostRouteHandler () {
+		// complete necessary global objects
+		$app = \MvcCore\Application::GetInstance();
+		$router = $app->GetRouter();
+		$req = $app->GetRequest();
+		
+		$defaultParams = & $router->GetDefaultParams();
+		if (isset($defaultParams['doc'])) {
+			$document = & $defaultParams['doc'];
+		} else {
+			// try to complete document instance
+			$rawDocumentPath = $req->HasParam('path')
+				? $req->GetParam('path', FALSE)
+				: $req->GetPath();
+			$document = Document::GetBestMatchByFilePath($req->GetLang(), $rawDocumentPath);
+		}
+		$documentControllerPc = NULL;
+		$documentActionPc = NULL;
+		// check if document has defined any controller or action
+		if ($document) {
+			if ($document->GetController() !== NULL) 
+				$documentControllerPc = $document->GetController();
+			if ($document->GetAction() !== NULL) 
+				$documentActionPc = $document->GetAction();
+		}
+		
+		// if there is no document and no definition for controller and action, do nothing more
+		if (!$document && !$documentControllerPc && !$documentActionPc) 
+			return TRUE;
+		
+		// if there is $document and doesn't matter if $documentControllerPc or $documentActionPc,
+		// try to complete controller class full name, create ctrl instance and set up document
+		$controllerNamePc = NULL;
+		if ($documentControllerPc) {
+			// get controller name from document
+			$controllerNamePc = $documentControllerPc;
+		} else {
+			// get controller name from routed route if any
+			$currentRoute = $router->GetCurrentRoute();
+			if ($currentRoute === NULL) return $app->DispatchException('No route for request', 404);
+			$controllerNamePc = $currentRoute->GetController();
+		}
+		
+		// complete full controller name
+		$ctrlClassFullName = $app->CompleteControllerName($controllerNamePc);
+		if (!class_exists($ctrlClassFullName)) 
+			return $app->DispatchException("Controller class `$documentControllerPc` not found.", 404);
+		
+		// try to create controller
+		$controller = NULL;
+		try {
+			$controller = $ctrlClassFullName::CreateInstance();
+		} catch (\Exception $e) {
+			return $app->DispatchException($e->getMessage(), 404);
+		}
+
+		// set up controller into application instance
+		$app->SetController($controller);
+
+		// if controller is completed successfully to set up document into it 
+		// and if there is necessary to redefine routed target, redefine routed 
+		// target
+		if ($documentControllerPc || $documentActionPc) 
+			$router->RedefineRoutedTarget($documentControllerPc, $documentActionPc, FALSE);
+		
+		// set up document into controller
+		$controller->document = $document;
+
+		// return TRUE to continue dispatching
+		return TRUE;
 	}
 	
 	public function Init () {
@@ -22,7 +100,7 @@ class Base extends \MvcCore\Controller {
 
 		$localization = implode('_', $this->router->GetLocalization(FALSE));
 
-		$this->translator = \MvcCore\Ext\Translators\Csv::GetInstance($localization);
+		$this->translator = CsvTranslator::GetInstance($localization);
 		$this->translator->SetCache(\MvcCore\Ext\Cache::GetStore());
 		
 		// set language and country locale
@@ -38,7 +116,7 @@ class Base extends \MvcCore\Controller {
 			$this->view = $this->createView(TRUE);
 			if ($this->assets === NULL)
 				$this->AddChildController(
-					$this->assets = new \App\Controllers\Common\Assets($this)
+					$this->assets = new Assets($this)
 				);
 			$this->_preDispatchSetUpAssetsHelper();
 		}
@@ -83,6 +161,7 @@ class Base extends \MvcCore\Controller {
 		];
 		$this->view->isDevelopment = $this->environment->IsDevelopment();
 		$this->view->isProduction = $this->environment->IsProduction();
+		$this->view->document = $this->document;
 		$this->view->themeCurrent = $this->assets->GetThemeCurrent();
 		$this->view->themeNext = $this->assets->GetThemeNext();
 		$this->view->gaTrackingId = $sysCfgApp->ga?->trackingId ?? '';

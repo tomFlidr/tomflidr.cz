@@ -4,7 +4,10 @@ namespace App\Routers;
 
 use \App\Models\AppModule,
 	\App\Models\Localizations\Localization,
-	\MvcCore\Ext\Routers\IMedia;
+	\MvcCore\Ext\Routers\IMedia,
+	\MvcCore\Route\IConstants as RouteConsts;
+
+use \App\Models\Xml\Document;
 
 class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	
@@ -95,64 +98,20 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 		$this
 			->setUpRoutesFront()
 			->setUpRoutesSystem()
+			->setUpRoutesUniversal()
 			->setUpRoutesVirtual();
 	}
 	
 	protected function setUpRoutesFront (): static {
 		$this->AddRoutes([
-			'home'					=> [
-				'match'					=> "#^/(index.php)?$#",
-				'reverse'				=> '/',
-				'controllerAction'		=> 'Fronts\Index:Index',
-			],
-			'cv'					=> [
-				'controllerAction'		=> 'Fronts\Cv:Index',
-				'pattern'				=> [
-					'en'				=> '/curriculum-vitae',
-					'de'				=> '/lebenslauf',
-					'cs'				=> '/životopis',
-				],
-			],
-			'services'				=> [
-				'controllerAction'		=> 'Fronts\Services:Index',
-				'pattern'				=> [
-					'en'				=> '/services',
-					'de'				=> '/dienste',
-					'cs'				=> '/služby',
-				],
-			],
-			'references'				=> [
-				'controllerAction'		=> 'Fronts\References:Index',
-				'pattern'				=> [
-					'en'				=> '/references',
-					'de'				=> '/referenzen',
-					'cs'				=> '/reference',
-				],
-			],
-			'training'				=> [
-				'controllerAction'		=> 'Fronts\Training:Index',
-				'pattern'				=> [
-					'en'				=> '/courses-for-professionals',
-					'de'				=> '/kurse-für-fachkräfte',
-					'cs'				=> '/kurzy-pro-profesionaly',
-				],
-			],
-			'projects'				=> [
+			/*'projects'				=> [
 				'controllerAction'		=> 'Fronts\Projects:Index',
 				'pattern'				=> [
 					'en'				=> '/projects',
 					'de'				=> '/projekte',
 					'cs'				=> '/projekty',
 				],
-			],
-			'contact'				=> [
-				'controllerAction'		=> 'Fronts\Index:Contact',
-				'pattern'				=> [
-					'en'				=> '/contact',
-					'de'				=> '/kontakt',
-					'cs'				=> '/kontakt',
-				],
-			],
+			]*/
 		]);
 		return $this;
 	}
@@ -168,7 +127,31 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 		return $this;
 	}
 	
+	protected function setUpRoutesUniversal (): static {
+		$this->AddRoutes([
+			'document'	=> new \MvcCore\Ext\Routers\Localizations\Route([
+				'controllerAction'		=> 'Fronts\Index:Index',
+				//'pattern'				=> '/<path>',
+				//'constraints'			=> ['path' => '[a-zA-Z0-9\-_/]*'],
+				'match'					=> "#^/(?<path>[^/]*)#",
+				'reverse'				=> '/<path>',
+				'filters'				=> [
+					RouteConsts::CONFIG_FILTER_IN	=> [Document::class, 'RouteFilterIn'],
+					RouteConsts::CONFIG_FILTER_OUT	=> [Document::class, 'RouteFilterOut']
+				],
+			]),
+		]);
+		return $this;
+	}
+	
 	protected function setUpRoutesVirtual (): static {
+		$this->AddRoutes([
+			'home'					=> [
+				'match'					=> "#^/(index.php)?$#",
+				'reverse'				=> '/',
+				'controllerAction'		=> 'Fronts\Index:Home',
+			]
+		]);
 		return $this;
 	}
 }
