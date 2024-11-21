@@ -3,7 +3,7 @@
 namespace App\Models\Navigations;
 
 use \App\Routers\MediaAndLocalization,
-	\App\Models\Xml\Document,
+	\App\Models\Xml\Entities\Document,
 	\App\Models\Navigations\Set,
 	\App\Models\Navigations\Item;
 

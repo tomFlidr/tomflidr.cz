@@ -2,17 +2,29 @@
 
 namespace App\Controllers;
 
+use \MvcCore\Request\IConstants as ReqConsts;
+
 use \App\Controllers\Fronts\Navigations as CtrlNavigations,
 	\App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
 
 class Front extends Base {
 
+	protected bool $renderNavigations;
 	protected ?CtrlNavigations\Main $navigationMain = NULL;
 	protected ?CtrlNavigations\BreadCrumbs $navigationBreadCrumbs = NULL;
 
 	public function Init (): void {
 		parent::Init();
 		if (!$this->viewEnabled) return;
+
+		// there is no POST with template rendering in whole website:
+		$method = $this->request->GetMethod();
+		$this->renderNavigations = (
+			$method === ReqConsts::METHOD_GET || 
+			$method === ReqConsts::METHOD_HEAD
+		);
+
+		if (!$this->renderNavigations) return;
 
 		$this->navigationMain = new CtrlNavigations\Main($this);
 		$this->navigationBreadCrumbs = new CtrlNavigations\BreadCrumbs($this);
@@ -23,7 +35,10 @@ class Front extends Base {
 
 	public function PreDispatch (): void {
 		parent::PreDispatch();
-		if (!$this->viewEnabled) return;
+		if (
+			!$this->viewEnabled ||
+			!$this->renderNavigations
+		) return;
 
 		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
 			text: $this->translate('Home'),

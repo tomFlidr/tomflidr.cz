@@ -7,8 +7,11 @@ use \MvcCore\Ext\Tools\Csp,
 	\MvcCore\Ext\Translators\Csv as CsvTranslator;
 
 use \App\Controllers\Common\Assets,
-	\App\Models\Xml\Document;
+	\App\Models\Xml\Entities\Document;
 
+/**
+ * @property \App\Routers\MediaAndLocalization $router
+ */
 class Base extends \MvcCore\Controller {
 
 	protected $layout = 'standard';
@@ -28,7 +31,7 @@ class Base extends \MvcCore\Controller {
 		$app = \MvcCore\Application::GetInstance();
 		$router = $app->GetRouter();
 		$req = $app->GetRequest();
-		
+
 		$defaultParams = & $router->GetDefaultParams();
 		if (isset($defaultParams['doc'])) {
 			$document = & $defaultParams['doc'];
@@ -37,7 +40,9 @@ class Base extends \MvcCore\Controller {
 			$rawDocumentPath = $req->HasParam('path')
 				? $req->GetParam('path', FALSE)
 				: $req->GetPath();
-			$document = Document::GetBestMatchByFilePath($req->GetLang(), $rawDocumentPath);
+			$document = $rawDocumentPath !== NULL
+				? Document::GetBestMatchByFilePath($req->GetLang(), $rawDocumentPath)
+				: NULL;
 		}
 		$documentControllerPc = NULL;
 		$documentActionPc = NULL;
@@ -149,6 +154,7 @@ class Base extends \MvcCore\Controller {
 		$sysCfgApp = $sysCfg->app;
 		$mediaSiteVersion = $this->request->GetMediaSiteVersion();
 		$this->view->appName = $sysCfgApp->name;
+		$this->view->appDesc = $sysCfgApp->description;
 		$this->view->basePath = $this->request->GetBasePath();
 		$this->view->localization = $this->router->GetLocalization(TRUE);
 		$this->view->mediaSiteVersion = $mediaSiteVersion;

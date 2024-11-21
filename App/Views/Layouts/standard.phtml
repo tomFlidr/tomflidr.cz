@@ -15,8 +15,8 @@
 	</head>
 	<body>
 		<input type="hidden" id="core-config" value="<?=$this->EscapeAttrJs($this->coreConfig)?>" />
-		<?=$this->RenderLayout('body/old-browser-warning')?>
-		<?=$this->RenderLayout('body/layout.' . $this->mediaSiteVersion)?>
+		<?=$this->RenderLayout('./body/old-browser-warning')?>
+		<?=$this->RenderLayout('./body/layout.' . $this->mediaSiteVersion)?>
 		<script type="text/javascript" nonce="<?$this->$nonce?>">Core.Page.GetPage();</script>
 	</body>
 </html>

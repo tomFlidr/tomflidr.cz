@@ -15,15 +15,13 @@ class Bootstrap {
 		
 		static::patchCoreClasses($app);
 		
-		$req = $app->GetRequest();
-		
 		// PHP 8+ and Attributes anotation:
 		$app->SetAttributesAnotations(TRUE);
 
 		// for new browsers supporting cookie with SameSite=Strict:
 		$app->SetCsrfProtection(\MvcCore\Application\IConstants::CSRF_PROTECTION_COOKIE);
 
-		$cache = static::getCache($req);
+		$cache = static::getCache($app);
 		
 		static::getEnvironment($app);
 
@@ -49,7 +47,7 @@ class Bootstrap {
 			->SetDefaultControllerName(\App\Controllers\Fronts\Index::class);
 	}
 	
-	protected static function getCache (\MvcCore\Request $req): \MvcCore\Ext\ICache {
+	protected static function getCache (\MvcCore\Application $app): \MvcCore\Ext\ICache {
 		$cacheDbName = 'tomflidr.cz';
 		$cache = \MvcCore\Ext\Caches\Redis::GetInstance([
 			\MvcCore\Ext\ICache::CONNECTION_PERSISTENCE	=> $cacheDbName,
@@ -66,7 +64,7 @@ class Bootstrap {
 	}
 	
 	protected static function getEnvironment (\MvcCore\Application $app): \MvcCore\Environment {
-		\MvcCore\Config::SetConfigEnvironmentPath('~/%appPath%/env.ini');
+		\MvcCore\Config::SetConfigEnvironmentPath('~/App/env.ini');
 		$env = $app->GetEnvironment();
 		$req = $app->GetRequest();
 		if ($req->IsCli()) {
@@ -86,7 +84,7 @@ class Bootstrap {
 		$env = $app->GetEnvironment();
 		$isDev = $env->IsDevelopment();
 		if ($isDev)
-			\MvcCore\Config::SetConfigSystemPath('~/%appPath%/config.dev.ini');
+			\MvcCore\Config::SetConfigSystemPath('~/App/config.dev.ini');
 		\MvcCore\Ext\Configs\Cached::SetEnvironmentGroups([
 			EnvConsts::PRODUCTION 	=> [EnvConsts::GAMMA],
 			EnvConsts::GAMMA 		=> [EnvConsts::PRODUCTION],
@@ -119,7 +117,7 @@ class Bootstrap {
 		$serverGlobals = & $req->GetGlobalCollection('server');
 		if (!$env->IsDevelopment() && isset($serverGlobals['HTTP_HOST'])) {
 			$rawHost = $serverGlobals['HTTP_HOST'];
-			/** @var $hostVerify \stdClass */
+			/** @var \stdClass $hostVerify */
 			$hostVerify = $sysCfg->app->hostVerify;
 			$req->SetPort(''); // app is always using default port not necessary to define
 			if (preg_match($hostVerify->pattern, $rawHost)) {

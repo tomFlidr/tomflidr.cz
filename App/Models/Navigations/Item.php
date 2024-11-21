@@ -109,12 +109,10 @@ class Item {
 		if ($this->items === NULL) {
 			return $this;
 		} else {
-			$offset = array_search($item, $this->items, TRUE);
-			if ($this->items instanceof Set) {
-				$this->items->splice($offset, 1);
-			} else {
-				array_splice($this->items, $offset, 1);
-			}
+			$items = $this->items instanceof Set ? $this->items->getArray() : $this->items;
+			$offset = array_search($item, $items, TRUE);
+			array_splice($items, $offset, 1);
+			$this->items = new Set($items);
 			return $this;
 		}
 	}

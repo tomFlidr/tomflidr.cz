@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Models\Xml\Document;
+namespace App\Models\Xml\Entities\Document;
 
 /**
- * @mixin \App\Models\Xml\Document
+ * @mixin \App\Models\Xml\Entities\Document
  */
 trait SetUp {
 	
-	protected function xmlSetUp (string $content, string $path, \DOMDocument & $xml, array $schemes): static {
-		parent::xmlSetUp($content, $path, $xml, $schemes);
+	protected function xmlSetUpMembers (): static {
+		/** @var \App\Models\Xml\Entities\Document $this */
+		parent::xmlSetUpMembers();
 		
 		// default values for navigation title and subtitle
 		if (!$this->navigationTitle) 

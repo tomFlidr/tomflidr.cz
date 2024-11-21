@@ -4,8 +4,6 @@ namespace App\Tools;
 
 class Cli {
 
-	private static string $_cliDirFp = '/App/Cli';
-
 	private static ?bool $_isWin = NULL;
 	
 	public static function GetIsWin (): bool {
@@ -15,14 +13,8 @@ class Cli {
 	}
 	
 	public static function GetCliDirFullPath (): string {
-		if (self::$_cliDirFp !== NULL) 
-			return self::$_cliDirFp;
 		$app = \MvcCore\Application::GetInstance();
-		return self::$_cliDirFp = implode('/', [
-			$app->GetRequest()->GetAppRoot(),
-			$app->GetAppDir(),
-			$app->GetCliDir(),
-		]);
+		return $app->GetPathCli(TRUE);
 	}
 
 	public static function RunScript (string $scriptName, array $args = []): string {

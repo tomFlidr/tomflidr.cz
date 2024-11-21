@@ -10,7 +10,7 @@ class Base extends \App\Models\Base {
 	
 	public static function GetDataDirFullPath () {
 		if (mb_substr(static::$dataDir, 0, 2) === '~/') {
-			$appRoot = self::GetRequest()->GetAppRoot() ;
+			$appRoot = self::GetApp()->GetPathAppRoot() ;
 			static::$dataDir = $appRoot . mb_substr(static::$dataDir, 1);
 		}
 		return static::$dataDir;

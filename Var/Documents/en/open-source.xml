@@ -17,7 +17,7 @@
 	<doc:navigation-subtitle>projects</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1><?=$this->title?></h1>
+		<h1>{$title}</h1>
 
 		<h3 class="indent">Open Source Projects <small>(<a href="https://github.com/tomflidr/" target="_blank">Github</a>)</small></h3>
 		<table class="os-projects"><tbody>

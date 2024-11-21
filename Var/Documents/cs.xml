@@ -17,7 +17,7 @@
 	<doc:navigation-subtitle>tak od začátku</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1><?=$this->appName?> cs</h1>
+		<h1>{$appName} cs</h1>
 		
 		<blockquote>
 			Rád vytvářím neobvykle specializované nástroje, které mi usnadňují práci,

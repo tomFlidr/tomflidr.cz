@@ -10,7 +10,6 @@ namespace Front.Navigations.Mobiles {
 		protected main: Mobile;
 		protected members: Mobiles.Interfaces.IMembers | null = null;
 		protected cssAnimDuration: number;
-		protected cssAnimationTimeout: number | null;
 		public constructor (main: Mobile) {
 			this.Static = new.target;
 			this.main = main;
@@ -19,25 +18,30 @@ namespace Front.Navigations.Mobiles {
 		public GetMembers (): Mobiles.Interfaces.IMembers {
 			return this.members;
 		}
-		public Show (): this {
+		public GetCssAnimDuration (): number {
+			return this.cssAnimDuration;
+		}
+		public ShowStart (): this {
 			var sels = this.Static.SELECTORS;
 			this.members.Container.removeClass(sels.OPENED_CLS);
 			this.members.Body.addClass(sels.OPENED_CLS);
-			clearTimeout(this.cssAnimationTimeout);
-			this.cssAnimationTimeout = setTimeout(() => {
-				this.members.Container.addClass(sels.OPENED_CLS);
-			}, this.cssAnimDuration);
 			return this;
 		}
-		public Hide (): this {
+		public ShowEnd (): this {
+			var sels = this.Static.SELECTORS;
+			this.members.Container.addClass(sels.OPENED_CLS);
+			return this;
+		}
+		public CloseStart (): this {
 			var sels = this.Static.SELECTORS;
 			this.members.Container.removeClass(sels.OPENED_CLS);
 			this.members.Body.removeClass(sels.OPENED_CLS);
 			this.members.CloseBtn.blur();
-			clearTimeout(this.cssAnimationTimeout);
-			this.cssAnimationTimeout = setTimeout(() => {
-				this.members.Container.addClass(sels.OPENED_CLS);
-			}, this.cssAnimDuration);
+			return this;
+		}
+		public CloseEnd (): this {
+			var sels = this.Static.SELECTORS;
+			this.members.Container.addClass(sels.OPENED_CLS);
 			return this;
 		}
 		protected initElements (): boolean {

@@ -1,62 +1,11 @@
 <?php
 
-namespace App\Models\Xml;
+namespace App\Models\Xml\Entities\Document;
 
 /**
- * @method static array<Document> GetByDirPath(string $relPath, bool $includingParentLevelDoc = FALSE, array $sort = [])
+ * @mixin \App\Models\Xml\Entities\Document
  */
-class Document extends \App\Models\Xml\Entity {
-	
-	public const ROUTE_NAME = 'document';
-	public const META_ROBOTS_DEFAULT = 'index,follow,archive';
-
-	protected static string	$dataDir = '~/Var/Documents';
-	
-	use \App\Models\Xml\Document\Props,
-		\App\Models\Xml\Document\GettersSetters,
-		\App\Models\Xml\Document\SetUp;
-	
-	public static function GetBestMatchByFilePath (string $lang, string $rawRequestedPath) {
-		$cacheKey = implode('_', [
-			'document_path_match', $lang, md5($rawRequestedPath)
-		]);
-		return self::GetCache()->Load(
-			$cacheKey, 
-			function (\Mvccore\Ext\ICache $cache, string $cacheKey) use ($lang, $rawRequestedPath) {
-				$document = static::loadBestMatchByFilePath($lang, $rawRequestedPath);
-				$cache->Save($cacheKey, $document, NULL, static::CACHE_TAGS);
-				return $document;
-			}
-		);
-	}
-
-	protected static function loadBestMatchByFilePath (string $lang, string $rawRequestedPath) {
-		$result = NULL;
-		$rawRequestedPath = $lang . (mb_strlen($rawRequestedPath) > 0 
-			? '/' . trim($rawRequestedPath, '/') : 
-			'');
-		$dataDirRelPathWithoutExt = rtrim(static::sanitizePath($rawRequestedPath), '/');
-		$dataDirFullPath = static::GetDataDirFullPath();
-		while (TRUE) {
-			$fileFullPath = str_replace('\\', '/', $dataDirFullPath . '/' . $dataDirRelPathWithoutExt . '.xml');
-			if (file_exists($fileFullPath)) {
-				$result = static::xmlLoadAndSetupModel($fileFullPath, $dataDirRelPathWithoutExt);
-				if ($result->Active) {
-					break;
-				} else {
-					$result = NULL;
-				}
-			}
-			if ($result === NULL) {
-				$lastSlashPos = mb_strrpos($dataDirRelPathWithoutExt, '/');
-				if ($lastSlashPos === FALSE) break;
-				$dataDirRelPathWithoutExt = mb_substr($dataDirRelPathWithoutExt, 0, $lastSlashPos);
-				$lastSlashPos = mb_strrpos($dataDirRelPathWithoutExt, '/');
-				if ($lastSlashPos === FALSE) break;
-			}
-		}
-		return $result;
-	}
+trait RouterFiltering {
 
 	public static function RouteFilterIn (& $urlParams, & $defaultParams, & $request) {
 		$lang = $request->GetLang();
@@ -79,12 +28,6 @@ class Document extends \App\Models\Xml\Entity {
 			$urlParams['path'] = $oppositeDoc->GetPath();
 		}
 		return $urlParams;		
-	}
-
-	public function GetUrl (array $urlParams = []) {
-		return self::GetRouter()->Url(
-			self::ROUTE_NAME, array_merge(['path' => $this->path], $urlParams)
-		);
 	}
 
 	public function & GetLanguageOpposite ($oppositeLang) {
@@ -129,4 +72,5 @@ class Document extends \App\Models\Xml\Entity {
 		}
 		return $result;
 	}
+	
 }

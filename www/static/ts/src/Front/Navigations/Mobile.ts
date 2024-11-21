@@ -2,32 +2,43 @@ namespace Front.Navigations {
 	export class Mobile {
 		protected page: Core.Page;
 		protected elements: Mobiles.Elements;
-		protected openCloseHandlers: Mobiles.Handlers;
+		protected handlers: Mobiles.Handlers;
 		protected opened: boolean = false;
 		protected externalHandlers: Map<keyof Mobiles.Interfaces.IEventsMap, Mobiles.EventHandler[]>;
+		protected cssAnimationTimeout: number | null;
 		public constructor (page: Core.Page) {
 			this.page = page;
 			this.elements = new Mobiles.Elements(this);
-			this.openCloseHandlers = new Mobiles.TouchHandlers(this);
+			this.handlers = new Mobiles.TouchHandlers(this);
 			this.externalHandlers = new Map<keyof Mobiles.Interfaces.IEventsMap, Mobiles.EventHandler[]>();
 		}
 		public GetElements (): Mobiles.Elements {
 			return this.elements;
 		}
 		public GetOpenCloseHandlers (): Mobiles.Handlers {
-			return this.openCloseHandlers;
+			return this.handlers;
 		}
 		public GetOpened (): boolean {
 			return this.opened;
 		}
 		public Open (): this {
 			this.opened = true;
-			this.elements.Show();
+			this.elements.ShowStart();
+			clearTimeout(this.cssAnimationTimeout);
+			this.cssAnimationTimeout = setTimeout(() => {
+				this.elements.ShowEnd();
+				this.handlers.HandleOpened(true);
+			}, this.elements.GetCssAnimDuration());
 			return this;
 		}
 		public Close (): this {
 			this.opened = false;
-			this.elements.Hide();
+			this.handlers.HandleOpened(false);
+			this.elements.CloseStart();
+			clearTimeout(this.cssAnimationTimeout);
+			this.cssAnimationTimeout = setTimeout(() => {
+				this.elements.CloseEnd();
+			}, this.elements.GetCssAnimDuration());
 			return this;
 		}
 		public AddEventListener <TEventName extends keyof Mobiles.Interfaces.IEventsMap>(eventName: TEventName, handler: (e: Mobiles.Interfaces.IEventsMap[TEventName]) => void): this {

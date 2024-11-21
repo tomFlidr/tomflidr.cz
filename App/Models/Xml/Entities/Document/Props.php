@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Models\Xml\Document;
+namespace App\Models\Xml\Entities\Document;
 
 /**
- * @mixin \App\Models\Xml\Document
+ * @mixin \App\Models\Xml\Entities\Document
  */
 trait Props {
 	

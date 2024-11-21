@@ -2,6 +2,10 @@
 
 namespace App\Models\Bases;
 
+/**
+ * @mixin \App\Models\Base
+ * @property \App\Routers\MediaAndLocalization $_router
+ */
 trait Helpers {
 	
 	public static function Url ($controllerActionOrRouteName, array $params = []): string {

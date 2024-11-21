@@ -2,6 +2,8 @@
 
 namespace App\Models\Xml;
 
+use \App\Models\Xml\Entity\Member;
+
 class Schema extends \App\Models\Xml\Base {
 
 	public const ANY_TYPE = 'code';
@@ -9,8 +11,8 @@ class Schema extends \App\Models\Xml\Base {
 	protected string	$name;
 	protected string	$path;
 	protected string	$fullPath;
-	/** @var array<string,string> */
-	protected array		$types		= [];
+	/** @var array<string,Member> */
+	protected array		$members	= [];
 
 	public function GetName (): string {
 		return $this->name;
@@ -36,13 +38,13 @@ class Schema extends \App\Models\Xml\Base {
 		return $this;
 	}
 	
-	/** @return array<string,string> */
-	public function GetTypes (): array {
-		return $this->types;
+	/** @return array<string,Member> */
+	public function GetMembers (): array {
+		return $this->members;
 	}
-	/** @param array<string,string> $types */
-	public function SetTypes (array $types): static {
-		$this->types = $types;
+	/** @param array<string,Member> $members */
+	public function SetMembers (array $members): static {
+		$this->members = $members;
 		return $this;
 	}
 
@@ -50,12 +52,12 @@ class Schema extends \App\Models\Xml\Base {
 		string $name,
 		string $path,
 		string $fullPath,
-		array $types = []
+		array $members = []
 	) {
 		$this->name = $name;
 		$this->path = $path;
 		$this->fullPath = $fullPath;
-		$this->types = $types;
+		$this->members = $members;
 	}
 
 	/** @param array<\App\Models\Xml\Schema> $schemas */
@@ -84,8 +86,10 @@ class Schema extends \App\Models\Xml\Base {
 		$xmlRootNode = static::getXmlContentRootNode($content);
 		$cacheKey = implode('_', [
 			'xml_schemas', 
-			basename($fileFullPath), 
-			md5(implode(', ', [$fileFullPath, $xmlRootNode])), 
+			md5(serialize([
+				$fileFullPath,
+				$xmlRootNode
+			]))
 		]);
 		return self::GetCache()->Load(
 			$cacheKey, 
@@ -212,7 +216,7 @@ class Schema extends \App\Models\Xml\Base {
 		$rootNodeDescriptorBase->registerXPathNamespace('xsd', 'http://www.w3.org/2001/XMLSchema');
 		$rootNodeDescriptorBaseAttrs = $rootNodeDescriptorBase->attributes();
 		$rootNodeDescriptorBaseName = (string) $rootNodeDescriptorBaseAttrs['name'];
-		$schemaTypes = [];
+		$schemaMembers = [];
 		foreach ($rootNodeDescriptorBase->xpath('//xsd:element') as $dataNode) {
 			$attrs = $dataNode->attributes();
 			$nodeName = trim((string) $attrs['name']);
@@ -220,13 +224,16 @@ class Schema extends \App\Models\Xml\Base {
 				continue; // do not process root node
 			if (!isset($attrs['type'])) {
 				$dataNode->xpath('//xs:element');
-				$schemaTypes[$nodeName] = static::ANY_TYPE;
+				$dataType = static::ANY_TYPE;
 			} else {
-				$nodeType = substr(trim((string)$attrs['type']), 4);
-				$schemaTypes[$nodeName] = $nodeType;
+				$dataType = substr(trim((string)$attrs['type']), 4);
 			}
+			$propName = lcfirst(\MvcCore\Tool::GetPascalCaseFromDashed($nodeName));
+			$schemaMembers[$nodeName] = new Member(
+				$nodeName, $dataType, $propName
+			);
 		}
-		$schema->SetTypes($schemaTypes);
+		$schema->SetMembers($schemaMembers);
 		return $schema;
 	}
 

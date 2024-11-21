@@ -3,9 +3,11 @@
 namespace App\Controllers\Fronts\Navigations;
 
 use \App\Models\Navigations\Set,
-	\App\Models\Navigations\Main as MainNavigationModel,
-	\App\Models\Xml\Document;
+	\App\Models\Navigations\Main as MainNavigationModel;
 
+/**
+ * @property \App\Routers\MediaAndLocalization $router
+ */
 class Main extends \MvcCore\Controller {
 
 	/** @var \App\Controllers\Front */

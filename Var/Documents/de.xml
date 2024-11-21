@@ -17,7 +17,7 @@
 	<doc:navigation-subtitle>also von Anfang an</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1><?=$this->appName?> en</h1>
+		<h1>{$appName} en</h1>
 	
 		<blockquote>
 			Ich liebe es, ungewöhnlich spezialisierte Tools zu erstellen, die mir, den Menschen um mich herum oder den Teilnehmern meiner IT-Kurse das Arbeitsleben erleichtern. Die Erfahrung in der IT hat mich gelehrt, dass Zeit Geld ist. Daher entscheidet es über die Qualität des Entwicklers, wie gut er diese beiden Dinge gegen seine unangemessene Präzision des Quellcodes abwägen kann:-)

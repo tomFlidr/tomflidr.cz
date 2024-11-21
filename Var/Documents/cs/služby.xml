@@ -17,7 +17,7 @@
 	<doc:navigation-subtitle>jak jsem užitečný</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1><?=$this->title?></h1>
+		<h1>{$title}</h1>
 
 	</doc:body>
 </doc:data>

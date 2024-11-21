@@ -2,6 +2,9 @@
 
 namespace App\Views\Helpers {
 
+	/**
+	 * @method static \App\Views\Helpers\TranslateHelper GetInstance ()
+	 */
 	class TranslateHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 		
 		protected static $instance = NULL;

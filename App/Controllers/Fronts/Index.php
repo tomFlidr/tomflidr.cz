@@ -21,7 +21,7 @@ class Index extends \App\Controllers\Front {
 		$this->layout = NULL;
 		$this->view->title = 'Status | ' . $this->request->GetHostName();
 		$this->view->phpVersion = phpversion();
-		$git = new \App\Tools\Git($this->request->GetAppRoot());
+		$git = new \App\Tools\Git($this->application->GetPathAppRoot());
 		$this->view->gitSummary = $git->GetHeadCommitSummary();
 	}
 	

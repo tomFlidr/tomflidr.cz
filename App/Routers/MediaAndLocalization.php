@@ -7,7 +7,7 @@ use \App\Models\AppModule,
 	\MvcCore\Ext\Routers\IMedia,
 	\MvcCore\Route\IConstants as RouteConsts;
 
-use \App\Models\Xml\Document;
+use \App\Models\Xml\Entities\Document;
 
 class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	

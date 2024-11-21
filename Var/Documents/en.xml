@@ -17,8 +17,7 @@
 	<doc:navigation-subtitle>so from beginning</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		
-		<h1><?=$this->appName?></h1>
+		<h1>{$appName}</h1>
 	
 		<blockquote>
 			I love to create unusually specialized tools that make work-life easier for me, 

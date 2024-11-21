@@ -2,6 +2,9 @@
 
 namespace App\Models\Bases;
 
+/**
+ * @mixin \App\Models\Base
+ */
 trait AppObjects {
 	
 	private static ?\MvcCore\Application $_app = NULL;

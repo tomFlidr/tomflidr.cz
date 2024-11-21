@@ -58,7 +58,7 @@ class Assets extends \MvcCore\Controller {
 
 	public function Base (): void {
 		/** @var $this \App\Controllers\Base */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		
 		$this->view->Css('headAll')
 			->Append($static . "/css/all/resets.css")
@@ -119,14 +119,14 @@ class Assets extends \MvcCore\Controller {
 	
 	public function Index (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		$this->view->Css('headPage')
 			->Append($static . '/css/pages/index.css');
 	}
 	
 	public function Cv (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		$this->view->Css('headPage')
 			->Append($static . '/css/pages/cv.css')
 			->Append($static . '/css/pages/cv.print.css', media: 'print');
@@ -134,31 +134,31 @@ class Assets extends \MvcCore\Controller {
 	
 	public function Contact (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		
 	}
 	
 	public function Projects (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		
 	}
 	
 	public function Training (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		
 	}
 	
 	public function Services (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		
 	}
 	
 	public function References (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = self::$staticPath;
+		$static = $this->application->GetPathStatic();
 		
 	}
 	

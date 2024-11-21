@@ -3,7 +3,7 @@
 namespace App\Views\Layouts;
 
 use \App\Controllers\Fronts\Navigations,
-	\App\Models\Xml\Document;
+	\App\Models\Xml\Entities\Document;
 
 abstract class standard extends \MvcCore\View {
 	
