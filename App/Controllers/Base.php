@@ -153,10 +153,13 @@ class Base extends \MvcCore\Controller {
 		$sysCfg = $this->GetConfigSystem();
 		$sysCfgApp = $sysCfg->app;
 		$mediaSiteVersion = $this->request->GetMediaSiteVersion();
+		list($langCode, $countryCode) = $this->router->GetLocalization(FALSE);
 		$this->view->appName = $sysCfgApp->name;
 		$this->view->appDesc = $sysCfgApp->description;
 		$this->view->basePath = $this->request->GetBasePath();
-		$this->view->localization = $this->router->GetLocalization(TRUE);
+		$this->view->langCode = $langCode;
+		$this->view->countryCode = $countryCode;
+		$this->view->localization = implode('-', [$langCode, $countryCode]);
 		$this->view->mediaSiteVersion = $mediaSiteVersion;
 		$this->view->coreConfig = (object) [
 			'Environment'		=> $this->environment->GetName(),
@@ -168,15 +171,18 @@ class Base extends \MvcCore\Controller {
 		$this->view->isDevelopment = $this->environment->IsDevelopment();
 		$this->view->isProduction = $this->environment->IsProduction();
 		$this->view->document = $this->document;
-		$this->view->themeCurrent = $this->assets->GetThemeCurrent();
-		$this->view->themeNext = $this->assets->GetThemeNext();
-		$this->view->gaTrackingId = $sysCfgApp->ga?->trackingId ?? '';
-		$this->view->footerSourceLink = $sysCfgApp->footer?->sourceLink ?? NULL;
+		$this->view->theme = (object) [
+			'current'	=> $this->assets->GetThemeCurrent(),
+			'next'		=> $this->assets->GetThemeNext(),
+		];
+		$this->view->google = $sysCfgApp->google;
+		$this->view->footer = $sysCfgApp->footer;
 	}
 
 	private function _preDispatchSetUpCsp (): void {
 		$csp = Csp::GetInstance()
 			->AllowGoogleAnalytics()
+			->AllowGoogleMapsEmbedApi()
 			->AllowSelf(
 				CspConsts::FETCH_SCRIPT_SRC |
 				CspConsts::FETCH_CONNECT_SRC |
@@ -195,7 +201,7 @@ class Base extends \MvcCore\Controller {
 				CspConsts::FETCH_FONT_SRC,
 				'data:'
 			)
-			// Tracy debugger, ag grid - standard virtual row rendering:
+			// Tracy debugger, AgGrid (standard virtual row rendering)
 			->AllowUnsafeInline(
 				CspConsts::FETCH_STYLE_SRC
 			);

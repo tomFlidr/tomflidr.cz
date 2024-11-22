@@ -3,3 +3,27 @@
 .document pre{
 	overflow-x:auto;
 }
+
+.document dl{
+	display:grid;
+	grid-template-columns:max-content max-content;
+	gap:5px 5px;
+}
+.document dl dd{
+	font-style:normal;
+	font-style:normal;
+}
+.document address{
+	font-style:normal;
+}
+
+.document ul,
+.document dl{
+	margin:0.5em 0 0.5em 0;
+}
+.document ul li{
+	line-height:1.5em;
+}
+.document small{
+	font-size:75%;
+}

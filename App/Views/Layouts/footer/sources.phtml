@@ -2,7 +2,7 @@
 	/**
 	 * @var \App\Views\Layouts\standard $this
 	 */
-	if ($this->footerSourceLink !== NULL):
-?><div class="document"><a href="<?=$this->footerSourceLink?>" target="_blank">
+	if (isset($this->footer->sourceLink)):
+?><div class="document"><a href="<?=$this->footer->sourceLink?>" target="_blank">
 	<?=__('Fork my source code on Github.com')?>
 </a></div><?php endif; ?>

@@ -1,0 +1,33 @@
+.map{
+	position:relative;
+	background:var(--color-bg);
+}
+.full .map{
+	height:0;
+	padding-bottom:calc(2 / 4 * 100%);
+}
+.mobile .map{
+	left:calc(var(--layout-mobile-content-horizontal-padding) * (-1));
+	width:calc(100% + (2 * var(--layout-mobile-content-horizontal-padding)));
+	height:calc(100vh - var(--layout-mobile-header-height));
+}
+.map iframe{
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+.full .personal{margin-bottom:37px;}
+.full .personal{margin-bottom:-1px;}
+
+ul.social li{
+	list-style-type: none;
+	padding:0 0 0 1.7em;
+	margin:0.3em 0;
+}
+ul.social li::before{
+	color:var(--color-front);
+	font-size:1.4em;
+}

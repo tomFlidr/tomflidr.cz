@@ -16,7 +16,7 @@
 		"mvccore/ext-router-media-localization": "^5.3",
 		"mvccore/ext-translator-csv": "^5.3",
 		"mvccore/ext-tool-locale": "^5.3",
-		"mvccore/ext-tool-csp": "^5.3",
+		"mvccore/ext-tool-csp": "^5.3.1",
 		"mvccore/ext-tool-cli-winfork": "^5.3",
 		"mvccore/ext-tool-collections": "^5.3",
 		"mvccore/ext-view-helper-assets": "^5.3",

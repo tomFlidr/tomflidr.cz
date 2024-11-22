@@ -171,3 +171,12 @@ footer{
 	text-align:center;
 	padding-bottom:10px;
 }
+
+/** content */
+.cols{
+	display:flex;
+	flex-direction:row;
+	gap:var(--layout-full-content-horizontal-padding);
+}
+.cols .col-left{flex:1;order:1;}
+.cols .col-right{flex:1;order:2;}

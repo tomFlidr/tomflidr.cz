@@ -46,3 +46,6 @@
 .icon-theme-dark-static::before,
 .icon-theme-dark-animated::before{content:'\e810';}
 .icon-theme-light::before{content:'\e811';}
+.icon-github::before{content:'\e822';}
+.icon-stackoverflow::before{content:'\e823';}
+.icon-linkedin::before{content:'\f30c';}

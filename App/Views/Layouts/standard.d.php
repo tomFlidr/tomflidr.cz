@@ -11,9 +11,20 @@ abstract class standard extends \MvcCore\View {
 
 	var string $basePath;
 
-	var ?string $gaTrackingId = NULL;
+	/**
+	 * @var ?object{
+	 *		"analyticsId":string,
+	 *		"mapsApiKey":string
+	 * }
+	 */
+	var ?\stdClass $google = NULL;
 
-	var ?string $footerSourceLink = NULL;
+	/**
+	 * @var ?object{
+	 *		"sourceLink":string
+	 * }
+	 */
+	var ?\stdClass $footer = NULL;
 
 	var bool $isDevelopment;
 
@@ -21,9 +32,13 @@ abstract class standard extends \MvcCore\View {
 
 	var ?Document $document;
 
-	var string $themeCurrent;
-
-	var string $themeNext;
+	/**
+	 * @var ?object{
+	 *		"current":string,
+	 *		"next":string
+	 * }
+	 */
+	var ?\stdClass $theme = NULL;
 	
 	/** 
 	 * @var object{
@@ -35,6 +50,10 @@ abstract class standard extends \MvcCore\View {
 	 *		"Action":string
 	 * } */
 	var \stdClass $coreConfig;
+
+	var string $langCode;
+
+	var string $countryCode;
 
 	var string $localization;
 

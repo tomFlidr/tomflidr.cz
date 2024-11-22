@@ -4,7 +4,7 @@
 	<doc:sequence>6</doc:sequence>
 	<doc:active>1</doc:active>
 	<doc:controller></doc:controller>
-	<doc:action></doc:action>
+	<doc:action>Contacts</doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
 	<doc:robots></doc:robots>
@@ -18,6 +18,8 @@
 	<doc:perex></doc:perex>
 	<doc:body>
 		<h1>{$title}</h1>
+		
+		<div>{$maps|noescape}</div>
 
 		<h4 class="indent">
 			<a href="https://www.linkedin.com/in/tomflidr/" target="_blank">Linked In</a>, 

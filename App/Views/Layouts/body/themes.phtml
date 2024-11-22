@@ -1,6 +1,6 @@
 <?php
 	/** @var \App\Views\Layouts\standard $this */
-	$themeNextParts = explode('/', $this->themeNext);
+	$themeNextParts = explode('/', $this->theme->next);
 	$themeNextDashedCase = implode('-', $themeNextParts);
 ?><form class="themes" method="post" action="<?=$this->Url('Front:Theme')?>">
 	<input type="hidden" name="source" value="<?=rawurlencode($this->Url('self', ['absolute' => TRUE]))?>" />

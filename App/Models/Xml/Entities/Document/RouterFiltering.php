@@ -16,7 +16,10 @@ trait RouterFiltering {
 
 	public static function RouteFilterOut (& $urlParams, & $defaultParams, & $request) {
 		$locParamName = \MvcCore\Ext\Routers\ILocalization::URL_PARAM_LOCALIZATION;
-		if ($urlParams[$locParamName] !== $defaultParams[$locParamName]) {
+		if (
+			isset($defaultParams[$locParamName]) && // request without route not contain any localization pram
+			$urlParams[$locParamName] !== $defaultParams[$locParamName]
+		) {
 			$targetLang = current(explode('-', $urlParams[$locParamName]));
 			if (isset($defaultParams['doc'])) {
 				$document = $defaultParams['doc'];

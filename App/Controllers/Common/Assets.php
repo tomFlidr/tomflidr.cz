@@ -132,10 +132,11 @@ class Assets extends \MvcCore\Controller {
 			->Append($static . '/css/pages/cv.print.css', media: 'print');
 	}
 	
-	public function Contact (): void {
+	public function Contacts (): void {
 		/** @var $this \App\Controllers\Front */
 		$static = $this->application->GetPathStatic();
-		
+		$this->view->Css('headPage')
+			->Append($static . '/css/pages/contacts.css');
 	}
 	
 	public function Projects (): void {
