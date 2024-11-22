@@ -129,6 +129,11 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	
 	protected function setUpRoutesUniversal (): static {
 		$this->AddRoutes([
+			'home'						=> new \MvcCore\Route([
+				'match'					=> "#^/index.php$#",
+				'reverse'				=> '/',
+				'redirect'				=> 'document',
+			]),
 			'document'	=> new \MvcCore\Ext\Routers\Localizations\Route([
 				'controllerAction'		=> 'Fronts\Index:Index',
 				//'pattern'				=> '/<path>',
@@ -145,13 +150,12 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	}
 	
 	protected function setUpRoutesVirtual (): static {
-		$this->AddRoutes([
-			'home'					=> [
-				'match'					=> "#^/(index.php)?$#",
-				'reverse'				=> '/',
-				'controllerAction'		=> 'Fronts\Index:Home',
+		/*$this->AddRoutes([
+			'training'					=> [
+				'pattern'				=> "/training/<path>",
+				'controllerAction'		=> 'Fronts\Training:Index',
 			]
-		]);
+		]);*/
 		return $this;
 	}
 }

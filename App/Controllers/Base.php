@@ -171,6 +171,7 @@ class Base extends \MvcCore\Controller {
 		$this->view->themeCurrent = $this->assets->GetThemeCurrent();
 		$this->view->themeNext = $this->assets->GetThemeNext();
 		$this->view->gaTrackingId = $sysCfgApp->ga?->trackingId ?? '';
+		$this->view->footerSourceLink = $sysCfgApp->footer?->sourceLink ?? NULL;
 	}
 
 	private function _preDispatchSetUpCsp (): void {

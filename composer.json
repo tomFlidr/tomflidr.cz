@@ -10,7 +10,7 @@
 	}],
 	"require": {
 		"php": ">=8.2.0",
-		"mvccore/mvccore": "^5.3",
+		"mvccore/mvccore": "^5.3.1",
 		"mvccore/ext-cache-redis": "^5.3",
 		"mvccore/ext-config-cached": "^5.3",
 		"mvccore/ext-router-media-localization": "^5.3",

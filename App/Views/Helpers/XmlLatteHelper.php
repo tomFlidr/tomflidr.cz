@@ -8,7 +8,9 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 	
 	protected static $instance = NULL;
 
-	public function XmlLatte (Entity $model, array $variables = [], string $codeProp = 'body'): string {
+	public function XmlLatte (?Entity $model, array $variables = [], string $codeProp = 'body'): string {
+		if ($model === NULL) return '';
+
 		$viewVars = $this->view->GetData();
 		$modelVars = $model->GetData();
 		$vars = array_merge($viewVars, $modelVars, $variables);

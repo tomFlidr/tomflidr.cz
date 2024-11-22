@@ -23,6 +23,8 @@ trait RouterFiltering {
 			} else {
 				$currentLang = current(explode('-', $defaultParams[$locParamName]));
 				$document = static::GetBestMatchByFilePath($currentLang, $urlParams['path'] ?? '');
+				if ($document === NULL)
+					$document = static::GetBestMatchByFilePath($currentLang, ''); // homepage
 			}
 			$oppositeDoc = $document->GetLanguageOpposite($targetLang);
 			$urlParams['path'] = $oppositeDoc->GetPath();

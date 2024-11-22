@@ -13,6 +13,9 @@ class Index extends \App\Controllers\Front {
 				->SetBody('ok');
 			$this->Terminate();
 		}
+		if ($this->document === NULL && $this->actionName !== 'not-found') {
+			$this->RenderNotFound($this->translate('Page not found.'));
+		}
 	}
 	
 	public function StatusAction (): void {
@@ -25,11 +28,6 @@ class Index extends \App\Controllers\Front {
 		$this->view->gitSummary = $git->GetHeadCommitSummary();
 	}
 	
-	// alias for router
-	public function HomeAction (): void {
-		$this->IndexAction();
-	}
-
 	public function IndexAction (): void {
 		$name = 'Tom Flídr';
 		$desc = 'Freelance developer, trainer & consultant';
@@ -52,7 +50,7 @@ class Index extends \App\Controllers\Front {
 	public function ErrorAction (): void {
 		$code = $this->response->GetCode();
 		if ($code === 200) $code = 500;
-		$this->view->title = "Error {$code}";
+		$this->view->title = $this->translate("Error {0}", [$code]);
 		$this->view->message = $this->request->GetParam('message', FALSE);
 		$this->Render('error');
 	}

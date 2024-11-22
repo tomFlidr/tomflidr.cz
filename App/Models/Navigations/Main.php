@@ -45,7 +45,7 @@ class Main extends \App\Models\Base {
 		[$lang] = $localization;
 		$firstLevelDocsPath = '/' . $lang;
 		$firstLevelDocsInclHome = Document::GetByDirPath(
-			$firstLevelDocsPath, TRUE, ['sequence' => 'asc', 'title' => 'asc']
+			$firstLevelDocsPath, TRUE, ['sequence' => 'asc', 'title' => 'asc'], TRUE
 		);
 		$docRoute = $router->GetRoute(Document::ROUTE_NAME);
 		foreach ($firstLevelDocsInclHome as $doc) {

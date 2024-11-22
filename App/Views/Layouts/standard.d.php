@@ -13,6 +13,8 @@ abstract class standard extends \MvcCore\View {
 
 	var ?string $gaTrackingId = NULL;
 
+	var ?string $footerSourceLink = NULL;
+
 	var bool $isDevelopment;
 
 	var bool $isProduction;
@@ -49,4 +51,7 @@ abstract class standard extends \MvcCore\View {
 	public abstract function Translate (string $key, array $replacements = []): string;
 
 	public abstract function Nl2Br (string $text): string;
+
+	public abstract function XmlLatte (?Entity $model, array $variables = [], string $codeProp = 'body'): string;
+
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <doc:data xsi:schemaLocation="/doc ../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<doc:title>Schulungen für Profis</doc:title>
+	<doc:title>Programming Courses for Professionals</doc:title>
 	<doc:sequence>2</doc:sequence>
-	<doc:active>1</doc:active>
+	<doc:active>0</doc:active>
 	<doc:controller>Fronts\Training</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
@@ -13,8 +13,8 @@
 	<doc:og-description></doc:og-description>
 	<doc:itemprop-name></doc:itemprop-name>
 	<doc:itemprop-description></doc:itemprop-description>
-	<doc:navigation-title>Kurse</doc:navigation-title>
-	<doc:navigation-subtitle>für Profis</doc:navigation-subtitle>
+	<doc:navigation-title>IT Training</doc:navigation-title>
+	<doc:navigation-subtitle>for professionals</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
 		<h1>{$title}</h1>

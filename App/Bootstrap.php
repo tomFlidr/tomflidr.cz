@@ -44,7 +44,7 @@ class Bootstrap {
 			->SetDebugClass(\MvcCore\Ext\Debugs\Tracy::class)
 			->SetConfigClass(\MvcCore\Ext\Configs\Cached::class)
 			->SetRouterClass(\App\Routers\MediaAndLocalization::class)
-			->SetDefaultControllerName(\App\Controllers\Fronts\Index::class);
+			->SetDefaultControllerName('//'.\App\Controllers\Fronts\Index::class);
 	}
 	
 	protected static function getCache (\MvcCore\Application $app): \MvcCore\Ext\ICache {

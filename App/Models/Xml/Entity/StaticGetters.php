@@ -5,7 +5,7 @@ namespace App\Models\Xml\Entity;
 use \App\Models\Xml\Entity;
 
 /**
- * @mixin \App\Models\Xml\Entity
+ * @mixin Entity
  */
 trait StaticGetters {
 
@@ -20,7 +20,7 @@ trait StaticGetters {
 		return self::GetCache()->Load(
 			$cacheKey, 
 			function (\Mvccore\Ext\ICache $cache, string $cacheKey) use ($dataDirRelPathWithoutExt) {
-				/** @var App\Models\Xml\Entity $this */
+				/** @var ?Entity $this */
 				$entity = static::loadByFilePath($dataDirRelPathWithoutExt);
 				$cache->Save($cacheKey, $entity, NULL, static::CACHE_TAGS);
 				return $entity;
@@ -58,7 +58,7 @@ trait StaticGetters {
 		return self::GetCache()->Load(
 			$cacheKey, 
 			function (\Mvccore\Ext\ICache $cache, string $cacheKey) use ($relPath, $includingParentLevelDoc, $sort) {
-				/** @var App\Models\Xml\Entity $this */
+				/** @var Entity $this */
 				$entities = static::loadByDirPath($relPath, $includingParentLevelDoc, $sort);
 				$cache->Save($cacheKey, $entities, NULL, static::CACHE_TAGS);
 				return $entities;

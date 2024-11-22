@@ -2,7 +2,7 @@
 <doc:data xsi:schemaLocation="/doc ../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<doc:title>Kurzy pro profesionály</doc:title>
 	<doc:sequence>2</doc:sequence>
-	<doc:active>1</doc:active>
+	<doc:active>0</doc:active>
 	<doc:controller>Fronts\Training</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
