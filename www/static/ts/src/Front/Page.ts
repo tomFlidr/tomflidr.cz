@@ -6,6 +6,7 @@ namespace Front {
 		constructor () {
 			super();
 			this.initWindowScroll();
+			this.initInfoLinks();
 			var layout = this.Static.GetLayout(),
 				mediaVersion = this.Static.GetMediaSiteVersion();
 			if (layout.IsStandard() && mediaVersion.IsMobile()) {
@@ -19,6 +20,22 @@ namespace Front {
 			window.addEventListener('scroll', this.handleWindowScroll.bind(this));
 			this.handleWindowScroll();
 			return this;
+		}
+		protected initInfoLinks (): void {
+			var sel = this.Static.SELECTORS.INFO_LINK_SEL,
+				infoLinks = Array.from<HTMLElement>(document.querySelectorAll(sel));
+			for (var infoLink of infoLinks) {
+				infoLink.addEventListener('click', this.handleInfoLinkClick.bind(this, infoLink));
+			}
+		}
+		protected handleInfoLinkClick (infoLink: HTMLElement, e: MouseEvent): void {
+			var url = infoLink.dataset.href,
+				target = infoLink.dataset.target;
+			if (target != null) {
+				window.open(url, target);
+			} else {
+				location.href = url;
+			}
 		}
 		protected handleWindowScroll (): void {
 			var cls = this.Static.SELECTORS.SCROLLED_CLS,

@@ -42,8 +42,8 @@ class Index extends \App\Controllers\Front {
 		$this->setUpTitleAndBreadCrumbs();
 		$this->view->contacts = (object) [
 			'phone'	=> (object) [
-				'link'	=> 'tel:+420274479802',
-				'text'	=> '+420 274 479 802',
+				'link'	=> 'tel:+420724479802',
+				'text'	=> '+420 724 479 802',
 			],
 			'email'	=> (object) [
 				'link'	=> 'mailto:info@tomflidr.cz?' . http_build_query([

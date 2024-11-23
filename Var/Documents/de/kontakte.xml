@@ -18,9 +18,70 @@
 	<doc:perex></doc:perex>
 	<doc:body>
 		<h1>{$title}</h1>
+
+		<div class="cols">
+			<div class="col-left">
+				<h4>It's best to reach me by phone, <br  />I'll call you back.</h4>
+				<dl class="personal">
+					<dt>mobile:</dt>			<dd><b><a href="{$contacts->email->link}">{$contacts->phone->text}</a></b></dd>
+					<dt>email:</dt>				<dd><b><a href="{$contacts->email->link}">{$contacts->email->text}</a></b></dd>
+					<dt>
+						<span 
+							class="info-link" 
+							title="
+Do you want to send me an email, 
+that no one else can read?
+Click on this text for more info.
+"
+							data-href="https://support.mozilla.org/de/kb/openpgp-in-thunderbird-leitfaden-und-faqs"
+							data-target="_blank"
+						>PGP public key:</span>
+					</dt>
+					<dd>
+						<b><a href="{$contacts->pgpKey->view|noescape}">view</a></b>
+						<b><a href="{$contacts->pgpKey->download|noescape}">download</a></b><br />
+						<small>fingerabdruck: {$contacts->pgpKey->fingerprint}</small>
+					</dd>
+				</dl>
+
+				<h4>Social</h4>
+				<ul class="social">
+					{foreach $contacts->social as $socialKey => $socialData}
+						<li class="icon icon-{$socialKey}">
+							<a href="{$socialData->link}" target="_blank">{$socialData->text}</a>
+						</li>
+					{/foreach}
+				</ul>
+			</div>
+			<div class="col-right">
+				<h4>Abrechnungsdaten</h4>
+				<p>
+					Firmen ID: <b><a href="{$contacts->invoicing->id->link}" target="_blank">{$contacts->invoicing->id->text}</a></b><br />
+					Tomas Flidr<br />
+					Melany 65<br />
+					664 64, Melcany
+				</p>
+				
+				<h4>Bankverbindung</h4>
+				<dl>
+					<dt>Kontonummer:</dt>	<dd>{$contacts->invoicing->bank->number} / {$contacts->invoicing->bank->code}</dd>
+					<dt>IBAN:</dt>			<dd>{$contacts->invoicing->bank->iban}</dd>
+					<dt>BIC:</dt>			<dd>{$contacts->invoicing->bank->bic}</dd>
+				</dl>
+				
+			</div>
+		</div>
 		
-		
-		<div>{$maps|noescape}</div>
+		<h5>Hier arbeite ich</h5>
+		<div>{$map|noescape}</div>
+
+		<br />
+		<p>
+			Wir können uns in Ihrer Firma oder anderswo in Prag, Wien usw. treffen.<br />
+			Wenn Sie bessere Räumlichkeiten benötigen, empfehle ich Ihnen gern
+			einen meiner Lieblingsorte.
+		</p>
+		<br />
 		
 	</doc:body>
 </doc:data>

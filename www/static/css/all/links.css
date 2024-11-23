@@ -51,3 +51,9 @@ a[target=_blank]::before{
 	margin-top:-0.5em;
 	font-size:0.89em;
 }
+
+.info-link{
+	border-bottom:1px dotted var(--color-link-normal);
+	text-decoration:none;
+	cursor:default;
+}

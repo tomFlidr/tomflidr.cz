@@ -22,10 +22,23 @@
 		<div class="cols">
 			<div class="col-left">
 				<h4>Nejlépe mne zastihnete na telefonu, případně zavolám zpět.</h4>
+				<br />
 				<dl class="personal">
 					<dt>telefon:</dt>			<dd><b><a href="{$contacts->email->link}">{$contacts->phone->text}</a></b></dd>
 					<dt>email:</dt>				<dd><b><a href="{$contacts->email->link}">{$contacts->email->text}</a></b></dd>
-					<dt>PGP veřejný klíč:</dt>	<dd>
+					<dt>
+						<span 
+							class="info-link" 
+							title="
+Chcete mi poslat email tak, 
+aby ho nikdo další nečetl?
+Více informací naleznete po klinutí na tento text.
+"
+							data-href="https://support.mozilla.org/cs/kb/openpgp-v-thunderbirdu-prakticky-navod-casto-klade"
+							data-target="_blank"
+						>PGP veřejný klíč:</span>
+					</dt>
+					<dd>
 						<b><a href="{$contacts->pgpKey->view|noescape}">zobrazit</a></b>
 						<b><a href="{$contacts->pgpKey->download|noescape}">stáhnout</a></b><br />
 						<small>otisk: {$contacts->pgpKey->fingerprint}</small>
@@ -40,12 +53,6 @@
 						</li>
 					{/foreach}
 				</ul>
-				
-				<h4>Adresa</h4>
-				<p>
-					Můžeme se setkat ve Vaší firmě nebo kdekoliv v Praze, Brně apod.<br />
-					Pokud budete potřebovat širší zázemí, rád doporučím některé ověřené místo.
-				</p>
 			</div>
 			<div class="col-right">
 				<h4>Fakturační údaje</h4>
@@ -60,7 +67,7 @@
 				<dl>
 					<dt>Číslo účtu:</dt><dd>{$contacts->invoicing->bank->number} / {$contacts->invoicing->bank->code}</dd>
 					<dt>IBAN:</dt>		<dd>{$contacts->invoicing->bank->iban}</dd>
-					<dt>IBAN:</dt>		<dd>{$contacts->invoicing->bank->bic}</dd>
+					<dt>BIC:</dt>		<dd>{$contacts->invoicing->bank->bic}</dd>
 				</dl>
 				
 				<h4>Datová schránka</h4>
@@ -77,6 +84,13 @@
 		
 		<h5>Zde pracuji</h5>
 		<div>{$map|noescape}</div>
+		<br />
+		
+		<p>
+			Můžeme se setkat ve Vaší firmě nebo kdekoliv v Praze, Brně apod.<br />
+			Pokud budete potřebovat širší zázemí, rád doporučím některé ověřené místo.
+		</p>
+		<br />
 		
 	</doc:body>
 </doc:data>
