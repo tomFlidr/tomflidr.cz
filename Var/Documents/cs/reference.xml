@@ -19,7 +19,7 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
-		<p>Společnosti a partneři, se kterými nadále spolupracuji nebo za kterými se rád ohlednu díky dobré spolupráci:</p>
+		<p>Společnosti a partneři, se kterými nadále spolupracuji nebo za kterými se rád ohlédnu díky dobré spolupráci:</p>
 
 		<dl class="references">
 			<dt>
@@ -40,7 +40,7 @@
 						<b>R-WEBDOG</b> - klientský systém pro správu, vzdálený přístup a řízení reklam v mobilních routerech nasazených v autobusech a vlacích.
 					</li>
 					<li>
-						<b>Teleagenda</b> - interní účtovací systém pro správu a fakturaci smluv a SIM.
+						<b>Teleagenda</b> - interní účtovací systém pro fakturaci SIM s správu smluv.
 					</li>
 					<li>
 						<b>XEROX</b> - dohled a vývoj klientského prodejního portálu speciálních nabídek pro český XEROX.
@@ -62,14 +62,13 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Vývoj další generace výrobního informačního systému Hercules 5.0</b>
+					<b>Vývoj další generace výrobního informačního systému Hercules 5.0.</b>
 				</p>
 				<ul>
 					<li>Architektura modulárního systému pro prodej dalším klientům.</li>
 					<li>Vývoj software, zpracovávání a migrace starých dat, řešení technických výzev.</li>
-					<li>Vedení projektu a práce vývojového teamu.</li>
+					<li>Plánování projektu a vedení vývojového teamu.</li>
 					<li>Správa aplikačních serverů a databáze.</li>
-					<li>Prozatím nejkomplexnější projekt, ke kterému jsem se mohl dostat.</li>
 				</ul>
 				<p>
 					Společnost Dendera se zabývá výrobou z oceli, plechů a profilů, pomocí laserových a CNC technologií.
@@ -118,7 +117,7 @@
 				<p>
 					<b>Lektroská činnost.</b><br />
 					ICT Pro i ostatní lektorské firmy jsou předními vzdělávacími agenturami v ČR. <br />
-					Společnost LearnQuest zajišťuje vzdělávání pro nadnárodní zahraniční společnosti.
+					Společnost LearnQuest zajišťuje vzdělávání pro nadnárodní zahraniční korporace.
 				</p>
 				<ul>
 					<li>
@@ -126,15 +125,12 @@
 						IBM, Microsoft, Česká spořitelna, Komerční banka, Seznam.cz, Avast, Esset, Bosh, 
 						Foxconn, Quadient a mnoho dalších.
 					</li>
-					<li>Kurzy vedené doma v českém nebo v zahraničí v anglickém jazyce.</li>
-					<li>Za {php echo intval(date('Y')) - 2008; } let přes 150 realizovaných kurzů.</li>
-					<li>Realizace dle osnov nebo příprava vlastních kurzů na míru pro náročné klienty.</li>
-					<li>Příprava vlastních příkladů, kde bylo třeba ukázat jednotlivá use-cases dané problematiky.</li>
-					<li>Realizace i kurzů grafiky pro začátečníky.</li>
-					<li>Hodnocení lektora po každém kurzu.</li>
+					<li>Kurzy vedené doma v českém jazyce nebo v zahraničí v anglickém jazyce.</li>
+					<li>Za {php echo 2022 - 2008; } let přes 150 realizovaných kurzů.</li>
+					<li>Realizace kurzů podle osnov nebo příprava na míru dle potřeb klientů.</li>
 				</ul>
 				<p>
-					Se polečností ICTPro s.r.o. šlo o dlouhodobou formu spolupráce i na vývojových věcech.
+					Se polečností ICTPro s.r.o. jsme také dlouhodobě spolupracovali na vývoji informačního systému.
 				</p>
 			</dd>
 			
@@ -152,7 +148,8 @@
 					<b>Vývoj webového portálu pro Výzkumný ústav veterinárního lékařství,</b>
 				</p>
 				<p>
-					pro oddělení farmakoligie, imunoterapie a nanotoxikologie (FIT), na publikačním systému Pimcore CMS.
+					pro oddělení farmakoligie, imunoterapie a nanotoxikologie (FIT).<br />
+					Portál jsem vyvíjel na publikačním systému Pimcore CMS.
 				</p>
 			</dd>
 			
@@ -167,12 +164,11 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Vývoj mezinárodního portálu pro plastické chirurgy a jejich zákazníky.</b>
+					<b>Vývoj mezinárodního portálu pro plastické chirurgy a jejich klienty.</b>
 				</p>
 				<p>
-					Práce pro Estheticon pro mne byla výzvou, firma se stará na svém portále Estheticon.com,<br />
-					který je jejím hlavním produktem, o velmi širokou škálu zákazníků. <br />
-					Šlo o extrémně rosáhlý codebase a náročnou práci.
+					Práce pro Estheticon pro mne byla výzvou. Firma se stará na svém portále Estheticon.com <br />
+					o velmi širokou škálu klientů a jeho vývoj je hlavní činností společnosti. Portál je ve 14 jazycích.
 				</p>
 			</dd>
 			
@@ -189,10 +185,11 @@
 				<p>
 					<b>Front-end programátor a grafik.</b>
 				</p>
-				<p>
-					Zde jsem se setkal se skvělým vedením firmy, pracoval jsem ve velmi dobrém vývojářském teamu, <br />
-					a potkal jsem skvělý kolektiv lidí. Mnoho jsem se naučil.
-				</p>
+				<ul>
+					<li>Programování JavaScriptových komponent a kódování HTML/CSS pro webové aplikace společnosti.</li>
+					<li>Návrh webdesignu/redesignu webů a kódování HTML šablon.</li>
+					<li>Příprava webové reklamy a tiskových materiálů.</li>
+				</ul>
 				<p>
 					Společnost Tripomatic se nyní zabývá mapovými aplikacemi, plánováním cest a výletů. <br />
 					V minulosti jsme se zabývali vývojem přestupního vyhledávače letenek.
@@ -212,6 +209,12 @@
 				<p>
 					<b>Front-end programátor a grafik.</b>
 				</p>
+				<ul>
+					<li>Programování JavaScriptových komponent a kódování HTML/CSS pro weby společnosti.</li>
+					<li>Návrh webdesignu/redesignu webů a kódování HTML šablon.</li>
+					<li>Příprava webové reklamy a tiskových materiálů.</li>
+					<li>Realizace reklamích videospotů, postprodukce.</li>
+				</ul>
 				<p>
 					Skvělá příležitost na začátku mé profese, kde jsem mohl díky tomuto zaměstnání <br />
 					získat mnoho zkušeností z mnoha různých odvětví - marketingu, grafiky a IT.
