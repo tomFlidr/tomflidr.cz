@@ -3,7 +3,7 @@
 	<doc:title>Open Source Projects</doc:title>
 	<doc:sequence>1</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\Projects</doc:controller>
+	<doc:controller>Fronts\Indexes\Projects</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
@@ -18,45 +18,160 @@
 	<doc:perex></doc:perex>
 	<doc:body>
 		<h1>{$title}</h1>
-
-		<h3 class="indent">Open Source Projects <small>(<a href="https://github.com/tomflidr/" target="_blank">Github</a>)</small></h3>
-		<table class="os-projects"><tbody>
-			<tr>
-				<th>.NET</th>
-				<td>
-					<a href="https://github.com/debug-sharp" target="_blank">Desharp</a>, 
-					<a href="https://github.com/Databasic-NET/Databasic" target="_blank">Databasic.NET</a>,
-					<a href="https://github.com/parallel-pooler" target="_blank">Pooler</a>
-				</td>
-			</tr>
-			<tr>
-				<th>JS/TS</th>
-				<td>
-					<a href="https://github.com/ExtTS/generator" target="_blank">Ext.TS</a>, 
-					<a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web&nbsp;Dev&nbsp;Server&nbsp;for&nbsp;Node.JS</a>, 
-					<a href="https://github.com/tomFlidr/Notepad-HTML-JS-Formater-Plugin" target="_blank">Notepad++&nbsp;JS/HTML&nbsp;Formatter&nbsp;Plugin</a>,
-					<a href="https://github.com/tomFlidr/ajax.js" target="_blank">Ajax.JS</a>,
-					<a href="https://github.com/tomFlidr/jDiet.js" target="_blank">jDiet.JS</a>,
-					<a href="https://github.com/tomFlidr/gradient-overlay.js" target="_blank">GradientOverlay.JS</a>,
-					<a href="https://github.com/tomFlidr/class-advanced.js" target="_blank">ClassAdvanced.JS</a>
-				</td>
-			</tr>
-			<tr>
-				<th>PHP</th>
-				<td>
-					<a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a>, 
-					<a href="https://github.com/tomFlidr/sreality-configurable-rss" target="_blank">SReality RSS</a>
-				</td>
-			</tr>
-			<tr>
-				<th>SQL</th>
-				<td>
-					<a href="https://bitbucket.org/tomflidr/imdb-training-database/src" target="_blank">IMDB Training Database</a>
-				</td>
-			</tr>
-			
-			
-		</tbody></table>
 		
+		<p>The motivation to write open-source software comes from 3 main reasons:</p>
+		<ul>
+			<li>I am dissatisfied with the available solutions in some way and want to do it differently,</li>
+			<li>I am lazy and want to make my work more comfortable and easier,</li>
+			<li>While preparing an IT course, I come across an interesting idea, or a participant suggests one.</li>
+		</ul>
+		<p>
+			I use some of my code daily, others less often, depending on what I am currently working on. <br />
+			Apart from archived projects, I try to improve them gradually.
+		</p>
+
+		<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
+		<p>
+			A PHP framework for building web applications that powers my systems or serves educational purposes in OOP. So far, my largest project.
+		</p>
+		<ul>
+			<li>
+				<b>Focus on performance</b>
+				<ul>
+					<li>As few magical functions as possible.</li>
+					<li>The fastest learning curve possible.</li>
+				</ul>
+			</li>
+			<li>
+				<b>Focus on structure</b>
+				<ul>
+					<li>The core framework can be used for simple applications.</li>
+					<li>For complex projects, a wide range of extensions is available that work together - routers, datagrids, etc.</li>
+					<li>You will never have cluttered folders with controllers, templates, widgets, etc. again; all MVC components can be structured as needed.</li>
+					<li>Extremely large applications can be structured independently into Composer packages and used together as modules of one main application.</li>
+				</ul>
+			</li>
+			<li>
+				<b>Focus on freedom</b>
+				<ul>
+					<li>The framework does not enforce any universal solution or style; the developer has maximum creative freedom.</li>
+					<li>The framework emphasizes long backward compatibility.</li>
+				</ul>
+			</li>
+			<li>
+				The framework can create applications or pack extensive libraries into a single PHP file (without PHAR packaging), <br />
+				making them even faster thanks to simplified opcache.
+			</li>
+			<li>The framework includes a <a href="https://github.com/mvccore/docs" target="_blank">documentation repository</a> and many <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">example repositories</a>.</li>
+		</ul>
+
+		<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>
+		<p>
+			A .NET utility for dumping or logging variables, objects, exceptions with call tracing, and many other features.
+		</p>
+		<ul>
+			<li>The output can be displayed in the development output window or CLI.</li>
+			<li>The output can also be shown as a floating window in the HTML response of an ASP.NET application (similar to <span class="info-link" data-href="https://github.com/nette/tracy" data-target="_blank">PHP tracy</span>).</li>
+			<li>The output can be logged by priority to HDD as clickable HTML output or plain text.</li>
+			<li>Configuration - logging settings by levels, email notifications, debug IP addresses, custom debug panels, etc.</li>
+			<li>The project includes <a href="https://github.com/orgs/debug-sharp/repositories?q=example-" target="_blank">example repositories</a>, Visual Studio code snippets, and more.</li>
+			<li>Only usable in .NET Framework (reimplementation for .NET Core still pending).</li>
+		</ul>
+
+		<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
+		<p>
+			A project for web application development with the Ext.JS framework in TypeScript. Generating a map of TS types from JSDocs and usage examples.
+		</p>
+		<ul>
+			<li>The project includes a <a href="https://github.com/ExtTS/generator" target="_blank">type definition generator for Ext.JS</a> written in C#, extracting an AST tree of types from the Ext.JS toolkit ZIP file.</li>
+			<li>Pre-generated type definitions for individual Ext.JS versions are available as separate repositories.</li>
+			<li>The generated type definitions include full JSDocs documentation for the framework, with working links, formatted code, etc.</li>
+			<li>Pre-generated or custom-generated, more concise type definitions can be used.</li>
+			<li>TypeScript definitions for Ext.JS sometimes provide better guidance than Sencha's paid development environment.</li>
+			<li>The project includes <a href="https://github.com/orgs/ExtTS/repositories?q=example-" target="_blank">example repositories</a> for various framework versions.</li>
+		</ul>
+
+		<h3><a href="https://github.com/Databasic-NET/Databasic" target="_blank">Databasic.NET</a></h3>
+		<p>
+			A .NET database layer to simplify working with relational databases in SQL. It does not aim to be an ORM like EntityFramework and does not use LINQ.
+		</p>
+		<ul>
+			<li>Implementations for Microsoft SQL Server/MySQL/MariaDB/PostgreSQL/Oracle/ODBC/OLEDB using a chosen extension.</li>
+			<li>Serialization of database data into scalar types, typed classes, ActiveRecord classes, collections, or others using annotations.</li>
+			<li>Change detection in ActiveRecord classes, insertion, updating, and deletion based on changes and annotations.</li>
+			<li>Option to choose between multiple connections using annotation or directly as another query parameter.</li>
+			<li>Only usable in .NET Framework (reimplementation for .NET Core still pending).</li>
+		</ul>
+
+		<h4><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server for Node.JS</a></h4>
+		<p>
+			A simple HTTP server for developing smaller applications or for training purposes.
+		</p>
+		<ul>
+			<li><b>Simple development</b> – TypeScript definitions, hot reload of the application upon changes (no need to restart the server and debugger).</li>
+			<li><b>Few dependencies</b> – only <code>tslib</code> and <code>mime-db</code>. If necessary, <code>express</code> and others can be used.</li>
+			<li><b>Main features</b> – default script of the application/folders, file transfers, session handling, error resolution, logging, error pages, etc.</li>
+			<li>The project includes <a href="https://github.com/orgs/web-dev-server/repositories?q=example-" target="_blank">example repositories</a>.</li>
+		</ul>
+
+		<h3><a href="https://github.com/tomFlidr/Notepad-HTML-JS-Formater-Plugin" target="_blank">Notepad++ JS/HTML Formatter Plugin</a></h3>
+		<p>
+			A plugin for "jN Plugin," this is a reimplementation of a code deobfuscator from the domain <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
+		</p>
+
+		<h3><a href="https://github.com/tomFlidr/ajax.js" target="_blank">Ajax.JS</a></h3>
+		<p>
+			A utility offering the same functions and additional features that built-in objects <code>window.XMLHttpRequest</code> and <code>window.fetch()</code> still lack to this day.
+		</p>
+
+		<h4><a href="https://github.com/parallel-pooler" target="_blank">Pooler</a></h4>
+		<p>
+			A library for parallel tasks in the .NET framework to reduce excessive system load caused by background tasks.
+		</p>
+
+		<h4><a href="https://github.com/tomFlidr/sreality-configurable-rss" target="_blank">SReality RSS</a></h4>
+		<p>
+			A configurable RSS feed for the largest Czech real estate portal, utilizing its API, including images and Google Maps. Very useful if you are quickly looking for a new apartment.
+		</p>
+
+		<h4><a href="https://bitbucket.org/tomflidr/imdb-training-database/src" target="_blank">IMDB Training Database</a></h4>
+		<p>
+			A portion of the IMDB (International Movie Database) for the purpose of training database optimization and queries.
+		</p>
+
+		{hr()}
+
+		<h3>Archived Projects</h3>
+
+		<h5><a href="https://github.com/tomFlidr/jDiet.js" target="_blank">jDiet.JS</a></h5>
+		<p>
+			A small JS framework from the jQuery era for JS nerds, created out of disillusionment with bloated jQuery. <br />
+			Its syntax is fully compatible with jQuery, but the framework contains only functions that were actually used, all in just 8 kB (GZIP).
+		</p>
+
+		<h5><a href="https://github.com/tomFlidr/class-advanced.js" target="_blank">ClassAdvanced.JS</a></h5>
+		<p>
+			A universal library for writing classes during the widespread era of ECMAScript 5, when there were no constructs for class writing.
+		</p>
+		<ul>
+			<li>
+				Supported constructs - constructor, extensions for static and dynamic members, parent function calls, namespaces.
+			</li>
+			<li>Similar behavior to Late Static Binding in PHP for <code>this.self</code> and <code>this.static</code>.</li>
+			<li>
+				Supported environments - browsers (MSIE6+, Firefox, Webkit, Opera), Node.JS, WSH (Windows Script Host), Adobe ExtendScript Toolkit.
+			</li>
+			<li>Inheritance checks using the <code>instanceof</code> construct and minimal self-reflection for classes and namespaces.</li>
+			<li>Syntax configuration for class writing.</li>
+			<li>Support for "Go To Definition (F12)" in Visual Studio IDE and other editors with a full-featured JS interpreter.</li>
+			<li>Very fast, efficient, super small - 2.8 kB (GZIP).</li>
+			<li>Inspired by PHP OOP, Ext.JS, and Prototype.JS syntax.</li>
+		</ul>
+
+		<h5><a href="https://github.com/tomFlidr/gradient-overlay.js" target="_blank">GradientOverlay.JS</a></h5>
+		<p>
+			A library for creating color overlays on images in the browser from a time when the CSS property <code class="info-link" data-href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" data-target="_blank">filter</code> was not widely adopted.
+		</p>
+
 	</doc:body>
 </doc:data>

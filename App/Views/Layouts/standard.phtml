@@ -13,7 +13,7 @@
 		<?=$this->Js('headAll')->Render()?>
 		<?=$this->Js('headPage')->Render()?>
 	</head>
-	<body>
+	<body class="<?=$this->theme->currentDcShort?> <?=$this->theme->currentDcFull?> <?=$this->mediaSiteVersion?>">
 		<input type="hidden" id="core-config" value="<?=$this->EscapeAttrJs($this->coreConfig)?>" />
 		<?=$this->RenderLayout('./body/old-browser-warning')?>
 		<?=$this->RenderLayout('./body/layout.' . $this->mediaSiteVersion)?>

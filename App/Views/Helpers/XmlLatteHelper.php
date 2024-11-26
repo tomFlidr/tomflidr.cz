@@ -15,11 +15,11 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 		$modelVars = $model->GetData();
 		$vars = array_merge($viewVars, $modelVars, $variables);
 		
-		if (!isset($vars['path']) || !isset($vars[$codeProp])) 
-			throw new \Exception("Entity model has not defined `path` or `{$codeProp}` in data output.");
+		if ((!isset($vars['originalPath']) && !isset($vars['path'])) || !isset($vars[$codeProp])) 
+			throw new \Exception("Entity model has not defined `originalPath` or `path` or `{$codeProp}` in XML data.");
 
 		$modTime = $vars['modTime'] ?? 0;
-		$path = $vars['path'];
+		$path = $vars['originalPath'] ?? $vars['path'];
 		$code = $vars[$codeProp];
 		unset($vars[$codeProp]);
 
@@ -37,6 +37,9 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 
 		$latte = new \Latte\Engine;
 		$latte->setTempDirectory($tmpFullPath);
+		
+		$latte->addFunction('hr', fn () => new \Latte\Runtime\Html($this->view->Hr()));
+		$latte->addExtension(new \Latte\Essential\RawPhpExtension);
 
 		return $latte->renderToString($tplFullPath, $vars);
 	}

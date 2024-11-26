@@ -3,7 +3,7 @@
 	<doc:title>References</doc:title>
 	<doc:sequence>3</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\References</doc:controller>
+	<doc:controller>Fronts\Indexes\References</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>

@@ -1,13 +1,9 @@
-.document *:first-child{margin-top:0;}
+.document > *:first-child{
+	margin-top:0;
+}
 
 .document pre{
 	overflow-x:auto;
-}
-
-.document dl{
-	display:grid;
-	grid-template-columns:max-content max-content;
-	gap:5px 5px;
 }
 .document dl dd{
 	font-style:normal;
@@ -23,7 +19,20 @@
 }
 .document ul li{
 	line-height:1.5em;
+	list-style-type:disc;
+	margin-left:1em;
+}
+.document ul li ul{
+	margin:0;
 }
 .document small{
 	font-size:75%;
+}
+
+.document code{
+	padding:0 2px;
+}
+.document pre > code{
+	display:block;
+	margin:0.5em 0;
 }

@@ -3,7 +3,7 @@
 	<doc:title>Reference</doc:title>
 	<doc:sequence>3</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\References</doc:controller>
+	<doc:controller>Fronts\Indexes\References</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
@@ -19,5 +19,192 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
+		<p>Společnosti a partneři, kde se ohlížím a kde děkuji za dobrou spolupráci:</p>
+
+		<dl class="references">
+			<dt>
+				<a
+					href="https://smart-con.cz/"
+					title="Smart-Con s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->smartcon->styleAttr|noescape}
+				>{$logotypes->smartcon->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Vývoj více interních informačních systémů.</b>
+				</p>
+				<ul>
+					<li>
+						<b>R-WEBDOG</b> - klientský systém pro správu, vzdálený přístup a řízení reklam v mobilních routerech nasazených v autobusech a vlacích.
+					</li>
+					<li>
+						<b>Teleagenda</b> - interní účtovací systém pro správu a fakturaci smluv a SIM.
+					</li>
+					<li>
+						<b>XEROX</b> - dohled a vývoj klientského prodejního portálu speciálních nabídek pro český XEROX.
+					</li>
+					<li>
+						Dlouhodobá forma spolupráce i na menších věcech.
+					</li>
+				</ul>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.dendera.cz/"
+					title="Dendera a.s." 
+					target="_blank" 
+					class="image no-redraw"
+					{$logotypes->dendera->styleAttr|noescape}
+				>{$logotypes->dendera->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Vývoj další generace výrobního informačního systému Hercules 5.0</b></p>
+				<ul>
+					<li>Architektura modulárního systému pro prodej dalším klientům.</li>
+					<li>Vývoj software, zpracovávání a migrace starých dat, řešení technických výzev.</li>
+					<li>Vedení projektu a práce vývojového teamu.</li>
+					<li>Správa aplikačních serverů a databáze.</li>
+					<li>Prozatím nejkomplexnější projekt, ke kterému jsem se mohl dostat.</li>
+				</ul>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.ictpro.cz/" 
+					title="ICTPro s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->ictpro->styleAttr|noescape}
+				>{$logotypes->ictpro->code|noescape}</a>
+				<a
+					href="https://www.learnquest.com/" 
+					title="LearnQuest, Inc."
+					target="_blank"
+					class="image"
+					{$logotypes->learnquest->styleAttr|noescape}
+				>{$logotypes->learnquest->code|noescape}</a>
+				<a
+					href="https://www.pcdir.cz/" 
+					title="PC-DIR Real, s. r. o."
+					target="_blank"
+					class="image"
+					{$logotypes->pcdir->styleAttr|noescape}
+				>{$logotypes->pcdir->code|noescape}</a>
+				<a
+					href="https://www.nicom.cz/" 
+					title="NICOM, a.s."
+					target="_blank"
+					class="image"
+					{$logotypes->nicom->styleAttr|noescape}
+				>{$logotypes->nicom->code|noescape}</a>
+				<a
+					href="https://www.profima.cz/" 
+					title="PROFIMA EFFECTIVE, s.r.o."
+					target="_blank" 
+					class="image"
+					{$logotypes->profima->styleAttr|noescape}
+				>{$logotypes->profima->code|noescape}</a>
+		
+			</dt>
+			<dd>
+				<p>
+					<b>Lektroská i vývojová činnost ve většině pro agenturu ICT Pro s.r.o. a pro její klienty.</b>
+				</p>
+				<ul>
+					<li>
+						Realizace TOP kurzů agentur pro nejnáročnější klienty a firmy s profesionálními vývojářskými teamy: <br />
+						IBM, Microsoft, Česká spořitelna, Komerční banka, Seznam.cz, Avast, Esset, Bosh, 
+						Foxconn, Quadient a mnoho dalších.
+					</li>
+					<li>Kurzy vedené doma v českém nebo v zahraničí v anglickém jazyce.</li>
+					<li>Za {php echo intval(date('Y')) - 2008; } let přes 150 realizovaných kurzů.</li>
+					<li>Realizace dle osnov nebo příprava vlastních kurzů na míru pro náročné klienty.</li>
+					<li>Příprava vlastních příkladů, kde bylo třeba ukázat jednotlivá use-cases dané problematiky.</li>
+					<li>Realizace i kurzů grafiky pro začátečníky.</li>
+					<li>Hodnocení lektora po každém kurzu.</li>
+				</ul>
+				<p>
+					Se polečností ICTPro s.r.o. šlo o dlouhodobou formu spolupráce i na menších věcech.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.vri.cz/"
+					title="Výzkumný ústav veterinárního lékařství, v. v. i."
+					target="_blank"
+					class="image"
+					{$logotypes->vuvel->styleAttr|noescape}
+				>{$logotypes->vuvel->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Vývoj webového portálu</b> pro farmakoligii, imunoterapii a nanotoxikologii (FIT) na Pimcore CMS.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.estheticon.cz/"
+					title="Estheticon, s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->estheticon->styleAttr|noescape}
+				>{$logotypes->estheticon->code|noescape}</a>
+			</dt>
+			<dd>
+				Vývoj mezinárodního portálu pro plastické chirurgy a jejich zákazníky.<br />
+				Práce pro Estheticon pro mne byla výzvou, firma se stará o velmi širokou škálu zákazníků, <br />
+				šlo o extrémně rosáhlý codebase a náročnou práci. <br />
+			</dd>
+			
+			<dt>
+				<a
+					href="https://tripomatic.com/"
+					title="Tripomatic s.r.o. (dříve Twobits s.r.o.)"
+					target="_blank"
+					class="image"
+					{$logotypes->tripomatic->styleAttr|noescape}
+				>{$logotypes->tripomatic->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Front-end programátor a grafik.</b>
+				</p>
+				<p>
+					Zde musím ocenit skvělé vedení firmy, nejlepší vývojářský team, ve kterém jsem pracoval <br />
+					a skvělý kolektiv lidí. Mnoho jsem se naučil.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.studentagency.cz/"
+					title="STUDENT AGENCY a.s."
+					target="_blank"
+					class="image"
+					{$logotypes->sa->styleAttr|noescape}
+				>{$logotypes->sa->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Front-end programátor a grafik.</b>
+				</p>
+				<p>
+					Zde nejraději vzpomínám na skvělou příležitost na začátku své profese,<br />
+					kde jsem mohl díky tomuto zaměstnání získat mnoho zkušeností z mnoha různých odvětví.<br />
+					Rád se vždy vidím i se všemi starými přáteli, které občas potkám a na které lenze zapomenout:-)
+				</p>
+			</dd>
+			
+		</dl>
+		
+		<p>Děkuji za spolupráci i mnoha dalším společnostem a jednotlivcům, kteří se zde nevešli.</p>
+		<br />
+		
 	</doc:body>
 </doc:data>

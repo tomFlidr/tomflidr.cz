@@ -3,7 +3,7 @@
 	<doc:title>Open source projekty</doc:title>
 	<doc:sequence>1</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\Projects</doc:controller>
+	<doc:controller>Fronts\Indexes\Projects</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
@@ -19,5 +19,158 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
+		<p>Motivace psát open source software u mě vychází z 3 hlavních důvodů:</p>
+		<ul>
+			<li>jsem v něčem nespokojený s dostupnými řešeními a chci to jinak,</li>
+			<li>jsem líný a chci si svoji práci udělat pohodlnější a usnadnit si ji,</li>
+			<li>při přípravě IT kurzu narazím na zajímavý nápad nebo s ním přijde některý s účastníků.</li>
+		</ul>
+		<p>
+			Některý svůj kód využívám každý den, některý méně, záleží co zrovna vytvářím. <br />
+			Kromě archivovaných projektů se je snažím postupně zdokonalovat.
+		</p>
+
+		<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
+		<p>
+			PHP framework pro vytváření webových aplikací, který pohání mé systémy nebo slouží k vyukovým účelům OOP. Prozatím největší projekt.
+		</p>
+		<ul>
+			<li>
+				<b>Důraz na výkon</b>
+				<ul>
+					<li>Co nejméně magických funkcí.</li>
+					<li>Co nejrychlejší křivka učení.</li>
+				</ul>
+			</li>
+			<li>
+				<b>Důraz na strukturu</b>
+				<ul>
+					<li>K jednoduchým aplikací lze použít pouze jádro frameworku.</li>
+					<li>Pro komplexní projekty lze použít širokou škálu extenzí, které spolu navzájem spolupracují - routery, datagridy, atd.</li>
+					<li>Už nikdy nebudete mít přeplněné složky s controllery, šablonami, widgety apod., všechny MVC komponenty lze strukturovat dle potřeby.</li>
+					<li>Extrémně velké aplikace lze samostatně strukturovat do Composer balíčků a používat je dohromady jako moduly jedné hlavní aplikace.</li>
+				</ul>
+			</li>
+			<li>
+				<b>Důraz na svobodu</b>
+				<ul>
+					<li>Framework se nesnaží nutit žádné univerzální řešení a styl, vývojář má maximální možnost kreativity.</li>
+					<li>Framework klade důraz na dlouhou zpětnou kompatibilitu.</li>
+				</ul>
+			</li>
+			<li>
+				Framework umí vytvářet aplikace nebo sbalit rozsáhlé knihovny do jednoho souboru PHP (bez sbalení PHAR), <br  />
+				které jsou díky takto zjednodušené opcache ještě rychlejší.</li>
+			<li>Součástí frameworku je <a href="https://github.com/mvccore/docs" target="_blank">repozitář dokumentace</a> a mnoho <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">repozitářů s příklady</a>.</li>
+		</ul>
+
+		<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>
+		<p>
+			.NET utilita pro dumpování nebo logování proměnných, objektů, vyjímek, s trasováním volání a s mnoha dalšími funkcemi.
+		</p>
+		<ul>
+			<li>Výstup lze zobrazit ve vývojovém okně výstupu nebo v CLI</li>
+			<li>Výstup lze zobrazit také jako plovoucí okno v HTML odpovědi ASP.NET aplikace (podobně jakou u <span class="info-link" data-href="https://github.com/nette/tracy" data-target="_blank">PHP tracy</span>).</li>
+			<li>Výstup lze logovat podle priorit na HDD jako klikatelný HTML výstup nebo prostý text.</li>
+			<li>Konfigurace - nastavení logování podle úrovní, zasílání upozornění emailem, debug IP adresy, vlastní debug panely apod.</li>
+			<li>Součástí projektu jsou <a href="https://github.com/orgs/debug-sharp/repositories?q=example-" target="_blank">repozitáře s příklady</a>, code snippety pro Visual Studio a další.</li>
+			<li>Použití pouze v .NET Framework (prostředí .NET Core stále čeká na reimplementaci).</li>
+		</ul>
+		
+		<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
+		<p>
+			Projekt vývoje webových aplikací s frameworkem Ext.JS v TypeScriptu. Generování mapy TS typů z JSDocs a příklady použití.
+		</p>
+		<ul>
+			<li>Projekt obsahuje <a href="https://github.com/ExtTS/generator" target="_blank">generátor typových definic Ext.JS</a> napsaný v jazyce C#, který z Ext.JS toolkit ZIP souboru extrahuje AST strom typů.</li>
+			<li>Předgenerované typové definice pro jednotlivé verze Ext.JS jsou jako samostatné repozitáře projektu.</li>
+			<li>Vygenerované typové definice obsahují plnou JSDocs nápovědu frameworku včetně fungujících odkazů, formátovaného kódu apod.</li>
+			<li>Lze použít vygenerované typové definice nebo si pomocí generátoru vytvořit vlastní, stručnější.</li>
+			<li>TypeScript definice ¨pro Ext.JS poskytují v některých místech i lepší nápovědu, než placené vývojové prostředí od Sencha.</li>
+			<li>Součástí projektu jsou <a href="https://github.com/orgs/ExtTS/repositories?q=example-" target="_blank">repozitáře s příklady</a> pro jednotlivé verze frameworku.</li>
+		</ul>
+
+		<h3><a href="https://github.com/Databasic-NET/Databasic" target="_blank">Databasic.NET</a></h3>
+		<p>
+			.NET databázová vrstva pro usnadnění práce s relační databází v SQL. Nedává si za cíl být ORM jako EntityFramework, nepoužívá LINQ.
+		</p>
+		<ul>
+			<li>Implementace pro Microsoft SQL Server/MySQL/MariaDB/PostgreSQL/Oracle/ODBC/OLEDB, pomocí zvolené extenze.</li>
+			<li>Serializace databázových dat do skalárních typů, typovaných tříd, tříd ActiveRecord, kolekcí nebo dalších pomocí anotací.</li>
+			<li>Detekce změněn v třídách ActiveRecord, vkládání, aktualizace a mazání podle změn a anotací.</li>
+			<li>Možnost výběru z více připojení podle anotace nebo přímo jako další parametr dotazu.</li>
+			<li>Použití pouze v .NET Framework (prostředí .NET Core stále čeká na reimplementaci).</li>
+		</ul>
+
+		<h4><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server for Node.JS</a></h4>
+		<p>
+			Jednoduchý HTTP server pro vývoj menších aplikací nebo pro účely školení.
+		</p>
+		<ul>
+			<li><b>Jednoduchý vývoj</b> - TypeScript definice, hot reload aplikace při změně (není třeba restartovat server a debugger).</li>
+			<li><b>Málo závislostí</b> - pouze balíčky <code>tslib</code> a <code>mime-db</code>, to je vše. Pokud je třeba, lze použít <code>express</code> apod.</li>
+			<li><b>Hlavní funkce</b> - výchozí script aplikace/složky, odesílání souborů, session, řešení chyb aplikací, logování, chybové stránky apod.</li>
+			<li>Součástí projektu jsou <a href="https://github.com/orgs/web-dev-server/repositories?q=example-" target="_blank">repozitáře s příklady</a>.</li>
+		</ul>
+		
+		<h3><a href="https://github.com/tomFlidr/Notepad-HTML-JS-Formater-Plugin" target="_blank">Notepad++ JS/HTML Formatter Plugin</a></h3>
+		<p>
+			Zásuvný modul pro "jN Plugin", jde o reimplementaci deobfuskátoru kódu z domény <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
+		</p>
+		
+		<h3><a href="https://github.com/tomFlidr/ajax.js" target="_blank">Ajax.JS</a></h3>
+		<p>
+			Utilitka nabízející stejné funkce a funkce navíc, které dodnes vestavěné objekty <code>window.XMLHttpRequest</code> a <code>window.fetch()</code> stále nemají.
+		</p>
+		
+		<h4><a href="https://github.com/parallel-pooler" target="_blank">Pooler</a></h4>
+		<p>
+			Knihovna pro paralelní úlohy v .NET frameworku, pro omezení příliš vysokého loadu systému úlohami na pozadí.
+		</p>
+		
+		<h4><a href="https://github.com/tomFlidr/sreality-configurable-rss" target="_blank">SReality RSS</a></h4>
+		<p>
+			Konfigurovatelný RSS kanál největšího českého realitního portálu využívající jeho API, včetně úbrázků a google map. Velmi potřebné, pokud rychle sháníte nový byt.
+		</p>
+
+		<h4><a href="https://bitbucket.org/tomflidr/imdb-training-database/src" target="_blank">IMDB Training Database</a></h4>
+		<p>
+			Část databáze IMDB (International Movie Database) pro účely školení optimalizí databází a dotazů.
+		</p>
+
+		{hr()}
+
+		<h3>Archivované projekty</h3>
+		
+		<h5><a href="https://github.com/tomFlidr/jDiet.js" target="_blank">jDiet.JS</a></h5>
+		<p>
+			Malý JS framework z dob jQuery pro JS nerdy, který vznikl na základě deziluze z obtloustlého jQuery. <br />
+			Syntaxe je plně kompatibilní s jQuery, avšak framework obsahuje pouze funkce, které byly reálně využívané, vše pouze jako 8 kB (GZIP).
+		</p>
+		
+		<h5><a href="https://github.com/tomFlidr/class-advanced.js" target="_blank">ClassAdvanced.JS</a></h5>
+		<p>
+			Univerzální knihovna pro zápis tříd z dob široce rozšířeného EcmaScriptu 5, kde nebyly konstrukce pro zápis tříd.
+		</p>
+		<ul>
+			<li>
+				Podporované konstrukce - konstruktor, rozšířování pro statické a dynamické členy, volání rodičovských funkcí, namespaces.
+			</li>
+			<li>Obdobné chování jako Late static binding v PHP pro <code>this.self</code> a <code>this.static</code>.</li>
+			<li>
+				Podporované prostředí - prohlížeče (MSIE6+, Firefox, Webkit, Opera), Node.JS, WSH (Windows Script Host), Adobe ExtendScript Toolkit.
+			</li>
+			<li>Kontrola dědičnosti pomocí <code>instanceof</code> konstrukce a minimalistická sebereflexe pro třídy a namespaces.</li>
+			<li>Konfigurace sytaxe pro zápis tříd.</li>
+			<li>Podpora pro "Go To Definition (F12)" ve Visual Studio IDE i jiných editorech s plnohodnotným JS interpretem.</li>
+			<li>Velmi rychlé, efektivní, supermalé - 2.8 kB (GZIP).</li>
+			<li>Inspirace z PHP OOP, Ext.JS a Prototype.JS syntaxe.</li>
+		</ul>
+
+		<h5><a href="https://github.com/tomFlidr/gradient-overlay.js" target="_blank">GradientOverlay.JS</a></h5>
+		<p>
+			Knihovna pro vytváření barevných přechodů nad obrázky v prohlížeči z dob, kdy nebyla široce rozšířena vlastnost CSS <code class="info-link" data-href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" data-target="_blank">filter</code>.
+		</p>
+		
 	</doc:body>
 </doc:data>

@@ -62,11 +62,20 @@ class Front extends Base {
 		self::Redirect($redirectUrl, \MvcCore\Response::SEE_OTHER);
 	}
 
-	protected function setUpTitleAndBreadCrumbs (): string {
-		$translatedTitle = $this->document->GetTitle();
+	protected function setUpTitleAndBreadCrumbsText (?string $viewTitle = NULL, ?string $bcNavText = NULL): string {
+		if ($viewTitle !== NULL) {
+			$translatedTitle = $this->translate($viewTitle);
+		} else {
+			$translatedTitle = $this->document->GetTitle();	
+		}
+		if ($bcNavText !== NULL) {
+			$translatedBcNavText = $this->translate($bcNavText);
+		} else {
+			$translatedBcNavText = $translatedTitle;	
+		}
 		$this->view->title = $translatedTitle;
 		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
-			text: $translatedTitle,
+			text: $translatedBcNavText,
 		));
 		return $translatedTitle;
 	}

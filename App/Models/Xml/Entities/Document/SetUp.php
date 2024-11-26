@@ -22,6 +22,7 @@ trait SetUp {
 			$this->robots = static::META_ROBOTS_DEFAULT;
 
 		// original xml path
+		$this->path = ltrim($this->path, '~/');
 		$originalPath = '/' . trim($this->path, '/');
 		$this->originalPath = $originalPath;
 

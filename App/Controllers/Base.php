@@ -171,9 +171,13 @@ class Base extends \MvcCore\Controller {
 		$this->view->isDevelopment = $this->environment->IsDevelopment();
 		$this->view->isProduction = $this->environment->IsProduction();
 		$this->view->document = $this->document;
+		$themeCurrent = $this->assets->GetThemeCurrent();
+		$themeCurrentParts = explode('/', $themeCurrent);
 		$this->view->theme = (object) [
-			'current'	=> $this->assets->GetThemeCurrent(),
-			'next'		=> $this->assets->GetThemeNext(),
+			'current'			=> $themeCurrent,
+			'currentDcShort'	=> $themeCurrentParts[0],
+			'currentDcFull'		=> implode('-', $themeCurrentParts),
+			'next'				=> $this->assets->GetThemeNext(),
 		];
 		$this->view->google = $sysCfgApp->google;
 		$this->view->footer = $sysCfgApp->footer;

@@ -3,8 +3,8 @@
 	<doc:title>Kontakty</doc:title>
 	<doc:sequence>6</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller></doc:controller>
-	<doc:action>Contacts</doc:action>
+	<doc:controller>Fronts\Indexes\Contacts</doc:controller>
+	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
 	<doc:robots></doc:robots>
@@ -20,7 +20,7 @@
 		<h1>{$title}</h1>
 
 		<div class="cols">
-			<div class="col-left">
+			<div class="col">
 				<h4>Nejlépe mne zastihnete na telefonu, případně zavolám zpět.</h4>
 				<br />
 				<dl class="personal">
@@ -54,7 +54,7 @@ Více informací naleznete po klinutí na tento text.
 					{/foreach}
 				</ul>
 			</div>
-			<div class="col-right">
+			<div class="col">
 				<h4>Fakturační údaje</h4>
 				<p>
 					IČ: <b><a href="{$contacts->invoicing->id->link}" target="_blank">{$contacts->invoicing->id->text}</a></b><br />

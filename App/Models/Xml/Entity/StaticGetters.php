@@ -46,20 +46,20 @@ trait StaticGetters {
 	 * defined data path without subdirectories.
 	 * @return  array<Entity>
 	 */
-	public static function GetByDirPath (string $relPath, bool $includingParentLevelDoc = FALSE, array $sort = []): array {
+	public static function GetByDirPath (string $path, bool $includingParentLevelDoc = FALSE, array $sort = []): array {
 		$cacheKey = implode('_', [
 			'xmlEntity_byDirPath', 
 			md5(serialize([
-				$relPath,
+				$path,
 				$includingParentLevelDoc,
 				$sort
 			]))
 		]);
 		return self::GetCache()->Load(
 			$cacheKey, 
-			function (\Mvccore\Ext\ICache $cache, string $cacheKey) use ($relPath, $includingParentLevelDoc, $sort) {
+			function (\Mvccore\Ext\ICache $cache, string $cacheKey) use ($path, $includingParentLevelDoc, $sort) {
 				/** @var Entity $this */
-				$entities = static::loadByDirPath($relPath, $includingParentLevelDoc, $sort);
+				$entities = static::loadByDirPath($path, $includingParentLevelDoc, $sort);
 				$cache->Save($cacheKey, $entities, NULL, static::CACHE_TAGS);
 				return $entities;
 			}
@@ -71,18 +71,22 @@ trait StaticGetters {
 	 * defined data path without subdirectories.
 	 * @return  array<Entity>
 	 */
-	public static function loadByDirPath (string $relPath, bool $includingParentLevelDoc = FALSE, array $sort = []): array {
+	public static function loadByDirPath (string $path, bool $includingParentLevelDoc = FALSE, array $sort = []): array {
 		$result = [];
 		$dataDirFullPath = self::GetDataDirFullPath();
-		$relPath = static::sanitizePath($relPath);
-		$fullPath = $dataDirFullPath . $relPath;
+		$path = static::sanitizePath($path);
+		if (mb_strpos($path, '~/') === 0) {
+			$fullPath = $dataDirFullPath . mb_substr($path, 1);
+		} else {
+			$fullPath = $path;
+		}
 		// get parent level document with the same name as target directory if necessary
 		$parentLevelDoc = NULL;
 		if ($includingParentLevelDoc) {
 			$parentLevelDocFullPath = $fullPath . '.xml';
 			if (is_file($parentLevelDocFullPath))
 				$parentLevelDoc = static::xmlLoadAndSetupModel(
-					$parentLevelDocFullPath, $relPath
+					$parentLevelDocFullPath, $path
 				);
 		}
 		// complete items from target directory
@@ -95,12 +99,13 @@ trait StaticGetters {
 		$resultItems = [];
 		foreach ($di as $item) {
 			if ($item->isDir()) continue;
-			if (strtolower($item->getExtension()) != 'xml') continue;
+			$extLower = strtolower($item->getExtension());
+			if (!in_array($extLower, static::EXTENSIONS, TRUE)) continue;
 			$fileName = $item->getFilename();
 			$fileNameWithoutExt = mb_substr($fileName, 0, mb_strlen($fileName) - 4);
 			$resultItems[] = static::xmlLoadAndSetupModel(
 				$fullPath . '/' . $fileName, 
-				$relPath . '/' . $fileNameWithoutExt
+				$path . '/' . $fileNameWithoutExt
 			);
 		}
 		// sorting by sort property:

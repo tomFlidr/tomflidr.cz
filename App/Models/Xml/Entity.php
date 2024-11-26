@@ -5,6 +5,8 @@ namespace App\Models\Xml;
 use \App\Models\Xml\Schema;
 
 class Entity extends \App\Models\Xml\Base {
+
+	public const EXTENSIONS = ['xml'];
 	
 	use \App\Models\Xml\Entity\Props,
 		\App\Models\Xml\Entity\GettersSetters,

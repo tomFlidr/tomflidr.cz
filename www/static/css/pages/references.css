@@ -1,0 +1,31 @@
+dl.references{
+	margin:3em 0;
+	border:0;
+	gap:3em 1em;
+}
+.mobile dl.references{
+	gap:0.25em;
+}
+dl.references dd,
+dl.references dt{
+	padding:0;
+	border:0;
+}
+dl.references dt{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	gap:20px;
+}
+dl.references dt a.image{
+}
+.dark dl.references dt a.image:not(.no-redraw) svg .white{
+	fill:#fff;
+}
+.mobile dl.references dd{
+	text-align:left;
+	vertical-align:top;
+	margin-left:0;
+	margin-bottom:3em;
+}

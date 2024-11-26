@@ -43,7 +43,7 @@ class Main extends \App\Models\Base {
 			$localKey	=> $localizationWeb,
 		];
 		[$lang] = $localization;
-		$firstLevelDocsPath = '/' . $lang;
+		$firstLevelDocsPath = '~/' . $lang;
 		$firstLevelDocsInclHome = Document::GetByDirPath(
 			$firstLevelDocsPath, TRUE, ['sequence' => 'asc', 'title' => 'asc'], TRUE
 		);

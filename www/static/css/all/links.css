@@ -1,38 +1,37 @@
-.document a{
+.document a:not(.image){
 	color:var(--color-link-normal);
 	cursor:pointer;
 	display:inline-block;
-	color:var(--color-link-normal);
 	border-bottom:1px solid var(--color-link-normal);
 	text-decoration:none;
 	padding-left:1px;
 	padding-right:1px;
 }
-.document a:hover,
-.document a:focus,
-.document a:active{
+.document a:not(.image):hover,
+.document a:not(.image):focus,
+.document a:not(.image):active{
 	border-bottom:1px solid transparent;
 	text-decoration:none;
 	background-color:var(--color-link-normal);
 	border-radius:2px;
 }
 
-.document a:visited{
+.document a:not(.image):visited{
 	color:var(--color-link-visited);
 	border-bottom:1px solid var(--color-link-visited);
 }
-.document a:visited:hover,
-.document a:visited:focus,
-.document a:visited:active{
+.document a:not(.image):visited:hover,
+.document a:not(.image):visited:focus,
+.document a:not(.image):visited:active{
 	background-color:var(--color-link-visited);
 }
 
-a[target=_blank]{
+a[target=_blank]:not(.image){
 	position:relative;
 	padding-right:calc(1em + 5px);
 }
-a[target=_blank]:before,
-a[target=_blank]::before{
+a[target=_blank]:not(.image):before,
+a[target=_blank]:not(.image)::before{
 	position:absolute;
 	font-family:'icons';
 	font-style:normal;
@@ -56,4 +55,25 @@ a[target=_blank]::before{
 	border-bottom:1px dotted var(--color-link-normal);
 	text-decoration:none;
 	cursor:default;
+}
+
+.document a.image{
+	padding:0;
+	cursor:pointer;
+	display:inline-flex;
+	text-decoration:none;
+}
+.document a.image:hover,
+.document a.image:focus,
+.document a.image:active{
+	background:transparent;
+	text-decoration:none;
+	border-radius:1px;
+	outline-offset:2px;
+	outline:1px solid var(--color-link-normal);
+}
+.document a.image:visited:hover,
+.document a.image:visited:focus,
+.document a.image:visited:active{
+	outline:1px solid var(--color-link-visited);
 }

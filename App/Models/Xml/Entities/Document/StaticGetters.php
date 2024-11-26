@@ -31,11 +31,11 @@ trait StaticGetters {
 	 * @inheritDoc
 	 * @return  array<Document>
 	 */
-	public static function GetByDirPath (string $relPath, bool $includingParentLevelDoc = FALSE, array $sort = [], bool $activeOnly = TRUE): array {
+	public static function GetByDirPath (string $path, bool $includingParentLevelDoc = FALSE, array $sort = [], bool $activeOnly = TRUE): array {
 		$cacheKey = implode('_', [
 			'document_byDirPath', 
 			md5(serialize([
-				$relPath,
+				$path,
 				$includingParentLevelDoc,
 				$sort,
 				$activeOnly
@@ -43,9 +43,9 @@ trait StaticGetters {
 		]);
 		return self::GetCache()->Load(
 			$cacheKey, 
-			function (\Mvccore\Ext\ICache $cache, string $cacheKey) use ($relPath, $includingParentLevelDoc, $sort, $activeOnly) {
+			function (\Mvccore\Ext\ICache $cache, string $cacheKey) use ($path, $includingParentLevelDoc, $sort, $activeOnly) {
 				/** @var Document $this */
-				$entities = static::loadByDirPath($relPath, $includingParentLevelDoc, $sort);
+				$entities = static::loadByDirPath($path, $includingParentLevelDoc, $sort);
 				if ($activeOnly) {
 					$entitiesActive = [];
 					foreach ($entities as $entity)

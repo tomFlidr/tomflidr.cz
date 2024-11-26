@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xs:schema [
+	<!ENTITY amp "&#38;#38;">
+	<!ENTITY nbsp "&#160;">
+]>
 <xsd:schema 
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	targetNamespace="/doc" 
@@ -27,9 +31,9 @@
 				<xsd:element name="body">
 					<xsd:complexType>
 						<xsd:sequence>
-							<xsd:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+							<xsd:any processContents="skip" minOccurs="0" maxOccurs="unbounded" />
 						</xsd:sequence>
-						<xsd:anyAttribute processContents="skip"/>
+						<xsd:anyAttribute processContents="skip" />
 					</xsd:complexType>
 				</xsd:element>
 			</xsd:sequence>

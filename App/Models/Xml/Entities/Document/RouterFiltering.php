@@ -60,7 +60,7 @@ trait RouterFiltering {
 			}
 		}
 		// load opposite documents by sequence tree
-		$baseOppositePath = '/' . $oppositeLang;
+		$baseOppositePath = '~/' . $oppositeLang;
 		$oppositePath = '';
 		foreach ($sequences as $sequence) {
 			$subDocs = parent::GetByDirPath($baseOppositePath . $oppositePath);

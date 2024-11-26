@@ -176,7 +176,12 @@ footer{
 .cols{
 	display:flex;
 	flex-direction:row;
+	flex-wrap:nowrap;
 	gap:var(--layout-full-content-horizontal-padding);
 }
-.cols .col-left{flex:1;order:1;}
-.cols .col-right{flex:1;order:2;}
+.cols .col{
+	flex:1;
+}
+.col > *:first-child{
+	margin-top:0;
+}

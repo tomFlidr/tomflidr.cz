@@ -67,7 +67,9 @@ class Assets extends \MvcCore\Controller {
 			->Append($static . "/css/all/icons.css")
 			->Append($static . "/css/all/common-rules.css")
 			->Append($static . "/css/all/links.css")
-			->Append($static . "/css/all/document.css");
+			->Append($static . "/css/all/layout.{$this->mediaSiteVersion}.css")
+			->Append($static . "/css/all/document.css")
+			->Append($static . "/css/all/document.{$this->mediaSiteVersion}.css");
 		
 		$themeParts = explode('/', $this->theme);
 		$themePartBase = $themeParts[0];
@@ -76,7 +78,7 @@ class Assets extends \MvcCore\Controller {
 			->Append($static . "/css/all/themes/{$themePartBase}/common-rules.{$themePartBase}.css")
 			->Append($static . "/css/all/themes/{$themePartBase}/links.{$themePartBase}.css")
 			->Append($static . "/css/all/themes/{$themePartBase}/links.{$themePartBase}.css")
-			->Append($static . "/css/all/layout.{$this->mediaSiteVersion}.css")
+			->Append($static . "/css/all/themes/{$themePartBase}/document.{$themePartBase}.css")
 			->Append($static . "/css/all/themes/{$themePartBase}/layout.{$this->mediaSiteVersion}.{$themePartBase}.css")
 			->Append($static . "/css/all/themes/{$this->theme}/layout.{$this->mediaSiteVersion}.{$themeFullSuffix}.css");
 		
@@ -160,6 +162,8 @@ class Assets extends \MvcCore\Controller {
 	public function References (): void {
 		/** @var $this \App\Controllers\Front */
 		$static = $this->application->GetPathStatic();
+		$this->view->Css('headPage')
+			->Append($static . '/css/pages/references.css');
 		
 	}
 	

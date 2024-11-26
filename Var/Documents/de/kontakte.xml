@@ -3,8 +3,8 @@
 	<doc:title>Kontakte</doc:title>
 	<doc:sequence>6</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller></doc:controller>
-	<doc:action>Contacts</doc:action>
+	<doc:controller>Fronts\Indexes\Contacts</doc:controller>
+	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
 	<doc:robots></doc:robots>
@@ -20,7 +20,7 @@
 		<h1>{$title}</h1>
 
 		<div class="cols">
-			<div class="col-left">
+			<div class="col">
 				<h4>It's best to reach me by phone, <br  />I'll call you back.</h4>
 				<dl class="personal">
 					<dt>mobile:</dt>			<dd><b><a href="{$contacts->email->link}">{$contacts->phone->text}</a></b></dd>
@@ -53,7 +53,7 @@ Click on this text for more info.
 					{/foreach}
 				</ul>
 			</div>
-			<div class="col-right">
+			<div class="col">
 				<h4>Abrechnungsdaten</h4>
 				<p>
 					Firmen ID: <b><a href="{$contacts->invoicing->id->link}" target="_blank">{$contacts->invoicing->id->text}</a></b><br />
