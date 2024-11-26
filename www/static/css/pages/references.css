@@ -3,9 +3,6 @@ dl.references{
 	border:0;
 	gap:3em 1em;
 }
-.mobile dl.references{
-	gap:0.25em;
-}
 dl.references dd,
 dl.references dt{
 	padding:0;
@@ -20,8 +17,9 @@ dl.references dt{
 }
 dl.references dt a.image{
 }
-.dark dl.references dt a.image:not(.no-redraw) svg .white{
-	fill:#fff;
+
+.mobile dl.references{
+	gap:0.25em;
 }
 .mobile dl.references dd{
 	text-align:left;
@@ -29,3 +27,7 @@ dl.references dt a.image{
 	margin-left:0;
 	margin-bottom:3em;
 }
+
+.dark dl.references dt a.image:not(.no-redraw) svg .white{fill:#fff;}
+.dark dl.references dt a.image:not(.no-redraw) svg .black{fill:#000;}
+.dark dl.references dt a.image:not(.no-redraw) svg .transparent{fill:transparent;}

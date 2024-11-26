@@ -19,7 +19,7 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
-		<p>Společnosti a partneři, kde se ohlížím a kde děkuji za dobrou spolupráci:</p>
+		<p>Společnosti a partneři, se kterými nadále spolupracuji nebo za kterými se rád ohlednu díky dobré spolupráci:</p>
 
 		<dl class="references">
 			<dt>
@@ -33,7 +33,7 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Vývoj více interních informačních systémů.</b>
+					<b>Se společností Smart-CON spolupracujeme dlouhodobě a vyvíjeli jsme spolu více aplikací.</b>
 				</p>
 				<ul>
 					<li>
@@ -45,10 +45,10 @@
 					<li>
 						<b>XEROX</b> - dohled a vývoj klientského prodejního portálu speciálních nabídek pro český XEROX.
 					</li>
-					<li>
-						Dlouhodobá forma spolupráce i na menších věcech.
-					</li>
 				</ul>
+				<p>
+					Smart-CON se specializuje na bezdrátovou komunikaci, průmyslové routery a 5G síť.
+				</p>
 			</dd>
 			
 			<dt>
@@ -56,13 +56,14 @@
 					href="https://www.dendera.cz/"
 					title="Dendera a.s." 
 					target="_blank" 
-					class="image no-redraw"
+					class="image"
 					{$logotypes->dendera->styleAttr|noescape}
 				>{$logotypes->dendera->code|noescape}</a>
 			</dt>
 			<dd>
 				<p>
-					<b>Vývoj další generace výrobního informačního systému Hercules 5.0</b></p>
+					<b>Vývoj další generace výrobního informačního systému Hercules 5.0</b>
+				</p>
 				<ul>
 					<li>Architektura modulárního systému pro prodej dalším klientům.</li>
 					<li>Vývoj software, zpracovávání a migrace starých dat, řešení technických výzev.</li>
@@ -70,6 +71,9 @@
 					<li>Správa aplikačních serverů a databáze.</li>
 					<li>Prozatím nejkomplexnější projekt, ke kterému jsem se mohl dostat.</li>
 				</ul>
+				<p>
+					Společnost Dendera se zabývá výrobou z oceli, plechů a profilů, pomocí laserových a CNC technologií.
+				</p>
 			</dd>
 			
 			<dt>
@@ -112,7 +116,9 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Lektroská i vývojová činnost ve většině pro agenturu ICT Pro s.r.o. a pro její klienty.</b>
+					<b>Lektroská činnost.</b><br />
+					ICT Pro i ostatní lektorské firmy jsou předními vzdělávacími agenturami v ČR. <br />
+					Společnost LearnQuest zajišťuje vzdělávání pro nadnárodní zahraniční společnosti.
 				</p>
 				<ul>
 					<li>
@@ -128,7 +134,7 @@
 					<li>Hodnocení lektora po každém kurzu.</li>
 				</ul>
 				<p>
-					Se polečností ICTPro s.r.o. šlo o dlouhodobou formu spolupráce i na menších věcech.
+					Se polečností ICTPro s.r.o. šlo o dlouhodobou formu spolupráce i na vývojových věcech.
 				</p>
 			</dd>
 			
@@ -143,7 +149,10 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Vývoj webového portálu</b> pro farmakoligii, imunoterapii a nanotoxikologii (FIT) na Pimcore CMS.
+					<b>Vývoj webového portálu pro Výzkumný ústav veterinárního lékařství,</b>
+				</p>
+				<p>
+					pro oddělení farmakoligie, imunoterapie a nanotoxikologie (FIT), na publikačním systému Pimcore CMS.
 				</p>
 			</dd>
 			
@@ -157,9 +166,14 @@
 				>{$logotypes->estheticon->code|noescape}</a>
 			</dt>
 			<dd>
-				Vývoj mezinárodního portálu pro plastické chirurgy a jejich zákazníky.<br />
-				Práce pro Estheticon pro mne byla výzvou, firma se stará o velmi širokou škálu zákazníků, <br />
-				šlo o extrémně rosáhlý codebase a náročnou práci. <br />
+				<p>
+					<b>Vývoj mezinárodního portálu pro plastické chirurgy a jejich zákazníky.</b>
+				</p>
+				<p>
+					Práce pro Estheticon pro mne byla výzvou, firma se stará na svém portále Estheticon.com,<br />
+					který je jejím hlavním produktem, o velmi širokou škálu zákazníků. <br />
+					Šlo o extrémně rosáhlý codebase a náročnou práci.
+				</p>
 			</dd>
 			
 			<dt>
@@ -176,8 +190,12 @@
 					<b>Front-end programátor a grafik.</b>
 				</p>
 				<p>
-					Zde musím ocenit skvělé vedení firmy, nejlepší vývojářský team, ve kterém jsem pracoval <br />
-					a skvělý kolektiv lidí. Mnoho jsem se naučil.
+					Zde jsem se setkal se skvělým vedením firmy, pracoval jsem ve velmi dobrém vývojářském teamu, <br />
+					a potkal jsem skvělý kolektiv lidí. Mnoho jsem se naučil.
+				</p>
+				<p>
+					Společnost Tripomatic se nyní zabývá mapovými aplikacemi, plánováním cest a výletů. <br />
+					V minulosti jsme se zabývali vývojem přestupního vyhledávače letenek.
 				</p>
 			</dd>
 			
@@ -195,9 +213,12 @@
 					<b>Front-end programátor a grafik.</b>
 				</p>
 				<p>
-					Zde nejraději vzpomínám na skvělou příležitost na začátku své profese,<br />
-					kde jsem mohl díky tomuto zaměstnání získat mnoho zkušeností z mnoha různých odvětví.<br />
-					Rád se vždy vidím i se všemi starými přáteli, které občas potkám a na které lenze zapomenout:-)
+					Skvělá příležitost na začátku mé profese, kde jsem mohl díky tomuto zaměstnání <br />
+					získat mnoho zkušeností z mnoha různých odvětví - marketingu, grafiky a IT.
+				</p>
+				<p>
+					Dnes již nadnárodní společnost se zabývá mnoha odvětvími - prodejem letenek, autobusovou <br />
+					a vlakovou dopravou, zprostředkováváním pracovních, jazykových a au-pair pobytů a mnohým dalším.
 				</p>
 			</dd>
 			
