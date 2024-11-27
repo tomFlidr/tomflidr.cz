@@ -3,7 +3,7 @@
 	<doc:title>Životopis</doc:title>
 	<doc:sequence>5</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\Cv</doc:controller>
+	<doc:controller>Fronts\Indexes\Cv</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
@@ -17,16 +17,86 @@
 	<doc:navigation-subtitle>vše o mě</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1>{$title}</h1>
+		<h1>Tomáš Flídr</h1>
 
-		<h3 class="indent">
-		CV <small>(<a 
-			href="/Tomas_Flidr_CV_2020-07-23_cs-CZ.pdf" 
-			target="_blank"
-		>Czech</a>, <a 
-			href="/Tomas_Flidr_CV_2020-07-23_en-GB.pdf" 
-			target="_blank"
-		>English</a>)</small></h3>
+		<div class="cols cols-2-1">
+			<div class="col">
+				
+				<h3>Profil</h3>
+				
+				<h3>Vzdělání</h3>
+				
+				<h3>Open Source</h3>
+				
+				<h3>Praxe</h3>
+				
+			</div>
+			<div class="col">
+				<div class="widget personal-info">
+					<h5>Osobní údaje</h5>
+					<dl>
+						<dt>datum narození:</dt><dd>6. 8. 1986</dd>
+						<dt>adresa:</dt>		<dd>Mělčany 65, 664 64, Mělčany</dd>
+						<dt class="noweb">kontakty:</dt>		<dd>+420 724 479 802, info@tomflidr.com, tomflidr.cz</dd>
+						<dt class="noweb">soc. sítě:</dt>		<dd>
+							github.com/tomflidr,
+							linkedin.com/in/tomflidr,
+							stackoverflow.com/users/7032987/tom-fl%c3%addr
+						</dd>
+						<dt class="noprint">Více kontaktů zde.</dt>
+						
+					</dl>
+				</div>
+
+				<div class="widget it-skills">
+					<h5>IT dovednosti</h5>
+					<i>(roky prof. používání) [zaměření]</i>
+					<ul>
+						<li>JavaScript <i>({$techYears->js}) [Node.JS, Ext.JS, Angular, Vue, Create.JS &hellip;]</i>,</li>
+						<li>PHP<i> ({$techYears->php}) [Pimcore CMS, Laminas, Nette, MvcCore]</i>,</li>
+						<li>MySQL, MariaDB <i>({$techYears->mySql}) [DB scripting, replikace]</i>,</li>
+						<li>C# <i>({$techYears->csharp}) [.NET Core, ASP.NET, MVC, WinForms, WPF]</i>,</li>
+						<li>MSSQL <i>({$techYears->msSql}) [Win., Linux, DB scripting]</i>,</li>
+						<li>VB.NET <i>({$techYears->vb})</i>,</li>
+						<li>Linux, Shell <i>({$techYears->shell}) [LAMP, Zabbix, Gitea, iRedMail]</i>,</li>
+						<li>TypeScript <i>({$techYears->ts})</i>,</li>
+						<li>
+							<b>Obvyklejší dovednosti:</b>
+							<ul>
+								<li>HTML, CSS <i>(18) [pure code or Less]</i>,</li>
+								<li>
+									CI/CD (started 14 years ago)<br />
+									<i>[GIT, Mercurial, SVN, Trac, Jira, Pupeteer, Selenium, Unit testing]</i>,
+								</li>
+								<li>XML <i>(9) [SOAP, DTD, XSD, XSLT]</i>,</li>
+								<li>C++, Java, Python <i>[only passive reading]</i>.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+					
+
+				<div class="widget lang-skills">
+					<h5>Jazyky</h5>
+					<ul>
+						<li>Angličtina <i>(intermediate B1)</i></li>
+						<li>Němčina <i>(začátečník)</i></li>
+						<li>Čeština <i>(rodillý)</i></li>
+					</ul>
+				</div>
+
+				<div class="widget other-skills">
+					<h5>Ostatní dovednosti</h5>
+					<p>Řidičský průkaz skupiny B</p>
+				</div>
+
+				<div class="widget hobbies">
+					<h5>Záliby</h5>
+					<p>Má rodina, DIY, psaní poezie, plavání, cykloturistika, červené víno.</p>
+				</div>
+				
+			</div>
+		</div>
 		
 	</doc:body>
 </doc:data>

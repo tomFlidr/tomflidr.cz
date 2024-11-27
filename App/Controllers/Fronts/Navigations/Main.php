@@ -33,7 +33,7 @@ class Main extends \MvcCore\Controller {
 	public function PreDispatch (): void {
 		parent::PreDispatch();
 		
-		$this->requestPath = $this->request->GetOriginalPath();
+		$this->requestPath = $this->router->EncodeUrl($this->request->GetOriginalPath());
 		$this->mediaSiteVersion = $this->request->GetMediaSiteVersion();
 		$localizationArr = $this->router->GetLocalization(FALSE);
 		
@@ -53,7 +53,7 @@ class Main extends \MvcCore\Controller {
 		foreach ($mainItems as $groupItem) {
 			/** @var \App\Models\Navigations\Item $groupItem */
 			$subItems = $groupItem->GetItems();
-			if ($subItems !== NULL) {
+			if ($subItems === NULL || count($subItems) > 0) {
 				foreach ($subItems as $subItem) {
 					if (
 						mb_strpos($subItem->GetUrl(), $this->requestPath) === 0 && (

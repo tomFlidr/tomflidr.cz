@@ -179,9 +179,13 @@ footer{
 	flex-wrap:nowrap;
 	gap:var(--layout-full-content-horizontal-padding);
 }
-.cols .col{
-	flex:1;
-}
-.col > *:first-child{
-	margin-top:0;
-}
+.cols .col{flex:1;}
+.cols.cols-2-1 .col:first-of-type{flex:2;}
+.cols.cols-2-1 .col:last-of-type{flex:1;}
+.cols.cols-1v .col:first-of-type{flex:1;}
+.cols.cols-1v .col:last-of-type{flex:2;}
+.cols.cols-3-1 .col:first-of-type{flex:3;}
+.cols.cols-3-1 .col:last-of-type{flex:1;}
+.cols.cols-1-3 .col:first-of-type{flex:1;}
+.cols.cols-1-3 .col:last-of-type{flex:3;}
+.col > *:first-child{margin-top:0;}

@@ -3,7 +3,7 @@
 	<doc:title>Služby</doc:title>
 	<doc:sequence>4</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\Services</doc:controller>
+	<doc:controller>Fronts\Indexes\Services</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
@@ -27,22 +27,23 @@
 					<li>Vývoj v jazycích JS, TypeScript, PHP, C#, VB.NET.</li>
 					<li>Vývoj a administrace databází MariaDB, Microsoft SQL Server.</li>
 					<li>
-						Frameworky a nástroje, které znám velmi dobře:
+						Frameworky a nástroje:
 						<ul>
 							<li>.NET - MVC, WPF, gRPC, XAML, LINQ, WCF, WinForms, ASP.NET.</li>
 							<li>PHP - Pimcore CMS, Laminas, Nette, MvcCore.</li>
 							<li>JS/TS - Node.JS, Ext.JS, Angular, Vue, CreateJS &hellip;</li>
 						</ul>
+						&hellip; plus mnoho dalších pasivně.
 					</li>
 				</ul>
 			</div>
 			<div class="col">
 				<h2>Supervize IT projektů</h2>
 				<ul>
-					<li>Pomohu Vám mít přehled ve vašem rozsáhlém IT projektu a kdy bude hotov.</li>
+					<li>Pomohu Vám mít lepší orientaci ve Vašem rozsáhlém IT projektu a&nbsp;získáte lepší přehled o tom, kdy bude hotov.</li>
 					<li>Pomohu Vám rozumět vývojovému teamu a nastavím správné postupy.</li>
 					<li>Dohlédnu, aby Vám vývojáři dávali tolik, za co platíte.</li>
-					<li>Pokud chcete, naučím Vás tolik, abyste po čase měl přehled i beze mne.</li>
+					<li>Pokud chcete, naučím Vás tolik, abyste po čase měli přehled i beze mne.</li>
 				</ul>
 			</div>
 		</div>
@@ -52,7 +53,7 @@
 				<h2>Administrace serverů</h2>
 				<ul>
 					<li>Pomohu Vám s administrací serveru na Linux nebo Windows.</li>
-					<li>Zprovozním a budu Vám spracovat emailový server.</li>
+					<li>Mohu Vám zprovoznit i spravovat emailový server.</li>
 					<li>Zajistím monitoring serverů a kontrolní hlášení.</li>
 					<li>Zajistím Vám Long Term Support Vašich aplikací.</li>
 				</ul>
@@ -61,7 +62,7 @@
 				<h2>Grafické práce</h2>
 				<ul>
 					<li>Navrhnu webdesign Vašeho webového projektu.</li>
-					<li>Připravím vám tiskovou propagaci nebo internetovou replamu.</li>
+					<li>Připravím Vám tiskovou propagaci nebo internetovou reklamu.</li>
 					<li>Pomohu Vám s postprodukcí fotografií nebo reklamních spotů.</li>
 				</ul>
 			</div>
@@ -70,15 +71,14 @@
 		<h2>Konzultace</h2>
 		<p>
 			Vývoj webových aplikací jsem započal před 15 lety, grafiku ještě o 5 let dříve. <br />
-			Za tu dobu jsem viděl mnoho práce různých lidí a mnoho jsem se naučil. <br />
-			Jsem si docela jist, že výše není vyjmenované vše, v čem Vám mohu pomoci.
+			Za tu dobu jsem viděl mnoho práce různých lidí a mnoho jsem se naučil.
 		</p>
 		<p>
-			Pokud je i přesto Váš systém napsaný v nečem obskurnějším, <br />
-			co zde není uvedeno, zkuste mi zavolat a něco vymyslíme.
+			Proto, pokud je Váš systém napsaný v nečem obskurnějším, co zde není uvedeno, <br />
+			zkuste mi zavolat a věřím, že spolu vymyslíme řešení.
 		</p>
 		<p>
-			Při nejhorším Vás odkážu na někoho koho znám a kdo se zabývá Vaší technologií.
+			Případně Vás odkáži na někoho, koho znám a kdo se zabývá Vaší technologií.
 		</p>
 
 		<p>

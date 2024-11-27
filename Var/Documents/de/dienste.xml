@@ -3,7 +3,7 @@
 	<doc:title>Spezialisierte IT-Dienste</doc:title>
 	<doc:sequence>4</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\Services</doc:controller>
+	<doc:controller>Fronts\Indexes\Services</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
@@ -27,19 +27,20 @@
 					<li>Entwicklung in den Sprachen JS, TypeScript, PHP, C#, VB.NET.</li>
 					<li>Entwicklung und Verwaltung von MariaDB- und Microsoft SQL Server-Datenbanken.</li>
 					<li>
-						Frameworks und Tools, mit denen ich sehr vertraut bin:
+						Frameworks und Tools:
 						<ul>
 							<li>.NET - MVC, WPF, gRPC, XAML, LINQ, WCF, WinForms, ASP.NET.</li>
 							<li>PHP - Pimcore CMS, Laminas, Nette, MvcCore.</li>
 							<li>JS/TS - Node.JS, Ext.JS, Angular, Vue, CreateJS &hellip;</li>
 						</ul>
 					</li>
+					&hellip;plus viele weitere passive.
 				</ul>
 			</div>
 			<div class="col">
 				<h2>IT-Projektüberwachung</h2>
 				<ul>
-					<li>Ich helfe Ihnen, den Überblick über Ihr umfangreiches IT-Projekt und den Zeitplan zur Fertigstellung zu behalten.</li>
+					<li>Ich helfe Ihnen dabei, sich in Ihrem IT-Großprojekt besser zu orientieren und einen besseren Überblick über die Fertigstellung zu bekommen.</li>
 					<li>Ich unterstütze Sie dabei, Ihr Entwicklungsteam zu verstehen und geeignete Prozesse einzurichten.</li>
 					<li>Ich sorge dafür, dass Ihre Entwickler liefern, wofür Sie bezahlen.</li>
 					<li>Falls gewünscht, bringe ich Ihnen bei, genug Einblick in Ihr Projekt zu erhalten, sodass Sie nach einiger Zeit ohne mich auskommen.</li>
@@ -52,7 +53,7 @@
 				<h2>Serveradministration</h2>
 				<ul>
 					<li>Ich unterstütze Sie bei der Serveradministration auf Linux oder Windows.</li>
-					<li>Ich richte Ihren E-Mail-Server ein und warte ihn.</li>
+					<li>Ich werde Ihren E-Mail-Server einrichten und betreuen.</li>
 					<li>Ich biete Server-Monitoring und Berichterstellung.</li>
 					<li>Ich stelle Long Term Support für Ihre Anwendungen sicher.</li>
 				</ul>
@@ -61,28 +62,28 @@
 				<h2>Grafikdesign</h2>
 				<ul>
 					<li>Ich erstelle Webdesigns/Redesigns für Ihr Projekt.</li>
-					<li>Ich bereite Print- oder Online-Werbematerialien für Sie vor.</li>
+					<li>Ich erstelle für Sie eine Printwerbung oder Internetanzeige.</li>
 					<li>Ich helfe Ihnen bei der Nachbearbeitung von Fotos oder Werbespots.</li>
 				</ul>
 			</div>
 		</div>
 
-		<h2>Beratungen</h2>
+		<h2>Konsultationen</h2>
 		<p>
-			Ich begann vor 15 Jahren mit der Entwicklung von Webanwendungen und habe vor 5 Jahren damit begonnen, im Grafikdesign zu arbeiten. <br />
-			Im Laufe der Jahre habe ich viele Arbeiten verschiedener Leute gesehen und viel gelernt. <br />
+			Ich begann vor 15 Jahren mit der Entwicklung von Webanwendungen und arbeitete 5 Jahre davor bereits im Grafikdesign. <br />
+			Im Laufe der Jahre habe ich viele Arbeiten von verschiedenen Personen gesehen und dabei eine Menge gelernt. <br />
 			Ich bin mir ziemlich sicher, dass die obige Liste nicht alles abdeckt, wobei ich Ihnen helfen kann.
 		</p>
 		<p>
-			Falls Ihr System in etwas Exotischerem geschrieben ist, <br />
-			das hier nicht erwähnt wurde, können Sie mich gerne kontaktieren und wir finden eine Lösung.
+			Daher, wenn Ihr System in etwas geschrieben ist, das ungewöhnlich ist und hier nicht aufgeführt wurde, <br />
+			versuchen Sie, mich zu kontaktieren, und ich glaube, wir werden zusammen eine Lösung finden.
 		</p>
 		<p>
-			Im schlimmsten Fall verweise ich Sie an jemanden, den ich kenne und der besser auf Ihre Technologie spezialisiert ist.
+			Alternativ kann ich Sie auch an jemanden aus meinem Netzwerk verweisen, der auf Ihre Technologie spezialisiert ist.
 		</p>
 
 		<p>
-			<b>Wenn Sie nach gründlicher Arbeit und einem Partner suchen, der sich auf Ihr Projekt konzentriert, 
+			<b>Wenn Sie präzise Arbeit und einen Partner suchen, der sich auf Ihr Projekt konzentriert, 
 			<a href="{url('document', ['path' => 'kontakte'])}">kontaktieren Sie mich bitte hier</a>.</b>
 		</p>
 		<br />

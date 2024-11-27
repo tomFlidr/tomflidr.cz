@@ -127,8 +127,8 @@
 						<b>ESET</b>, <b>Bosch</b>, <b>Foxconn</b>, <b>Quadient</b> a mnoho dalších.
 					</li>
 					<li>Kurzy vedené doma v českém jazyce nebo v zahraničí v anglickém jazyce.</li>
-					<li>Za {$trainingsYears} let přes {$trainingsCount} realizovaných kurzů, moje průměrné hodnocení od studentů je {$trainingsAvg * 5|number: '0.00'}.</li>
 					<li>Realizace kurzů podle osnov nebo příprava na míru dle potřeb klientů.</li>
+					<li>Za {$trainingsYears} let přes {$trainingsCount} realizovaných kurzů, moje průměrné hodnocení od studentů je {$trainingsAvg * 5|number: '0.00'}.</li>
 				</ul>
 				<p>
 					Se polečností ICTPro s.r.o. spolupracuji dlouhodobě. <br />

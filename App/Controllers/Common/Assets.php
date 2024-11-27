@@ -143,19 +143,19 @@ class Assets extends \MvcCore\Controller {
 	
 	public function Projects (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = $this->application->GetPathStatic();
+		//$static = $this->application->GetPathStatic();
 		
 	}
 	
 	public function Training (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = $this->application->GetPathStatic();
+		//$static = $this->application->GetPathStatic();
 		
 	}
 	
 	public function Services (): void {
 		/** @var $this \App\Controllers\Front */
-		$static = $this->application->GetPathStatic();
+		//$static = $this->application->GetPathStatic();
 		
 	}
 	

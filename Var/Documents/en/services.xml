@@ -3,7 +3,7 @@
 	<doc:title>Services</doc:title>
 	<doc:sequence>4</doc:sequence>
 	<doc:active>1</doc:active>
-	<doc:controller>Fronts\Services</doc:controller>
+	<doc:controller>Fronts\Indexes\Services</doc:controller>
 	<doc:action></doc:action>
 	<doc:description></doc:description>
 	<doc:keywords></doc:keywords>
@@ -27,19 +27,20 @@
 					<li>Development in languages JS, TypeScript, PHP, C#, VB.NET.</li>
 					<li>Development and administration of MariaDB and Microsoft SQL Server databases.</li>
 					<li>
-						Frameworks and tools I am very proficient with:
+						Frameworks and tools:
 						<ul>
 							<li>.NET - MVC, WPF, gRPC, XAML, LINQ, WCF, WinForms, ASP.NET.</li>
 							<li>PHP - Pimcore CMS, Laminas, Nette, MvcCore.</li>
 							<li>JS/TS - Node.JS, Ext.JS, Angular, Vue, CreateJS &hellip;</li>
 						</ul>
+						&hellip; plus many more passive.
 					</li>
 				</ul>
 			</div>
 			<div class="col">
 				<h2>IT Project Supervision</h2>
 				<ul>
-					<li>I will help you gain an overview of your extensive IT project and its timeline for completion.</li>
+					<li>I will help you to better orient yourself in your large IT project and get a better overview of its completion.</li>
 					<li>I will help you understand your development team and establish proper processes.</li>
 					<li>I will ensure your developers deliver what you are paying for.</li>
 					<li>If you prefer, I can teach you enough to have good insight into your project without me after some time.</li>
@@ -74,15 +75,15 @@
 			I am quite sure that the list above does not cover everything I can help you with.
 		</p>
 		<p>
-			If your system is written in something more obscure <br />
-			that is not mentioned here, feel free to call me and we can figure something out.
+			Therefore, if your system is written in something more obscure that is not listed here, <br />
+			try to call me and I believe we will come up with some solution together.
 		</p>
 		<p>
-			At worst, I will refer you someone else I know, who is more specialized in your technology.
+			Alternatively, I can refer you to someone I know, who is more specialized in your technology.
 		</p>
 
 		<p>
-			<b>If you are looking for meticulous work and a partner focused on your project, 
+			<b>If you are looking for precise work and a partner focused on your project, 
 			<a href="{url('document', ['path' => 'contacts'])}">please contact me here</a>.</b>
 		</p>
 		<br />
