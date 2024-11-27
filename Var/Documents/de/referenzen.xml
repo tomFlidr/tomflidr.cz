@@ -19,5 +19,217 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
+		<p>Unternehmen und Partner, mit denen ich weiterhin zusammenarbeitet oder auf deren Zusammenarbeit ich dank guter Erfahrungen gerne zurückblicke:</p>
+
+		<dl class="references">
+			<dt>
+				<a
+					href="https://www.dendera.cz/"
+					title="Dendera a.s." 
+					target="_blank" 
+					class="image"
+					{$logotypes->dendera->styleAttr|noescape}
+				>{$logotypes->dendera->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Entwicklung der nächsten Generation des Produktionsinformationssystems Hercules 5.0.</b>
+				</p>
+				<ul>
+					<li>Architektur eines modularen Systems für den Verkauf an weitere Kunden.</li>
+					<li>Softwareentwicklung, Verarbeitung und Migration alter Daten, Lösung technischer Herausforderungen.</li>
+					<li>Projektplanung und Leitung des Entwicklungsteams.</li>
+					<li>Verwaltung von Anwendungsservern und Datenbanken.</li>
+				</ul>
+				<p>
+					Dendera a.s. ist spezialisiert auf die Verarbeitung von Stahl, Blechen und Profilen mittels Laser- und CNC-Technologien.<br />
+					Dank an die Familie Zatloukal für ihren Ansatz. Als einer der wenigen Kunden wussten sie genau, was sie wollten.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://smart-con.cz/"
+					title="Smart-Con s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->smartcon->styleAttr|noescape}
+				>{$logotypes->smartcon->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Mit der Firma Smart-CON arbeite ich langfristig zusammen und wir haben gemeinsam mehrere Anwendungen entwickelt.</b>
+				</p>
+				<ul>
+					<li>
+						<b>R-WEBDOG</b> - ein Kundensystem für Verwaltung, Fernzugriff und Steuerung von Werbung in mobilen Routern, die in Bussen und Zügen in ganz Europa eingesetzt werden.
+					</li>
+					<li>
+						<b>Teleagenda</b> - ein internes Abrechnungssystem für die Fakturierung von SIM-Karten und Vertragsverwaltung.
+					</li>
+					<li>
+						<b>XEROX</b> - Überwachung und Entwicklung eines Kundenportals für Sonderangebote des tschechischen XEROX.
+					</li>
+				</ul>
+				<p>
+					Smart-CON ist spezialisiert auf drahtlose Kommunikation, Industrie-Router und 5G-Netzwerke.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.ictpro.cz/" 
+					title="ICTPro s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->ictpro->styleAttr|noescape}
+				>{$logotypes->ictpro->code|noescape}</a>
+				<a
+					href="https://www.learnquest.com/" 
+					title="LearnQuest, Inc."
+					target="_blank"
+					class="image"
+					{$logotypes->learnquest->styleAttr|noescape}
+				>{$logotypes->learnquest->code|noescape}</a>
+				<a
+					href="https://www.pcdir.cz/" 
+					title="PC-DIR Real, s. r. o."
+					target="_blank"
+					class="image"
+					{$logotypes->pcdir->styleAttr|noescape}
+				>{$logotypes->pcdir->code|noescape}</a>
+				<a
+					href="https://www.nicom.cz/" 
+					title="NICOM, a.s."
+					target="_blank"
+					class="image"
+					{$logotypes->nicom->styleAttr|noescape}
+				>{$logotypes->nicom->code|noescape}</a>
+				<a
+					href="https://www.profima.cz/" 
+					title="PROFIMA EFFECTIVE, s.r.o."
+					target="_blank" 
+					class="image"
+					{$logotypes->profima->styleAttr|noescape}
+				>{$logotypes->profima->code|noescape}</a>
+		
+			</dt>
+			<dd>
+				<p>
+					<b>Dozententätigkeiten.</b><br />
+					ICT Pro und andere Schulungsunternehmen sind führende Bildungsagenturen in der Tschechischen Republik.<br />
+					LearnQuest bietet Schulungen für multinationale ausländische Konzerne an.
+				</p>
+				<ul>
+					<li>
+						Durchführung von TOP-Kursen der Agenturen für die anspruchsvollsten Kunden und Firmen mit professionellen Entwicklerteams: <br />
+						<b>IBM</b>, <b title="Czech Savings Bank">Ceska sporitelna</b>, <b title="Commercial bank">Komercni banka</b>, 
+						<b>Seznam.cz</b>, <b>Avast</b>, <b>ESET</b>, <b>Bosch</b>, <b>Foxconn</b>, <b>Quadient</b> and many others.
+					</li>
+					<li>Kurse durchgeführt in der heimischen Sprache (Tschechisch) oder im Ausland auf Englisch.</li>
+					<li>Über {$trainingsCount} durchgeführte Kurse in {$trainingsYears} Jahren.</li>
+					<li>Kurse gemäß Lehrplan oder maßgeschneidert nach den Bedürfnissen der Kunden.</li>
+				</ul>
+				<p>
+					Ich arbeite schon lange mit ICTPro s.r.o. zusammen. <br />
+					In der Vergangenheit haben wir auch deren Informationssystem entwickelt.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.vri.cz/"
+					title="Veterinary Research Institute, v. v. i."
+					target="_blank"
+					class="image"
+					{$logotypes->vri->styleAttr|noescape}
+				>{$logotypes->vri->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Entwicklung eines Webportals für das Veterinärmedizinische Forschungsinstitut,</b>
+				</p>
+				<p>
+					für die Abteilung für Pharmakologie, Immuntherapie und Nanotoxikologie.<br />
+					Das Portal habe ich auf dem Publikationssystem Pimcore CMS entwickelt.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.estheticon.cz/"
+					title="Estheticon, s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->estheticon->styleAttr|noescape}
+				>{$logotypes->estheticon->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Entwicklung eines internationalen Portals für plastische Chirurgen und ihre Kunden.</b>
+				</p>
+				<p>
+					Die Arbeit für Estheticon war eine Herausforderung für mich. Das Unternehmen betreibt ein breites Spektrum von Kunden auf seinem Portal Estheticon.com,<br />
+					und die Entwicklung des Portals ist die Hauptaktivität des Unternehmens. Das Portal ist in 14 Sprachen verfügbar.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://tripomatic.com/"
+					title="Tripomatic s.r.o. (früher Twobits s.r.o. genannt)"
+					target="_blank"
+					class="image"
+					{$logotypes->tripomatic->styleAttr|noescape}
+				>{$logotypes->tripomatic->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Front-End-Programmierer und Grafikdesigner.</b>
+				</p>
+				<ul>
+					<li>Programmierung von JavaScript-Komponenten und Codierung von HTML/CSS für die Webanwendungen des Unternehmens.</li>
+					<li>Gestaltung und Neugestaltung von Websites sowie Codierung von HTML-Vorlagen.</li>
+					<li>Erstellung von Webanzeigen und gedrucktem Werbematerial.</li>
+				</ul>
+				<p>
+					Tripomatic konzentriert sich heute auf Kartenanwendungen, Reiseplanung und Reiserouten.<br />
+					Zuvor arbeiteten wir an der Entwicklung einer Suchmaschine für Transferflüge.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
+					href="https://www.studentagency.cz/"
+					title="STUDENT AGENCY a.s."
+					target="_blank"
+					class="image"
+					{$logotypes->sa->styleAttr|noescape}
+				>{$logotypes->sa->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Front-End-Programmierer und Grafikdesigner.</b>
+				</p>
+				<ul>
+					<li>Programmierung von JavaScript-Komponenten und Codierung von HTML/CSS für für viele Webseiten des Unternehmens.</li>
+					<li>Gestaltung und Neugestaltung von Websites sowie Codierung von HTML-Vorlagen.</li>
+					<li>Erstellung von Webanzeigen und gedrucktem Werbematerial.</li>
+					<li>Produktion von Werbevideos und Postproduktion.</li>
+				</ul>
+				<p>
+					Eine großartige Gelegenheit zu Beginn meiner Karriere, bei der ich viel Erfahrung in verschiedenen Bereichen – Marketing, Grafik und IT – gesammelt habe.
+				</p>
+				<p>
+					Heute ist das Unternehmen international tätig und engagiert sich in vielen Bereichen – Flugticketverkauf, Bus- und Zugverkehr, 
+					Vermittlung von Arbeit, Sprach- und Au-pair-Aufenthalten und vielem mehr.
+				</p>
+			</dd>
+			
+		</dl>
+		
+		<p>Vielen Dank auch an viele andere Unternehmen und Einzelpersonen, die hier nicht aufgeführt wurden.</p>
+		<br />
+
 	</doc:body>
 </doc:data>

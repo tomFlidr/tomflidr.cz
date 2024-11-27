@@ -19,7 +19,7 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
-		<p>Companies and partners with whom I continue to work or whom I am happy to look back on for our good collaboration:</p>
+		<p>Companies and partners with whom I continue to work or fondly look back on due to good cooperation:</p>
 
 		<dl class="references">
 			<dt>
@@ -33,16 +33,16 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Development of the next generation of the manufacturing information system Hercules 5.0.</b>
+					<b>Development of the next generation of the Hercules 5.0 manufacturing information system.</b>
 				</p>
 				<ul>
 					<li>Architecture of a modular system for resale to other clients.</li>
-					<li>Software development, processing and migration of old data, solving technical challenges.</li>
+					<li>Software development, data processing and migration, addressing technical challenges.</li>
 					<li>Project planning and leading the development team.</li>
-					<li>Administration of application servers and databases.</li>
+					<li>Management of application servers and the database.</li>
 				</ul>
 				<p>
-					Dendera a.s. specializes in manufacturing from steel, sheets, and profiles using laser and CNC technologies.<br />
+					Dendera a.s. specializes in steel, sheet metal, and profile manufacturing using laser and CNC technologies.<br />
 					Thanks to the Zatloukal family for their approach. As one of the few clients, they knew exactly what they wanted.
 				</p>
 			</dd>
@@ -58,17 +58,17 @@
 			</dt>
 			<dd>
 				<p>
-					<b>We have been collaborating with Smart-CON for a long time and have developed several applications together.</b>
+					<b>Long-term collaboration with Smart-CON, during which we developed multiple applications together.</b>
 				</p>
 				<ul>
 					<li>
-						<b>R-WEBDOG</b> - client system for managing, remote access, and control of advertisements in mobile routers deployed in buses and trains.
+						<b>R-WEBDOG</b> - a client system for management, remote access, and control of advertisements in mobile routers deployed in buses and trains around Europe.
 					</li>
 					<li>
-						<b>Teleagenda</b> - internal billing system for SIM card billing and contract management.
+						<b>Teleagenda</b> - an internal billing system for invoicing SIM cards and managing contracts.
 					</li>
 					<li>
-						<b>XEROX</b> - oversight and development of a client sales portal for special offers for Czech XEROX.
+						<b>XEROX</b> - supervision and development of a client sales portal for special offers for Czech XEROX.
 					</li>
 				</ul>
 				<p>
@@ -116,41 +116,42 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Lecturer activities.</b><br />
-					ICT Pro and other training companies are leading educational agencies in the Czech Republic. <br />
+					<b>Lecturer Activity.</b><br />
+					ICT Pro and other lecturing companies are leading educational agencies in the Czech Republic. <br />
 					LearnQuest provides training for multinational foreign corporations.
 				</p>
 				<ul>
 					<li>
-						Implementation of TOP courses for the most demanding clients and companies with professional development teams: <br />
-						IBM, Microsoft, Česká spořitelna, Komerční banka, Seznam.cz, Avast, Esset, Bosh, 
-						Foxconn, Quadient, and many others.
+						Delivery of TOP courses for agencies serving the most demanding clients and companies with professional development teams: <br />
+						<b>IBM</b>, <b>Česká spořitelna</b>, <b>Komerční banka</b>, <b>Seznam.cz</b>, <b>Avast</b>, 
+						<b>ESET</b>, <b>Bosch</b>, <b>Foxconn</b>, <b>Quadient</b>, and many others.
 					</li>
-					<li>Courses taught in Czech at home or in English abroad.</li>
-					<li>Over 150 courses completed in {php echo 2022 - 2008; } years.</li>
-					<li>Implementation of courses according to curricula or tailored to client needs.</li>
+					<li>Courses conducted domestically in the Czech language or abroad in English.</li>
+					<li>Over {$trainingsCount} courses delivered in {$trainingsYears} years.</li>
+					<li>Courses conducted based on outlines or customized according to client needs.</li>
 				</ul>
 				<p>
-					We also collaborated with ICTPro s.r.o. for a long time on the development of an information system.
+					I have been cooperating with ICTPro s.r.o. for a long time. <br  />
+					In the past, I also worked on the development of their information system.
 				</p>
 			</dd>
 			
 			<dt>
 				<a
 					href="https://www.vri.cz/"
-					title="Výzkumný ústav veterinárního lékařství, v. v. i."
+					title="Veterinary Research Institute, v. v. i."
 					target="_blank"
 					class="image"
-					{$logotypes->vuvel->styleAttr|noescape}
-				>{$logotypes->vuvel->code|noescape}</a>
+					{$logotypes->vri->styleAttr|noescape}
+				>{$logotypes->vri->code|noescape}</a>
 			</dt>
 			<dd>
 				<p>
 					<b>Development of a web portal for the Veterinary Research Institute,</b>
 				</p>
 				<p>
-					for the Department of Pharmacology, Immunotherapy, and Nanotoxicology (PIN).<br />
-					I developed the portal using the Pimcore CMS publishing system.
+					for the Department of Pharmacology, Immunotherapy, and Nanotoxicology (FIT).<br />
+					The portal was developed on the Pimcore CMS publication system.
 				</p>
 			</dd>
 			
@@ -168,8 +169,8 @@
 					<b>Development of an international portal for plastic surgeons and their clients.</b>
 				</p>
 				<p>
-					Working for Estheticon was a challenge for me. The company manages a wide range of clients on its Estheticon.com portal.<br />
-					The portal is available in 14 languages and its development is the company's core business.
+					Working for Estheticon was a challenge for me. The company manages a wide range of clients on its portal Estheticon.com,<br />
+					and its development is the main activity of the company. The portal is available in 14 languages.
 				</p>
 			</dd>
 			
@@ -184,16 +185,16 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Front-end developer and graphic designer.</b>
+					<b>Front-end programmer and graphic designer.</b>
 				</p>
 				<ul>
-					<li>Developed JavaScript components and coded HTML/CSS for the company's web applications.</li>
-					<li>Designed website redesigns and coded HTML templates.</li>
-					<li>Prepared web advertisements and print materials.</li>
+					<li>Programming JavaScript components and coding HTML/CSS for the company's web applications.</li>
+					<li>Designing and redesigning websites and coding HTML templates.</li>
+					<li>Preparing web advertisements and printed materials.</li>
 				</ul>
 				<p>
-					Tripomatic currently focuses on map applications, trip planning, and excursions. <br />
-					In the past, we developed a flight search aggregator.
+					Tripomatic now focuses on map applications, trip planning, and travel itineraries.<br />
+					Previously, we worked on developing a transfer flight search engine.
 				</p>
 			</dd>
 			
@@ -208,25 +209,26 @@
 			</dt>
 			<dd>
 				<p>
-					<b>Front-end developer and graphic designer.</b>
+					<b>Front-end programmer and graphic designer.</b>
 				</p>
 				<ul>
-					<li>Developed JavaScript components and coded HTML/CSS for the company's websites.</li>
-					<li>Designed website redesigns and coded HTML templates.</li>
-					<li>Prepared web advertisements and print materials.</li>
-					<li>Produced commercial video spots and post-production.</li>
+					<li>Programming JavaScript components and coding HTML/CSS for many company's websites.</li>
+					<li>Designing and redesigning websites and coding HTML templates.</li>
+					<li>Preparing web advertisements and printed materials.</li>
+					<li>Producing advertising video spots and post-production.</li>
 				</ul>
 				<p>
-					It was a great opportunity at the start of my career, where I gained a lot of experience in many different fields - marketing, graphic design, and IT.
+					A great opportunity at the start of my career, where I gained a lot of experience in various fields—marketing, graphics, and IT.
 				</p>
 				<p>
-					Today, the multinational company operates in many sectors - selling airline tickets, bus and train transportation, facilitating work, language, and au-pair stays, and much more.
+					Now an international company, it is engaged in many fields—air ticket sales, bus and train transport, 
+					intermediating work, language, and au-pair stays, and much more.
 				</p>
 			</dd>
 			
 		</dl>
 		
-		<p>Thanks to all the other companies and individuals who collaborated but couldn't fit here.</p>
+		<p>Thanks also to many other companies and individuals who could not fit here.</p>
 		<br />
 
 	</doc:body>

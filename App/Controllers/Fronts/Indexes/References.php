@@ -28,6 +28,9 @@ class References extends \App\Controllers\Fronts\Index {
 		}
 		$this->view->logotypes = $logotypes;
 
+		$this->view->trainingsCount = 150;
+		$this->view->trainingsYears = intval(date('Y')) - 2008;
+
 		$this->assets->References();
 		$this->view->logoHeight = 100;
 		$this->renderAction();

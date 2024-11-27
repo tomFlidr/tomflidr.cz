@@ -62,7 +62,7 @@
 				</p>
 				<ul>
 					<li>
-						<b>R-WEBDOG</b> - klientský systém pro správu, vzdálený přístup a řízení reklam v mobilních routerech nasazených v autobusech a vlacích.
+						<b>R-WEBDOG</b> - klientský systém pro správu, vzdálený přístup a řízení reklam v mobilních routerech nasazených v autobusech a vlacích po Evropě.
 					</li>
 					<li>
 						<b>Teleagenda</b> - interní účtovací systém pro fakturaci SIM s správu smluv.
@@ -123,15 +123,16 @@
 				<ul>
 					<li>
 						Realizace TOP kurzů agentur pro nejnáročnější klienty a firmy s profesionálními vývojářskými teamy: <br />
-						IBM, Microsoft, Česká spořitelna, Komerční banka, Seznam.cz, Avast, Esset, Bosh, 
-						Foxconn, Quadient a mnoho dalších.
+						<b>IBM</b>, <b>Česká spořitelna</b>, <b>Komerční banka</b>, <b>Seznam.cz</b>, <b>Avast</b>, 
+						<b>ESET</b>, <b>Bosch</b>, <b>Foxconn</b>, <b>Quadient</b> a mnoho dalších.
 					</li>
 					<li>Kurzy vedené doma v českém jazyce nebo v zahraničí v anglickém jazyce.</li>
-					<li>Za {php echo 2022 - 2008; } let přes 150 realizovaných kurzů.</li>
+					<li>Za {$trainingsYears} let přes {$trainingsCount} realizovaných kurzů.</li>
 					<li>Realizace kurzů podle osnov nebo příprava na míru dle potřeb klientů.</li>
 				</ul>
 				<p>
-					Se polečností ICTPro s.r.o. jsme také dlouhodobě spolupracovali na vývoji informačního systému.
+					Se polečností ICTPro s.r.o. spolupracuji dlouhodobě. <br />
+					V minulosti jsme také vyvíjeli jejich informační systém.
 				</p>
 			</dd>
 			
@@ -211,7 +212,7 @@
 					<b>Front-end programátor a grafik.</b>
 				</p>
 				<ul>
-					<li>Programování JavaScriptových komponent a kódování HTML/CSS pro weby společnosti.</li>
+					<li>Programování JavaScriptových komponent a kódování HTML/CSS pro mnoho webů společnosti.</li>
 					<li>Návrh webdesignu/redesignu webů a kódování HTML šablon.</li>
 					<li>Příprava webové reklamy a tiskových materiálů.</li>
 					<li>Realizace reklamích videospotů, postprodukce.</li>
