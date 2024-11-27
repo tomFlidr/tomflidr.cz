@@ -19,9 +19,34 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
-		<p>Společnosti a partneři, se kterými nadále spolupracuji nebo za kterými se rád ohlédnu díky dobré spolupráci:</p>
+		<p>Společnosti a partneři, se kterými nadále pracuji nebo za kterými se rád ohlédnu díky dobré spolupráci:</p>
 
 		<dl class="references">
+			<dt>
+				<a
+					href="https://www.dendera.cz/"
+					title="Dendera a.s." 
+					target="_blank" 
+					class="image"
+					{$logotypes->dendera->styleAttr|noescape}
+				>{$logotypes->dendera->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Vývoj další generace výrobního informačního systému Hercules 5.0.</b>
+				</p>
+				<ul>
+					<li>Architektura modulárního systému pro prodej dalším klientům.</li>
+					<li>Vývoj software, zpracovávání a migrace starých dat, řešení technických výzev.</li>
+					<li>Plánování projektu a vedení vývojového teamu.</li>
+					<li>Správa aplikačních serverů a databáze.</li>
+				</ul>
+				<p>
+					Dendera a.s. se zabývá výrobou z oceli, plechů a profilů, pomocí laserových a CNC technologií.<br />
+					Děkuji za přístup manželů Zatloukalových. Jako jeden z mála klientů přesně věděli co chtějí.
+				</p>
+			</dd>
+			
 			<dt>
 				<a
 					href="https://smart-con.cz/"
@@ -48,30 +73,6 @@
 				</ul>
 				<p>
 					Smart-CON se specializuje na bezdrátovou komunikaci, průmyslové routery a 5G síť.
-				</p>
-			</dd>
-			
-			<dt>
-				<a
-					href="https://www.dendera.cz/"
-					title="Dendera a.s." 
-					target="_blank" 
-					class="image"
-					{$logotypes->dendera->styleAttr|noescape}
-				>{$logotypes->dendera->code|noescape}</a>
-			</dt>
-			<dd>
-				<p>
-					<b>Vývoj další generace výrobního informačního systému Hercules 5.0.</b>
-				</p>
-				<ul>
-					<li>Architektura modulárního systému pro prodej dalším klientům.</li>
-					<li>Vývoj software, zpracovávání a migrace starých dat, řešení technických výzev.</li>
-					<li>Plánování projektu a vedení vývojového teamu.</li>
-					<li>Správa aplikačních serverů a databáze.</li>
-				</ul>
-				<p>
-					Společnost Dendera se zabývá výrobou z oceli, plechů a profilů, pomocí laserových a CNC technologií.
 				</p>
 			</dd>
 			
