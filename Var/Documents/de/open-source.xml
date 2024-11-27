@@ -19,158 +19,156 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
-		<p>Die Motivation, Open-Source-Software zu schreiben, basiert bei mir auf 3 Hauptgründen:</p>
+		<p>Meine Motivation, Open-Source-Software zu schreiben, beruht auf drei Hauptgründen:</p>
 		<ul>
-			<li>Ich bin mit den verfügbaren Lösungen unzufrieden und möchte es anders machen,</li>
-			<li>ich bin faul und möchte meine Arbeit bequemer und einfacher gestalten,</li>
-			<li>bei der Vorbereitung eines IT-Kurses stoße ich auf eine interessante Idee oder ein Teilnehmer bringt eine solche ein.</li>
+			<li>Ich möchte meine Arbeit erleichtern und effizienter gestalten,</li>
+			<li>ich bin manchmal unzufrieden mit den verfügbaren Lösungen und möchte es anders machen,</li>
+			<li>bei der Vorbereitung eines IT-Kurses stoße ich auf eine interessante Idee oder ein Teilnehmer bringt sie ein.</li>
 		</ul>
-		<p>
-			Manche meiner Codes nutze ich täglich, andere weniger, je nachdem, was ich gerade entwickle. <br />
-			Neben archivierten Projekten bemühe ich mich, diese kontinuierlich zu verbessern.
-		</p>
 
 		<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
 		<p>
-			Ein PHP-Framework zur Erstellung von Webanwendungen, das meine Systeme antreibt oder zu Lehrzwecken für OOP dient. Mein bisher größtes Projekt.
+			Ein PHP-Framework zur Erstellung von Webanwendungen, das meine Systeme unterstützt oder zu Lehrzwecken für OOP verwendet wird. Bisher das größte Projekt.
 		</p>
 		<ul>
 			<li>
-				<b>Schwerpunkt auf Leistung</b>
+				<b>Fokus auf Performance</b>
 				<ul>
-					<li>So wenig magische Funktionen wie möglich.</li>
-					<li>Eine möglichst schnelle Lernkurve.</li>
+					<li>So wenige magische Funktionen wie möglich.</li>
+					<li>Schnellstmögliche Lernkurve.</li>
 				</ul>
 			</li>
 			<li>
-				<b>Schwerpunkt auf Struktur</b>
+				<b>Fokus auf Struktur</b>
 				<ul>
-					<li>Für einfache Anwendungen kann nur der Kern des Frameworks verwendet werden.</li>
-					<li>Für komplexe Projekte steht eine breite Palette von Erweiterungen zur Verfügung, die miteinander zusammenarbeiten – Router, Datagrids usw.</li>
-					<li>Nie wieder überfüllte Ordner mit Controllern, Vorlagen, Widgets usw., alle MVC-Komponenten können nach Bedarf strukturiert werden.</li>
-					<li>Extrem große Anwendungen können in eigenständige Composer-Pakete strukturiert werden und als Module einer Hauptanwendung zusammen verwendet werden.</li>
+					<li>Für einfache Anwendungen kann nur der Framework-Kern verwendet werden.</li>
+					<li>Für komplexe Projekte steht eine Vielzahl von Erweiterungen zur Verfügung, die miteinander kooperieren - Router, Datagrids usw.</li>
+					<li>Nie wieder überfüllte Ordner mit Controllern, Templates, Widgets usw., alle MVC-Komponenten können je nach Bedarf strukturiert werden.</li>
+					<li>Extrem große Anwendungen können als eigenständige Composer-Pakete strukturiert und als Module einer Hauptanwendung genutzt werden.</li>
 				</ul>
 			</li>
 			<li>
-				<b>Schwerpunkt auf Freiheit</b>
+				<b>Fokus auf Freiheit</b>
 				<ul>
-					<li>Das Framework versucht nicht, eine universelle Lösung oder Stil aufzuzwingen; der Entwickler hat maximale kreative Freiheit.</li>
+					<li>Das Framework zwingt keine universellen Lösungen oder Stile auf, der Entwickler hat maximale kreative Freiheit.</li>
 					<li>Das Framework legt Wert auf langfristige Rückwärtskompatibilität.</li>
 				</ul>
 			</li>
-			<li>
-				Das Framework kann Anwendungen erstellen oder umfangreiche Bibliotheken in eine einzige PHP-Datei (ohne PHAR-Komprimierung) bündeln, <br />
-				die durch die vereinfachte Opcache noch schneller wird.
-			</li>
-			<li>Das Framework enthält ein <a href="https://github.com/mvccore/docs" target="_blank">Dokumentations-Repository</a> und viele <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">Beispiel-Repositories</a>.</li>
 		</ul>
+		<p>
+			Das Framework kann Anwendungen erstellen oder umfangreiche Bibliotheken in eine einzelne PHP-Datei packen (ohne PHAR-Packing), <br />
+			die dank der vereinfachten <code>opcache</code> noch schneller sind.
+		</p>
+		<p>
+			Das Framework umfasst ein <a href="https://github.com/mvccore/docs" target="_blank">Dokumentations-Repository</a> und viele <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">Beispiel-Repositories</a>.
+		</p>
 
 		<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>
 		<p>
-			Eine .NET-Utility zum Dumpen oder Loggen von Variablen, Objekten, Ausnahmen, mit Call-Trace und vielen weiteren Funktionen.
+			Ein .NET-Tool zum Dumpen oder Loggen von Variablen, Objekten, Ausnahmen, mit Call-Stack-Tracking und vielen weiteren Funktionen.
 		</p>
 		<ul>
-			<li>Ausgaben können im Entwicklungs-Output-Fenster oder CLI angezeigt werden.</li>
-			<li>Ausgaben können auch als schwebendes Fenster in der HTML-Antwort einer ASP.NET-Anwendung angezeigt werden (ähnlich wie bei <span class="info-link" data-href="https://github.com/nette/tracy" data-target="_blank">PHP tracy</span>).</li>
-			<li>Ausgaben können nach Priorität auf HDD als klickbare HTML-Ausgabe oder reiner Text geloggt werden.</li>
-			<li>Konfiguration – Log-Level-Einstellungen, Benachrichtigungen per E-Mail, Debug-IP-Adressen, benutzerdefinierte Debug-Panels usw.</li>
+			<li>Ausgabe kann im Entwicklungs-Ausgabefenster oder in der CLI angezeigt werden.</li>
+			<li>Ausgabe kann auch als schwebendes Fenster in der HTML-Antwort einer ASP.NET-Anwendung angezeigt werden (ähnlich wie bei <span class="info-link" data-href="https://github.com/nette/tracy" data-target="_blank">PHP Tracy</span>).</li>
+			<li>Ausgabe kann nach Prioritäten auf die Festplatte als klickbares HTML oder als reiner Text geloggt werden.</li>
+			<li>Konfiguration – Logging-Einstellungen nach Leveln, E-Mail-Benachrichtigungen, Debug-IP-Adressen, benutzerdefinierte Debug-Panels usw.</li>
 			<li>Zum Projekt gehören <a href="https://github.com/orgs/debug-sharp/repositories?q=example-" target="_blank">Beispiel-Repositories</a>, Code-Snippets für Visual Studio und mehr.</li>
-			<li>Nur für .NET Framework verwendbar (eine Reimplementierung für .NET Core steht noch aus).</li>
+			<li>Nur für .NET Framework nutzbar (Unterstützung für .NET Core steht noch aus).</li>
 		</ul>
 
 		<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
 		<p>
-			Ein Projekt für die Entwicklung von Webanwendungen mit dem Ext.JS-Framework in TypeScript. Erstellung von TS-Typ-Definitionen aus JSDocs und Beispiele zur Nutzung.
+			Ein Projekt zur Entwicklung von Webanwendungen mit dem Ext.JS-Framework in TypeScript. Generierung von TS-Typ-Mappings aus JSDocs und Anwendungsbeispiele.
 		</p>
 		<ul>
-			<li>Das Projekt enthält einen <a href="https://github.com/ExtTS/generator" target="_blank">Generator für Typdefinitionen</a>, geschrieben in C#, der aus einem Ext.JS-Toolkit-ZIP-Archiv den AST-Typbaum extrahiert.</li>
-			<li>Vorgenerierte Typdefinitionen für verschiedene Ext.JS-Versionen sind als separate Projekt-Repositories verfügbar.</li>
-			<li>Die generierten Typdefinitionen enthalten die vollständige JSDocs-Dokumentation des Frameworks, einschließlich funktionierender Links, formatiertem Code usw.</li>
-			<li>Es können entweder die vorgefertigten Typdefinitionen verwendet oder eigene, vereinfachte Definitionen erstellt werden.</li>
-			<li>TypeScript-Typdefinitionen für Ext.JS bieten an einigen Stellen sogar bessere Unterstützung als die kostenpflichtige Entwicklungsumgebung von Sencha.</li>
-			<li>Zum Projekt gehören <a href="https://github.com/orgs/ExtTS/repositories?q=example-" target="_blank">Beispiel-Repositories</a> für die verschiedenen Framework-Versionen.</li>
+			<li>Das Projekt enthält einen <a href="https://github.com/ExtTS/generator" target="_blank">Typdefinitionen-Generator für Ext.JS</a>, geschrieben in C#, der aus dem Ext.JS-Toolkit-ZIP-Datei einen AST-Baum von Typen extrahiert.</li>
+			<li>Vorgefertigte Typdefinitionen für verschiedene Versionen von Ext.JS sind als separate Projekt-Repositories verfügbar.</li>
+			<li>Die generierten Typdefinitionen enthalten vollständige JSDoc-Hilfen des Frameworks, einschließlich funktionierender Links, formatiertem Code usw.</li>
+			<li>Es können vorgefertigte oder selbst erstellte, kürzere Typdefinitionen genutzt werden.</li>
+			<li>TypeScript-Definitionen für Ext.JS bieten in einigen Bereichen sogar bessere Hilfen als die kostenpflichtige IDE von Sencha.</li>
+			<li>Das Projekt enthält <a href="https://github.com/orgs/ExtTS/repositories?q=example-" target="_blank">Beispiel-Repositories</a> für verschiedene Versionen des Frameworks.</li>
 		</ul>
 		
 		<h3><a href="https://github.com/Databasic-NET/Databasic" target="_blank">Databasic.NET</a></h3>
 		<p>
-			Eine .NET-Datenbankschicht, die die Arbeit mit relationalen Datenbanken in SQL erleichtert. Ziel ist es nicht, ein ORM wie EntityFramework zu sein; LINQ wird nicht verwendet.
+			Eine .NET-Datenbankschicht zur Vereinfachung der Arbeit mit relationalen Datenbanken in SQL. Es zielt nicht darauf ab, ein ORM wie EntityFramework zu sein, und verwendet kein LINQ.
 		</p>
 		<ul>
 			<li>Implementierungen für Microsoft SQL Server/MySQL/MariaDB/PostgreSQL/Oracle/ODBC/OLEDB, je nach gewählter Erweiterung.</li>
-			<li>Serialisierung von Datenbankdaten in skalare Typen, typisierte Klassen, ActiveRecord-Klassen, Sammlungen oder andere Formate mithilfe von Annotations.</li>
-			<li>Änderungserkennung in ActiveRecord-Klassen mit Einfügen, Aktualisieren und Löschen basierend auf Änderungen und Annotations.</li>
-			<li>Die Möglichkeit, aus mehreren Verbindungen zu wählen, entweder durch Annotation oder als zusätzlicher Abfrageparameter.</li>
-			<li>Nur für .NET Framework verwendbar (eine Reimplementierung für .NET Core steht noch aus).</li>
+			<li>Serialisierung von Datenbankdaten in skalare Typen, typisierte Klassen, ActiveRecord-Klassen, Sammlungen oder andere mittels Annotationen.</li>
+			<li>Erkennung von Änderungen in ActiveRecord-Klassen, Einfügen, Aktualisieren und Löschen basierend auf Änderungen und Annotationen.</li>
+			<li>Die Möglichkeit, zwischen mehreren Verbindungen basierend auf Annotationen oder direkt als weiterer Abfrageparameter zu wählen.</li>
+			<li>Nur für .NET Framework nutzbar (Unterstützung für .NET Core steht noch aus).</li>
 		</ul>
 
 		<h4><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server for Node.JS</a></h4>
 		<p>
-			Ein einfacher HTTP-Server für die Entwicklung kleinerer Anwendungen oder für Schulungszwecke.
+			Ein einfacher HTTP-Server für die Entwicklung kleinerer Anwendungen oder zu Schulungszwecken.
 		</p>
 		<ul>
-			<li><b>Einfache Entwicklung</b> – TypeScript-Definitionen, Hot-Reload der Anwendung bei Änderungen (kein Neustart von Server und Debugger erforderlich).</li>
-			<li><b>Wenige Abhängigkeiten</b> – nur die Pakete <code>tslib</code> und <code>mime-db</code>. Falls nötig, können <code>express</code> und andere Pakete verwendet werden.</li>
-			<li><b>Hauptfunktionen</b> – Standard-Skript der Anwendung/Verzeichnisse, Dateiübertragungen, Sitzungen, Fehlerbehandlung, Logging, Fehlerseiten usw.</li>
-			<li>Zum Projekt gehören <a href="https://github.com/orgs/web-dev-server/repositories?q=example-" target="_blank">Beispiel-Repositories</a>.</li>
+			<li><b>Einfache Entwicklung</b> - TypeScript-Definitionen, „Hot Reload“ der Anwendung bei Änderungen (kein Neustart von Server und Debugger erforderlich).</li>
+			<li><b>Wenige Abhängigkeiten</b> - nur die Pakete <code>tslib</code> und <code>mime-db</code>. Bei Bedarf können <code>express</code> und ähnliche verwendet werden.</li>
+			<li><b>Hauptfunktionen</b> - Standardskript der Anwendung/Verzeichnisse, Dateiübertragung, Sessions, Fehlerbehandlung der Anwendungen, Logging, Fehlerseiten usw.</li>
+			<li>Das Projekt umfasst <a href="https://github.com/orgs/web-dev-server/repositories?q=example-" target="_blank">Beispiel-Repositories</a>.</li>
 		</ul>
 
 		<h3><a href="https://github.com/tomFlidr/Notepad-HTML-JS-Formater-Plugin" target="_blank">Notepad++ JS/HTML Formatter Plugin</a></h3>
 		<p>
-			Ein Plugin für "jN Plugin", eine Reimplementierung des Code-Deobfuskators von der Website <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
+			Ein Plugin für „jN Plugin“, eine Reimplementierung eines Code-Deobfuskators von der Seite <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
 		</p>
 
 		<h3><a href="https://github.com/tomFlidr/ajax.js" target="_blank">Ajax.JS</a></h3>
 		<p>
-			Eine Utility-Bibliothek, die dieselben und zusätzliche Funktionen bietet, die den eingebauten Objekten <code>window.XMLHttpRequest</code> und <code>window.fetch()</code> bis heute fehlen.
+			Ein Utility, das die gleichen und zusätzliche Funktionen bietet, die in den eingebauten Objekten <code>window.XMLHttpRequest</code> und <code>window.fetch()</code> noch fehlen.
 		</p>
 
 		<h4><a href="https://github.com/parallel-pooler" target="_blank">Pooler</a></h4>
 		<p>
-			Eine Bibliothek für parallele Aufgaben im .NET Framework, um eine zu hohe Systemauslastung durch Hintergrundaufgaben zu begrenzen.
+			Eine Bibliothek für parallele Aufgaben im .NET Framework, um eine zu hohe Systembelastung durch Hintergrundaufgaben zu begrenzen.
 		</p>
 
 		<h4><a href="https://github.com/tomFlidr/sreality-configurable-rss" target="_blank">SReality RSS</a></h4>
 		<p>
-			Ein konfigurierbarer RSS-Feed des größten tschechischen Immobilienportals, der dessen API verwendet, einschließlich Bildern und Google Maps. Sehr nützlich, wenn man schnell eine neue Wohnung sucht.
+			Ein kostenloser RSS-Feed des größten tschechischen Immobilienportals, der dessen API nutzt, inklusive Bilder und Google Maps. Sehr nützlich, wenn man schnell eine neue Wohnung sucht.
 		</p>
 
 		<h4><a href="https://bitbucket.org/tomflidr/imdb-training-database/src" target="_blank">IMDB Training Database</a></h4>
 		<p>
-			Ein Teil der IMDB-Datenbank (International Movie Database) für Schulungen zur Optimierung von Datenbanken und Abfragen.
+			Ein Teil der IMDB (International Movie Database) zur Schulung von Datenbankoptimierung und Abfragen.
 		</p>
 
-		{hr()}
+		<hr />
 
 		<h3>Archivierte Projekte</h3>
 
 		<h5><a href="https://github.com/tomFlidr/jDiet.js" target="_blank">jDiet.JS</a></h5>
 		<p>
-			Ein kleines JS-Framework aus den Zeiten von jQuery für JS-Nerds, das aus der Desillusionierung über das "aufgeblähte" jQuery entstanden ist. <br />
-			Die Syntax ist vollständig kompatibel mit jQuery, jedoch enthält das Framework nur tatsächlich genutzte Funktionen – alles in nur 8 kB (GZIP).
+			Ein kleines JS-Framework aus der Zeit von jQuery für JS-Nerds, das aus der Enttäuschung über das aufgeblähte jQuery entstand. <br />
+			Die Syntax ist vollständig kompatibel mit jQuery, jedoch enthält das Framework nur die tatsächlich genutzten Funktionen, alles in nur 8 kB (GZIP).
 		</p>
 
 		<h5><a href="https://github.com/tomFlidr/class-advanced.js" target="_blank">ClassAdvanced.JS</a></h5>
 		<p>
-			Eine universelle Bibliothek für die Definition von Klassen aus der Zeit des weit verbreiteten EcmaScript 5, als es noch keine Syntax für Klassen gab.
+			Eine universelle Bibliothek zum Schreiben von Klassen aus der Zeit des weit verbreiteten ECMAScript 5, als es noch keine Klassenkonstruktionen gab.
 		</p>
 		<ul>
 			<li>
-				Unterstützte Konstruktionen – Konstruktor, Vererbung für statische und dynamische Mitglieder, Aufrufe von Elternfunktionen, Namespaces.
+				Unterstützte Konstruktionen – Konstruktor, Erweiterungen für statische und dynamische Mitglieder, Aufrufe von Elternfunktionen, Namespaces.
 			</li>
-			<li>Ähnliches Verhalten wie Late Static Binding in PHP für <code>this.self</code> und <code>this.static</code>.</li>
+			<li>Ähnliches Verhalten wie „Late Static Binding“ in PHP für <code>this.self</code> und <code>this.static</code>.</li>
 			<li>
 				Unterstützte Umgebungen – Browser (MSIE6+, Firefox, Webkit, Opera), Node.JS, WSH (Windows Script Host), Adobe ExtendScript Toolkit.
 			</li>
-			<li>Vererbungskontrolle mithilfe der Konstruktion <code>instanceof</code> und minimalistischer Selbstreflexion für Klassen und Namespaces.</li>
-			<li>Konfigurierbare Syntax für die Definition von Klassen.</li>
-			<li>Unterstützung für "Gehe zu Definition (F12)" in Visual Studio IDE und anderen Editoren mit vollständigem JS-Interpreter.</li>
+			<li>Vererbungskontrolle mit der <code>instanceof</code>-Konstruktion und minimalistische Selbstreflexion für Klassen und Namespaces.</li>
+			<li>Konfigurierbare Syntax für das Schreiben von Klassen.</li>
+			<li>Unterstützung für „Gehe zu Definition (F12)“ in Visual Studio IDE und anderen Editoren mit vollwertigem JS-Interpreter.</li>
 			<li>Sehr schnell, effizient, superklein – 2,8 kB (GZIP).</li>
-			<li>Inspiration durch PHP-OOP, Ext.JS und Prototype.JS-Syntax.</li>
+			<li>Inspiriert von PHP OOP, Ext.JS und Prototype.JS-Syntax.</li>
 		</ul>
 
 		<h5><a href="https://github.com/tomFlidr/gradient-overlay.js" target="_blank">GradientOverlay.JS</a></h5>
 		<p>
-			Eine Bibliothek zur Erstellung von Farbverläufen über Bildern im Browser aus der Zeit, als die CSS-Eigenschaft <code class="info-link" data-href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" data-target="_blank">filter</code> noch nicht weit verbreitet war.
+			Eine Bibliothek zum Erstellen von Farbverläufen über Bildern im Browser, aus der Zeit, bevor die CSS-Eigenschaft <code class="info-link" data-href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter" data-target="_blank">filter</code> weit verbreitet war.
 		</p>
 	
 	</doc:body>
