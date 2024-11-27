@@ -115,7 +115,7 @@
 
 		<h3><a href="https://github.com/tomFlidr/Notepad-HTML-JS-Formater-Plugin" target="_blank">Notepad++ JS/HTML Formatter Plugin</a></h3>
 		<p>
-			Plugin für „jN Plugin“, eine Reimplementierung des Code-Deobfuskators der Seite <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
+			Plugin für "jN Plugin", eine Reimplementierung des Code-Deobfuskators der Seite <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
 		</p>
 
 		<h3><a href="https://github.com/tomFlidr/ajax.js" target="_blank">Ajax.JS</a></h3>
@@ -138,13 +138,13 @@
 			Ein Teil der IMDB-Datenbank (International Movie Database) für Schulungszwecke in Datenbank- und Abfrageoptimierung.
 		</p>
 
-		<hr />
+		{hr()}
 
 		<h3>Archivierte Projekte</h3>
 
 		<h5><a href="https://github.com/tomFlidr/jDiet.js" target="_blank">jDiet.JS</a></h5>
 		<p>
-			Kleines JS-Framework aus der jQuery-Ära für JS-Enthusiasten, entstanden aus der Ernüchterung über das „aufgeblähte“ jQuery. <br />
+			Kleines JS-Framework aus der jQuery-Ära für JS-Enthusiasten, entstanden aus der Ernüchterung über das "aufgeblähte" jQuery. <br />
 			Die Syntax ist vollständig mit jQuery kompatibel, jedoch enthält das Framework nur häufig genutzte Funktionen, alles in nur 8 kB (GZIP).
 		</p>
 
@@ -156,13 +156,13 @@
 			<li>
 				Unterstützte Konstruktionen – Konstruktor, Vererbung für statische und dynamische Mitglieder, Aufrufe von Elternfunktionen, Namespaces.
 			</li>
-			<li>Ähnliches Verhalten wie „Late Static Binding“ in PHP für <code>this.self</code> und <code>this.static</code>.</li>
+			<li>Ähnliches Verhalten wie "Late Static Binding" in PHP für <code>this.self</code> und <code>this.static</code>.</li>
 			<li>
 				Unterstützte Umgebungen – Browser (MSIE6+, Firefox, Webkit, Opera), Node.JS, WSH (Windows Script Host), Adobe ExtendScript Toolkit.
 			</li>
 			<li>Vererbungsprüfung mit der <code>instanceof</code>-Konstruktion und minimalistische Selbstreflexion für Klassen und Namespaces.</li>
 			<li>Konfigurierbare Syntax für die Klassendeklaration.</li>
-			<li>Unterstützung für „Gehe zu Definition (F12)“ in Visual Studio IDE und anderen Editoren mit vollständigem JS-Interpreter.</li>
+			<li>Unterstützung für "Gehe zu Definition (F12)" in Visual Studio IDE und anderen Editoren mit vollständigem JS-Interpreter.</li>
 			<li>Sehr schnell, effizient, superklein – 2,8 kB (GZIP).</li>
 			<li>Inspiration aus PHP OOP, Ext.JS und Prototype.JS-Syntax.</li>
 		</ul>

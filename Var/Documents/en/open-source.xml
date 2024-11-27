@@ -52,7 +52,7 @@
 			<li>
 				<b>Focus on freedom</b>
 				<ul>
-					<li>The framework doesn’t enforce any universal solution or style, providing developers maximum creativity.</li>
+					<li>The framework doesn't enforce any universal solution or style, providing developers maximum creativity.</li>
 					<li>The framework emphasizes long-term backward compatibility.</li>
 				</ul>
 			</li>
@@ -116,7 +116,7 @@
 
 		<h3><a href="https://github.com/tomFlidr/Notepad-HTML-JS-Formater-Plugin" target="_blank">Notepad++ JS/HTML Formatter Plugin</a></h3>
 		<p>
-			A plugin for "jN Plugin," reimplementing the code deobfuscator from <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
+			A plugin for "jN Plugin", reimplementing the code deobfuscator from <span class="info-link" data-href="http://jsbeautifier.org/" data-target="_blank">jsbeautifier.org</span>.
 		</p>
 
 		<h3><a href="https://github.com/tomFlidr/ajax.js" target="_blank">Ajax.JS</a></h3>
@@ -139,7 +139,7 @@
 			A portion of the IMDB (International Movie Database) for training database optimization and query efficiency.
 		</p>
 
-		<hr />
+		{hr()}
 
 		<h3>Archived Projects</h3>
 
