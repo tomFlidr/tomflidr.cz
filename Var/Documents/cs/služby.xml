@@ -19,5 +19,73 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
+		<div class="cols">
+			<div class="col">
+				<h2>Vývoj web a desktop aplikací</h2>
+				<ul>
+					<li>Vývoj informačních systémů na míru, přizpůsobení řešení na trhu.</li>
+					<li>Vývoj v jazycích JS, TypeScript, PHP, C#, VB.NET.</li>
+					<li>Vývoj a administrace databází MariaDB, Microsoft SQL Server.</li>
+					<li>
+						Frameworky a nástroje, které znám velmi dobře:
+						<ul>
+							<li>.NET - MVC, WPF, gRPC, XAML, LINQ, WCF, WinForms, ASP.NET.</li>
+							<li>PHP - Pimcore CMS, Laminas, Nette, MvcCore.</li>
+							<li>JS/TS - Node.JS, Ext.JS, Angular, Vue, CreateJS &hellip;</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h2>Supervize IT projektů</h2>
+				<ul>
+					<li>Pomohu Vám mít přehled ve vašem rozsáhlém IT projektu a kdy bude hotov.</li>
+					<li>Pomohu Vám rozumět vývojovému teamu a nastavím správné postupy.</li>
+					<li>Dohlédnu, aby Vám vývojáři dávali tolik, za co platíte.</li>
+					<li>Pokud chcete, naučím Vás tolik, abyste po čase měl přehled i beze mne.</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="cols">
+			<div class="col">
+				<h2>Administrace serverů</h2>
+				<ul>
+					<li>Pomohu Vám s administrací serveru na Linux nebo Windows.</li>
+					<li>Zprovozním a budu Vám spracovat emailový server.</li>
+					<li>Zajistím monitoring serverů a kontrolní hlášení.</li>
+					<li>Zajistím Vám Long Term Support Vašich aplikací.</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h2>Grafické práce</h2>
+				<ul>
+					<li>Navrhnu webdesign Vašeho webového projektu.</li>
+					<li>Připravím vám tiskovou propagaci nebo internetovou replamu.</li>
+					<li>Pomohu Vám s postprodukcí fotografií nebo reklamních spotů.</li>
+				</ul>
+			</div>
+		</div>
+		
+		<h2>Konzultace</h2>
+		<p>
+			Vývoj webových aplikací jsem započal před 15 lety, grafiku ještě o 5 let dříve. <br />
+			Za tu dobu jsem viděl mnoho práce různých lidí a mnoho jsem se naučil. <br />
+			Jsem si docela jist, že výše není vyjmenované vše, v čem Vám mohu pomoci.
+		</p>
+		<p>
+			Pokud je i přesto Váš systém napsaný v nečem obskurnějším, <br />
+			co zde není uvedeno, zkuste mi zavolat a něco vymyslíme.
+		</p>
+		<p>
+			Při nejhorším Vás odkážu na někoho koho znám a kdo se zabývá Vaší technologií.
+		</p>
+
+		<p>
+			<b>V případě, že hledáte pečlivou práci, společníka zaměřeného na Váš projekt, 
+			<a href="{url('document', ['path' => 'kontakty'])}">prosím kontaktujte mne zde</a>.</b>
+		</p>
+		<br />
+
 	</doc:body>
 </doc:data>

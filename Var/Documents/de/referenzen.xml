@@ -127,7 +127,7 @@
 						<b>Seznam.cz</b>, <b>Avast</b>, <b>ESET</b>, <b>Bosch</b>, <b>Foxconn</b>, <b>Quadient</b> and many others.
 					</li>
 					<li>Kurse durchgeführt in der heimischen Sprache (Tschechisch) oder im Ausland auf Englisch.</li>
-					<li>Über {$trainingsCount} durchgeführte Kurse in {$trainingsYears} Jahren, meine durchschnittliche Bewertung durch die Studierenden beträgt {$trainingsAvg|number: 0.00} (von 5).</li>
+					<li>Über {$trainingsCount} durchgeführte Kurse in {$trainingsYears} Jahren, meine durchschnittliche Bewertung durch die Studierenden beträgt {$trainingsAvg * 6|number: '0.00'} (von 6).</li>
 					<li>Kurse gemäß Lehrplan oder maßgeschneidert nach den Bedürfnissen der Kunden.</li>
 				</ul>
 				<p>

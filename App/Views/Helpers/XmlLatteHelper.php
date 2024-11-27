@@ -37,8 +37,11 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 
 		$latte = new \Latte\Engine;
 		$latte->setTempDirectory($tmpFullPath);
+		$localization = \MvcCore\Ext\Tools\Locale::GetLocale(LC_ALL);
+		$latte->setLocale("{$localization->lang}_{$localization->locale}");
 		
 		$latte->addFunction('hr', fn () => new \Latte\Runtime\Html($this->view->Hr()));
+		$latte->addFunction('url', fn ($route, $params = [])  => $this->controller->Url($route, $params));
 		$latte->addExtension(new \Latte\Essential\RawPhpExtension);
 
 		return $latte->renderToString($tplFullPath, $vars);

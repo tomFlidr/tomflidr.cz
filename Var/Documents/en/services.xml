@@ -19,5 +19,73 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
+		<div class="cols">
+			<div class="col">
+				<h2>Development of Web and Desktop Applications</h2>
+				<ul>
+					<li>Custom development of information systems, adapting market solutions.</li>
+					<li>Development in languages JS, TypeScript, PHP, C#, VB.NET.</li>
+					<li>Development and administration of MariaDB and Microsoft SQL Server databases.</li>
+					<li>
+						Frameworks and tools I am very proficient with:
+						<ul>
+							<li>.NET - MVC, WPF, gRPC, XAML, LINQ, WCF, WinForms, ASP.NET.</li>
+							<li>PHP - Pimcore CMS, Laminas, Nette, MvcCore.</li>
+							<li>JS/TS - Node.JS, Ext.JS, Angular, Vue, CreateJS &hellip;</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h2>IT Project Supervision</h2>
+				<ul>
+					<li>I will help you gain an overview of your extensive IT project and its timeline for completion.</li>
+					<li>I will help you understand your development team and establish proper processes.</li>
+					<li>I will ensure your developers deliver what you are paying for.</li>
+					<li>If you prefer, I can teach you enough to have good insight into your project without me after some time.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cols">
+			<div class="col">
+				<h2>Server Administration</h2>
+				<ul>
+					<li>I can assist you with server administration on Linux or Windows.</li>
+					<li>I will set up and maintain your email server.</li>
+					<li>I will provide server monitoring and reporting.</li>
+					<li>I will ensure Long Term Support for your applications.</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h2>Graphic Design</h2>
+				<ul>
+					<li>I will prepare webdesign/redesign for your project.</li>
+					<li>I will prepare print or online advertising materials for you.</li>
+					<li>I will help you with post-production of photos or advertising spots.</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Consultations</h2>
+		<p>
+			I began developing web applications 15 years ago and started working in graphic design 5 years before that. <br />
+			Over the years, I have seen a lot of work by different people and have learned a great deal. <br />
+			I am quite sure that the list above does not cover everything I can help you with.
+		</p>
+		<p>
+			If your system is written in something more obscure <br />
+			that is not mentioned here, feel free to call me and we can figure something out.
+		</p>
+		<p>
+			At worst, I will refer you someone else I know, who is more specialized in your technology.
+		</p>
+
+		<p>
+			<b>If you are looking for meticulous work and a partner focused on your project, 
+			<a href="{url('document', ['path' => 'contacts'])}">please contact me here</a>.</b>
+		</p>
+		<br />
+		
 	</doc:body>
 </doc:data>

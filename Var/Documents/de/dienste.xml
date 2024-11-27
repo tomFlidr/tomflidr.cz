@@ -19,5 +19,73 @@
 	<doc:body>
 		<h1>{$title}</h1>
 		
+		<div class="cols">
+			<div class="col">
+				<h2>Entwicklung von Web- und Desktop-Anwendungen</h2>
+				<ul>
+					<li>Individuelle Entwicklung von Informationssystemen, Adaption von Lösungen am Markt.</li>
+					<li>Entwicklung in den Sprachen JS, TypeScript, PHP, C#, VB.NET.</li>
+					<li>Entwicklung und Verwaltung von MariaDB- und Microsoft SQL Server-Datenbanken.</li>
+					<li>
+						Frameworks und Tools, mit denen ich sehr vertraut bin:
+						<ul>
+							<li>.NET - MVC, WPF, gRPC, XAML, LINQ, WCF, WinForms, ASP.NET.</li>
+							<li>PHP - Pimcore CMS, Laminas, Nette, MvcCore.</li>
+							<li>JS/TS - Node.JS, Ext.JS, Angular, Vue, CreateJS &hellip;</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h2>IT-Projektüberwachung</h2>
+				<ul>
+					<li>Ich helfe Ihnen, den Überblick über Ihr umfangreiches IT-Projekt und den Zeitplan zur Fertigstellung zu behalten.</li>
+					<li>Ich unterstütze Sie dabei, Ihr Entwicklungsteam zu verstehen und geeignete Prozesse einzurichten.</li>
+					<li>Ich sorge dafür, dass Ihre Entwickler liefern, wofür Sie bezahlen.</li>
+					<li>Falls gewünscht, bringe ich Ihnen bei, genug Einblick in Ihr Projekt zu erhalten, sodass Sie nach einiger Zeit ohne mich auskommen.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cols">
+			<div class="col">
+				<h2>Serveradministration</h2>
+				<ul>
+					<li>Ich unterstütze Sie bei der Serveradministration auf Linux oder Windows.</li>
+					<li>Ich richte Ihren E-Mail-Server ein und warte ihn.</li>
+					<li>Ich biete Server-Monitoring und Berichterstellung.</li>
+					<li>Ich stelle Long Term Support für Ihre Anwendungen sicher.</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h2>Grafikdesign</h2>
+				<ul>
+					<li>Ich erstelle Webdesigns/Redesigns für Ihr Projekt.</li>
+					<li>Ich bereite Print- oder Online-Werbematerialien für Sie vor.</li>
+					<li>Ich helfe Ihnen bei der Nachbearbeitung von Fotos oder Werbespots.</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Beratungen</h2>
+		<p>
+			Ich begann vor 15 Jahren mit der Entwicklung von Webanwendungen und habe vor 5 Jahren damit begonnen, im Grafikdesign zu arbeiten. <br />
+			Im Laufe der Jahre habe ich viele Arbeiten verschiedener Leute gesehen und viel gelernt. <br />
+			Ich bin mir ziemlich sicher, dass die obige Liste nicht alles abdeckt, wobei ich Ihnen helfen kann.
+		</p>
+		<p>
+			Falls Ihr System in etwas Exotischerem geschrieben ist, <br />
+			das hier nicht erwähnt wurde, können Sie mich gerne kontaktieren und wir finden eine Lösung.
+		</p>
+		<p>
+			Im schlimmsten Fall verweise ich Sie an jemanden, den ich kenne und der besser auf Ihre Technologie spezialisiert ist.
+		</p>
+
+		<p>
+			<b>Wenn Sie nach gründlicher Arbeit und einem Partner suchen, der sich auf Ihr Projekt konzentriert, 
+			<a href="{url('document', ['path' => 'kontakte'])}">kontaktieren Sie mich bitte hier</a>.</b>
+		</p>
+		<br />
+		
 	</doc:body>
 </doc:data>
