@@ -30,6 +30,7 @@ class References extends \App\Controllers\Fronts\Index {
 
 		$this->view->trainingsCount = 150;
 		$this->view->trainingsYears = intval(date('Y')) - 2008;
+		$this->view->trainingsAvg = 1.35;
 
 		$this->assets->References();
 		$this->view->logoHeight = 100;
