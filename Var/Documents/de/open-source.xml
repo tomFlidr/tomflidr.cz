@@ -79,14 +79,14 @@
 
 		<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
 		<p>
-			Projekt zur Entwicklung von Webanwendungen mit dem Ext.JS-Framework in TypeScript. Generierung von TS-Typ-Mapping aus JSDocs und Anwendungsbeispielen.
+			Ein Web-Anwendungsentwicklungsprojekt unter Verwendung des Ext.JS-Frameworks in TypeScript. Beinhaltet das Generieren einer TS-Typenzuordnung (aus JSDocs) und Anwendungsbeispiele.
 		</p>
 		<ul>
 			<li>Das Projekt enthält einen <a href="https://github.com/ExtTS/generator" target="_blank">Typdefinitionen-Generator für Ext.JS</a>, geschrieben in C#, der aus dem Ext.JS-Toolkit-ZIP eine AST-Baum-Struktur der Typen extrahiert.</li>
 			<li>Vorgefertigte Typdefinitionen für verschiedene Ext.JS-Versionen sind als separate Repositories des Projekts verfügbar.</li>
 			<li>Die generierten Typdefinitionen enthalten vollständige JSDoc-Hilfen des Frameworks, inklusive funktionierender Links, formatiertem Code usw.</li>
 			<li>Es können vorgefertigte Typdefinitionen verwendet oder eigene kompaktere mit dem Generator erstellt werden.</li>
-			<li>TypeScript-Definitionen für Ext.JS bieten in einigen Bereichen eine bessere Unterstützung als die kostenpflichtige Entwicklungsumgebung von Sencha.</li>
+			<li>TypeScript-Definitionen für Ext.JS bieten teilweise eine bessere Intellisense-Autovervollständigung als die kostenpflichtige IDE von Sencha.</li>
 			<li>Zum Projekt gehören <a href="https://github.com/orgs/ExtTS/repositories?q=example-" target="_blank">Beispiel-Repositories</a> für verschiedene Versionen des Frameworks.</li>
 		</ul>
 		

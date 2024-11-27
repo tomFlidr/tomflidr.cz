@@ -79,14 +79,14 @@
 		
 		<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
 		<p>
-			Projekt vývoje webových aplikací s frameworkem Ext.JS v TypeScriptu. Generování mapy TS typů z JSDocs a příklady použití.
+			Projekt vývoje webových aplikací s frameworkem Ext.JS v TypeScriptu. Generování mapy TS typů (z JSDocs) a příklady použití.
 		</p>
 		<ul>
 			<li>Projekt obsahuje <a href="https://github.com/ExtTS/generator" target="_blank">generátor typových definic Ext.JS</a> napsaný v jazyce C#, který z Ext.JS toolkit ZIP souboru extrahuje AST strom typů.</li>
 			<li>Předgenerované typové definice pro jednotlivé verze Ext.JS jsou jako samostatné repozitáře projektu.</li>
 			<li>Vygenerované typové definice obsahují plnou JSDocs nápovědu frameworku včetně fungujících odkazů, formátovaného kódu apod.</li>
 			<li>Lze použít vygenerované typové definice nebo si pomocí generátoru vytvořit vlastní, stručnější.</li>
-			<li>TypeScript definice pro Ext.JS poskytují v některých místech i lepší nápovědu, než placené vývojové prostředí od Sencha.</li>
+			<li>TypeScript definice pro Ext.JS poskytují v některých místech i lepší automatické doplňování, než placené vývojové prostředí od Sencha.</li>
 			<li>Součástí projektu jsou <a href="https://github.com/orgs/ExtTS/repositories?q=example-" target="_blank">repozitáře s příklady</a> pro jednotlivé verze frameworku.</li>
 		</ul>
 

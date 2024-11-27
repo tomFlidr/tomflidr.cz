@@ -19,8 +19,6 @@
 	<doc:body>
 		<h1>{$title}</h1>
 		
-		<h1>Open Source Projects</h1>
-
 		<p>My motivation to write open source software comes from three main reasons:</p>
 		<ul>
 			<li>I want to make my work easier and more efficient,</li>
@@ -67,7 +65,7 @@
 
 		<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>
 		<p>
-			A .NET utility for dumping or logging variables, objects, exceptions, with call tracing and many other features.
+			A .NET utility for dumping or logging variables, objects, exceptions, clickable stack trace and many other features.
 		</p>
 		<ul>
 			<li>Output can be displayed in the development output window or CLI.</li>
@@ -80,14 +78,14 @@
 
 		<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
 		<p>
-			A web application development project using the Ext.JS framework in TypeScript. Includes generating TS type maps from JSDocs and usage examples.
+			A web application development project using the Ext.JS framework in TypeScript. Includes generating TS types map (from JSDocs) and usage examples.
 		</p>
 		<ul>
 			<li>The project contains a <a href="https://github.com/ExtTS/generator" target="_blank">type definition generator for Ext.JS</a> written in C#, which extracts an AST tree of types from the Ext.JS toolkit ZIP file.</li>
 			<li>Pre-generated type definitions for different Ext.JS versions are separate project repositories.</li>
 			<li>Generated type definitions include complete JSDocs help, including working links, formatted code, etc.</li>
 			<li>You can use pre-generated type definitions or create custom ones using the generator.</li>
-			<li>TypeScript definitions for Ext.JS sometimes offer better guidance than the paid IDE from Sencha.</li>
+			<li>TypeScript definitions for Ext.JS sometimes offer better intellisense autocomplete, than the paid IDE from Sencha.</li>
 			<li>The project includes <a href="https://github.com/orgs/ExtTS/repositories?q=example-" target="_blank">example repositories</a> for different framework versions.</li>
 		</ul>
 
