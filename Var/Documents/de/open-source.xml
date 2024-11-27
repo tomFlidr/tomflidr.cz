@@ -19,7 +19,7 @@
 	<doc:body>
 		<h1>{$title}</h1>
 
-		<p>Die Motivation, Open-Source-Software zu schreiben, ergibt sich bei mir aus drei Hauptgründen:</p>
+		<p>Die Motivation, Open-Source-Software zu schreiben, ergibt sich bei mir aus 3 Hauptgründen:</p>
 		<ul>
 			<li>Ich möchte meine Arbeit erleichtern und effizienter gestalten,</li>
 			<li>ich bin manchmal mit verfügbaren Lösungen unzufrieden und möchte es anders machen,</li>
@@ -34,8 +34,9 @@
 			<li>
 				<b>Fokus auf Performance</b>
 				<ul>
-					<li>So wenig magische Funktionen wie möglich.</li>
-					<li>So steile Lernkurve wie möglich.</li>
+					<li>So wenig magische Prinzipien und Funktionen wie möglich.</li>
+					<li>So steile Lernkurve wie möglich, keine neue Sprache oder neues Universum.</li>
+					
 				</ul>
 			</li>
 			<li>
