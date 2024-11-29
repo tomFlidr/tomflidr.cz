@@ -2,8 +2,11 @@
 
 namespace App\Controllers\Common;
 
+use \MvcCore\Ext\Views\Helpers\CssHelper;
+
 class Assets extends \MvcCore\Controller {
 
+	public const PRINT_PREVIEW_PARAM = 'print-preview';
 	public const THEME_SESSION_NAME = 'theme';
 	
 	protected string $mediaSiteVersion;
@@ -83,10 +86,19 @@ class Assets extends \MvcCore\Controller {
 			->Append($static . "/css/all/themes/{$this->theme}/layout.{$this->mediaSiteVersion}.{$themeFullSuffix}.css");
 		
 		$this->view->Css('headAllPrint')
+			->Append(media: 'print', path: $static . '/css/print/fonts.css')
 			->Append(media: 'print', path: $static . '/css/print/common-rules.css')
 			->Append(media: 'print', path: $static . '/css/print/links.css')
 			->Append(media: 'print', path: $static . '/css/print/layout.css')
 			->Append(media: 'print', path: $static . '/css/print/document.css');
+		
+		if ($this->request->HasParam(self::PRINT_PREVIEW_PARAM)) {
+			$headAllBundle = $this->view->Css('headAllPrint');
+			$printItems = & $headAllBundle->GetItems();
+			foreach ($printItems as & $printItem)
+				$printItem->media = CssHelper::MEDIA_ALL;
+			$headAllBundle->Prepend(media: 'screen', path: $static . '/css/print/preview.css');
+		}
 		
 		$this->view->Js('headAll')
 			->Append($static . "/js/libs/prototype-extensions.js")
@@ -132,6 +144,12 @@ class Assets extends \MvcCore\Controller {
 		$this->view->Css('headPage')
 			->Append($static . '/css/pages/cv.css')
 			->Append($static . '/css/pages/cv.print.css', media: 'print');
+		if ($this->request->HasParam(self::PRINT_PREVIEW_PARAM)) {
+			$headPageBundle = $this->view->Css('headPage');
+			$printItems = & $headPageBundle->GetItems();
+			foreach ($printItems as & $printItem)
+				$printItem->media = CssHelper::MEDIA_ALL;
+		}
 	}
 	
 	public function Contacts (): void {

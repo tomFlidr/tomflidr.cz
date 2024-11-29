@@ -13,7 +13,11 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 
 		$viewVars = $this->view->GetData();
 		$modelVars = $model->GetData();
-		$vars = array_merge($viewVars, $modelVars, $variables);
+		$vars = array_merge($viewVars, $modelVars, $variables, [
+			'controller'	=> $this->controller,
+			'request'		=> $this->request,
+			'response'		=> $this->response,
+		]);
 		
 		if ((!isset($vars['originalPath']) && !isset($vars['path'])) || !isset($vars[$codeProp])) 
 			throw new \Exception("Entity model has not defined `originalPath` or `path` or `{$codeProp}` in XML data.");

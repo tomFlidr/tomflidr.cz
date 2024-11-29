@@ -17,59 +17,198 @@
 	<doc:navigation-subtitle>vše o mě</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1>Tomáš Flídr</h1>
 
-		<div class="cols cols-2-1">
+		<div class="cols cols-5-2">
 			<div class="col">
+				<h1>Tomáš Flídr</h1>
 				
-				<h3>Profil</h3>
+				
+				<h3 class="noprint">Profil</h3>
+				<p>
+					Jsem zkušený vývojář webových aplikací s&nbsp;různými přesahy.<br />
+					Mám rád výkonná řešení s&nbsp;minimálními závislostmi a&nbsp;důrazem na&nbsp;dlouhou životnost.<br />
+					Nejsem serfař po&nbsp;přechodných módách a rád mažu přebujelý kód:-).
+				</p>
+				<p class="noprint">
+					Vytvářím informační systémy, ecommerce aplikace, open source komponenty a čas od času
+					školím profesionální vývojáře. Mám zkušenosti s vedením vývojového týmu nebo jsem jeho součástí.
+				</p>
+				
 				
 				<h3>Vzdělání</h3>
+				<p>Všeobecné Gymnázium Polička (2001 - 2005).</p>
 				
-				<h3>Open Source</h3>
+				
+				<h3>Open source <small>(<a href="{url('document', ['path' => 'open-source'])}">zobrazit vše</a>)</small></h3>
+				<div class="cols open-source">
+					<div class="col">
+						<h6><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h6>
+						<p>PHP MVC framework pro jedno-souborové nástroje i komplexní systémy.</p>
+						<h6><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h6>
+						<p>.NET debug utilita pro desktop i web.</p>
+					</div>
+					<div class="col">
+						<h6><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></h6>
+						<p>Pohodlnější vývoj web aplikací v Node.JS s podporou "hot realod".</p>
+						<h6><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h6>
+						<p>Transpiller Ext.JS dokumentace do TS.</p>
+					</div>
+				</div>
+				
 				
 				<h3>Praxe</h3>
+				<h5 class="practice">
+					<span class="practice-from-to">
+						2018 – dnes
+					</span>
+					<span class="practice-subject">
+						Dlouhodobá spolupráce se spol. <a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a>
+					</span>
+				</h5>
+				<p class="practise">
+					
+				</p>
+				
+				<h5 class="practice">
+					<span class="practice-from-to">
+						2008 – dnes
+					</span>
+					<span class="practice-subject">
+						Lektorská činnost
+					</span>
+				</h5>
+				<p class="practise">
+					
+				</p>
+				
+				<h5 class="practice">
+					<span class="practice-from-to">
+						2022 – 2024
+					</span>
+					<span class="practice-subject">
+						Spolupráce se spol. <a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a>
+					</span>
+				</h5>
+				<p class="practise">
+					
+				</p>
+				
+				<h5 class="practice">
+					<span class="practice-from-to">
+						2018
+					</span>
+					<span class="practice-subject">
+						Portál FIT pro Výzkumný ústav veterinárního lékařství
+					</span>
+				</h5>
+				<p class="practise">
+					
+				</p>
+				
+			
 				
 			</div>
 			<div class="col">
 				<div class="widget personal-info">
+					<img class="portrait" src="TODO" />
 					<h5>Osobní údaje</h5>
 					<dl>
-						<dt>datum narození:</dt><dd>6. 8. 1986</dd>
-						<dt>adresa:</dt>		<dd>Mělčany 65, 664 64, Mělčany</dd>
-						<dt class="noweb">kontakty:</dt>		<dd>+420 724 479 802, info@tomflidr.com, tomflidr.cz</dd>
-						<dt class="noweb">soc. sítě:</dt>		<dd>
-							github.com/tomflidr,
-							linkedin.com/in/tomflidr,
-							stackoverflow.com/users/7032987/tom-fl%c3%addr
-						</dd>
-						<dt class="noprint">Více kontaktů zde.</dt>
+						<dt>narozen:</dt>
+						<dd>6. 8. 1986</dd>
 						
+						<dt>adresa:</dt>
+						<dd><a href="{$contacts->fullMap}" target="_blank">Mělčany 65, 664 64, Mělčany</a></dd>
+						
+						<dt>kontakty:</dt>
+						<dd class="noprint">
+							<a href="{$contacts->phone->link}">{$contacts->phone->text}</a>, 
+							<a href="{$contacts->email->link}">{$contacts->email->text}</a>
+						</dd>
+						<dd class="noscreen">
+							<a href="{$contacts->phone->link}">{$contacts->phone->text}</a><br />
+							<a href="{$contacts->email->link}">{$contacts->email->text}</a><br />
+							<a href="{url('home', ['absolute' => TRUE])}">{$request->GetHostname()}</a>
+						</dd>
+						
+						<dt>soc. sítě:</dt>
+						<dd>
+							<ul class="social nostyle">
+								{foreach $contacts->social as $socialKey => $socialData}
+									<li class="icon icon-{$socialKey}">
+										<a href="{$socialData->link}" target="_blank">{$socialData->text}</a>
+									</li>
+								{/foreach}
+							</ul>
+						</dd>
 					</dl>
+					<a class="contacts noprint" href="{url('document', ['path' => 'kontakty'])}">Všechny kontaktní informace</a>
 				</div>
 
 				<div class="widget it-skills">
 					<h5>IT dovednosti</h5>
-					<i>(roky prof. používání) [zaměření]</i>
-					<ul>
-						<li>JavaScript <i>({$techYears->js}) [Node.JS, Ext.JS, Angular, Vue, Create.JS &hellip;]</i>,</li>
-						<li>PHP<i> ({$techYears->php}) [Pimcore CMS, Laminas, Nette, MvcCore]</i>,</li>
-						<li>MySQL, MariaDB <i>({$techYears->mySql}) [DB scripting, replikace]</i>,</li>
-						<li>C# <i>({$techYears->csharp}) [.NET Core, ASP.NET, MVC, WinForms, WPF]</i>,</li>
-						<li>MSSQL <i>({$techYears->msSql}) [Win., Linux, DB scripting]</i>,</li>
-						<li>VB.NET <i>({$techYears->vb})</i>,</li>
-						<li>Linux, Shell <i>({$techYears->shell}) [LAMP, Zabbix, Gitea, iRedMail]</i>,</li>
-						<li>TypeScript <i>({$techYears->ts})</i>,</li>
+					<span class="years">roky profesionálního používání</span>
+					<span class="focus">fokus</span>
+					<ul class="skills">
 						<li>
-							<b>Obvyklejší dovednosti:</b>
+							<span class="skill">JavaScript</span>
+							<span class="years">{$techYears->js}</span>
+							<span class="focus">Node.JS, Ext.JS, Vue, Create.JS &hellip;</span>
+						</li>
+						<li>
+							<span class="skill">PHP</span>
+							<span class="years">{$techYears->php}</span>
+							<span class="focus">Pimcore CMS, Laminas, Nette, MvcCore</span>
+						</li>
+						<li>
+							<span class="skill">MySQL, MariaDB</span>
+							<span class="years">{$techYears->mySql}</span>
+							<span class="focus">DB scripting, replikace</span>
+						</li>
+						<li>
+							<span class="skill">C#</span>
+							<span class="years">{$techYears->csharp}</span>
+							<span class="focus">.NET Core, ASP.NET, MVC, WPF, WinForms</span>
+						</li>
+						<li>
+							<span class="skill">MSSQL</span>
+							<span class="years">{$techYears->msSql}</span>
+							<span class="focus">Win., Linux, DB scripting</span>
+						</li>
+						<li>
+							<span class="skill">VB.NET</span>
+							<span class="years">{$techYears->vb}</span>
+						</li>
+						<li>
+							<span class="skill">Linux, Shell</span>
+							<span class="years">{$techYears->shell}</span>
+							<span class="focus">LAMP, Zabbix, Gitea, iRedMail</span>
+						</li>
+						<li>
+							<span class="skill">TypeScript</span>
+							<span class="years">{$techYears->ts}</span>
+						</li>
+						<li>
+							<h6>Obvyklejší dovednosti:</h6>
 							<ul>
-								<li>HTML, CSS <i>(18) [pure code or Less]</i>,</li>
 								<li>
-									CI/CD (started 14 years ago)<br />
-									<i>[GIT, Mercurial, SVN, Trac, Jira, Pupeteer, Selenium, Unit testing]</i>,
+									<span class="skill">HTML, CSS</span>
+									<span class="years">18</span>
+									<span class="focus">čistě nebo pomocí Less</span>
 								</li>
-								<li>XML <i>(9) [SOAP, DTD, XSD, XSLT]</i>,</li>
-								<li>C++, Java, Python <i>[only passive reading]</i>.</li>
+								<li>
+									<span class="skill">CI/CD</span>
+									<span class="years">14</span>
+									<span class="focus">GIT, Mercurial, SVN, Trac, Jira, Pupeteer, Selenium, Unit testing</span>
+								</li>
+								<li>
+									<span class="skill">XML</span>
+									<span class="years">9</span>
+									<span class="focus">SOAP, DTD, XSD, XSLT</span>
+								</li>
+								<li>
+									<span class="skill">C++, Python, Java</span>
+									<span class="focus">pouze pasivně</span>
+								</li>
 							</ul>
 						</li>
 					</ul>
@@ -78,25 +217,44 @@
 
 				<div class="widget lang-skills">
 					<h5>Jazyky</h5>
-					<ul>
-						<li>Angličtina <i>(intermediate B1)</i></li>
-						<li>Němčina <i>(začátečník)</i></li>
-						<li>Čeština <i>(rodillý)</i></li>
+					<ul class="skills">
+						<li>
+							<span class="skill">Angličtina</span>
+							<a class="focus" href="https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level/b1-intermediate" target="_blank">intermediate B1</a>
+						</li>
+						<li>
+							<span class="skill">Němčina</span>
+							<span class="focus">začátečník</span>
+						</li>
+						<li>
+							<span class="skill">Čeština</span>
+							<span class="focus">rodillý</span>
+						</li>
 					</ul>
 				</div>
 
 				<div class="widget other-skills">
 					<h5>Ostatní dovednosti</h5>
-					<p>Řidičský průkaz skupiny B</p>
+					<span class="skill">Řidičský průkaz skupiny B</span>
+					<span class="focus">aktivní</span>
 				</div>
 
 				<div class="widget hobbies">
 					<h5>Záliby</h5>
-					<p>Má rodina, DIY, psaní poezie, plavání, cykloturistika, červené víno.</p>
+					<span class="skill">Má rodina, DIY, psaní poezie, plavání, cykloturistika, červené víno.</span>
 				</div>
 				
 			</div>
 		</div>
+		
+		<div style="height:800px">hello</div>
+		<div style="height:800px">hello</div>
+		<div style="height:800px">hello</div>
+		<div style="height:800px">hello</div>
+		<div style="height:800px">hello</div>
+		<div style="height:800px">hello</div>
+		<div style="height:800px">hello</div>
+
 		
 	</doc:body>
 </doc:data>

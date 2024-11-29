@@ -1,3 +1,17 @@
 <?php
 	/** @var \App\Views\Layouts\standard $this */
+	$themeImages = [
+		'dark-static'	=> 'circuit_dark.jpg',
+		'dark-animated'	=> 'circuit_dark_animated.webp',
+		'light'			=> 'circuit_light.jpg',
+	];
 ?>
+<link rel="prefetch" href="/static/fonts/sourcesanspro/regular.woff2" />
+<link rel="prefetch" href="/static/fonts/sourcesanspro/bold.woff2" />
+<link rel="prefetch" href="/static/fonts/fontello/icons.woff" />
+<?php if (isset($themeImages[$this->theme->currentDcFull])): ?>
+<link rel="prefetch" href="/static/img/content/<?=$themeImages[$this->theme->currentDcFull]?>" />
+<?php endif; ?>
+<link rel="prefetch" href="/static/fonts/sourcesanspro/it.woff2" />
+<link rel="prefetch" href="/static/fonts/sourcesanspro/boldit.woff2" />
+<link rel="prefetch" href="/static/fonts/sourcesanspro/black.woff2" />

@@ -1,0 +1,35 @@
+.document a:not(.image){
+	color:var(--color-link-normal);
+	cursor:pointer;
+	display:inline-block;
+	border-bottom:0;
+	text-decoration:underline;
+	padding-left:0;
+	padding-right:0;
+}
+.document a:not(.image):hover,
+.document a:not(.image):focus,
+.document a:not(.image):active{
+	border-bottom:0;
+	text-decoration:none;
+	background-color:unset;
+	border-radius:0;
+}
+
+.document a:not(.image):visited{
+	color:var(--color-link-visited);
+	border-bottom:0;
+}
+.document a:not(.image):visited:hover,
+.document a:not(.image):visited:focus,
+.document a:not(.image):visited:active{
+	background-color:unset;
+}
+a[target=_blank]:not(.image){
+	position:relative;
+	padding-right:0;
+}
+a[target=_blank]:not(.image):before,
+a[target=_blank]:not(.image)::before{
+	content:unset;
+}

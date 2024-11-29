@@ -1,9 +1,71 @@
-.widget{
-	font-size:90%;
+/* hide all not for screen */
+.noscreen{display:none;}
+
+/* widgets - common rules */
+.cols .col:last-of-type{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:flex-start;
+	gap:0.5em;
+}
+.widget{font-size:90%;}
+.widget h5{margin-top:0.75em;}
+.widget:first-of-type h5{margin-top:0.5em;}
+.widget dl{gap:0 5px;}
+.widget ul.skills{margin-top:0.4em;margin-bottom:0;}
+.widget ul.skills li{margin-bottom:0.4em;}
+.widget ul.skills li:last-of-type{margin-bottom:0em;}
+.widget .years{font-size:90%;}
+.widget .years::before{content:'(';}
+.widget .years::after{content:')';}
+.widget .focus{font-size:90%;line-height:1.2em;}
+.widget .focus::before{content:'[' !important;}
+/* unset all from a[target=_blank]: */
+.widget a.focus{padding-right:1px;}
+.widget a.focus::before{
+	position:static !important;
+	font-family:unset !important;
+	font-style:unset !important;
+	font-weight:unset !important;
+	right:unset !important;
+	width:unset !important;
+	height:unset !important;
+	line-height:unset !important;
+	top:unset !important;
+	margin-top:unset !important;
+	font-size:unset !important;
+}
+.widget .focus::after{content:']';}
+.dark .focus{color:#aaa;}
+.light .focus{color:#555;}
+.widget ul li .focus{display:block;}
+
+
+/* widget - personal info */
+.widget.personal-info ul{
+	margin:0;
+}
+.widget.personal-info ul li{
+	list-style-type:none;
+	margin-left:0;
+}
+.widget.personal-info a.contacts::after{
+	content:'\00BB';
+	padding-left:3px;
+	padding-right:3px;
 }
 
-.widget i{
-	color:#aaa;
-	font-size:90%;
+/* widget- it skills */
+
+
+/* content */
+
+.cols.open-source{
+	gap:0.25cm;
 }
-.noweb{display:none;}
+.cols.open-source .col{width:0;flex:1 !important;display:block;}
+.open-source h6{
+	font-size:11pt;
+	margin-bottom:0;
+}

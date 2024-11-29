@@ -1,4 +1,40 @@
+/* show all not for screen, hide all not for print */
+.noscreen{display:block;}
+.noprint{display:none !important;}
+
+/* columns */
+.cols{
+	gap:0.5cm;
+}
+.cols .col:first-of-type {
+	flex:1 !important;
+	border-right:1px dotted #888;
+}
+.cols .col:last-of-type{
+	flex:1 !important;
+	max-width:225px !important;
+	gap:0;
+	border-left:1px dotted #888;
+}
+
+/* widgets */
+.widget{
+	font-size:10pt;
+	min-width:5cm;
+}
+.widget h5{
+	margin:0.75em 0 0 0;
+}
+.widget:first-of-type h5{
+	margin-top:0;
+}
+.widget dl{
+	margin:0;
+}
+.widget ul.skills li .skill{font-family:'ssp_semibold';}
+.widget ul.skills li .years{}
+.widget ul.skills li .focus{}
 
 
-.noweb{display:block;}
-.noprint{display:none;}
+/* content */
+.document h1{font-family:'ssp_black';}

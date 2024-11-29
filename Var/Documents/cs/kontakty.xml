@@ -24,8 +24,12 @@
 				<h4>Nejlépe mne zastihnete na telefonu, případně zavolám zpět.</h4>
 				<br />
 				<dl class="personal">
-					<dt>telefon:</dt>			<dd><b><a href="{$contacts->email->link}">{$contacts->phone->text}</a></b></dd>
-					<dt>email:</dt>				<dd><b><a href="{$contacts->email->link}">{$contacts->email->text}</a></b></dd>
+					<dt>mobil:</dt>
+					<dd><b><a href="{$contacts->phone->link}">{$contacts->phone->text}</a></b></dd>
+					
+					<dt>email:</dt>
+					<dd><b><a href="{$contacts->email->link}">{$contacts->email->text}</a></b></dd>
+					
 					<dt>
 						<span 
 							class="info-link" 
@@ -42,6 +46,13 @@ Více informací naleznete po klinutí na tento text.
 						<b><a href="{$contacts->pgpKey->view|noescape}">zobrazit</a></b>
 						<b><a href="{$contacts->pgpKey->download|noescape}">stáhnout</a></b><br />
 						<small>otisk: {$contacts->pgpKey->fingerprint}</small>
+					</dd>
+					
+					<dt>chaty:</dt>
+					<dd>
+						aktivně <span class="info-link" data-href="https://signal.org/" data-target="_blank">Signal</span>, 
+						<a href="{$contacts->chats->whatsapp}" target="_blank">WhatsApp</a>
+						 a <a href="{$contacts->chats->skype}" target="_blank">Skype</a>
 					</dd>
 				</dl>
 
@@ -72,17 +83,20 @@ Více informací naleznete po klinutí na tento text.
 				
 				<h4>Datová schránka</h4>
 				<dl>
-					<dt>Podnikající fyzická osoba (PFO):</dt>	<dd>
+					<dt>Podnikající fyzická osoba (PFO):</dt>
+					<dd>
 						<a href="{$contacts->goverment->business->link}" target="_blank">{$contacts->goverment->business->text}</a>
 					</dd>
-					<dt>Fyzická osoba  (FO):</dt>				<dd>
+					
+					<dt>Fyzická osoba  (FO):</dt>
+					<dd>
 						<a href="{$contacts->goverment->personal->link}" target="_blank">{$contacts->goverment->personal->text}</a>
 					</dd>
 				</dl>
 			</div>
 		</div>
 		
-		<h5>Zde pracuji</h5>
+		<h5><a href="{$contacts->fullMap}" target="_blank">Zde pracuji</a></h5>
 		<div>{$map|noescape}</div>
 		<br />
 		

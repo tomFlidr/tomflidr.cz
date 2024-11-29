@@ -35,7 +35,9 @@ abstract class standard extends \MvcCore\View {
 	/**
 	 * @var ?object{
 	 *		"current":string,
-	 *		"next":string
+	 *		"next":string,
+	 *		"currentDcShort":string,
+	 *		"currentDcFull":string
 	 * }
 	 */
 	var ?\stdClass $theme = NULL;

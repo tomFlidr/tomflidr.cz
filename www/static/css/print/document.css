@@ -1,0 +1,23 @@
+.document ul:not(.nostyle){
+	margin:0;
+}
+.document ul:not(.nostyle) li{
+	position:relative;
+	padding-left:0.8em;
+	list-style-type:none;
+	margin-left:0;
+}
+.document ul:not(.nostyle) li::before{
+	position:absolute;
+	left:0;
+	line-height:13pt;
+	content:'\2022';
+	display:inline-block;
+	font-size:14pt;
+}
+.document p,
+.document dl dd,
+.document dl dt,
+.document ul li{
+	font-size:10pt;
+}

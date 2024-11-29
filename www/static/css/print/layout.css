@@ -1,13 +1,35 @@
+@page{
+	/* real print margins */
+	margin:1.0cm 1.0cm 1.25cm 1.0cm;
+	size:a4 portrait;
+	@bottom-center {
+		font-size:8px;
+		content:"page " counter(page);
+		color:#888;
+	}
+}
 html,body{
-	font-size:12pt;
+	background:#fff;
 }
 .container{
 	width:100%;
 	margin:0;
+	box-shadow:unset;
+	border-radius:unset;
+}
+.glass{
+	padding:0 !important;
+	backdrop-filter:unset;
+	border:0;
+}
+.glass::before{
+	display:none;
 }
 .content{
 }
-.bg,
-.foot{
+
+header,
+main .nav-breadcrumbs,
+footer{
 	display:none;
 }

@@ -23,6 +23,15 @@ class Cv extends \App\Controllers\Fronts\Index {
 
 	public function IndexAction (): void {
 		$this->setUpTitleAndBreadCrumbsText();
+		
+		$this->view->contacts = \App\Models\Contact::GetData();
+		$this->view->techYears = $this->completeTechYears();
+
+		$this->assets->Cv();
+		$this->renderAction();
+	}
+
+	protected function completeTechYears (): \stdClass {
 		$currentDateTime = new DateTime('now');
 		$techYears = new \stdClass;
 		foreach (self::$techStarts as $techKey => $techStart) {
@@ -32,10 +41,6 @@ class Cv extends \App\Controllers\Fronts\Index {
 			$dateDiff = $currentDateTime->diff($startDate, TRUE);
 			$techYears->{$techKey} = intval($dateDiff->format('%y'));
 		}
-		$this->view->techYears = $techYears;
-		x($techYears);
-		$this->assets->Cv();
-		$this->renderAction();
+		return $techYears;
 	}
-
 }

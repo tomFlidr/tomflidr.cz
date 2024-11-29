@@ -23,8 +23,12 @@
 			<div class="col">
 				<h4>It's best to reach me by phone, <br  />I'll call you back.</h4>
 				<dl class="personal">
-					<dt>mobile:</dt>			<dd><b><a href="{$contacts->email->link}">{$contacts->phone->text}</a></b></dd>
-					<dt>email:</dt>				<dd><b><a href="{$contacts->email->link}">{$contacts->email->text}</a></b></dd>
+					<dt>mobile:</dt>
+					<dd><b><a href="{$contacts->phone->link}">{$contacts->phone->text}</a></b></dd>
+					
+					<dt>email:</dt>
+					<dd><b><a href="{$contacts->email->link}">{$contacts->email->text}</a></b></dd>
+					
 					<dt>
 						<span 
 							class="info-link" 
@@ -41,6 +45,13 @@ Click on this text for more info.
 						<b><a href="{$contacts->pgpKey->view|noescape}">view</a></b>
 						<b><a href="{$contacts->pgpKey->download|noescape}">download</a></b><br />
 						<small>fingerprint: {$contacts->pgpKey->fingerprint}</small>
+					</dd>
+					
+					<dt>chats:</dt>
+					<dd>
+						actively <span class="info-link" data-href="https://signal.org/" data-target="_blank">Signal</span>, 
+						<a href="{$contacts->chats->whatsapp}" target="_blank">WhatsApp</a>
+						 and <a href="{$contacts->chats->skype}" target="_blank">Skype</a>
 					</dd>
 				</dl>
 
@@ -72,7 +83,7 @@ Click on this text for more info.
 			</div>
 		</div>
 		
-		<h5>This is where I work</h5>
+		<h5><a href="{$contacts->fullMap}" target="_blank">This is where I work</a></h5>
 		<div>{$map|noescape}</div>
 		
 		<br />
