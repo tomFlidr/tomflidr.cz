@@ -19,6 +19,9 @@ class Cv extends \App\Controllers\Fronts\Index {
 		'htmlCss'	=> '2006-08',
 		'ciCd'		=> '2010-12',
 		'xml'		=> '2012-10',
+		'adobe'		=> '2007-09',
+		'corel'		=> '2013-02',
+		'autodesk'	=> '2013-02',
 	];
 
 	public function IndexAction (): void {

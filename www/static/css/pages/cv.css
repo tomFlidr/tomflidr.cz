@@ -1,3 +1,8 @@
+:root{
+	--cv-photo-size:348px;
+}
+
+
 /* hide all not for screen */
 .noscreen{display:none;}
 
@@ -10,8 +15,8 @@
 	gap:0.5em;
 }
 .widget{font-size:90%;}
+.mobile .widget{width:100%;}
 .widget h5{margin-top:0.75em;}
-.widget:first-of-type h5{margin-top:0.5em;}
 .widget dl{gap:0 5px;}
 .widget ul.skills{margin-top:0.4em;margin-bottom:0;}
 .widget ul.skills li{margin-bottom:0.4em;}
@@ -42,6 +47,35 @@
 .widget ul li .focus{display:block;}
 
 
+/* widget - portrait */
+.widget .portrait{}
+.full .widget .portrait{
+	position:relative;
+	border-radius:50%;
+	height:0;
+	padding-bottom:100%;
+	margin:10px 0 25px 0;
+}
+.full .widget .portrait img{
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+}
+.mobile .widget .portrait{
+	display:flex;
+	justify-content:center;
+	margin:2em 0;
+}
+.mobile .widget .portrait img{
+	width:100%;
+	height:100%;
+	max-width:var(--cv-photo-size);
+	max-height:var(--cv-photo-size);
+}
+
+
 /* widget - personal info */
 .widget.personal-info ul{
 	margin:0;
@@ -69,3 +103,20 @@
 	font-size:11pt;
 	margin-bottom:0;
 }
+
+.experience{margin:2em 0;}
+.experience h5{font-size:110%;margin-bottom:0 !important;}
+.experience h6{font-family:'ssp_regular';font-size:100%;margin-bottom:0 !important;}
+.experience h5 small,
+.experience h6 small,
+.experience .from,
+.experience .to{font-family:'ssp_regular';}
+.experience .from,
+.experience .to{display:inline-block;}
+.experience .from{width:60px;}
+.experience .to{width:80px;}
+.experience .to::before{content:'\2013';display:inline-block;padding-right:5px;}
+.experience h5 .subject{}
+.experience p{margin:5px 0;}
+.experience ul{margin:5px 0;}
+.experience dl{gap:0 5px;margin:5px 0;}

@@ -1,6 +1,9 @@
 .document > *:first-child{
 	margin-top:0;
 }
+.document .cols .col:first-of-type > *:first-child{
+	margin-top:0;
+}
 
 .document pre{
 	overflow-x:auto;
