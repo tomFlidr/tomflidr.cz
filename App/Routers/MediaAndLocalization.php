@@ -138,7 +138,7 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 				'controllerAction'		=> 'Fronts\Index:Index',
 				//'pattern'				=> '/<path>',
 				//'constraints'			=> ['path' => '[a-zA-Z0-9\-_/]*'],
-				'match'					=> "#^/(?<path>[^/]*)#",
+				'match'					=> "#^/(?<path>.*)#",
 				'reverse'				=> '/<path>',
 				'filters'				=> [
 					RouteConsts::CONFIG_FILTER_IN	=> [Document::class, 'RouteFilterIn'],

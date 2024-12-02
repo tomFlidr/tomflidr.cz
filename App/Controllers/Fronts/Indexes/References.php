@@ -3,6 +3,7 @@
 namespace App\Controllers\Fronts\Indexes;
 
 use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
+use \App\Models\Training;
 
 class References extends \App\Controllers\Fronts\Index {
 
@@ -28,9 +29,7 @@ class References extends \App\Controllers\Fronts\Index {
 		}
 		$this->view->logotypes = $logotypes;
 
-		$this->view->trainingsCount = 150;
-		$this->view->trainingsYears = intval(date('Y')) - 2008;
-		$this->view->trainingsAvg = 0.27; // 1.35 / 5
+		$this->view->training = new Training;
 
 		$this->assets->References();
 		$this->view->logoHeight = 100;

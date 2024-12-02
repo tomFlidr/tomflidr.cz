@@ -3,7 +3,9 @@
 namespace App\Controllers\Fronts\Indexes;
 
 use \App\Models\Navigations\BreadCrumbs\Item as BreadCrumbItem;
-use DateTime;
+use \App\Models\Xml\Entities\Document;
+use \App\Models\Contact;
+use \App\Models\Training;
 
 class Cv extends \App\Controllers\Fronts\Index {
 
@@ -26,8 +28,26 @@ class Cv extends \App\Controllers\Fronts\Index {
 
 	public function IndexAction (): void {
 		$this->setUpTitleAndBreadCrumbsText();
-		
-		$this->view->contacts = \App\Models\Contact::GetData();
+		$this->indexRender();
+	}
+	
+	public function CompleteAction (): void {
+		$parentDocPath = dirname($this->document->GetOriginalPath());
+		$parentDoc = Document::GetByFilePath($parentDocPath);
+		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
+			text: $parentDoc->GetNavigationTitle(),
+			url: $parentDoc->GetUrl()
+		));
+		$this->view->title = $this->document->GetTitle();
+		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
+			text: $this->document->GetNavigationTitle(),
+		));
+		$this->indexRender();
+	}
+
+	protected function indexRender (): void {
+		$this->view->training = new Training;
+		$this->view->contacts = Contact::GetData();
 		$this->view->techYears = $this->completeTechYears();
 
 		$this->assets->Cv();
@@ -35,7 +55,7 @@ class Cv extends \App\Controllers\Fronts\Index {
 	}
 
 	protected function completeTechYears (): \stdClass {
-		$currentDateTime = new DateTime('now');
+		$currentDateTime = new \DateTime('now');
 		$techYears = new \stdClass;
 		foreach (self::$techStarts as $techKey => $techStart) {
 			$startTimestamp = strtotime($techStart . '-01');

@@ -3,6 +3,7 @@
 namespace App\Controllers\Fronts\Navigations;
 
 use \App\Models\Navigations\Set,
+	\App\Models\Navigations\Item,
 	\App\Models\Navigations\Main as MainNavigationModel;
 
 /**
@@ -13,8 +14,11 @@ class Main extends \MvcCore\Controller {
 	/** @var \App\Controllers\Front */
 	protected $parentController;
 	
-	protected string $requestPath;
-	protected string $mediaSiteVersion;
+	protected string	$requestPath;
+	protected string	$requestLocalizationPath;
+	protected bool		$requestLocalizationDefault;
+	protected bool		$requestIsHome;
+	protected string	$mediaSiteVersion;
 	
 	protected array $cssClasses = ['nav-main'];
 
@@ -33,13 +37,22 @@ class Main extends \MvcCore\Controller {
 	public function PreDispatch (): void {
 		parent::PreDispatch();
 		
-		$this->requestPath = $this->router->EncodeUrl($this->request->GetOriginalPath());
+		$this->requestPath = $this->router->EncodeUrl($this->request->GetPath());
+		//x($this->request->GetPath(), "req path only");
 		$this->mediaSiteVersion = $this->request->GetMediaSiteVersion();
-		$localizationArr = $this->router->GetLocalization(FALSE);
+		$localization = $this->router->GetLocalization(TRUE);
+		$defaultLocalization = $this->router->GetDefaultLocalization(TRUE);
+		$reqPath = $this->request->GetPath();
+		$this->requestLocalizationPath = '/' . $localization;
+		$this->requestIsHome = $reqPath === '/';
+		$this->requestLocalizationDefault = $localization === $defaultLocalization;
+		if ($this->requestIsHome && $this->requestLocalizationDefault) {
+			$this->requestLocalizationPath = '';
+		}
 		
 		// Complete cached data with urls:
 		$mainItems = MainNavigationModel::GetData(
-			$this->mediaSiteVersion, $localizationArr
+			$this->mediaSiteVersion, $this->router->GetLocalization(FALSE)
 		);
 
 		$this->view->items = $this->completeItemsSelected($mainItems);
@@ -55,41 +68,39 @@ class Main extends \MvcCore\Controller {
 			$subItems = $groupItem->GetItems();
 			if ($subItems === NULL || count($subItems) > 0) {
 				foreach ($subItems as $subItem) {
-					if (
-						mb_strpos($subItem->GetUrl(), $this->requestPath) === 0 && (
-							$currentRouteName === $subItem->GetRouteName() ||
-							in_array($currentRouteName, $subItem->GetSubRouteNames(), TRUE)
-						)
-					) {
+					if ($this->completeItemSelected($subItem)) {
 						$groupItem->SetSelected(TRUE);
-						$subItem->SetSelected(TRUE);
 						break 2;
 					}
 				}
 				if (!$groupItem->GetSelected()) {
-					if (
-						mb_strpos($groupItem->GetUrl(), $this->requestPath) === 0 && (
-							$currentRouteName === $groupItem->GetRouteName() ||
-							in_array($currentRouteName, $groupItem->GetSubRouteNames(), TRUE)
-						)
-					) {
-						$groupItem->SetSelected(TRUE);
-						break;
-					}
+					if ($this->completeItemSelected($groupItem)) break;
 				}
 			} else {
-				if (
-					mb_strpos($groupItem->GetUrl(), $this->requestPath) === 0 && (
-						$currentRouteName === $groupItem->GetRouteName() ||
-						in_array($currentRouteName, $groupItem->GetSubRouteNames(), TRUE)
-					)
-				) {
-					$groupItem->SetSelected(TRUE);
-					break;
-				}
+				if ($this->completeItemSelected($groupItem)) break;
 			}
 		}
 		return $mainItems;
+	}
+
+	protected function completeItemSelected (Item $groupItem): bool {
+		$itemUrl = $groupItem->GetUrl();
+		$itemUrlIsHome = (
+			($this->requestLocalizationDefault && $itemUrl === '/') || 
+			(!$this->requestLocalizationDefault && $itemUrl === $this->requestLocalizationPath . '/')
+		);
+		$itemPath = $itemUrlIsHome
+			? $itemUrl
+			: mb_substr($itemUrl, strlen($this->requestLocalizationPath));
+		$isHomeSelected = $this->requestIsHome && $itemUrlIsHome;
+		if (
+			$isHomeSelected ||
+			(!$isHomeSelected && mb_strpos($this->requestPath, $itemPath) === 0)
+		) {
+			$groupItem->SetSelected(TRUE);
+			return TRUE;
+		}
+		return FALSE;
 	}
 
 	/**

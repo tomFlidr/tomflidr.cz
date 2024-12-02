@@ -128,7 +128,7 @@
 					</li>
 					<li>Courses conducted domestically in the Czech language or abroad in English.</li>
 					<li>Courses conducted based on outlines or customized according to client needs.</li>
-					<li>Over {$trainingsCount} courses delivered in {$trainingsYears} years, my average rating made by students is {$trainingsAvg * 5|number: '0.00'} (out of 5).</li>
+					<li>Over {$training->GetCount()} courses delivered in {$training->GetYears()} years, my average rating made by students is {$training->GetRating(5)|number: '0.00'} (out of 5).</li>
 				</ul>
 				<p>
 					I have been cooperating with ICTPro s.r.o. for a long time. <br  />

@@ -1,6 +1,6 @@
 @page{
 	/* real print margins */
-	margin:1.0cm 1.0cm 1.25cm 1.0cm;
+	margin:var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left);
 	size:a4 portrait;
 	@bottom-center {
 		font-size:8px;

@@ -19,39 +19,44 @@
 	<doc:body>
 
 		<div class="cols cols-5-2">
-			<div class="col">
-				<h1>Tomáš Flídr</h1>
+			<div class="col col-right">
+				{incl('./životopis/left-panel')}
+			</div>
+			<div class="col col-left">
+				<h1>
+					Tomáš Flídr
+					<small class="screen-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní CV</a>)</small>
+					<small class="print-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní CV na webu</a>)</small>
+				</h1>
 				
-				
-				<h3 class="noprint">Profil</h3>
-				<p>
+				<h3 class="screen-only">Profil</h3>
+				<p class="profile">
 					Jsem zkušený vývojář webových aplikací s&nbsp;různými přesahy.<br />
-					Mám rád výkonná řešení s&nbsp;minimálními závislostmi a&nbsp;důrazem na&nbsp;dlouhou životnost.<br />
-					Nejsem serfař po&nbsp;přechodných módách a rád mažu přebujelý kód:-).
+					Mám rád výkonná řešení s&nbsp;minimem závislostí a&nbsp;důrazem na&nbsp;životnost.<br />
+					Nejsem serfař po&nbsp;přechodných módách, pečlivě zvažuji svá rozhodnutí a čas.
 				</p>
-				<p class="noprint">
-					Vytvářím informační systémy, ecommerce aplikace, open source komponenty a čas od času
-					školím profesionální vývojáře. Mám zkušenosti s vedením vývojového týmu nebo jsem jeho součástí.
-				</p>
-				
-				
-				<h3>Vzdělání</h3>
-				<p>Všeobecné Gymnázium Polička (2001 - 2005).</p>
-				
 				
 				<h3>Open source <small>(<a href="{url('document', ['path' => 'open-source'])}">zobrazit vše</a>)</small></h3>
 				<div class="cols open-source">
 					<div class="col">
-						<h6><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h6>
-						<p>PHP MVC framework pro jedno-souborové nástroje i komplexní systémy.</p>
-						<h6><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h6>
-						<p>.NET debug utilita pro desktop i web.</p>
+						<p class="os-item">
+							<b><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></b>
+							PHP MVC framework pro jedno-souborové nástroje i komplexní systémy.
+						</p>
+						<p class="os-item">
+							<b><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></b>
+							.NET debug utilita pro desktop i web.
+						</p>
 					</div>
 					<div class="col">
-						<h6><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></h6>
-						<p>Pohodlnější vývoj web aplikací v Node.JS s podporou "hot realod".</p>
-						<h6><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h6>
-						<p>Transpiller Ext.JS dokumentace do TS.</p>
+						<p class="os-item">
+							<b><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></b>
+							Pohodlnější vývoj aplikací v Node.JS s feature "hot realod".
+						</p>
+						<p class="os-item">
+							<b><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></b>
+							Transpiller Ext.JS docs do TS.
+						</p>
 					</div>
 				</div>
 				
@@ -68,25 +73,21 @@
 							Lektorská činnost <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: návrh a realizace kurzů pro jednotlivce nebo vývojové teamy.</p>
 					<ul>
 						<li>
-							Realizace kurzů pro vzdělávací agentury: 
-							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro s.r.o.</a> (většina kurzů), 
+							Agentury: 
+							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro s.r.o.</a> (většina), 
 							<a href="https://www.learnquest.com/" target="_blank">LearnQuest, Inc.</a>, 
 							<a href="https://www.pcdir.cz/" target="_blank">PC DIR Real, s.r.o.</a>, 
-							<a href="https://www.nicom.cz/" target="_blank">NICOM, a.s.</a> a
-							<a href="https://www.profima.cz/" target="_blank">PROFIMA EFFECTIVE, s.r.o.</a>.
+							<a href="https://www.nicom.cz/" target="_blank">NICOM, a.s.</a>,
+							<a href="https://www.profima.cz/" target="_blank">PROFIMA, s.r.o.</a>
 						</li>
 						<li>
 							Realizace TOP kurzů pro nejnáročnější klienty a firmy s profesionálními vývojářskými teamy:
-							IBM, Česká spořitelna, Komerční banka, Seznam.cz, Avast, ESET, Bosch, Foxconn, Quadient a mnoho dalších.
+							IBM, Česká spořitelna, Komerční banka, Seznam.cz, Avast, ESET, Bosch, Foxconn, Quadient&hellip;
 						</li>
-						<li>Vzdělávání pro nadnárodní zahraniční korporace se spol. LearnQuest Inc.</li>
-						<li>Kurzy vedené doma v českém jazyce nebo v zahraničí v anglickém jazyce.</li>
-						<li>Realizace kurzů podle osnov nebo příprava na míru dle potřeb klientů.</li>
-						{* TODO: data z kurzů *}
-						<li>Za 16 let přes 150 realizovaných kurzů, moje průměrné hodnocení od studentů je 1,35.</li>
+						<li>Vzdělávání pro nadnárodní zahraniční korporace se spol. LearnQuest Inc v angličtině.</li>
+						<li>Za {$training->GetYears()} let přes {$training->GetCount()} kurzů, moje průměrné hodnocení od studentů je {$training->GetRating(5)|number: '0.00'}, vlastní kurzy na míru.</li>
 					</ul>
 				</div>
 				
@@ -100,14 +101,12 @@
 							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-
-					<p>Role: vývoj další generace výrobního informačního systému, management projektu.</p>
+					{*
+					<p>Vývoj výrobního informačního systému pro další prodej, management projektu, vedení teamu.</p>
+					*}
 					<ul>
-						<li>Návrh architektury modulárního systému pro prodej dalším klientům.</li>
-						<li>Vývoj v PHP(MvcCore)/TypeScript/MSSQL/C++ podle přesného popisu a wireframes.</li>
-						<li>Řešení technických výzev - migrace starých dat z 90' let, merge nových databází apod.</li>
-						<li>Plánování projektu a vedení vývojového teamu.</li>
-						<li>Instalace, a management aplikačních serverů a databáze.</li>
+						<li>Návrh architektury modulárního IS pro prodej dalším klientům, vývoj v PHP/TS/MSSQL/C++.</li>
+						<li>Plánování projektu, vedení vývojového teamu, administrace aplikačních serverů.</li>
 					</ul>
 				</div>
 				
@@ -121,11 +120,7 @@
 							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<ul>
-						<li>Postprodukce fotografií, grafické práce.</li>
-						<li>Webdesign a realizace malého firemního webu bez CMS v PHP(MvcCore)/TypeScript/MariaDB.</li>
-						<li>Parsování katalogových dat, tvorba nabídky Decodom kuchyní na vlastním webu.</li>
-					</ul>
+					<p>Kompletní realizace - grafika, webdesign a firemní web bez CMS, přenesení nabídky Decodom.</p>
 				</div>
 				
 				
@@ -133,12 +128,11 @@
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">nyní</span>
+						<span class="to">2021/12</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: vývoj především v PHP/TypeScript/MySQL/MSSQL ale i jiných odvětvích, více projektů:</p>
 					<ul>
 						<li>
 							<h6>
@@ -148,19 +142,9 @@
 									<a href="https://teleagenda.smart-con.cz/" target="_blank">TeleAgenda</a>
 								</span>
 							</h6>
-							<ul>
-								<li>
-									Interní účtovací systém pro fakturaci SIM s správu telefonních smluv.
-								</li>
-								<li>
-									Vývoj úplně nového systému, import statických dat, automatizované 
-									fakturace podle nakonfigurovaných tarifů, skupin a dalších podmínek 
-									a automatické rozesílání klientům.
-								</li>
-								<li>
-									Kompletní realizace vývoje v PHP/TypeScript/MSSQL.
-								</li>
-							</ul>
+							<p>
+								Kompletní realizace IS pro fakturaci SIM a správu smluv, PHP/TypeScript/MSSQL, LTS.
+							</p>
 						</li>
 						<li>
 							<h6>
@@ -170,27 +154,12 @@
 									<a href="https://smart-con.cz/rwebdog/" target="_blank">R-WEBDOG</a>
 								</span>
 							</h6>
-							<ul>
-								<li>
-									Klientský systém pro správu, vzdálený přístup a řízení reklam 
-									v mobilních routerech nasazených v autobusech a vlacích po Evropě.
-								</li>
-								<li>
-									Vývoj nové generace, přesun dat (několik tisíc routerů) a síťové infrastruktury v plném provozu.
-								</li>
-								<li>
-									Kompletní realizace vývoje v PHP/TypeScript(Ext.JS)/MariaDB. 
-								</li>
-								<li>
-									Předpočítávání a agregace masivního obsahu reportovaných dat, tvorba reportů, grafů a PDF.
-								</li>
-								<li>
-									Zodpovědnost za běh systému 24/7, Long Term Support
-								</li>
-							</ul>
+							<p>
+								Kompletní realizace IS pro správu a vzdálený přístup do mobilních routerů po Evropě. Vývoj PHP/Ext.JS/MariaDB. 
+								Přesun infrastruktury za běhu, agregace masivních dat, LTS 24/7, servery.
+							</p>
 						</li>
 					</ul>
-					
 				</div>
 				
 				
@@ -203,12 +172,7 @@
 							<a href="https://www.archive.fit.tomflidr.cz/" target="_blank">Výzkumný ústav veterinárního lékařství</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: Kompletní zpracování pro oddělení Farmakoligie, Imunoterapie a Nanotoxikologie (FIT).</p>
-					<ul>
-						<li>Zpracování dokumentace výběrového řízení pro dotovaný projekt EU.</li>
-						<li>Realizace webdesignu, postprodukce grafických materiálů.</li>
-						<li>Realizace mezinárodního portálu webu s administrací v Pimcore CMS.</li>
-					</ul>
+					<p>Kompletní realizace grafiky, webdesignu a mezinárodního portálu na Pimcore CMS, projekt EU.</p>
 				</div>
 				
 				
@@ -218,15 +182,10 @@
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
 						<span class="subject">
-							<a href="https://www.ictpro.cz/" target="_blank">ICTPro s.r.o.</a> - vývoj<small>(OSVČ)</small>
+							<a href="https://www.ictpro.cz/" target="_blank">ICTPro s.r.o.</a> - vývoj <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<ul>
-						<li>Návrh nového webdesignu a struktury vícedoménového a mezinárodního vzdělávacího portálu.</li>
-						<li>Částečný redesign původního webu, realizace menších podpurných webových projektů.</li>
-						<li>Vývoj další generace informačního systému v C#.NET MVC/JS/MSSQL.</li>
-						<li>Vývoj aplikace pro synchronizaci a přesun dat ze starého systému ve VB6 a ASP.NET.</li>
-					</ul>
+					<p>Nová generace IS - návrh struktury, domén, webdesignu, přesun dat, vývoj v C#.NET/MSSQL.</p>
 				</div>
 				
 				
@@ -236,19 +195,15 @@
 						<span class="from">2015/05</span>
 						<span class="to">2015/08</span>
 						<span class="subject">
-							<a href="" target="_blank">Estheticon.com</a> <small>dříve ATWEB Consulting s. r. o. (OSVČ)</small>
+							<a href="" target="_blank">Estheticon.com</a><small>, dříve ATWEB Consulting s. r. o. (OSVČ)</small>
 						</span>
 					</h5>
-					<ul>
-						<li>Role: práce ve 4-členném teamu, vývoj dle ticketů v PHP(Zend)/JS/MySQL.</li>
-						<li>Vývoj mezinárodního portálu ve 14 jazycích pro plastické chirurgy a jejich klienty.</li>
-						<li>Estheticon má rozsáhlý codebase, mobilní verzi, vlastní CMS a mnoho dalšího.</li>
-					</ul>
+					<p>Práce ve 4-členném teamu, vývoj dle ticketů v PHP(Zend)/JS/MySQL, vlastní CMS, 14 jazyků.</p>
 				</div>
 				
 				
 				{* janaflidrova.cz *}
-				<div class="experience">
+				{*<div class="experience">
 					<h5>
 						<span class="from">2015/04</span>
 						<span class="to">2015/05</span>
@@ -256,24 +211,21 @@
 							<a href="https://www.janaflidrova.cz/" target="_blank">Janaflidrova.cz</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: malá designová prezentace na Pimcore CMS (PHP/MySQL), kompletní realizace.</p>
-				</div>
+					<p>Kompletní realizace malé designová prezentace na Pimcore CMS.</p>
+				</div>*}
 				
 				
 				{* ssosz.cz *}
-				<div class="experience">
+				{*<div class="experience">
 					<h5>
 						<span class="from">2013/08</span>
 						<span class="to">2013/10</span>
 						<span class="subject">
-							<a href="https://www.archive.ssosz.tomflidr.cz/" target="_blank">Soukromá střední odborná škola živnostenská, s.r.o.</a> <small>(OSVČ)</small>
+							<a href="https://www.archive.ssosz.tomflidr.cz/" target="_blank">Soukromá střední odborná škola živnostenská</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<ul>
-						<li>Kompletní redesign, tvorba nového webu vč. obsahu v Pimcore CMS (PHP/JS/MySQL).</li>
-						<li>Zparsování starého HTML statického webu vč. fotogalerie do nové databáze.</li>
-					</ul>
-				</div>
+					<p>Kompletní redesign webu, zparsování starého statického HTML obsahu do Pimcore CMS.</p>
+				</div>*}
 				
 				
 				{* OMNES PRODUCTS *}
@@ -285,23 +237,14 @@
 							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: Realizace webových projektů, vývoj informačního systému, IT management.</p>
-					<ul>
-						<li>
-							<b>Webové projekty:</b><br />
-							<ul>
-								<li>Návrh logotypů a CI, návrh a produkce sázených a automatizovaných tiskovin.</li>
-								<li>Návrh webdesignu a kompletní realizace webů a specializovaných eshopů.</li>
-								<li>Programování komponent do informačního systému na Pimcore CMS (PHP/JS/MySQL).</li>
-								<li>Management IT činností, nastavování doručovacích procesů, komunikace s kolegy.</li>
-							</ul>
-							<dl>
-								<dt>2012/10 – 2012/12</dt>	<dd><a href="https://www.archive.jenicek-domaci-cukrarska-vyroba.tomflidr.cz/" target="_blank">jenicek-domaci-cukrarska-vyroba.cz</a></dd>
-								<dt>2013/01 – 2013/02</dt>	<dd>zana-zdrava-krasna.cz</dd>
-								<dt>2013/03 – 2015/03</dt>	<dd><a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">omnesproducts.cz</a></dd>
-							</dl>
-						</li>
-					</ul>
+					<p>Realizace více projektů, IT management, kompletní vývoj IS, grafika, reklama.</p>
+					<dl>
+						<dt>2012/10 – 2012/12</dt>	<dd><a href="https://www.archive.jenicek-domaci-cukrarska-vyroba.tomflidr.cz/" target="_blank">jenicek-domaci-cukrarska-vyroba.cz</a></dd>
+						<dt>2013/03 – 2015/03</dt>	<dd>
+							<a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">omnesproducts.cz</a>
+							 – vývoj vícedoménového eshopu pro doručování potravin.
+						</dd>
+					</dl>
 				</div>
 				
 				
@@ -311,74 +254,29 @@
 						<span class="from">2012/08</span>
 						<span class="to">2012/10</span>
 						<span class="subject">
-							Kniha <a href="https://books.google.cz/books?id=TupgAgAAQBAJ&printsec=frontcover&hl=cs&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Adobe Photoshop CS6</a> <small>spoluautor, (OSVČ)</small>
+							Kniha <a href="https://books.google.cz/books?id=TupgAgAAQBAJ&printsec=frontcover&hl=cs&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Adobe Photoshop CS6</a><small>, spoluautor (OSVČ)</small>
 						</span>
 					</h5>
-					<ul>
-						<li>Sepsání textů, postupů a vytvoření grafických podkladů pro vybrané kapitoly.</li>
-						<li>Témata: maskování a background changing, content-avare, vanishing point, displacement map, HDR merge, pokročilé transformace, zásuvné moduly.</li>
-					</ul>
+					<p>Texty a grafika pro témata: maskování a výměna pozadí, vanishing point, efekty, HDR, pluginy...</p>
 				</div>
 				
 				
-				{* imperastyl.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2012/07</span>
-						<span class="to">2012/08</span>
-						<span class="subject">
-							<a href="https://web.archive.org/web/20130921124932/http://www.imperastyl.cz/" target="_blank">Imperastyl.cz</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Role: práce ve 2-členném teamu, webdesign a kódování šablon do HTML a CSS.</p>
-				</div>
-				
-				
-				{* ubytovaninanetu.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2012/06</span>
-						<span class="to">2012/07</span>
-						<span class="subject">
-							Startup Ubytovaninanetu.cz <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Role: práce ve 2-členném teamu, webdesign a kódování šablon do HTML a CSS.</p>
-				</div>
-				
-				
-				{* floormax.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2012/02</span>
-						<span class="to">2012/06</span>
-						<span class="subject">
-							<a href="https://archive.floormax.tomflidr.cz/" target="_blank">Floormax.cz</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Kompletní realizace projektu - tvorba loga, produkce i postprodukce fotografií, textový obsah.</li>
-						<li>Realizace firemního webu a specializovaného e-shopu na Pimcore CMS (PHP/JS/MySQL).</li>
-						<li>Nové e-shop features: výpočty váhy objednávek, speciální přepravci, doručovací matice cen&hellip;</li>
-					</ul>
-				</div>
-				
-				
-				{* choka.cz *}
+				{* choka.cz, floormax.cz, imperastyl.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2011/10</span>
-						<span class="to">2012/01</span>
+						<span class="to">2012/08</span>
 						<span class="subject">
-							<a href="http://archive.choka.tomflidr.cz/en/" target="_blank">Choka.cz</a> <small>(OSVČ)</small>
+							<a href="http://archive.choka.tomflidr.cz/en/" target="_blank">Choka.cz</a>,
+							<a href="https://archive.floormax.tomflidr.cz/" target="_blank">Floormax.cz</a>,
+							<a href="https://web.archive.org/web/20130921124932/http://www.imperastyl.cz/" target="_blank">Imperastyl.cz</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<ul>
-						<li>Kompletní realizace mezinárodního e-shopu podle hotových návrhů webdesignera.</li>
-						<li>Rozšíření vlastního e-shopu nad Pimcore CMS (PHP/JS/MySQL).</li>
-						<li>Front features: varianty, 4 kroky objednávky, emaily, administrace kategorií, zboží, obrázků.</li>
-						<li>Admin features: prodejní nastavení, editovatelné faktury, exporty na srovnávače cen apod.</li>
-					</ul>
+					<p>
+						Choka - částečná realizace (bez designu), vlastní e-shop na Pimcore CMS. 
+						FloorMAX - kompletní real., další vývoj e-shop features. 
+						Imperastyl - práce ve 2-členném teamu, webdesign, kódování.
+					</p>
 				</div>
 				
 				
@@ -392,14 +290,10 @@
 						</span>
 					</h5>
 					<p>
-						Role: práce ve 2-členném teamu, vývoj portálu
-						<a href="https://web.archive.org/web/20160308031043/http:/www.dokument-festival.cz/" target="_blank">Mezinárodního Festivalu Dokumentárních Filmů</a>.
+						<a href="https://web.archive.org/web/20160308031043/http:/www.dokument-festival.cz/" target="_blank">Mezinárodního Festivalu Dokumentárních Filmů</a>
+						 - práce ve 2-členném teamu s webdesignérem, vývoj portálu, vlastního eshopu pro merch. prodej a vývoj archivu.
+						Správa VPS s Linux CentOS.
 					</p>
-					<ul>
-						<li>Realizace v Pimcore CMS (PHP/JS/MySQL/SOAP) podle návrhů webdesignera.</li>
-						<li>Vývoj vlastního e-shopu nad CMS pro merchandising prodej a archivu pro minulé ročníky.</li>
-						<li>Administrace VPS na CentOS s cca 30 firemními weby a projekty podobné velikosti.</li>
-					</ul>
 				</div>
 				
 				
@@ -409,66 +303,27 @@
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>
 						<span class="subject">
-							<a href="https://tripomatic.com/" target="_blank">Trimpomatic.com</a> <small>(dříve Twobits s.r.o., OSVČ)</small>
+							<a href="https://tripomatic.com/" target="_blank">Trimpomatic.com</a><small>, dříve Twobits s.r.o. (OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: webdesigner, práce v teamu s 2 programátory v PHP(Nette)/JS/MySQL, grafické práce.</p>
-					<ul>
-						<li>
-							Webdesign a front-end development pro weby myairdeals.com a 
-							<a href="https://web.archive.org/web/20110209010501/http://www.whichairline.com/" target="_blank">whichairline.com</a>.
-						</li>
-						<li>
-							Online a tištěná reklama pro weby: 
-							<a href="https://web.archive.org/web/20110903065549/http://top.hostingy.cz/" target="_blank">hostingy.cz</a>, 
-							<a href="https://web.archive.org/web/20100127143915/http://www.kdesportovat.cz/" target="_blank">kdesportovat.cz</a>, 
-							 a <a href="https://web.archive.org/web/20090214224143/http://nazkusenou.cz/" target="_blank">nazkusenou.cz</a>.
-						</li>
-					</ul>
+					<p>Front-end vývoj v teamu s 2 programátory, webdesign, grafika, vyhledávač <a href="https://web.archive.org/web/20110209010501/http://www.whichairline.com/" target="_blank">whichairline.com</a>.</p>
 				</div>
 				
 				
-				{* exreals.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2009/12</span>
-						<span class="to">2010/06</span>
-						<span class="subject">
-							<a href="https://www.archive.exreals.cz.tomflidr.cz/" target="_blank">Exreals.cz</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Kompletní realizace webu s vlastním CMS pro správu obsahu a realit (PHP/MySQL, Nette).</p>
-				</div>
-				
-				
-				{* webdesigneri.cz *}
+				{* webdesigneri.cz, exreals.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2009/07</span>
-						<span class="to">2009/11</span>
+						<span class="to">2010/06</span>
 						<span class="subject">
-							<a href="https://web.archive.org/web/20141128235810/http://www.webdesigneri.cz/" target="_blank">Webdesigneri.cz</a> <small>(OSVČ)</small>
+							<a href="https://web.archive.org/web/20141128235810/http://www.webdesigneri.cz/" target="_blank">Webdesigneri.cz</a>,s
+							<a href="https://www.archive.exreals.cz.tomflidr.cz/" target="_blank">Exreals.cz</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: práce ve 2-členném teamu, návrh webdesignu, kódování šablon a programování v jQuery.</p>
-				</div>
-				
-				
-				{* first freelance cooperations *}
-				<div class="experience">
-					<h5>
-						<span class="from">2007</span>
-						<span class="to">2008</span>
-						<span class="subject">
-							 Samostatné reklamní a webové projekty <small>(práce dohodou při HPP)</small>
-						</span>
-					</h5>
-					<dl>
-						<dt><a href="https://web.archive.org/web/20081006060519/http://www.5rstudio.cz/" target="_blank">5rstudio.cz</a></dt>				<dd>ActionScript, Webdesign.</dd>
-						<dt><a href="https://web.archive.org/web/20080603051135/http://videa.superhry.cz/" target="_blank">videa.superhry.cz</a></dt>	<dd>ActionScript, programování přehrávače videa.</dd>
-						<dt><a href="https://web.archive.org/web/20090619104238/http://www.paulbrun.cz/" target="_blank">paulbrun.cz</a></dt>		<dd>Postprodukce fotografií.</dd>
-						<dt>dkproduction.cz</dt>	<dd>Reklamní grafika, animace.</dd>
-					</dl>
+					<p>
+						Práce ve 2-členném teamu, webdesign, HTML/CSS/JS.
+						Komplet. real., vlastní CMS, správa realit.
+					</p>
 				</div>
 				
 				
@@ -481,202 +336,19 @@
 							<a href="http://www.studentagency.cz/" target="_blank">STUDENT AGENCY a.s.</a> <small>(HPP)</small>
 						</span>
 					</h5>
-					<p>Role: grafik, později jako webdesigner a web developer, práce ve 2 až 3-členném teamu.</p>
-					<ul>
-						<li>
-							<b>Grafické práce:</b><br />
-							<ul>
-								<li>Online reklamní bannery, reklamní spoty a postprodukce.</li>
-								<li>Tištěná reklama, polepy, billboardy.</li>
-							</ul>
-						</li>
-						<li>
-							<b>Webové projekty:</b><br />
-							<ul>
-								<li>Návrh logotypů a CI, webdesign a kódování HTML/CSS webů.</li>
-								<li>Programování komponent do firemního CMS v PHP/JS.</li>
-								<li>Realizace výběrového řízení pro externí zpracování nové generace celofiremního portálu.</li>
-							</ul>
-							<dl>
-								<dt>2008/10 – 2009/06</dt>	<dd><a href="https://web.archive.org/web/20111004234623/http://www.studentagency.cz/" target="_blank">studentagency.cz</a></dd>
-								<dt>2008/04 – 2008/05</dt>	<dd>highjet.com</dd>
-								<dt>2008/02 – 2008/03</dt>	<dd><a href="https://web.archive.org/web/20100328123409/https://letenky.cz/" target="_blank">letenky.cz</a></dd>
-								<dt>2008/01 – 2008/02</dt>	<dd>cestyzasportem.cz</dd>
-								<dt>2007/11 – 2007/12</dt>	<dd><a href="https://web.archive.org/web/20081003084246/http://www.orbix.cz/" target="_blank">orbix.cz</a></dd>
-								<dt>2007/10 – 2007/11</dt>	<dd><a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a></dd>
-							</dl>
-						</li>
-					</ul>
+					<p>
+						Grafika (online reklama, postprodukce spotů, tisk), později webdesign a front-end vývoj, <br />
+						práce ve 2 až 3-členném teamu. Weby:
+						<a href="https://web.archive.org/web/20111004234623/http://www.studentagency.cz/" target="_blank">studentagency.cz</a>,
+						<a href="https://web.archive.org/web/20100328123409/https://letenky.cz/" target="_blank">letenky.cz</a>,
+						<a href="https://web.archive.org/web/20081003084246/http://www.orbix.cz/" target="_blank">orbix.cz</a>,
+						<a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a> a další.
+					</p>
 				</div>
 
-				<p>
-					Freelance práce je různorodá, seznam nepokrývá 100% vše, 
-					co&nbsp;jsem kdy&nbsp;realizoval i&nbsp;za&nbsp;menší weby a&nbsp;grafické práce. 
-					Proto jsem vybral pouze větší projekty.
+				<p class="screen-only">
+					Tato verze živitopisu je stručnější, <a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní živtopis</a>.
 				</p>
-				
-			</div>
-			<div class="col">
-				
-				<div class="widget personal-info">
-					<div class="portrait">
-						<img src="/static/img/content/cv/me.png" alt="Tomáš Flídr" />
-					</div>
-					<h5>Osobní údaje</h5>
-					<dl>
-						<dt>narozen:</dt>
-						<dd>6. 8. 1986</dd>
-						
-						<dt>adresa:</dt>
-						<dd><a href="{$contacts->fullMap}" target="_blank">Mělčany 65, 664 64, Mělčany</a></dd>
-						
-						<dt>kontakty:</dt>
-						<dd class="noprint">
-							<a href="{$contacts->phone->link}">{$contacts->phone->text}</a>, 
-							<a href="{$contacts->email->link}">{$contacts->email->text}</a>
-						</dd>
-						<dd class="noscreen">
-							<a href="{$contacts->phone->link}">{$contacts->phone->text}</a><br />
-							<a href="{$contacts->email->link}">{$contacts->email->text}</a><br />
-							<a href="{url('home', ['absolute' => TRUE])}">{$request->GetHostname()}</a>
-						</dd>
-						
-						<dt>soc. sítě:</dt>
-						<dd>
-							<ul class="social nostyle">
-								{foreach $contacts->social as $socialKey => $socialData}
-									<li class="icon icon-{$socialKey}">
-										<a href="{$socialData->link}" target="_blank">{$socialData->text}</a>
-									</li>
-								{/foreach}
-							</ul>
-						</dd>
-					</dl>
-					<a class="contacts noprint" href="{url('document', ['path' => 'kontakty'])}">Všechny kontaktní informace</a>
-				</div>
-
-				
-				<div class="widget it-skills">
-					<h5>IT dovednosti</h5>
-					<span class="years">roky profesionálního používání</span>
-					<span class="focus">fokus</span>
-					<ul class="skills">
-						<li>
-							<span class="skill">JavaScript</span>
-							<span class="years">{$techYears->js}</span>
-							<span class="focus">Node.JS, Ext.JS, Vue, Create.JS &hellip;</span>
-						</li>
-						<li>
-							<span class="skill">PHP</span>
-							<span class="years">{$techYears->php}</span>
-							<span class="focus">Pimcore CMS, Laminas, Nette, MvcCore</span>
-						</li>
-						<li>
-							<span class="skill">MySQL, MariaDB</span>
-							<span class="years">{$techYears->mySql}</span>
-							<span class="focus">DB scripting, replikace</span>
-						</li>
-						<li>
-							<span class="skill">C#</span>
-							<span class="years">{$techYears->csharp}</span>
-							<span class="focus">.NET Core, ASP.NET, MVC, WPF, WinForms</span>
-						</li>
-						<li>
-							<span class="skill">MSSQL</span>
-							<span class="years">{$techYears->msSql}</span>
-							<span class="focus">Win., Linux, DB scripting</span>
-						</li>
-						<li>
-							<span class="skill">VB.NET</span>
-							<span class="years">{$techYears->vb}</span>
-						</li>
-						<li>
-							<span class="skill">Linux, Shell</span>
-							<span class="years">{$techYears->shell}</span>
-							<span class="focus">LAMP, Zabbix, Gitea, iRedMail</span>
-						</li>
-						<li>
-							<span class="skill">TypeScript</span>
-							<span class="years">{$techYears->ts}</span>
-						</li>
-						<li>
-							<h6>Obvyklejší dovednosti:</h6>
-							<ul>
-								<li>
-									<span class="skill">HTML, CSS</span>
-									<span class="years">18</span>
-									<span class="focus">čistě nebo pomocí Less</span>
-								</li>
-								<li>
-									<span class="skill">CI/CD</span>
-									<span class="years">14</span>
-									<span class="focus">GIT, Mercurial, SVN, Trac, Jira, Pupeteer, Selenium, Unit testing</span>
-								</li>
-								<li>
-									<span class="skill">XML</span>
-									<span class="years">9</span>
-									<span class="focus">SOAP, DTD, XSD, XSLT</span>
-								</li>
-								<li>
-									<span class="skill">C++, Python, Java</span>
-									<span class="focus">pouze pasivně</span>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-					
-
-				<div class="widget graphic-skills">
-					<h5>Grafický software</h5>
-					<ul class="skills">
-						<li>
-							<span class="skill">Adobe Suite</span>
-							<span class="years">{$techYears->adobe}</span>
-							<span class="focus">Ps, Ae, Au, An, Ai, Id</span>
-						</li>
-						<li>
-							<span class="skill">Corel Draw, Paint Shop Photo Pro</span>
-							<span class="years">{$techYears->corel}</span>
-						</li>
-						<li>
-							<span class="skill">Autodesk 3DS MAX</span>
-							<span class="years">{$techYears->autodesk}</span>
-						</li>
-					</ul>
-				</div>
-					
-
-				<div class="widget lang-skills">
-					<h5>Jazyky</h5>
-					<ul class="skills">
-						<li>
-							<span class="skill">Angličtina</span>
-							<a class="focus" href="https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level/b1-intermediate" target="_blank">intermediate B1</a>
-						</li>
-						<li>
-							<span class="skill">Němčina</span>
-							<span class="focus">začátečník</span>
-						</li>
-						<li>
-							<span class="skill">Čeština</span>
-							<span class="focus">rodillý</span>
-						</li>
-					</ul>
-				</div>
-				
-
-				<div class="widget other-skills">
-					<h5>Ostatní dovednosti</h5>
-					<span class="skill">Řidičský průkaz skupiny B</span>
-					<span class="focus">aktivní</span>
-				</div>
-
-				
-				<div class="widget hobbies">
-					<h5>Záliby</h5>
-					<span class="skill">Má rodina, DIY, psaní poezie, plavání, cykloturistika, červené víno.</span>
-				</div>
 				
 			</div>
 		</div>

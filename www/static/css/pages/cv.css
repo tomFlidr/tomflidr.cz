@@ -4,10 +4,16 @@
 
 
 /* hide all not for screen */
-.noscreen{display:none;}
+.print-only{display:none;}
 
 /* widgets - common rules */
-.cols .col:last-of-type{
+.document > .cols > .col.col-left{
+	order:1;
+	flex:5;
+}
+.document > .cols > .col.col-right{
+	order:2;
+	flex:2;
 	display:flex;
 	flex-direction:column;
 	align-items:flex-start;
@@ -48,10 +54,8 @@
 
 
 /* widget - portrait */
-.widget .portrait{}
 .full .widget .portrait{
 	position:relative;
-	border-radius:50%;
 	height:0;
 	padding-bottom:100%;
 	margin:10px 0 25px 0;
@@ -62,6 +66,7 @@
 	width:100%;
 	top:0;
 	left:0;
+	border-radius:50%;
 }
 .mobile .widget .portrait{
 	display:flex;
@@ -95,8 +100,16 @@
 
 /* content */
 
+.document h1 small,
+.document h3 small{font-family:'ssp_regular';margin-left:1em;line-height:1.3em;}
+.document h1 small{font-size:70%;}
+.document h3 small{font-size:80%;}
 .cols.open-source{
 	gap:0.25cm;
+}
+.os-item b{
+	display:block;
+	margin-bottom:0.2em;
 }
 .cols.open-source .col{width:0;flex:1 !important;display:block;}
 .open-source h6{
@@ -110,7 +123,7 @@
 .experience h5 small,
 .experience h6 small,
 .experience .from,
-.experience .to{font-family:'ssp_regular';}
+.experience .to{}
 .experience .from,
 .experience .to{display:inline-block;}
 .experience .from{width:60px;}
