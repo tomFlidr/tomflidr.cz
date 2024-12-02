@@ -30,6 +30,8 @@ dl.references dt a.image{
 	margin-bottom:3em;
 }
 
-.dark dl.references dt a.image:not(.no-redraw) svg .white{fill:#fff;}
-.dark dl.references dt a.image:not(.no-redraw) svg .black{fill:#000;}
-.dark dl.references dt a.image:not(.no-redraw) svg .transparent{fill:transparent;}
+@media screen {
+	.dark dl.references dt a.image:not(.no-redraw) svg .white{fill:#fff;}
+	.dark dl.references dt a.image:not(.no-redraw) svg .black{fill:#000;}
+	.dark dl.references dt a.image:not(.no-redraw) svg .transparent{fill:transparent;}
+}

@@ -17,14 +17,40 @@
 	<doc:navigation-subtitle>tak od začátku</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1>{$appName} cs</h1>
+		<h1>{$appName}</h1>
 		
-		<blockquote>
-			Rád vytvářím neobvykle specializované nástroje, které mi usnadňují práci,
-			lidé v okolí nebo lidé na mých IT kurzech. Zkušenosti v IT mě naučily, že čas jsou peníze,
-			rozhoduje tedy o kvalitě vývojáře, jak dobře dokáže tyto dvě věci zvážit
-			proti jeho nevhodné přesnosti zdrojového kódu :-)
-		</blockquote>
+		<div class="cols cols-1-1">
+			<div class="col">
+				Jsem zkušený vývojář webových aplikací s&nbsp;různými přesahy.<br />
+				Mám rád výkonná řešení s&nbsp;minimem závislostí a&nbsp;velkou životností.<br />
+				Nejsem serfař po&nbsp;přechodných módách a pečlivě zvažuji svůj čas.
+			</div>
+			<div class="col">
+				Vytvářím informační systémy, ecommerce aplikace, open source komponenty a&nbsp;čas od času
+				školím profesionální programátory. Pracuji jak sám tak v teamu
+				a&nbsp;mám zkušenosti s&nbsp;vedením vývojářů.
+			</div>
+		</div>
+		
+		<div class="cols cols-1-1">
+			<div class="col">
+				<h3>Služby</h3>
+				
+				<h3>Open Source projekty</h3>
+			</div>
+			<div class="col">
+				<h3>Reference</h3>
+				
+				<h3>Životopis</h3>
+			</div>
+		</div>
+		
+		<h2>Kontakty</h2>
+		<p>Nejlépe mne zastihnete na telefonu, případně zavolám zpět.</p>
+		<p>Telefon: , email: .</p>
+		<p>
+			<a href="">Všechny kontaktní informace.</a>
+		</p>
 		
 	</doc:body>
 </doc:data>

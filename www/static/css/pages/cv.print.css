@@ -2,7 +2,6 @@
 	--cols-gap:0.6cm;
 	--portrait-size:2.5cm;
 	--right-col-width:220px;
-	--right-col-bg:#00578a;
 	--margin-bottom:0;
 }
 
@@ -22,6 +21,7 @@ html,body{
 	line-height:1.1em;
 	letter-spacing:-0.3pt;
 }
+header{display:none;}
 .glass{overflow:visible;}
 
 /* show all not for screen, hide all not for print */
@@ -45,7 +45,7 @@ html,body{
 	float:right;
 	width:var(--right-col-width) !important;
 	gap:0.4em 0;
-	background:var(--right-col-bg);
+	background:var(--print-color-bg);
 	margin-left:calc(var(--cols-gap) * 0.9);
 	padding:var(--margin-top) var(--margin-right) 0 calc(var(--cols-gap) / 2);
 	height:calc(29.7cm - var(--margin-top));
