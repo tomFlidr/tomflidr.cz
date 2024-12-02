@@ -4,13 +4,13 @@
 	</div>
 	<h5>Osobní údaje</h5>
 	<dl>
-		<dt>narozen:</dt>
-		<dd>6. 8. 1986</dd>
+		<dt>Born:</dt>
+		<dd>6th August 1986</dd>
 						
-		<dt>adresa:</dt>
-		<dd><a href="{$contacts->fullMap}" target="_blank">Mělčany 65, 664 64, Mělčany</a></dd>
+		<dt>Address:</dt>
+		<dd><a href="{$contacts->fullMap}" target="_blank">Melcany 65, 664 64, Melcany</a></dd>
 						
-		<dt>kontakty:</dt>
+		<dt>Contacts:</dt>
 		<dd class="screen-only">
 			<a href="{$contacts->phone->link}">{$contacts->phone->text}</a>, 
 			<a href="{$contacts->email->link}">{$contacts->email->text}</a>
@@ -21,7 +21,7 @@
 			<a href="{url('home', ['absolute' => TRUE])}">{$request->GetHostname()}</a>
 		</dd>
 						
-		<dt>soc. sítě:</dt>
+		<dt>Socials:</dt>
 		<dd>
 			<ul class="social nostyle">
 				{foreach $contacts->social as $socialKey => $socialData}
@@ -37,15 +37,15 @@
 				
 				
 <div class="widget hobbies">
-	<h5>Vzdělání</h5>
-	<span class="skill"><a href="https://www.gympolicka.cz/" target="_blank">Gymnázium Polička</a> (2001 – 2005)</span>
+	<h5>Education</h5>
+	<span class="skill"><a href="https://www.gympolicka.cz/" target="_blank">College-preparatory school</a> (2001 – 2005)</span>
 </div>
 
 				
 <div class="widget it-skills">
-	<h5>IT dovednosti</h5>
-	<span class="years">roky profesionálního používání</span>
-	<span class="focus">fokus</span>
+	<h5>IT skills</h5>
+	<span class="years">years of professional use</span>
+	<span class="focus">focus</span>
 	<ul class="skills">
 		<li>
 			<span class="skill">JavaScript</span>
@@ -60,7 +60,7 @@
 		<li>
 			<span class="skill">MySQL, MariaDB</span>
 			<span class="years">{__('{0} year(s)', [$techYears->mySql])}</span>
-			<span class="focus">DB scripting, replikace</span>
+			<span class="focus">DB scripting, replications</span>
 		</li>
 		<li>
 			<span class="skill">C#</span>
@@ -86,12 +86,12 @@
 			<span class="years">{__('{0} year(s)', [$techYears->ts])}</span>
 		</li>
 		<li>
-			<h6>Obvyklejší dovednosti:</h6>
+			<h6>More common skills:</h6>
 			<ul>
 				<li>
 					<span class="skill">HTML, CSS</span>
 					<span class="years">{__('{0} year(s)', [$techYears->htmlCss])}</span>
-					<span class="focus">čistě nebo pomocí Less</span>
+					<span class="focus">pure or by Less</span>
 				</li>
 				<li>
 					<span class="skill">CI/CD</span>
@@ -105,7 +105,7 @@
 				</li>
 				<li>
 					<span class="skill">C++, Python, Java</span>
-					<span class="focus">pasivně</span>
+					<span class="focus">pasive</span>
 				</li>
 			</ul>
 		</li>
@@ -114,7 +114,7 @@
 					
 
 <div class="widget graphic-skills">
-	<h5>Grafický software</h5>
+	<h5>Graphics software</h5>
 	<ul class="skills">
 		<li>
 			<span class="skill">Adobe Suite</span>
@@ -134,32 +134,32 @@
 					
 
 <div class="widget lang-skills">
-	<h5>Jazyky</h5>
+	<h5>Languages</h5>
 	<ul class="skills">
 		<li>
-			<span class="skill">Angličtina</span>
+			<span class="skill">English</span>
 			<a class="focus" href="https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level/b1-intermediate" target="_blank">intermediate B1</a>
 		</li>
 		<li>
-			<span class="skill">Němčina</span>
-			<span class="focus">začátečník</span>
+			<span class="skill">German</span>
+			<span class="focus">beginner</span>
 		</li>
 		<li>
 			<span class="skill">Čeština</span>
-			<span class="focus">rodilý</span>
+			<span class="focus">native</span>
 		</li>
 	</ul>
 </div>
 				
 
 <div class="widget other-skills">
-	<h5>Ostatní dovednosti</h5>
-	<span class="skill">Řidičský průkaz skupiny B</span>
-	<span class="focus">aktivní</span>
+	<h5>Other skills</h5>
+	<span class="skill">Class D driver's license</span>
+	<span class="focus">active</span>
 </div>
 
 				
 <div class="widget hobbies">
-	<h5>Záliby</h5>
-	<span class="skill">Má rodina, DIY, psaní poezie, plavání, cykloturistika, červené víno.</span>
+	<h5>Hobbies</h5>
+	<span class="skill">My family, DIY, writing poetry, swimming, cycling, red wine.</span>
 </div>

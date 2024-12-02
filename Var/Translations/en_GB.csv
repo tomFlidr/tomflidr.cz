@@ -15,3 +15,4 @@ Page not found.;Page not found.
 Fork my source code on Github.com;Fork my source code on Github.com
 Home;Home
 contact email subject;Request for IT services
+{0} year(s);{0, plural, =1 {# year} other {# years}}

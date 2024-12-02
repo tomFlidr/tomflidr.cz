@@ -2,7 +2,6 @@
 	--cv-photo-size:348px;
 }
 
-
 /* hide all not for screen */
 .print-only{display:none;}
 
@@ -34,7 +33,7 @@
 .widget .focus::before{content:'[' !important;}
 /* unset all from a[target=_blank]: */
 .widget a.focus{padding-right:1px;}
-.widget a.focus::before{
+.widget a.focus::after{
 	position:static !important;
 	font-family:unset !important;
 	font-style:unset !important;
@@ -46,12 +45,13 @@
 	top:unset !important;
 	margin-top:unset !important;
 	font-size:unset !important;
+	margin-left:0 !important;
 }
-.widget .focus::after{content:']';}
+.widget .focus::after{content:']' !important;}
 .dark .focus{color:#aaa;}
 .light .focus{color:#555;}
 .widget ul li .focus{display:block;}
-
+.widget.lang-skills ul li .focus{display:inline-block;}
 
 /* widget - portrait */
 .full .widget .portrait{
@@ -80,7 +80,6 @@
 	max-height:var(--cv-photo-size);
 }
 
-
 /* widget - personal info */
 .widget.personal-info ul{
 	margin:0;
@@ -95,13 +94,11 @@
 	padding-right:3px;
 }
 
-/* widget- it skills */
-
-
 /* content */
-
 .document h1 small,
 .document h3 small{font-family:'ssp_regular';margin-left:1em;line-height:1.3em;}
+.mobile .document h1 small.screen-only,
+.mobile .document h3 small{display:block;margin-left:0;font-size:50%;}
 .document h1 small{font-size:70%;}
 .document h3 small{font-size:80%;}
 .cols.open-source{
@@ -112,6 +109,7 @@
 	margin-bottom:0.2em;
 }
 .cols.open-source .col{width:0;flex:1 !important;display:block;}
+.mobile .cols.open-source .col{width:unset;flex:unset;}
 .open-source h6{
 	font-size:11pt;
 	margin-bottom:0;
@@ -119,14 +117,13 @@
 
 .experience{margin:2em 0;}
 .experience h5{font-size:110%;margin-bottom:0 !important;}
+.mobile .experience h5 a{display:inline;}
 .experience h6{font-family:'ssp_regular';font-size:100%;margin-bottom:0 !important;}
 .experience h5 small,
-.experience h6 small,
-.experience .from,
-.experience .to{}
+.experience h6 small{font-family:'ssp_regular';}
 .experience .from,
 .experience .to{display:inline-block;}
-.experience .from{width:60px;}
+.experience .from{width:65px;}
 .experience .to{width:80px;}
 .experience .to::before{content:'\2013';display:inline-block;padding-right:5px;}
 .experience h5 .subject{}

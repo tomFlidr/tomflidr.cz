@@ -40,8 +40,6 @@ header{display:none;}
 	padding:var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left);
 }
 .document > .cols > .col.col-right{
-	/*flex:1 !important;
-	max-width:var(--right-col-width) !important;*/
 	float:right;
 	width:var(--right-col-width) !important;
 	gap:0.4em 0;
@@ -50,14 +48,6 @@ header{display:none;}
 	padding:var(--margin-top) var(--margin-right) 0 calc(var(--cols-gap) / 2);
 	height:calc(29.7cm - var(--margin-top));
 }
-/*.col .cols > .col:first-of-type{
-	padding:0;
-}
-.col .cols > .col:last-of-type{
-	background:transparent;
-	padding:0;
-	height:unset;
-}*/
 
 /* widgets */
 .widget{
@@ -105,8 +95,11 @@ header{display:none;}
 /* content */
 .document h1{font-family:'ssp_black';}
 .document h1 small,
-.document h3 small{font-family:'ssp_regular';font-size:10pt;margin-left:2em;}
+.document h3 small{font-family:'ssp_regular';font-size:10pt;margin-left:0;}
+.document h1 span.text,
+.document h3 span.text{display:inline-block;width:calc(55px + 70px);}
 .document h3{margin-bottom:0;margin-top:0.3em;line-height:1.2em;}
+.document .complete h3{margin-top:0.45em;}
 .open-source .col:first-of-type{flex:1.0 !important;}
 .open-source .col:last-of-type{flex:0.9 !important;}
 .open-source p.os-item{margin:0;}
@@ -117,10 +110,13 @@ header{display:none;}
 	padding:0 2px 0 4px;
 }
 .experience{margin:0 0 0.4em;}
+.complete .experience{margin:0 0 0.5em;}
 .experience:last-of-type{margin-bottom:0;}
 .experience h5{margin:0;font-size:100%;}
 .experience h6{margin:0;}
+.experience .from{width:55px;}
+.experience .to{width:70px;}
 .experience p,
 .experience ul,
 .experience dl{margin:0.15em 0;letter-spacing:-0.4pt;}
-.page-break-before{page-break-before:always;margin-top:var(--margin-top);}
+.page-break-before{page-break-before:always;padding-top:var(--margin-top);}

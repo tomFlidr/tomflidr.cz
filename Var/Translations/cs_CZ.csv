@@ -15,3 +15,4 @@ Page not found.;Stránka nenalezena.
 Fork my source code on Github.com;Forkni si mé zdrojáky na Github.com
 Home;Úvod
 contact email subject;Poptávka IT služeb
+{0} year(s);{0, plural, =1 {# rok} few {# roky} other {# let}}

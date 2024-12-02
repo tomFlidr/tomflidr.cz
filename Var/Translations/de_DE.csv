@@ -15,3 +15,4 @@ Page not found.;Seite nicht gefunden.
 Fork my source code on Github.com;Forke meinen Quellcode auf Github.com
 Home;Hauptseite
 contact email subject;Anfrage für IT-Dienstleistungen
+{0} year(s);{0, plural, =1 {# Jahr} other {# Jahre}}

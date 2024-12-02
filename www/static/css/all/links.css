@@ -27,28 +27,23 @@
 }
 
 a[target=_blank]:not(.image){
-	position:relative;
-	padding-right:calc(1em + 5px);
+	padding-right:0.2em;
 }
-a[target=_blank]:not(.image):before,
-a[target=_blank]:not(.image)::before{
-	position:absolute;
+a[target=_blank]:not(.image):after,
+a[target=_blank]:not(.image)::after{
+	position:static;
 	font-family:'icons';
 	font-style:normal;
 	font-weight:normal;
 	display:inline-block;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
-
 	content:'\e803';
-	
-	right:3px;
 	width:1em;
 	height:1em;
 	line-height:1.25em;
-	top:50%;
-	margin-top:-0.5em;
-	font-size:0.89em;
+	font-size:0.6em;
+	margin-left:0.2em;
 }
 
 .info-link{

@@ -24,7 +24,7 @@
 			</div>
 			<div class="col col-left">
 				<h1>
-					Tomáš Flídr
+					<span class="text">Tomáš Flídr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní CV</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní CV na webu</a>)</small>
 				</h1>
@@ -36,7 +36,10 @@
 					Nejsem serfař po&nbsp;přechodných módách, pečlivě zvažuji svá rozhodnutí a čas.
 				</p>
 				
-				<h3>Open source <small>(<a href="{url('document', ['path' => 'open-source'])}">zobrazit vše</a>)</small></h3>
+				<h3>
+					<span class="text">Open source</span>
+					<small>(<a href="{url('document', ['path' => 'open-source'])}">zobrazit vše</a>)</small>
+				</h3>
 				<div class="cols open-source">
 					<div class="col">
 						<p class="os-item">
@@ -117,7 +120,7 @@
 						<span class="from">2021/01</span>
 						<span class="to">2021/02</span>
 						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně</a> <small>(OSVČ)</small>
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně s.r.o.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<p>Kompletní realizace - grafika, webdesign a firemní web bez CMS, přenesení nabídky Decodom.</p>
@@ -169,7 +172,7 @@
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>
 						<span class="subject">
-							<a href="https://www.archive.fit.tomflidr.cz/" target="_blank">Výzkumný ústav veterinárního lékařství</a> <small>(OSVČ)</small>
+							<a href="https://www.archive.fit.tomflidr.cz/" target="_blank">Výzkumný ústav veterinárního lékařství v.v.i.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<p>Kompletní realizace grafiky, webdesignu a mezinárodního portálu na Pimcore CMS, projekt EU.</p>
@@ -182,7 +185,7 @@
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
 						<span class="subject">
-							<a href="https://www.ictpro.cz/" target="_blank">ICTPro s.r.o.</a> - vývoj <small>(OSVČ)</small>
+							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro s.r.o.</a> - vývoj <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<p>Nová generace IS - návrh struktury, domén, webdesignu, přesun dat, vývoj v C#.NET/MSSQL.</p>
@@ -234,15 +237,18 @@
 						<span class="from">2012/10</span>
 						<span class="to">2015/03</span>
 						<span class="subject">
-							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS</a> <small>(OSVČ)</small>
+							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS s.r.o.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<p>Realizace více projektů, IT management, kompletní vývoj IS, grafika, reklama.</p>
 					<dl>
-						<dt>2012/10 – 2012/12</dt>	<dd><a href="https://www.archive.jenicek-domaci-cukrarska-vyroba.tomflidr.cz/" target="_blank">jenicek-domaci-cukrarska-vyroba.cz</a></dd>
+						<dt>2012/10 – 2012/12</dt>	<dd>
+							<a href="https://www.archive.jenicek-domaci-cukrarska-vyroba.tomflidr.cz/" target="_blank">jenicek-domaci-cukrarska-vyroba.cz</a>
+							 – později začleněno do brandu.
+						</dd>
 						<dt>2013/03 – 2015/03</dt>	<dd>
 							<a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">omnesproducts.cz</a>
-							 – vývoj vícedoménového eshopu pro doručování potravin.
+							 – vývoj vícedoménového eshopu prodeje potravin.
 						</dd>
 					</dl>
 				</div>
@@ -257,7 +263,7 @@
 							Kniha <a href="https://books.google.cz/books?id=TupgAgAAQBAJ&printsec=frontcover&hl=cs&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Adobe Photoshop CS6</a><small>, spoluautor (OSVČ)</small>
 						</span>
 					</h5>
-					<p>Texty a grafika pro témata: maskování a výměna pozadí, vanishing point, efekty, HDR, pluginy...</p>
+					<p>Texty a grafika pro témata: maskování a výměna pozadí, vanishing point, efekty, HDR, pluginy&hellip;</p>
 				</div>
 				
 				
@@ -316,12 +322,12 @@
 						<span class="from">2009/07</span>
 						<span class="to">2010/06</span>
 						<span class="subject">
-							<a href="https://web.archive.org/web/20141128235810/http://www.webdesigneri.cz/" target="_blank">Webdesigneri.cz</a>,s
+							<a href="https://web.archive.org/web/20141128235810/http://www.webdesigneri.cz/" target="_blank">Webdesigneri.cz</a>;
 							<a href="https://www.archive.exreals.cz.tomflidr.cz/" target="_blank">Exreals.cz</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<p>
-						Práce ve 2-členném teamu, webdesign, HTML/CSS/JS.
+						Práce ve 2-členném teamu, webdesign, HTML/CSS/JS;
 						Komplet. real., vlastní CMS, správa realit.
 					</p>
 				</div>
@@ -347,7 +353,7 @@
 				</div>
 
 				<p class="screen-only">
-					Tato verze živitopisu je stručnější, <a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní živtopis</a>.
+					Tato verze životopisu je stručnější, <a href="{url('document', ['path' => 'životopis/kompletní'])}">view the full resume</a>.
 				</p>
 				
 			</div>

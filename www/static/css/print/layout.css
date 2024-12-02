@@ -2,11 +2,6 @@
 	/* real print margins */
 	margin:var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left);
 	size:a4 portrait;
-	@bottom-center {
-		font-size:8px;
-		content:"page " counter(page);
-		color:#888;
-	}
 }
 html,body{
 	background:#fff;

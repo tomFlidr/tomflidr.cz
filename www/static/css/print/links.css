@@ -29,7 +29,7 @@ a[target=_blank]:not(.image){
 	position:relative;
 	padding-right:0;
 }
-a[target=_blank]:not(.image):before,
-a[target=_blank]:not(.image)::before{
+a[target=_blank]:not(.image):after,
+a[target=_blank]:not(.image)::after{
 	content:unset;
 }
