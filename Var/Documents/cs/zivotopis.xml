@@ -20,13 +20,13 @@
 
 		<div class="cols cols-5-2">
 			<div class="col col-right">
-				{incl('./životopis/left-panel')}
+				{incl('./zivotopis/left-panel')}
 			</div>
 			<div class="col col-left">
 				<h1>
 					<span class="text">Tomáš Flídr</span>
-					<small class="screen-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní CV</a>)</small>
-					<small class="print-only">(<a href="{url('document', ['path' => 'životopis/kompletní', 'absolute' => TRUE])}">zobrazit kompletní CV na webu</a>)</small>
+					<small class="screen-only">(<a href="{url('document', ['path' => 'zivotopis/kompletni'])}">zobrazit kompletní CV</a>)</small>
+					<small class="print-only">(<a href="{url('document', ['path' => 'zivotopis/kompletni', 'absolute' => TRUE])}">zobrazit kompletní CV na webu</a>)</small>
 				</h1>
 				
 				<h3 class="screen-only">Profil</h3>
@@ -353,7 +353,7 @@
 				</div>
 
 				<p class="screen-only">
-					Tato verze životopisu je stručnější, <a href="{url('document', ['path' => 'životopis/kompletní'])}">view the full resume</a>.
+					Tato verze životopisu je stručnější, <a href="{url('document', ['path' => 'zivotopis/kompletni'])}">zobrazit celý životopis</a>.
 				</p>
 				
 			</div>

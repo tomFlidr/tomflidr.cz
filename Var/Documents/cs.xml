@@ -39,7 +39,7 @@
 						Pracuji jak sám, tak v teamu a&nbsp;mám zkušenosti s&nbsp;vedením vývojářů.
 					</p>
 					<p>
-						<a class="more" href="{url('document', ['path' => 'životopis'])}">V životopisu se o mne dozvíte úplně vše</a>.
+						<a class="more" href="{url('document', ['path' => 'zivotopis'])}">V životopisu se o mne dozvíte úplně vše</a>.
 					</p>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 		
 		<section>
 
-			<h2><a href="{url('document', ['path' => 'služby'])}">Služby</a></h2>
+			<h2><a href="{url('document', ['path' => 'sluzby'])}">Služby</a></h2>
 			<div class="cols">
 				<div class="col">
 					<h3>Vývoj web a desktop aplikací</h3>
