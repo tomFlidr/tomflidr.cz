@@ -129,7 +129,7 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	
 	protected function setUpRoutesUniversal (): static {
 		$this->AddRoutes([
-			'home'						=> new \MvcCore\Route([
+			'home'						=> new \MvcCore\Ext\Routers\Localizations\Route([
 				'match'					=> "#^/index.php$#",
 				'reverse'				=> '/',
 				'redirect'				=> 'document',
