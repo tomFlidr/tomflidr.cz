@@ -17,6 +17,7 @@ class Main extends \MvcCore\Controller {
 	protected string	$requestPath;
 	protected string	$requestLocalizationPath;
 	protected bool		$requestLocalizationDefault;
+	protected string	$requestMediaPrefix;
 	protected bool		$requestIsHome;
 	protected string	$mediaSiteVersion;
 	
@@ -37,24 +38,33 @@ class Main extends \MvcCore\Controller {
 	public function PreDispatch (): void {
 		parent::PreDispatch();
 		
-		$this->requestPath = $this->router->EncodeUrl($this->request->GetPath());
+		$router = $this->router;
+		$mediaVersionsAndUrlValues = $router->GetAllowedMediaVersionsAndUrlValues();
+		$mediaSiteVersion = $router->GetMediaSiteVersion();
+		$this->requestMediaPrefix = $mediaVersionsAndUrlValues[$mediaSiteVersion];
+		if ($this->requestMediaPrefix !== '')
+			$this->requestMediaPrefix = '/' . $this->requestMediaPrefix;
+		
+		$this->requestPath = $router->EncodeUrl($this->request->GetPath());
 		//x($this->request->GetPath(), "req path only");
 		$this->mediaSiteVersion = $this->request->GetMediaSiteVersion();
-		$localization = $this->router->GetLocalization(TRUE);
-		$defaultLocalization = $this->router->GetDefaultLocalization(TRUE);
+		$localization = $router->GetLocalization(TRUE);
+		$defaultLocalization = $router->GetDefaultLocalization(TRUE);
 		$reqPath = $this->request->GetPath();
-		$this->requestLocalizationPath = '/' . $localization;
+		$this->requestLocalizationPath = $this->requestMediaPrefix . '/' . $localization;
 		$this->requestIsHome = $reqPath === '/';
 		$this->requestLocalizationDefault = $localization === $defaultLocalization;
 		if ($this->requestIsHome && $this->requestLocalizationDefault) {
-			$this->requestLocalizationPath = '';
+			$this->requestLocalizationPath = $this->requestMediaPrefix !== '' 
+				? $this->requestMediaPrefix . '/' 
+				: '';
 		}
 		
 		// Complete cached data with urls:
 		$mainItems = MainNavigationModel::GetData(
-			$this->mediaSiteVersion, $this->router->GetLocalization(FALSE)
+			$this->mediaSiteVersion, $router->GetLocalization(FALSE)
 		);
-
+		
 		$this->view->items = $this->completeItemsSelected($mainItems);
 		$this->view->nonce = \MvcCore\Ext\Tools\Csp::GetInstance()->GetNonce();
 	}
@@ -74,8 +84,8 @@ class Main extends \MvcCore\Controller {
 					if ($this->completeItemSelected($groupItem)) break;
 				}
 			} else {
-				//if ($this->completeItemSelected($groupItem)) break;
-				$this->completeItemSelected($groupItem);
+				if ($this->completeItemSelected($groupItem)) break;
+				//$this->completeItemSelected($groupItem);
 			}
 		}
 		return $mainItems;
@@ -84,7 +94,7 @@ class Main extends \MvcCore\Controller {
 	protected function completeItemSelected (Item $groupItem): bool {
 		$itemUrl = $groupItem->GetUrl();
 		$itemUrlIsHome = (
-			($this->requestLocalizationDefault && $itemUrl === '/') || 
+			($this->requestLocalizationDefault && $itemUrl === $this->requestMediaPrefix . '/') || 
 			(!$this->requestLocalizationDefault && $itemUrl === $this->requestLocalizationPath . '/')
 		);
 		$itemPath = $itemUrlIsHome
@@ -94,7 +104,7 @@ class Main extends \MvcCore\Controller {
 		$isOtherSelected = !$this->requestIsHome && !$itemUrlIsHome;
 		if (
 			$isHomeSelected ||
-			($isOtherSelected && mb_strpos($this->requestPath, $itemPath) === 0)
+			($isOtherSelected && $itemPath !== '/' && mb_strpos($this->requestPath, $itemPath) === 0)
 		) {
 			$groupItem->SetSelected(TRUE);
 			return TRUE;
