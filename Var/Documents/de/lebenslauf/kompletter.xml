@@ -117,7 +117,7 @@
 					<p>Rolle: Entwicklung des IS der nächsten Generation für die Fertigung, Projektmanagement.</p>
 					<ul>
 						<li>Entwurf einer modularen Systemarchitektur für den Wiederverkauf an andere Kunden.</li>
-						<li>Entwicklung in PHP(MvcCore)/TypeScript/MSSQL/C++ basierend auf detaillierten Wireframes und Texten.</li>
+						<li class="condensed-11">Entwicklung in PHP(MvcCore)/TypeScript/MSSQL/C++ basierend auf detaillierten Wireframes und Texten.</li>
 						<li>Lösung technischer Herausforderungen – Migration alter Daten aus den 90ern, Zusammenführung neuer Datenbanken&hellip;</li>
 						<li>Projektplanung und Leitung des Entwicklerteams.</li>
 						<li>Installation und Verwaltung von Anwendungsservern und Datenbanken.</li>
@@ -199,7 +199,7 @@
 				</div>
 
 				{* FIT *}
-				<div class="experience">
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>
@@ -216,7 +216,7 @@
 				</div>
 
 				{* ictpro.cz Entwicklung *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
@@ -398,7 +398,7 @@
 				
 				
 				{* twobits.cz *}
-				<div class="experience">
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>
@@ -424,7 +424,7 @@
 				
 				
 				{* exreals.cz *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2009/12</span>
 						<span class="to">2010/06</span>
