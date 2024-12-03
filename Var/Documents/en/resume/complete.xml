@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <doc:data xsi:schemaLocation="/doc ../../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<doc:title>Kompletní životopis</doc:title>
+	<doc:title>Complete Resume</doc:title>
 	<doc:sequence>5</doc:sequence>
 	<doc:active>1</doc:active>
 	<doc:controller>Fronts\Indexes\Cv</doc:controller>
@@ -13,7 +13,7 @@
 	<doc:og-description></doc:og-description>
 	<doc:itemprop-name></doc:itemprop-name>
 	<doc:itemprop-description></doc:itemprop-description>
-	<doc:navigation-title>Kompletní</doc:navigation-title>
+	<doc:navigation-title>Complete</doc:navigation-title>
 	<doc:navigation-subtitle></doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
@@ -24,133 +24,131 @@
 			</div>
 			<div class="col col-left">
 				<h1>
-					<span class="text">Tomáš Flídr</span>
-					<small class="screen-only">(<a href="{url('document', ['path' => 'životopis'])}">zobrazit stručné CV</a>)</small>
-					<small class="print-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit CV na webu</a>)</small>
+					<span class="text">Tomas Flidr</span>
+					<small class="screen-only">(<a href="{url('document', ['path' => 'resume'])}">view short resume</a>)</small>
+					<small class="print-only">(<a href="{url('document', ['path' => 'resume/complete', 'absolute' => TRUE])}">view complete resume online</a>)</small>
 				</h1>
 				
 				
-				<h3 class="screen-only">Profil</h3>
+				<h3 class="screen-only">Profile</h3>
 				<p class="profile">
-					Jsem zkušený vývojář webových aplikací s&nbsp;různými přesahy.<br />
-					Mám rád výkonná řešení s&nbsp;minimem závislostí a&nbsp;důrazem na&nbsp;životnost.<br />
-					Nejsem serfař po&nbsp;přechodných módách, pečlivě zvažuji svá rozhodnutí a čas.
+					I'm an experienced web developer with various overlaps. I&nbsp;like solutions<br />
+					with minimal dependencies and with focus on performance and longevity.<br />
+					I don't surf on dev fashion and carefully consider my decisions and time.
 				</p>
 				<p class="profile screen-only">
-					Vytvářím informační systémy, ecommerce aplikace, open source komponenty a&nbsp;čas od času
-					školím profesionální programátory. Pracuji jak sám tak v teamu
-					a&nbsp;mám zkušenosti s&nbsp;vedením vývojářů.
+					I create information systems, ecommerce applications, open source components <br />
+					and sometimes I&nbsp;make some training for&nbsp;professional programmers. <br />
+					I&nbsp;work both alone and in&nbsp;a&nbsp;team and I&nbsp;have experience in&nbsp;managing developers.
 				</p>
+				
 				
 				<h3>
 					<span class="text">Open source</span>
-					<small>(<a href="{url('document', ['path' => 'open-source'])}">zobrazit vše</a>)</small>
+					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">view all</a>)</small>
 				</h3>
 				<div class="cols open-source">
 					<div class="col">
 						<p class="os-item">
 							<b><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></b>
-							PHP MVC framework pro jedno-souborové nástroje i komplexní systémy.
+							PHP MVC framework for both single-file tools and complex systems.
 						</p>
 						<p class="os-item">
 							<b><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></b>
-							.NET debug utilita pro desktop i web.
+							.NET debug utility for web/desktop.
 						</p>
 					</div>
 					<div class="col">
 						<p class="os-item">
 							<b><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></b>
-							Pohodlnější vývoj aplikací v Node.JS s feature "hot realod".
+							Comfort dev in Node.JS with "hot reload" feature.
 						</p>
 						<p class="os-item">
 							<b><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></b>
-							Transpiller Ext.JS docs do TS.
+							Transpiler for Ext.JS docs to TS.
 						</p>
 					</div>
 				</div>
 				
 				
-				<h3>Praxe</h3>
+				<h3>Work Experience</h3>
 				
 				
 				{* lecturing *}
 				<div class="experience">
 					<h5>
 						<span class="from">2008</span>
-						<span class="to">nyní</span>
+						<span class="to">present</span>
 						<span class="subject">
-							Lektorská činnost <small>(OSVČ)</small>
+							Lecturing Activity <small>(Freelance)</small>
 						</span>
 					</h5>
-					<p>Role: návrh a realizace kurzů pro jednotlivce nebo vývojové teamy.</p>
+					<p>Role: design and delivery of courses for individuals or development teams.</p>
 					<ul>
 						<li>
-							Realizace kurzů pro vzdělávací agentury: 
-							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro s.r.o.</a> (většina kurzů), 
-							<a href="https://www.learnquest.com/" target="_blank">LearnQuest, Inc.</a>, 
-							<a href="https://www.pcdir.cz/" target="_blank">PC DIR Real, s.r.o.</a>, 
-							<a href="https://www.nicom.cz/" target="_blank">NICOM, a.s.</a> a
-							<a href="https://www.profima.cz/" target="_blank">PROFIMA EFFECTIVE, s.r.o.</a>.
+							Delivery of courses for educational agencies: 
+							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro</a> (majority of courses), 
+							<a href="https://www.learnquest.com/" target="_blank">LearnQuest</a>, 
+							<a href="https://www.pcdir.cz/" target="_blank">PC DIR</a>, 
+							<a href="https://www.nicom.cz/" target="_blank">NICOM</a> and
+							<a href="https://www.profima.cz/" target="_blank">PROFIMA EFFECTIVE</a>.
 						</li>
 						<li>
-							Realizace TOP kurzů pro nejnáročnější klienty a firmy s profesionálními vývojářskými teamy:
-							IBM, Česká spořitelna, Komerční banka, Seznam.cz, Avast, ESET, Bosch, Foxconn, Quadient a mnoho dalších.
+							Delivery of TOP courses for the most demanding companies with professional development teams: 
+							IBM, Česká spořitelna, Komerční banka, Seznam.cz, Avast, ESET, Bosch, Foxconn&hellip;
 						</li>
-						<li>Vzdělávání pro nadnárodní zahraniční korporace se spol. LearnQuest Inc.</li>
-						<li>Kurzy vedené doma v českém jazyce nebo v zahraničí v anglickém jazyce.</li>
-						<li>Realizace kurzů podle osnov nebo příprava na míru dle potřeb klientů.</li>
-						<li>Za {$training->GetYears()} let přes {$training->GetCount()} realizovaných kurzů, moje průměrné hodnocení od studentů je {$training->GetRating(5)|number: '0.00'}.</li>
+						<li>Training for international corporations in collaboration with LearnQuest Inc.</li>
+						<li>Courses delivered domestically in Czech or internationally in English.</li>
+						<li>Delivery of courses based on predefined outlines or customized to client needs.</li>
+						<li>More than {$training->GetCount()} courses delivered over {$training->GetYears()} years, with average student rating {$training->GetRating(5)|number: '0.00'} (of 5).</li>
 					</ul>
 				</div>
-				
-				
+
 				{* dendera.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2022/03</span>
 						<span class="to">2024/11</span>
 						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
+							<a href="https://www.dendera.cz/" target="_blank">Dendera</a> <small>(Freelance)</small>
 						</span>
 					</h5>
-					<p>Role: vývoj další generace výrobního informačního systému, management projektu.</p>
+					<p>Role: development of the next-generation manufacturing IS, project management.</p>
 					<ul>
-						<li>Návrh architektury modulárního systému pro prodej dalším klientům.</li>
-						<li>Vývoj v PHP(MvcCore)/TypeScript/MSSQL/C++ podle přesného popisu a wireframes.</li>
-						<li>Řešení technických výzev - migrace starých dat z 90' let, merge nových databází apod.</li>
-						<li>Plánování projektu a vedení vývojového teamu.</li>
-						<li>Instalace a management aplikačních serverů a databáze.</li>
+						<li>Design of a modular system architecture for resale to other clients.</li>
+						<li>Development in PHP(MvcCore)/TypeScript/MSSQL/C++ based on detailed wireframes and text.</li>
+						<li>Resolving technical challenges - migration of old data from the 90's, merging new databases, etc.</li>
+						<li>Project planning and leading the development team.</li>
+						<li>Installation and management of application servers and databases.</li>
 					</ul>
 				</div>
-				
-				
+
 				{* jipekokuchyne.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2021/01</span>
 						<span class="to">2021/02</span>
 						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně</a> <small>(OSVČ)</small>
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens</a> <small>(Freelance)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Postprodukce fotografií, grafické práce.</li>
-						<li>Webdesign a realizace malého firemního webu bez CMS v PHP(MvcCore)/TypeScript/MariaDB.</li>
-						<li>Parsování katalogových dat, tvorba nabídky Decodom kuchyní na vlastním webu.</li>
+						<li>Photo post-production and graphic work.</li>
+						<li>Web design and development of a small company website without CMS in PHP(MvcCore)/TypeScript/MariaDB.</li>
+						<li>Parsing catalogue data and creating Decodom kitchen offers on a custom website.</li>
 					</ul>
 				</div>
-				
-				
+
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
 						<span class="to">2021/12</span>
 						<span class="subject">
-							<a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a> <small>(OSVČ)</small>
+							<a href="https://smart-con.cz/" target="_blank">Smart-CON</a> <small>(Freelance)</small>
 						</span>
 					</h5>
-					<p>Role: vývoj především v PHP/TypeScript/MySQL/MSSQL ale i jiných platformách, více projektů:</p>
+					<p>Role: development primarily in PHP/TypeScript/MariaDB/MSSQL, multiple projects:</p>
 					<ul>
 						<li>
 							<h6>
@@ -162,16 +160,12 @@
 							</h6>
 							<ul>
 								<li>
-									Interní účtovací systém pro fakturaci SIM a správu telefonních smluv.
+									Internal billing system for invoicing SIM cards and managing phone contracts.
 								</li>
 								<li>
-									Vývoj úplně nového systému, import statických dat, automatizované 
-									fakturace podle nakonfigurovaných tarifů, skupin a dalších podmínek 
-									a automatické rozesílání klientům.
+									Development of a completely new system, static data import, automated invoicing based on&nbsp;configured rates, groups, and other conditions, with automated client delivery.
 								</li>
-								<li>
-									Kompletní realizace vývoje v PHP/TypeScript/MSSQL.
-								</li>
+								<li>Complete delivery in PHP/TypeScript/MSSQL.</li>
 							</ul>
 						</li>
 						<li>
@@ -184,35 +178,33 @@
 							</h6>
 							<ul>
 								<li>
-									Klientský systém pro správu, vzdálený přístup a řízení reklam 
-									v mobilních routerech nasazených v autobusech a vlacích po Evropě.
+									Client system for management, remote access, and ads control in mobile routers deployed in&nbsp;buses and trains across Europe.
 								</li>
 								<li>
-									Vývoj nové generace, přesun dat (několik tisíc routerů) a síťové infrastruktury v plném provozu.
+									Development of a new system generation, data migration (thousands of routers), and live network infrastructure transfer.
 								</li>
 								<li>
-									Kompletní realizace vývoje v PHP/TypeScript(Ext.JS)/MariaDB. 
+									Complete delivery of development in PHP/TypeScript(Ext.JS)/MariaDB.
 								</li>
 								<li>
-									Předpočítávání a agregace masivního obsahu reportovaných dat, tvorba reportů, grafů a PDF.
+									Pre-calculation and aggregation of massive data, dynamic reports, charts and PDFs.
 								</li>
 								<li>
-									Zodpovědnost za běh systému 24/7, Long Term Support.
+									System and servers operation responsibility 24/7, Long Term Support.
 								</li>
 							</ul>
 						</li>
 					</ul>
-					
 				</div>
 				
 				
-				{* FIT *}
+				{* FIT: TODO *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>
 						<span class="subject">
-							<a href="https://www.archive.fit.tomflidr.cz/" target="_blank">Výzkumný ústav veterinárního lékařství v.v.i.</a> <small>(OSVČ)</small>
+							<a href="https://www.archive.fit.tomflidr.cz/" target="_blank">Veterinary Research Institute</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
 					<p>Role: Kompletní zpracování pro oddělení Farmakoligie, Imunoterapie a Nanotoxikologie (FIT).</p>

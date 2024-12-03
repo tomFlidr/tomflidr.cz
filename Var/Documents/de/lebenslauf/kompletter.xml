@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <doc:data xsi:schemaLocation="/doc ../../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<doc:title>Kompletní životopis</doc:title>
+	<doc:title>Kompletter Lebenslauf</doc:title>
 	<doc:sequence>5</doc:sequence>
 	<doc:active>1</doc:active>
 	<doc:controller>Fronts\Indexes\Cv</doc:controller>
@@ -13,7 +13,7 @@
 	<doc:og-description></doc:og-description>
 	<doc:itemprop-name></doc:itemprop-name>
 	<doc:itemprop-description></doc:itemprop-description>
-	<doc:navigation-title>Kompletní</doc:navigation-title>
+	<doc:navigation-title>Kompletter</doc:navigation-title>
 	<doc:navigation-subtitle></doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
@@ -24,9 +24,9 @@
 			</div>
 			<div class="col col-left">
 				<h1>
-					<span class="text">Tomáš Flídr</span>
-					<small class="screen-only">(<a href="{url('document', ['path' => 'životopis'])}">zobrazit stručné CV</a>)</small>
-					<small class="print-only">(<a href="{url('document', ['path' => 'životopis/kompletní', 'absolute' => TRUE])}">zobrazit CV na webu</a>)</small>
+					<span class="text">Tomas Flidr</span>
+					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf'])}">zobrazit stručné CV</a>)</small>
+					<small class="print-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter', 'absolute' => TRUE])}">zobrazit CV na webu</a>)</small>
 				</h1>
 				
 				
@@ -130,7 +130,7 @@
 						<span class="from">2021/01</span>
 						<span class="to">2021/02</span>
 						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně s.r.o.</a> <small>(OSVČ)</small>
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<ul>
@@ -150,7 +150,7 @@
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Role: vývoj především v PHP/TypeScript/MariaDB/MSSQL ale i jiných platformách, více projektů:</p>
+					<p>Role: vývoj především v PHP/TypeScript/MySQL/MSSQL ale i jiných platformách, více projektů:</p>
 					<ul>
 						<li>
 							<h6>
@@ -194,10 +194,10 @@
 									Kompletní realizace vývoje v PHP/TypeScript(Ext.JS)/MariaDB. 
 								</li>
 								<li>
-									Předpočítávání a agregace masivního obsahu dat, dynamické reporty, grafy a PDF.
+									Předpočítávání a agregace masivního obsahu reportovaných dat, tvorba reportů, grafů a PDF.
 								</li>
 								<li>
-									Zodpovědnost za běh systému a serverů 24/7, Long Term Support.
+									Zodpovědnost za běh systému 24/7, Long Term Support.
 								</li>
 							</ul>
 						</li>
@@ -230,7 +230,7 @@
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
 						<span class="subject">
-							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro s.r.o.</a> - vývoj <small>(OSVČ)</small>
+							<a href="https://www.ictpro.cz/" target="_blank">ICTPro s.r.o.</a> - vývoj <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<ul>
@@ -294,7 +294,7 @@
 						<span class="from">2012/10</span>
 						<span class="to">2015/03</span>
 						<span class="subject">
-							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS s.r.o.</a> <small>(OSVČ)</small>
+							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<p>Role: Realizace více projektů, IT management, kompletní vývoj IS, grafika, reklama.</p>

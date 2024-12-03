@@ -60,9 +60,6 @@ class Main extends \MvcCore\Controller {
 	}
 
 	protected function completeItemsSelected (Set $mainItems): Set {
-		$currentRoute = $this->router->GetCurrentRoute();
-		[$crCtrl, $crAction] = [$currentRoute->GetController(), $currentRoute->GetAction()];
-		$currentRouteName = "{$crCtrl}:{$crAction}";
 		foreach ($mainItems as $groupItem) {
 			/** @var \App\Models\Navigations\Item $groupItem */
 			$subItems = $groupItem->GetItems();
@@ -77,7 +74,8 @@ class Main extends \MvcCore\Controller {
 					if ($this->completeItemSelected($groupItem)) break;
 				}
 			} else {
-				if ($this->completeItemSelected($groupItem)) break;
+				//if ($this->completeItemSelected($groupItem)) break;
+				$this->completeItemSelected($groupItem);
 			}
 		}
 		return $mainItems;
@@ -93,9 +91,10 @@ class Main extends \MvcCore\Controller {
 			? $itemUrl
 			: mb_substr($itemUrl, strlen($this->requestLocalizationPath));
 		$isHomeSelected = $this->requestIsHome && $itemUrlIsHome;
+		$isOtherSelected = !$this->requestIsHome && !$itemUrlIsHome;
 		if (
 			$isHomeSelected ||
-			(!$isHomeSelected && mb_strpos($this->requestPath, $itemPath) === 0)
+			($isOtherSelected && mb_strpos($this->requestPath, $itemPath) === 0)
 		) {
 			$groupItem->SetSelected(TRUE);
 			return TRUE;

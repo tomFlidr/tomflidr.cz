@@ -26,7 +26,7 @@
 				<h1>
 					<span class="text">Tomáš Flídr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní CV</a>)</small>
-					<small class="print-only">(<a href="{url('document', ['path' => 'životopis/kompletní'])}">zobrazit kompletní CV na webu</a>)</small>
+					<small class="print-only">(<a href="{url('document', ['path' => 'životopis/kompletní', 'absolute' => TRUE])}">zobrazit kompletní CV na webu</a>)</small>
 				</h1>
 				
 				<h3 class="screen-only">Profil</h3>
@@ -38,7 +38,7 @@
 				
 				<h3>
 					<span class="text">Open source</span>
-					<small>(<a href="{url('document', ['path' => 'open-source'])}">zobrazit vše</a>)</small>
+					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">zobrazit vše</a>)</small>
 				</h3>
 				<div class="cols open-source">
 					<div class="col">
