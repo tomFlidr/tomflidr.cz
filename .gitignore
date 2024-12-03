@@ -62,6 +62,7 @@ Temporary Items
 # Application third party modules
 App/Cli/Fork.exe
 App/Cli/Fork.Debug.exe
+App/config.dev.ini
 vendor/*
 composer-update-dev.*
 composer-update.*
