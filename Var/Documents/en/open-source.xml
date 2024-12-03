@@ -60,7 +60,9 @@
 			which improves performance due to simplified <code>opcache</code>.
 		</p>
 		<p>
-			The framework includes a <a href="https://github.com/mvccore/docs" target="_blank">documentation repository</a> and many <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">example repositories</a>.
+			The framework includes a <a href="https://github.com/mvccore/docs" target="_blank">documentation repository</a>,
+			<a href="https://github.com/mvccore/docs/blob/master/mvccore/en/extensions.md" target="_blank">more than 50 extensions</a>
+			and many <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">example repositories</a>.
 		</p>
 
 		<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>

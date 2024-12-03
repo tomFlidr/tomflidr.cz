@@ -61,7 +61,9 @@
 			die durch vereinfachtes <code>opcache</code> noch schneller sind.
 		</p>
 		<p>
-			Teil des Frameworks ist ein <a href="https://github.com/mvccore/docs" target="_blank">Dokumentations-Repository</a> sowie viele <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">Beispiel-Repositories</a>.
+			Teil des Frameworks ist ein <a href="https://github.com/mvccore/docs" target="_blank">Dokumentations-Repository</a>,
+			<a href="https://github.com/mvccore/docs/blob/master/mvccore/en/extensions.md" target="_blank">mehr als 50 Erweiterungen</a> 
+			und viele <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">Beispiel-Repositories</a>.
 		</p>
 
 		<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>

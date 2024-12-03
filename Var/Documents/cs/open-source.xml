@@ -60,7 +60,9 @@
 			které jsou díky takto zjednodušené <code>opcache</code> ještě rychlejší.
 		</p>
 		<p>
-			Součástí frameworku je <a href="https://github.com/mvccore/docs" target="_blank">repozitář dokumentace</a> a mnoho <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">repozitářů s příklady</a>.
+			Součástí frameworku je <a href="https://github.com/mvccore/docs" target="_blank">repozitář dokumentace</a>,
+			<a href="https://github.com/mvccore/docs/blob/master/mvccore/cs/extensions.md" target="_blank">více než 50 rozšíření</a>
+			a&nbsp;mnoho <a href="https://github.com/orgs/mvccore/repositories?q=example-" target="_blank">repozitářů s příklady</a>.
 		</p>
 		
 

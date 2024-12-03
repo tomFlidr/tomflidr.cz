@@ -87,11 +87,11 @@
 					<ul>
 						<li>
 							Delivery of courses for educational agencies: 
-							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro</a> (majority of courses), 
-							<a href="https://www.learnquest.com/" target="_blank">LearnQuest</a>, 
-							<a href="https://www.pcdir.cz/" target="_blank">PC DIR</a>, 
-							<a href="https://www.nicom.cz/" target="_blank">NICOM</a> and
-							<a href="https://www.profima.cz/" target="_blank">PROFIMA EFFECTIVE</a>.
+							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro Ltd</a> (majority of courses), 
+							<a href="https://www.learnquest.com/" target="_blank">LearnQuest Inc</a>, 
+							<a href="https://www.pcdir.cz/" target="_blank">PC DIR Ltd</a>, 
+							<a href="https://www.nicom.cz/" target="_blank">NICOM plc</a> and
+							<a href="https://www.profima.cz/" target="_blank">PROFIMA EFFECTIVE Ltd</a>.
 						</li>
 						<li>
 							Delivery of TOP courses for the most demanding companies with professional development teams: 
@@ -110,14 +110,14 @@
 						<span class="from">2022/03</span>
 						<span class="to">2024/11</span>
 						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera</a> <small>(Freelance)</small>
+							<a href="https://www.dendera.cz/" target="_blank">Dendera plc</a> <small>(Freelance)</small>
 						</span>
 					</h5>
 					<p>Role: development of the next-generation manufacturing IS, project management.</p>
 					<ul>
 						<li>Design of a modular system architecture for resale to other clients.</li>
 						<li>Development in PHP(MvcCore)/TypeScript/MSSQL/C++ based on detailed wireframes and text.</li>
-						<li>Resolving technical challenges - migration of old data from the 90's, merging new databases, etc.</li>
+						<li>Resolving technical challenges - migration of old data from the 90's, merging new databases&hellip;</li>
 						<li>Project planning and leading the development team.</li>
 						<li>Installation and management of application servers and databases.</li>
 					</ul>
@@ -129,7 +129,7 @@
 						<span class="from">2021/01</span>
 						<span class="to">2021/02</span>
 						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens</a> <small>(Freelance)</small>
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens Ltd</a> <small>(Freelance)</small>
 						</span>
 					</h5>
 					<ul>
@@ -145,7 +145,7 @@
 						<span class="from">2018/11</span>
 						<span class="to">2021/12</span>
 						<span class="subject">
-							<a href="https://smart-con.cz/" target="_blank">Smart-CON</a> <small>(Freelance)</small>
+							<a href="https://smart-con.cz/" target="_blank">Smart-CON Ltd</a> <small>(Freelance)</small>
 						</span>
 					</h5>
 					<p>Role: development primarily in PHP/TypeScript/MariaDB/MSSQL, multiple projects:</p>
@@ -197,8 +197,7 @@
 					</ul>
 				</div>
 				
-				
-				{* FIT: TODO *}
+				{* FIT *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/03</span>
@@ -207,177 +206,167 @@
 							<a href="https://www.archive.fit.tomflidr.cz/" target="_blank">Veterinary Research Institute</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
-					<p>Role: Kompletní zpracování pro oddělení Farmakoligie, Imunoterapie a Nanotoxikologie (FIT).</p>
+					<p>Role: Complete project delivery for the Pharmacology, Immunotherapy, and Nanotoxicology (FIT) department.</p>
 					<ul>
-						<li>Zpracování dokumentace výběrového řízení pro dotovaný projekt EU.</li>
-						<li>Realizace webdesignu, postprodukce grafických materiálů.</li>
-						<li>Realizace mezinárodního portálu webu s administrací v Pimcore CMS (PHP/MySQL).</li>
+						<li>Preparation of documentation for an EU-funded project tender.</li>
+						<li>Web design implementation, post-production of graphic materials.</li>
+						<li>Development of an international web portal with administration in Pimcore CMS (PHP/MySQL).</li>
 					</ul>
 				</div>
-				
-				
+
 				{* ictpro.cz development *}
 				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
 						<span class="subject">
-							<a href="https://www.ictpro.cz/" target="_blank">ICTPro s.r.o.</a> - vývoj <small>(OSVČ)</small>
+							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro Ltd</a> - Development <small>(Freelancer)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Návrh nového webdesignu a struktury vícedoménového a mezinárodního vzdělávacího portálu.</li>
-						<li>Částečný redesign původního webu, realizace menších podpurných webových projektů.</li>
-						<li>Vývoj další generace informačního systému v C#.NET MVC/JS/MSSQL.</li>
-						<li>Vývoj aplikace pro synchronizaci a přesun dat ze starého systému ve VB6 a ASP.NET.</li>
+						<li>Design of new structure for a multi-domain international educational portal, new webdesign.</li>
+						<li>Partial redesign of the original website, implementation of smaller support web projects.</li>
+						<li>Development of the next generation information system in C#.NET MVC/JS/MSSQL.</li>
+						<li>Development of a data synchronization and migration application from the old system in VB6 and ASP.NET.</li>
 					</ul>
 				</div>
-				
-				
+
 				{* estheticon.com *}
 				<div class="experience">
 					<h5>
 						<span class="from">2015/05</span>
 						<span class="to">2015/08</span>
 						<span class="subject">
-							<a href="" target="_blank">Estheticon.com</a><small>, dříve ATWEB Consulting s. r. o. (OSVČ)</small>
+							<a href="" target="_blank">Estheticon.com</a><small>, formerly ATWEB Consulting Ltd (Freelancer)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Práce ve 4-členném teamu, vývoj dle ticketů v PHP(Zend)/JS/MySQL.</li>
-						<li>Vývoj mezinárodního portálu ve 14 jazycích pro plastické chirurgy a jejich klienty.</li>
-						<li>Estheticon má rozsáhlý codebase, mobilní verzi, vlastní CMS a mnoho dalšího.</li>
+						<li>4-member team remote work, development based on tickets in PHP (Zend)/JS/MySQL.</li>
+						<li>Development of an international portal in 14 languages for plastic surgeons and their clients.</li>
+						<li>Estheticon has an extensive codebase, a mobile version, its own CMS, and more.</li>
 					</ul>
 				</div>
-				
-				
+
 				{* janaflidrova.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2015/04</span>
 						<span class="to">2015/05</span>
 						<span class="subject">
-							<a href="https://www.janaflidrova.cz/" target="_blank">Janaflidrova.cz</a> <small>(OSVČ)</small>
+							<a href="https://www.janaflidrova.cz/" target="_blank">Janaflidrova.cz</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
-					<p>Role: malá designová prezentace na Pimcore CMS (PHP/MySQL), kompletní realizace.</p>
+					<p>Role: Small design website presentation on Pimcore CMS (PHP/MySQL), complete delivery.</p>
 				</div>
-				
-				
+
 				{* ssosz.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2013/08</span>
 						<span class="to">2013/10</span>
 						<span class="subject">
-							<a href="https://www.archive.ssosz.tomflidr.cz/" target="_blank">Soukromá střední odborná škola živnostenská, s.r.o.</a> <small>(OSVČ)</small>
+							<a href="https://www.archive.ssosz.tomflidr.cz/" target="_blank">Private Business Secondary School Brno Ltd</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Kompletní redesign, tvorba nového webu vč. obsahu v Pimcore CMS (PHP/JS/MySQL).</li>
-						<li>Zparsování starého HTML statického webu vč. fotogalerie do nové databáze.</li>
+						<li>Complete redesign, creation of a new website including content in Pimcore CMS (PHP/JS/MySQL).</li>
+						<li>Parsing the old static HTML website including the photo gallery into a new database.</li>
 					</ul>
 				</div>
-				
-				
+
 				{* OMNES PRODUCTS *}
 				<div class="experience">
 					<h5>
 						<span class="from">2012/10</span>
 						<span class="to">2015/03</span>
 						<span class="subject">
-							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS</a> <small>(OSVČ)</small>
+							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS Ltd</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
-					<p>Role: Realizace více projektů, IT management, kompletní vývoj IS, grafika, reklama.</p>
+					<p>Role: Implementation of multiple projects, IT management, complete IS development, graphics, advertising.</p>
 					<ul>
 						<li>
-							<b>Webové projekty:</b><br />
+							<b>Web Projects:</b><br />
 							<ul>
-								<li>Návrh logotypů a CI, návrh a produkce sázených a automatizovaných tiskovin.</li>
-								<li>Návrh webdesignu a kompletní realizace webů a specializovaných eshopů.</li>
-								<li>Programování komponent do informačního systému na Pimcore CMS (PHP/JS/MySQL).</li>
-								<li>Management IT činností, nastavování doručovacích procesů, komunikace s kolegy.</li>
+								<li>Corporate identity, design and production of typeset and automated print materials.</li>
+								<li>Web design and complete implementation of websites and specialized e-shops.</li>
+								<li>Programming components for the information system on Pimcore CMS (PHP/JS/MySQL).</li>
+								<li>Management of IT activities, setting up delivery processes, communication with colleagues.</li>
 							</ul>
 							<dl>
-								<dt>2012/10 – 2012/12</dt>	<dd>
-									<a href="https://www.archive.jenicek-domaci-cukrarska-vyroba.tomflidr.cz/" target="_blank">jenicek-domaci-cukrarska-vyroba.cz</a>
-									 – později začleněno do brandu
+								<dt>2012/10 – 2012/12</dt> <dd>
+									<a href="https://www.archive.jenicek-domaci-cukrarska-vyroba.tomflidr.cz/" target="_blank">jenicek-domaci-cukrarska-vyroba.cz</a> 
+									– later integrated into the brand
 								</dd>
-								<dt>2013/01 – 2013/02</dt>	<dd>zana-zdrava-krasna.cz</dd>
-								<dt>2013/03 – 2015/03</dt>	<dd>
+								<dt>2013/01 – 2013/02</dt> <dd>zana-zdrava-krasna.cz</dd>
+								<dt>2013/03 – 2015/03</dt> <dd>
 									<a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">omnesproducts.cz</a>
-									 – vývoj multidoménového eshopu prodeje potravin
+									 – development of a multi-domain food sales e-shop
 								</dd>
 							</dl>
 						</li>
 					</ul>
 				</div>
-				
-				
+
 				{* Photoshop CS6 *}
 				<div class="experience">
 					<h5>
 						<span class="from">2012/08</span>
 						<span class="to">2012/10</span>
 						<span class="subject">
-							Kniha <a href="https://books.google.cz/books?id=TupgAgAAQBAJ&printsec=frontcover&hl=cs&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Adobe Photoshop CS6</a><small>, spoluautor (OSVČ)</small>
+							Book <a href="https://books.google.cz/books?id=TupgAgAAQBAJ&printsec=frontcover&hl=cs&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Adobe Photoshop CS6</a><small>, co-author (Freelancer)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Sepsání textů, postupů a vytvoření grafických podkladů pro vybrané kapitoly.</li>
-						<li>Témata: maskování a background changing, content-aware, vanishing point, displacement map <br />a podobné efekty, HDR merge, pokročilé transformace, zásuvné moduly.</li>
+						<li>Writing texts, procedures, and creating graphic materials for selected chapters.</li>
+						<li>Topics: masking and background changing, content-aware, vanishing point, displacement map<br /> and similar effects, HDR merge, advanced transformations, plug-ins&hellip;</li>
 					</ul>
 				</div>
-				
-				
+
 				{* imperastyl.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2012/07</span>
 						<span class="to">2012/08</span>
 						<span class="subject">
-							<a href="https://web.archive.org/web/20130921124932/http://www.imperastyl.cz/" target="_blank">Imperastyl.cz</a> <small>(OSVČ)</small>
+							<a href="https://web.archive.org/web/20130921124932/http://www.imperastyl.cz/" target="_blank">Imperastyl.cz</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
-					<p>Role: práce ve 2-členném teamu, webdesign a kódování šablon do HTML a CSS.</p>
+					<p>Role: 2-member team work, web design, and coding templates into HTML and CSS.</p>
 				</div>
-				
-				
+
 				{* floormax.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2012/02</span>
 						<span class="to">2012/06</span>
 						<span class="subject">
-							<a href="https://archive.floormax.tomflidr.cz/" target="_blank">Floormax.cz</a> <small>(OSVČ)</small>
+							<a href="https://archive.floormax.tomflidr.cz/" target="_blank">Floormax.cz</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Kompletní realizace projektu - tvorba loga, produkce i postprodukce fotografií, textový obsah.</li>
-						<li>Realizace firemního webu a specializovaného e-shopu na Pimcore CMS (PHP/JS/MySQL).</li>
-						<li>Nové e-shop features: výpočty váhy objednávek, speciální přepravci, doručovací matice cen&hellip;</li>
+						<li>Complete project delivery - logo creation, photo production, and post-production, textual content.</li>
+						<li>Implementation of a corporate website and specialized e-shop on Pimcore CMS (PHP/JS/MySQL).</li>
+						<li>New e-shop features: order weight calculations, special carriers, delivery price matrices&hellip;</li>
 					</ul>
 				</div>
-				
-				
+
 				{* choka.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2011/10</span>
 						<span class="to">2012/01</span>
 						<span class="subject">
-							<a href="http://archive.choka.tomflidr.cz/en/" target="_blank">Choka.cz</a> <small>(OSVČ)</small>
+							<a href="http://archive.choka.tomflidr.cz/en/" target="_blank">Choka.cz</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Kompletní realizace mezinárodního e-shopu podle hotových návrhů webdesignéra.</li>
-						<li>Rozšíření vlastního e-shopu nad Pimcore CMS (PHP/JS/MySQL).</li>
-						<li>Front features: varianty, 4 kroky objednávky, emaily, administrace kategorií, zboží, obrázků.</li>
-						<li>Admin features: prodejní nastavení, editovatelné faktury, exporty na srovnávače cen apod.</li>
+						<li>Complete implementation of an international e-shop based on designs from a web designer.</li>
+						<li>Extending a custom e-shop built on Pimcore CMS (PHP/JS/MySQL).</li>
+						<li>Front-end features: editation of categories, products, images, variants, parameters, 4-step order process, multilanguage emails and more.</li>
+						<li>Admin features: sales settings, editable invoices, exports to price comparison sites and more.</li>
 					</ul>
 				</div>
-				
 				
 				{* PORTA, MFDF *}
 				<div class="experience">
@@ -385,110 +374,105 @@
 						<span class="from">2011/07</span>
 						<span class="to">2011/10</span>
 						<span class="subject">
-							<a href="https://www.portadesign.cz/" target="_blank">PORTA DESIGN s.r.o.</a> <small>(OSVČ)</small>
+							<a href="https://www.portadesign.cz/" target="_blank">PORTA DESIGN Ltd</a> <small>(Freelance)</small>
 						</span>
 					</h5>
 					<p>
-						Role: práce ve 2-členném teamu, vývoj portálu
-						<a href="https://web.archive.org/web/20160308031043/http:/www.dokument-festival.cz/" target="_blank">Mezinárodního Festivalu Dokumentárních Filmů</a>.
+						Role: 2-member team remote work, development of the portal for the 
+						<a href="https://web.archive.org/web/20160308031043/http:/www.dokument-festival.cz/" target="_blank">International Documentary Film Festival</a>.
 					</p>
 					<ul>
-						<li>Realizace v Pimcore CMS (PHP/JS/MySQL/SOAP) podle návrhů webdesignéra.</li>
-						<li>Vývoj vlastního e-shopu nad CMS pro prodej merchandisingu a vývoj archivu pro minulé ročníky.</li>
-						<li>Administrace VPS na CentOS s cca 30ti firemními weby a projekty podobné velikosti.</li>
+						<li>Implementation in Pimcore CMS (PHP/JS/MySQL/SOAP) based on web designer's designs.</li>
+						<li>Development of a custom e-shop on the CMS for merchandising sales and an archive for past festival editions.</li>
+						<li>Administration of a VPS on CentOS hosting approximately 30 company websites and projects of similar size.</li>
 					</ul>
 				</div>
-				
-				
+
 				{* twobits.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>
 						<span class="subject">
-							<a href="https://tripomatic.com/" target="_blank">Trimpomatic.com</a><small>, dříve Twobits s.r.o. (OSVČ)</small>
+							<a href="https://tripomatic.com/" target="_blank">Trimpomatic.com</a><small>, formerly Twobits Ltd (Freelance)</small>
 						</span>
 					</h5>
-					<p>Role: webdesignér, front-end vývoj v teamu s 2 vývojáři v PHP(Nette)/JS/MySQL, grafické práce.</p>
+					<p>Role: Web designer, front-end developer in team with 2 developers - PHP (Nette)/JS/MySQL, graphic design tasks.</p>
 					<ul>
 						<li>
-							Webdesign a front-end development pro weby myairdeals.com a 
+							Web design and front-end development for websites myairdeals.com and 
 							<a href="https://web.archive.org/web/20110209010501/http://www.whichairline.com/" target="_blank">whichairline.com</a>.
 						</li>
 						<li>
-							Online a tištěná reklama pro weby: 
+							Online and print advertising for websites: 
 							<a href="https://web.archive.org/web/20110903065549/http://top.hostingy.cz/" target="_blank">hostingy.cz</a>, 
 							<a href="https://web.archive.org/web/20100127143915/http://www.kdesportovat.cz/" target="_blank">kdesportovat.cz</a>, 
-							 a <a href="https://web.archive.org/web/20090214224143/http://nazkusenou.cz/" target="_blank">nazkusenou.cz</a>.
+							and <a href="https://web.archive.org/web/20090214224143/http://nazkusenou.cz/" target="_blank">nazkusenou.cz</a>.
 						</li>
 					</ul>
 				</div>
-				
-				
+
 				{* exreals.cz *}
 				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2009/12</span>
 						<span class="to">2010/06</span>
 						<span class="subject">
-							<a href="https://www.archive.exreals.cz.tomflidr.cz/" target="_blank">Exreals.cz</a> <small>(OSVČ)</small>
+							<a href="https://www.archive.exreals.cz.tomflidr.cz/" target="_blank">Exreals.cz</a> <small>(Freelance)</small>
 						</span>
 					</h5>
-					<p>Kompletní realizace webu s vlastním CMS pro správu obsahu a realit (PHP/MySQL, Nette).</p>
+					<p>Complete delivery of a website with a custom CMS for content and real estate management (PHP/MySQL, Nette).</p>
 				</div>
-				
-				
+
 				{* webdesigneri.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2009/07</span>
 						<span class="to">2009/11</span>
 						<span class="subject">
-							<a href="https://web.archive.org/web/20141128235810/http://www.webdesigneri.cz/" target="_blank">Webdesigneri.cz</a> <small>(OSVČ)</small>
+							<a href="https://web.archive.org/web/20141128235810/http://www.webdesigneri.cz/" target="_blank">Webdesigneri.cz</a> <small>(Freelance)</small>
 						</span>
 					</h5>
-					<p>Role: práce ve 2-členném teamu, návrh webdesignu, kódování šablon a programování v jQuery.</p>
+					<p>Role: 2-member team work, designed web layouts, coded templates, and developed in jQuery.</p>
 				</div>
-				
-				
+
 				{* first freelance cooperations *}
 				<div class="experience">
 					<h5>
 						<span class="from">2007</span>
 						<span class="to">2008</span>
 						<span class="subject">
-							 Samostatné reklamní a webové projekty <small>(práce dohodou při HPP)</small>
+							Independent web projects <small>(part-time alongside full-time employment)</small>
 						</span>
 					</h5>
 					<dl>
-						<dt><a href="https://web.archive.org/web/20081006060519/http://www.5rstudio.cz/" target="_blank">5rstudio.cz</a></dt>			<dd>ActionScript, Webdesign.</dd>
-						<dt><a href="https://web.archive.org/web/20080603051135/http://videa.superhry.cz/" target="_blank">videa.superhry.cz</a></dt>	<dd>ActionScript, programování přehrávače videa.</dd>
-						<dt><a href="https://web.archive.org/web/20090619104238/http://www.paulbrun.cz/" target="_blank">paulbrun.cz</a></dt>			<dd>Postprodukce fotografií.</dd>
-						<dt>dkproduction.cz</dt>	<dd>Reklamní grafika, animace.</dd>
+						<dt><a href="https://web.archive.org/web/20081006060519/http://www.5rstudio.cz/" target="_blank">5rstudio.cz</a></dt> <dd>ActionScript, Web design.</dd>
+						<dt><a href="https://web.archive.org/web/20080603051135/http://videa.superhry.cz/" target="_blank">videa.superhry.cz</a></dt> <dd>ActionScript, video player programming.</dd>
+						<dt><a href="https://web.archive.org/web/20090619104238/http://www.paulbrun.cz/" target="_blank">paulbrun.cz</a></dt> <dd>Photo post-production.</dd>
+						<dt>dkproduction.cz</dt> <dd>Advertising graphics, animations.</dd>
 					</dl>
 				</div>
-				
-				
+
 				{* STUDENT AGENCY *}
 				<div class="experience">
 					<h5>
 						<span class="from">2007/10</span>
 						<span class="to">2009/06</span>
 						<span class="subject">
-							<a href="http://www.studentagency.cz/" target="_blank">STUDENT AGENCY a.s.</a> <small>(HPP)</small>
+							<a href="http://www.studentagency.cz/" target="_blank">STUDENT AGENCY plc</a> <small>(Full-time employment)</small>
 						</span>
 					</h5>
-					<p>Role: grafik, později jako webdesignér a web developer, práce ve 2 až 3-členném teamu.</p>
+					<p>Role: Graphic designer, later as web designer and web developer, work in a 2 to 3-member team.</p>
 					<ul>
 						<li>
-							<b>Grafické práce:</b><br />
+							<b>Graphic work:</b><br />
 							<ul>
-								<li>Online reklamní bannery, reklamní spoty a postprodukce.</li>
-								<li>Tištěná reklama, polepy, billboardy.</li>
+								<li>Online advertising banners, short commercials and post-production.</li>
+								<li>Print advertising, vehicle wraps, billboards.</li>
 							</ul>
 						</li>
 						<li>
-							<b>Webové projekty:</b><br />
+							<b>Web projects:</b><br />
 							<dl>
 								<dt>2008/10 – 2009/06</dt>	<dd><a href="https://web.archive.org/web/20111004234623/http://www.studentagency.cz/" target="_blank">studentagency.cz</a></dd>
 								<dt>2008/04 – 2008/05</dt>	<dd>highjet.com</dd>
@@ -498,17 +482,16 @@
 								<dt>2007/10 – 2007/11</dt>	<dd><a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a></dd>
 							</dl>
 							<ul>
-								<li>Návrh logotypů a CI, webdesign a kódování HTML/CSS webů.</li>
-								<li>Programování komponent do firemního CMS v PHP/JS.</li>
-								<li>Realizace výběrového řízení pro externí zpracování nové generace celofiremního portálu.</li>
+								<li>Logo and CI design, web design, and HTML/CSS coding.</li>
+								<li>Programming components for the company's CMS in PHP/JS.</li>
+								<li>Organization of a tender for external processing of a new generation company-wide portal.</li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 
 				<p class="screen-only">
-					Freelance práce je různorodá, seznam nepokrývá 100% vše, <br />
-					co&nbsp;jsem kdy&nbsp;realizoval i&nbsp;za&nbsp;menší weby a&nbsp;grafické práce.
+					Freelance work is various, this list does not cover 100% of all the smaller websites <br  />and graphics I've ever handled.
 				</p>
 				
 			</div>

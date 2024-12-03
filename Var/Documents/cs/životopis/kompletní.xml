@@ -248,7 +248,7 @@
 						<span class="from">2015/05</span>
 						<span class="to">2015/08</span>
 						<span class="subject">
-							<a href="" target="_blank">Estheticon.com</a><small>, dříve ATWEB Consulting s. r. o. (OSVČ)</small>
+							<a href="" target="_blank">Estheticon.com</a><small>, dříve ATWEB Consulting s.r.o. (OSVČ)</small>
 						</span>
 					</h5>
 					<ul>
@@ -302,7 +302,7 @@
 						<li>
 							<b>Webové projekty:</b><br />
 							<ul>
-								<li>Návrh logotypů a CI, návrh a produkce sázených a automatizovaných tiskovin.</li>
+								<li>Corporate identity, návrh a produkce sázených a automatizovaných tiskovin.</li>
 								<li>Návrh webdesignu a kompletní realizace webů a specializovaných eshopů.</li>
 								<li>Programování komponent do informačního systému na Pimcore CMS (PHP/JS/MySQL).</li>
 								<li>Management IT činností, nastavování doručovacích procesů, komunikace s kolegy.</li>
@@ -334,7 +334,7 @@
 					</h5>
 					<ul>
 						<li>Sepsání textů, postupů a vytvoření grafických podkladů pro vybrané kapitoly.</li>
-						<li>Témata: maskování a background changing, content-aware, vanishing point, displacement map <br />a podobné efekty, HDR merge, pokročilé transformace, zásuvné moduly.</li>
+						<li>Témata: maskování a background changing, content-aware, vanishing point, displacement map <br />a podobné efekty, HDR merge, pokročilé transformace, zásuvné moduly&hellip;</li>
 					</ul>
 				</div>
 				
@@ -381,7 +381,7 @@
 					<ul>
 						<li>Kompletní realizace mezinárodního e-shopu podle hotových návrhů webdesignéra.</li>
 						<li>Rozšíření vlastního e-shopu nad Pimcore CMS (PHP/JS/MySQL).</li>
-						<li>Front features: varianty, 4 kroky objednávky, emaily, administrace kategorií, zboží, obrázků.</li>
+						<li>Front features: editace kategorií, produktů, obrázků, variant, parametrů, 4 kroky objednávky, vícejazyčné emaily a další.</li>
 						<li>Admin features: prodejní nastavení, editovatelné faktury, exporty na srovnávače cen apod.</li>
 					</ul>
 				</div>
