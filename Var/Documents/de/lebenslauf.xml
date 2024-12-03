@@ -26,8 +26,8 @@
 
 				<h1>
 					<span class="text">Tomas Flidr</span>
-					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">kompletten Lebenslauf ansehen</a>)</small>
-					<small class="print-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter', 'absolute' => TRUE])}">kompletten Lebenslauf online ansehen</a>)</small>
+					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">Kompletten Lebenslauf ansehen</a>)</small>
+					<small class="print-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter', 'absolute' => TRUE])}">Kompletten Lebenslauf online ansehen</a>)</small>
 				</h1>
 
 
@@ -42,7 +42,7 @@
 
 				<h3>
 					<span class="text">Open Source</span>
-					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">alle anzeigen</a>)</small>
+					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">Alle anzeigen</a>)</small>
 				</h3>
 				<div class="cols open-source">
 					<div class="col">
@@ -201,7 +201,7 @@
 						<span class="from">2015/05</span>
 						<span class="to">2015/08</span>
 						<span class="subject">
-							<a href="" target="_blank">Estheticon.com</a><small>, ehemals ATWEB Consulting GmbH (Freiberufler)</small>
+							<a href="https://www.estheticon.de/" target="_blank">Estheticon.com</a><small>, früher ATWEB Consulting GmbH (Freiberufler)</small>
 						</span>
 					</h5>
 					<p class="condensed-10">4 Entwicklerteam, DevOps per Tickets, in PHP(Zend)/JS/MySQL, benutzerdefiniertes CMS, 14 Sprachen.</p>
@@ -288,7 +288,7 @@
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>
 						<span class="subject">
-							<a href="https://tripomatic.com/" target="_blank">Tripomatic.com</a><small>, ehemals Twobits GmbH (Freiberufler)</small>
+							<a href="https://tripomatic.com/" target="_blank">Tripomatic.com</a><small>, früher Twobits GmbH (Freiberufler)</small>
 						</span>
 					</h5>
 					<p>Front-End-DevOps im Team mit 2 Entwicklern, Webdesign, Grafik, Suchseite <a href="https://web.archive.org/web/20110209010501/http://www.whichairline.com/" target="_blank">whichairline.com</a>.</p>
@@ -332,7 +332,7 @@
 				</div>
 				
 				<p class="screen-only">
-					This version of the resume is shorter, <a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">view the full resume</a>.
+					Diese Version des Lebenslaufs ist kürzer. <a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">Vollständigen Lebenslauf ansehen</a>.
 				</p>
 				
 			</div>
