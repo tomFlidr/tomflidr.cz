@@ -2,15 +2,15 @@
 	<div class="portrait">
 		<img src="/static/img/content/cv/me.png" alt="Tomáš Flídr" />
 	</div>
-	<h5>Personal info</h5>
+	<h5>Persönliches</h5>
 	<dl>
-		<dt>Born:</dt>
-		<dd>6th August 1986</dd>
+		<dt>Geboren:</dt>
+		<dd>6. August 1986</dd>
 						
-		<dt>Address:</dt>
+		<dt>Adresse:</dt>
 		<dd><a href="{$contacts->fullMap}" target="_blank">Melcany 65, 664 64, Melcany</a></dd>
 						
-		<dt>Contacts:</dt>
+		<dt>Kontakte:</dt>
 		<dd class="screen-only">
 			<a href="{$contacts->phone->link}">{$contacts->phone->text}</a>, 
 			<a href="{$contacts->email->link}">{$contacts->email->text}</a>
@@ -21,7 +21,7 @@
 			<a href="{url('home', ['absolute' => TRUE])}">{$request->GetHostname()}</a>
 		</dd>
 						
-		<dt>Socials:</dt>
+		<dt>Soziale:</dt>
 		<dd>
 			<ul class="social nostyle">
 				{foreach $contacts->social as $socialKey => $socialData}
@@ -32,20 +32,20 @@
 			</ul>
 		</dd>
 	</dl>
-	<a class="contacts screen-only" href="{url('document', ['path' => 'kontakty'])}">All contact information</a>
+	<a class="contacts screen-only" href="{url('document', ['path' => 'kontakty'])}">Alle Kontaktinformationen</a>
 </div>
 				
 				
 <div class="widget hobbies">
-	<h5>Education</h5>
-	<span class="skill"><a href="https://www.gympolicka.cz/" target="_blank">College-preparatory school</a> (2001 – 2005)</span>
+	<h5>Ausbildung</h5>
+	<span class="skill"><a href="https://www.gympolicka.cz/" target="_blank">Allgemeinbildendes Gymnasium</a><small> (2001–2005)</small></span>
 </div>
 
 				
 <div class="widget it-skills">
-	<h5>IT skills</h5>
-	<span class="years">years of professional use</span>
-	<span class="focus">focus</span>
+	<h5>IT-Kenntnisse</h5>
+	<span class="years">Jahre professioneller Einsatz</span>
+	<span class="focus">Fokus</span>
 	<ul class="skills">
 		<li>
 			<span class="skill">JavaScript</span>
@@ -60,7 +60,7 @@
 		<li>
 			<span class="skill">MySQL, MariaDB</span>
 			<span class="years">{__('{0} year(s)', [$techYears->mySql])}</span>
-			<span class="focus">DB scripting, replications</span>
+			<span class="focus">DB-Skripting, Replikation</span>
 		</li>
 		<li>
 			<span class="skill">C#</span>
@@ -70,7 +70,7 @@
 		<li>
 			<span class="skill">MSSQL</span>
 			<span class="years">{__('{0} year(s)', [$techYears->msSql])}</span>
-			<span class="focus">Win., Linux, DB scripting</span>
+			<span class="focus">Win., Linux, DB-Skripting</span>
 		</li>
 		<li>
 			<span class="skill">VB.NET</span>
@@ -86,17 +86,17 @@
 			<span class="years">{__('{0} year(s)', [$techYears->ts])}</span>
 		</li>
 		<li>
-			<h6>More common skills:</h6>
+			<h6>Weitere allgemeine Fähigkeiten:</h6>
 			<ul>
 				<li>
 					<span class="skill">HTML, CSS</span>
 					<span class="years">{__('{0} year(s)', [$techYears->htmlCss])}</span>
-					<span class="focus">pure or by Less</span>
+					<span class="focus">pur oder mit Less</span>
 				</li>
 				<li>
 					<span class="skill">CI/CD</span>
 					<span class="years">{__('{0} year(s)', [$techYears->ciCd])}</span>
-					<span class="focus">GIT, Mercurial, SVN, Trac, Jira, Pupeteer, Selenium, Unit testing</span>
+					<span class="focus">GIT, Mercurial, SVN, Trac, Jira, Pupeteer, Selenium, Unit-Tests</span>
 				</li>
 				<li>
 					<span class="skill">XML</span>
@@ -105,16 +105,16 @@
 				</li>
 				<li>
 					<span class="skill">C++, Python, Java</span>
-					<span class="focus">pasive</span>
+					<span class="focus">passiv</span>
 				</li>
 			</ul>
 		</li>
 	</ul>
 </div>
-					
+
 
 <div class="widget graphic-skills">
-	<h5>Graphics software</h5>
+	<h5>Grafiksoftware</h5>
 	<ul class="skills">
 		<li>
 			<span class="skill">Adobe Suite</span>
@@ -134,32 +134,32 @@
 					
 
 <div class="widget lang-skills">
-	<h5>Languages</h5>
+	<h5>Sprachen</h5>
 	<ul class="skills">
 		<li>
 			<span class="skill">English</span>
-			<a class="focus" href="https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level/b1-intermediate" target="_blank">intermediate B1</a>
+			<a class="focus" href="https://learnenglish.britishcouncil.org/english-levels/understand-your-english-level/b1-intermediate" target="_blank">Intermediate B1</a>
 		</li>
 		<li>
-			<span class="skill">German</span>
-			<span class="focus">beginner</span>
+			<span class="skill">Deutsch</span>
+			<span class="focus">Anfänger</span>
 		</li>
 		<li>
-			<span class="skill">Čeština</span>
-			<span class="focus">native</span>
+			<span class="skill">Tschechisch</span>
+			<span class="focus">Muttersprache</span>
 		</li>
 	</ul>
 </div>
 				
 
 <div class="widget other-skills">
-	<h5>Other skills</h5>
-	<span class="skill">Class D driver's license</span>
-	<span class="focus">active</span>
+	<h5>Andere Fähigkeiten</h5>
+	<span class="skill">Führerschein Kategorie B</span>
+	<span class="focus">Aktiv</span>
 </div>
 
 				
 <div class="widget hobbies">
-	<h5>Hobbies</h5>
-	<span class="skill">My family, DIY, writing poetry, swimming, cycling, red wine.</span>
+	<h5>Hobbys</h5>
+	<span class="skill condensed-6">Meine Familie, Heimwerken, Gedichte schreiben, Schwimmen, Radfahren, Rotwein.</span>
 </div>
