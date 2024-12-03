@@ -71,7 +71,7 @@
 				</div>
 				
 				
-				<h3>Work Experience</h3>
+				<h3>Professional Experience</h3>
 				
 				
 				{* lecturing *}
@@ -155,7 +155,7 @@
 								<span class="from">2021/02</span>
 								<span class="to">2021/12</span>
 								<span class="subject">
-									<a href="https://teleagenda.smart-con.cz/" target="_blank">TeleAgenda</a>
+									<a href="https://teleagenda.smart-con.cz/" target="_blank">PhoneAgenda</a>
 								</span>
 							</h6>
 							<ul>
@@ -413,7 +413,7 @@
 				</div>
 
 				{* exreals.cz *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2009/12</span>
 						<span class="to">2010/06</span>
@@ -425,7 +425,7 @@
 				</div>
 
 				{* webdesigneri.cz *}
-				<div class="experience">
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2009/07</span>
 						<span class="to">2009/11</span>

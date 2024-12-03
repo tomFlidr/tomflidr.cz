@@ -26,102 +26,105 @@
 
 				<h1>
 					<span class="text">Tomas Flidr</span>
-					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">view complete resume</a>)</small>
-					<small class="print-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter', 'absolute' => TRUE])}">view complete resume online</a>)</small>
+					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">kompletten Lebenslauf ansehen</a>)</small>
+					<small class="print-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter', 'absolute' => TRUE])}">kompletten Lebenslauf online ansehen</a>)</small>
 				</h1>
-				
-				<h3 class="screen-only">Profile</h3>
+
+
+				<h3 class="screen-only">Profil</h3>
 				<p class="profile">
-					I am an experienced web developer with various overlaps. I like solutions<br />
-					with minimal dependencies and with focus on performance and longevity.<br />
-					I don't surf on dev fashion and carefully consider my decisions and time.
+					Ich bin ein erfahrener Webentwickler mit verschiedenen Überschneidungen. <br />
+					Ich bevorzuge Lösungenmit minimalen Abhängigkeiten, die auf Leistung <br />
+					und Langlebigkeit ausgerichtet sind. Ich surfe nicht auf Entwicklungstrends, <br />
+					sondern treffe Entscheidungen sorgfältig und zeiteffizient.
 				</p>
-				
+
+
 				<h3>
-					<span class="text">Open source</span>
-					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">view all</a>)</small>
+					<span class="text">Open Source</span>
+					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">alle anzeigen</a>)</small>
 				</h3>
 				<div class="cols open-source">
 					<div class="col">
 						<p class="os-item">
 							<b><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></b>
-							PHP MVC framework for both single-file tools and complex systems.
+							PHP-MVC-Framework für sowohl einfache Tools als auch komplexe Systeme.
 						</p>
 						<p class="os-item">
 							<b><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></b>
-							.NET debug utility for web/desktop.
+							.NET-Debug-Utility für Web/Desktop.
 						</p>
 					</div>
 					<div class="col">
 						<p class="os-item">
 							<b><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></b>
-							Comfort dev in Node.JS with "hot reload" feature.
+							Komfortable Entwicklung in Node.JS mit "Hot Reload".
 						</p>
 						<p class="os-item">
 							<b><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></b>
-							Transpiler for Ext.JS docs to TS.
+							Transpiler für Ext.JS Docs zu TS.
 						</p>
 					</div>
 				</div>
-				
-				
-				<h3>Experience</h3>
-				
-				
-				{* lecturing *}
+
+
+				<h3>Berufserfahrung</h3>
+
+
+				{* Vorlesungen *}
 				<div class="experience">
 					<h5>
 						<span class="from">2008</span>
-						<span class="to">present</span>
+						<span class="to">heute</span>
 						<span class="subject">
-							Lecturing <small>(Freelancer)</small>
+							Vorlesungen <small>(Freiberufler)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>
-							Agencies: 
-							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro</a> (majority), 
-							<a href="https://www.learnquest.com/" target="_blank">LearnQuest</a>, 
-							<a href="https://www.pcdir.cz/en/" target="_blank">PC DIR</a>, 
-							<a href="https://www.nicom.cz/" target="_blank">NICOM</a>,
-							<a href="https://www.profima.cz/" target="_blank">PROFIMA</a>
+						<li class="condensed-1">
+							Agenturen: 
+							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro <small>GmbH</small></a> (Mehrheit), 
+							<a href="https://www.learnquest.com/" target="_blank">LearnQuest <small>Inc</small></a>, 
+							<a href="https://www.pcdir.cz/en/" target="_blank">PC DIR <small>GmbH</small></a>, 
+							<a href="https://www.nicom.cz/" target="_blank">NICOM <small>AG</small></a>,
+							<a href="https://www.profima.cz/" target="_blank">PROFIMA <small>GmbH</small></a>
 						</li>
-						<li>
-							Delivery of TOP courses for the most demanding companies with professional dev teams: <br />
-							IBM, Česká spořitelna, Komerční banka, Seznam.cz, Avast, ESET, Bosch, Foxconn, Quadient&hellip;
+						<li class="condensed-1">
+							Durchführung von TOP-Kursen für die anspruchsvollsten Unternehmen mit professionellen <br />
+							Entwicklerteams: IBM, Erste Group (Czech), Seznam.cz, Avast, ESET, Bosch, Foxconn&hellip;
 						</li>
-						<li>Customized courses, training for international corporations in English with LearnQuest Inc.</li>
-						<li>More than {$training->GetCount()} courses delivered over {$training->GetYears()} years, with average student rating {$training->GetRating(5)|number: '0.00'} (of 5).</li>
+						<li>Angepasste Kurse, Schulungen für internationale Konzerne auf Englisch mit LearnQuest Inc.</li>
+						<li class="condensed-5">Mehr als {$training->GetCount()} Kurse über {$training->GetYears()} Jahre, einer durchschnittlichen Teilnehmerbewertung von {$training->GetRating(6)|number: '0.00'} <small>(von 6)</small>.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* dendera.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2022/03</span>
 						<span class="to">2024/11</span>
 						<span class="subject">
-							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera</a> <small>(Freelancer)</small>
+							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera AG</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
 					<ul>
-						<li>Architecting a modular IS for resale to other clients, development in PHP/TS/MSSQL/C++.</li>
-						<li>Project planning, leading the development team, application server administration.</li>
+						<li>Architektur eines modularen IS für den Weiterverkauf, Entwicklung in PHP/TS/MSSQL/C++.</li>
+						<li>Projektplanung, Leitung des Entwicklungsteams, Serveradministration von Anwendungen.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* jipekokuchyne.cz *}
 				<div class="experience">
 					<h5>
 						<span class="from">2021/01</span>
 						<span class="to">2021/02</span>
 						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kitchens</a> <small>(Freelancer)</small>
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens GmbH</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
-					<p>Complete delivery - graphics, web design and company website without CMS (PHP/MariaDB).</p>
+					<p>Komplettlösung - Grafik, Webdesign und Firmenwebsite ohne CMS (PHP(MvcCore)/MariaDB).</p>
 				</div>
 				
 				
@@ -131,7 +134,7 @@
 						<span class="from">2018/11</span>
 						<span class="to">2021/12</span>
 						<span class="subject">
-							<a href="https://smart-con.cz/" target="_blank">Smart-CON</a> <small>(Freelancer)</small>
+							<a href="https://smart-con.cz/" target="_blank">Smart-CON GmbH</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
 					<ul>
@@ -140,11 +143,11 @@
 								<span class="from">2021/02</span>
 								<span class="to">2021/12</span>
 								<span class="subject">
-									<a href="https://teleagenda.smart-con.cz/" target="_blank">TeleAgenda</a>
+									<a href="https://teleagenda.smart-con.cz/" target="_blank">PhoneAgenda</a>
 								</span>
 							</h6>
 							<p>
-								Complete delivery of IS for SIM billing and contract management, PHP/TS/MSSQL, LTS.
+								Vollständige Lieferung IS für SIM-Abrechnung und Vertragsverwaltung, PHP/TS/MSSQL, LTS.
 							</p>
 						</li>
 						<li>
@@ -155,9 +158,9 @@
 									<a href="https://smart-con.cz/rwebdog/" target="_blank">R-WEBDOG</a>
 								</span>
 							</h6>
-							<p>
-								Complete delivery of IS for mobile routers across EU (remotely accessible). Dev in PHP/Ext.JS/ MariaDB. 
-								Live infrastructure migration, massive data aggregation, LTS 24/7 for IS and servers.
+							<p class="condensed-6">
+								Vollständige Lieferung IS für mobile Router in der EU (ferngesteuert zugänglich). PHP/Ext.JS/TS/<br />
+								MariaDB DevOps. Live-Infrastruktur Migration, massive Datenaggregation, IS und Servern 24/7 LTS.
 							</p>
 						</li>
 					</ul>
@@ -170,23 +173,25 @@
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>
 						<span class="subject">
-							<a href="https://www.archive.fit.tomflidr.cz/en/" target="_blank">Veterinary Research Institute</a> <small>(Freelancer)</small>
+							<a href="https://www.archive.fit.tomflidr.cz/en/" target="_blank">Veterinärforschungsinstitut</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
-					<p>Complete delivery of graphics, web design and international portal on Pimcore CMS, EU project.</p>
+					<p class="condensed-4">
+						Komplettlieferung, Grafiken, Webdesign und internationales Portal auf Pimcore CMS, EU-Projekt.
+					</p>
 				</div>
 
 
-				{* ictpro.cz development *}
+				{* ictpro.cz Entwicklung *}
 				<div class="experience">
 					<h5>
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
 						<span class="subject">
-							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro</a> - development <small>(Freelancer)</small>
+							<a href="https://www.ictpro.cz/" target="_blank">ICT Pro GmbH</a> - Entwicklung <small>(Freiberufler)</small>
 						</span>
 					</h5>
-					<p>New generation IS - structure, domains, web design, data migration, devops in C#.NET/MSSQL.</p>
+					<p class="condensed-9">Neue Generation von IS - Struktur, Domains, Webdesign, Datenmigration, DevOps in C#.NET/MSSQL.</p>
 				</div>
 
 
@@ -196,10 +201,10 @@
 						<span class="from">2015/05</span>
 						<span class="to">2015/08</span>
 						<span class="subject">
-							<a href="" target="_blank">Estheticon.com</a><small>, formerly ATWEB Consulting (Freelancer)</small>
+							<a href="" target="_blank">Estheticon.com</a><small>, ehemals ATWEB Consulting GmbH (Freiberufler)</small>
 						</span>
 					</h5>
-					<p>4-member team work, devops by tickets, in PHP (Zend)/JS/MySQL, custom CMS, 14 languages.</p>
+					<p class="condensed-10">4 Entwicklerteam, DevOps per Tickets, in PHP(Zend)/JS/MySQL, benutzerdefiniertes CMS, 14 Sprachen.</p>
 				</div>
 
 
@@ -209,20 +214,20 @@
 						<span class="from">2012/10</span>
 						<span class="to">2015/03</span>
 						<span class="subject">
-							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS</a> <small>(Freelancer)</small>
+							Startup <a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">OMNES PRODUCTS GmbH</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
-					<p>Delivery of multiple projects, IT management, complete IS development, graphics, advertising.</p>
+					<p>Lieferung mehrerer Projekte, IT-Management, vollständige IS-Entwicklung, Grafik, Werbung.</p>
 					<dl>
 						<dt>2012/10 – 2012/12</dt>	
 						<dd>
 							<a href="https://www.archive.jenicek-domaci-cukrarska-vyroba.tomflidr.cz/" target="_blank">jenicek-domaci-cukrarska-vyroba.cz</a>
-							 – later integrated into the brand.
+							 – später in die Marke integriert.
 						</dd>
 						<dt>2013/03 – 2015/03</dt>	
 						<dd>
 							<a href="https://archive.www.omnesproducts.cz.tomflidr.cz/" target="_blank">omnesproducts.cz</a>
-							 – development of a multi-domain e-shop for food sales.
+							 – Multi-Domain-E-Shops für den Lebensmittelverkauf.
 						</dd>
 					</dl>
 				</div>
@@ -234,10 +239,10 @@
 						<span class="from">2012/08</span>
 						<span class="to">2012/10</span>
 						<span class="subject">
-							Book <a href="https://books.google.cz/books?id=TupgAgAAQBAJ&printsec=frontcover&hl=cs&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Adobe Photoshop CS6</a><small>, co-author (Freelancer)</small>
+							Buch <a href="https://books.google.cz/books?id=TupgAgAAQBAJ&printsec=frontcover&hl=cs&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Adobe Photoshop CS6</a><small>, Co-Autor (Freiberufler)</small>
 						</span>
 					</h5>
-					<p>Texts and graphics for topics: masking (bg change), vanishing point, effects, HDR, plugins&hellip;</p>
+					<p class="condensed-10">Texte und Grafiken, Themen: Maskierung (Hintergrundänderung), Fluchtpunkt, Effekte, HDR, Plugins&hellip;</p>
 				</div>
 
 
@@ -249,13 +254,13 @@
 						<span class="subject">
 							<a href="http://archive.choka.tomflidr.cz/en/" target="_blank">Choka.cz</a>;
 							<a href="https://archive.floormax.tomflidr.cz/" target="_blank">Floormax.cz</a>;
-							<a href="https://web.archive.org/web/20130921124932/http://www.imperastyl.cz/" target="_blank">Imperastyl.cz</a> <small>(Freelancer)</small>
+							<a href="https://web.archive.org/web/20130921124932/http://www.imperastyl.cz/" target="_blank">Imperastyl.cz</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
-					<p>
-						Choka - partial delivery without design, custom e-shop on Pimcore CMS;
-						FloorMAX - complete delivery, next features on my e-shop;
-						Imperastyl - 2-member team work, web design and coding.
+					<p class="condensed-10">
+						Teilweise Lieferung ohne Design, benutzerdefinierter E-Shop auf Pimcore CMS;
+						Vollständige Lieferung, zusätzliche Funktionen auf meinem E-Shop;
+						Arbeit im 2-köpfigen Team, Webdesign und Codierung.
 					</p>
 				</div>
 
@@ -266,13 +271,13 @@
 						<span class="from">2011/07</span>
 						<span class="to">2011/10</span>
 						<span class="subject">
-							<a href="https://www.portadesign.cz/" target="_blank">PORTA DESIGN</a> <small>(Freelancer)</small>
+							<a href="https://www.portadesign.cz/" target="_blank">PORTA DESIGN GmbH</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
 					<p>
-						<a href="https://web.archive.org/web/20160308031043/http:/www.dokument-festival.cz/" target="_blank">International Documentary Film Festival</a>
-						 - 2-member team work (with web designer), web portal development, custom e-shop, archive development.
-						VPS management with Linux CentOS.
+						<a href="https://web.archive.org/web/20160308031043/http:/www.dokument-festival.cz/" target="_blank">Internationales Dokumentarfilmfestival</a>
+						- Team mit Webdesigner, Entwicklung eines Webportals, benutzerdefinierter E-Shop, Entwicklung eines Archivs.
+						VPS-Management mit Linux CentOS.
 					</p>
 				</div>
 
@@ -283,10 +288,10 @@
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>
 						<span class="subject">
-							<a href="https://tripomatic.com/" target="_blank">Tripomatic.com</a><small>, formerly Twobits (Freelancer)</small>
+							<a href="https://tripomatic.com/" target="_blank">Tripomatic.com</a><small>, ehemals Twobits GmbH (Freiberufler)</small>
 						</span>
 					</h5>
-					<p>Front-end devops in team with 2 developers, web design, graphics, search site <a href="https://web.archive.org/web/20110209010501/http://www.whichairline.com/" target="_blank">whichairline.com</a>.</p>
+					<p>Front-End-DevOps im Team mit 2 Entwicklern, Webdesign, Grafik, Suchseite <a href="https://web.archive.org/web/20110209010501/http://www.whichairline.com/" target="_blank">whichairline.com</a>.</p>
 				</div>
 
 
@@ -297,12 +302,12 @@
 						<span class="to">2010/06</span>
 						<span class="subject">
 							<a href="https://web.archive.org/web/20141128235810/http://www.webdesigneri.cz/" target="_blank">Webdesigneri.cz</a>;
-							<a href="https://www.archive.exreals.cz.tomflidr.cz/" target="_blank">Exreals.cz</a> <small>(Freelancer)</small>
+							<a href="https://www.archive.exreals.cz.tomflidr.cz/" target="_blank">Exreals.cz</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
-					<p>
-						2-member team work, web design, HTML/CSS/JS;
-						Complete delivery, custom CMS, real estates.
+					<p class="condensed-11">
+						Team mit 1 Programmierer, design, HTML/CSS/JS;
+						Vollständige Lieferung, benutzerdefiniertes CMS, Immobilien.
 					</p>
 				</div>
 
@@ -313,16 +318,16 @@
 						<span class="from">2007/10</span>
 						<span class="to">2009/06</span>
 						<span class="subject">
-							<a href="http://www.studentagency.cz/" target="_blank">STUDENT AGENCY</a> <small>(Full-time)</small>
+							<a href="http://www.studentagency.cz/" target="_blank">STUDENT AGENCY AG</a> <small>(Full-time employment)</small>
 						</span>
 					</h5>
 					<p>
-						Graphics (online ads, post-production of videos, print), later webdesign and front-end devops, <br />
-						worked in 2 to 3-member teams. Sites:
+						Grafik (Online-Werbung, kurze Werbespots, Print), später Webdesign und Front-End-DevOps, <br />
+						Arbeit in Team von 2 bis 3. Websites:
 						<a href="https://web.archive.org/web/20111004234623/http://www.studentagency.cz/" target="_blank">studentagency.cz</a>,
 						<a href="https://web.archive.org/web/20100328123409/https://letenky.cz/" target="_blank">letenky.cz</a>,
 						<a href="https://web.archive.org/web/20081003084246/http://www.orbix.cz/" target="_blank">orbix.cz</a>,
-						<a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a>, and more.
+						<a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a> und mehr.
 					</p>
 				</div>
 				

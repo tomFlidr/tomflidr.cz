@@ -23,6 +23,7 @@
 				{incl('./left-panel')}
 			</div>
 			<div class="col col-left">
+				
 				<h1>
 					<span class="text">Tomas Flidr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf'])}">zobrazit stručné CV</a>)</small>

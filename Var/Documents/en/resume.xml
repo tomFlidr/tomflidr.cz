@@ -67,7 +67,7 @@
 				</div>
 				
 				
-				<h3>Work Experience</h3>
+				<h3>Professional Experience</h3>
 				
 				
 				{* lecturing *}
@@ -142,7 +142,7 @@
 								<span class="from">2021/02</span>
 								<span class="to">2021/12</span>
 								<span class="subject">
-									<a href="https://teleagenda.smart-con.cz/" target="_blank">TeleAgenda</a>
+									<a href="https://teleagenda.smart-con.cz/" target="_blank">PhoneAgenda</a>
 								</span>
 							</h6>
 							<p>
@@ -157,8 +157,8 @@
 									<a href="https://smart-con.cz/rwebdog/" target="_blank">R-WEBDOG</a>
 								</span>
 							</h6>
-							<p>
-								Complete delivery of IS for mobile routers across EU (remotely accessible). Dev in PHP/Ext.JS/ MariaDB. 
+							<p class="condensed-4">
+								Complete delivery of IS for mobile routers across EU (remotely accessible). Dev in PHP/Ext.JS/ TS/MariaDB. 
 								Live infrastructure migration, massive data aggregation, LTS 24/7 for IS and servers.
 							</p>
 						</li>
@@ -324,7 +324,7 @@
 						<a href="https://web.archive.org/web/20111004234623/http://www.studentagency.cz/" target="_blank">studentagency.cz</a>,
 						<a href="https://web.archive.org/web/20100328123409/https://letenky.cz/" target="_blank">letenky.cz</a>,
 						<a href="https://web.archive.org/web/20081003084246/http://www.orbix.cz/" target="_blank">orbix.cz</a>,
-						<a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a>, and more.
+						<a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a> and more.
 					</p>
 				</div>
 				

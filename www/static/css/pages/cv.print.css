@@ -42,7 +42,7 @@ header{display:none;}
 .document > .cols > .col.col-right{
 	float:right;
 	width:var(--right-col-width) !important;
-	gap:0.4em 0;
+	gap:0.5em 0;
 	background:var(--print-color-bg);
 	margin-left:calc(var(--cols-gap) * 0.9);
 	padding:var(--margin-top) var(--margin-right) 0 calc(var(--cols-gap) / 2);
@@ -54,14 +54,14 @@ header{display:none;}
 	color:#fff;
 	position:relative;
 	font-size:10pt;
-	line-height:1.1em;
+	line-height:1.2em;
 }
 .document .widget a:not(.image),
 .document .widget a:not(.image):visited{
 	color:#fff;
 }
 .widget h5{
-	margin:0.54em 0 0 0;
+	margin:0.7em 0 0.15em 0;
 }
 .widget:first-of-type h5{
 	margin-top:0;
@@ -98,8 +98,7 @@ header{display:none;}
 .document h3 small{font-family:'ssp_regular';font-size:10pt;margin-left:0;}
 .document h1 span.text,
 .document h3 span.text{display:inline-block;width:calc(55px + 70px);}
-.document h3{margin-bottom:0;margin-top:0.3em;line-height:1.2em;}
-.document .complete h3{margin-top:0.45em;}
+.document h3{margin-bottom:0;margin-top:0.4em;line-height:1.2em;}
 .open-source .col:first-of-type{flex:1.0 !important;}
 .open-source .col:last-of-type{flex:0.9 !important;}
 .open-source p.os-item{margin:0;}
@@ -109,8 +108,7 @@ header{display:none;}
 	display:inline-block;
 	padding:0 2px 0 4px;
 }
-.experience{margin:0 0 0.4em;}
-.complete .experience{margin:0 0 0.5em;}
+.experience{margin:0 0 0.45em;}
 .experience:last-of-type{margin-bottom:0;}
 .experience h5{margin:0;font-size:100%;}
 .experience h6{margin:0;}
@@ -119,4 +117,16 @@ header{display:none;}
 .experience p,
 .experience ul,
 .experience dl{margin:0.15em 0;letter-spacing:-0.4pt;}
+.document ul li{line-height:1.3em;}
+
 .page-break-before{page-break-before:always;padding-top:var(--margin-top);}
+
+.complete h3{margin-top:0.7em;margin-bottom:0.25em;}
+.complete .experience{margin:0 0 0.5em;}
+.complete .experience ul li{line-height:1.35em;}
+.complete .experience p,
+.complete .experience ul,
+.complete .experience dl{margin:0.2em 0;}
+
+html[lang=de-DE] .document h3{margin-top:0.5em;}
+html[lang=de-DE] .experience{margin:0 0 0.35em;}
