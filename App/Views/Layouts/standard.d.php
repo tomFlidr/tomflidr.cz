@@ -9,6 +9,8 @@ abstract class standard extends \MvcCore\View {
 	
 	var string $appName;
 
+	var string $appDesc;
+
 	var string $basePath;
 
 	/**
