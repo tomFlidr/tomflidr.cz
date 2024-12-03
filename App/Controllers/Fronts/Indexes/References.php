@@ -19,7 +19,7 @@ class References extends \App\Controllers\Fronts\Index {
 		$logotypes = new \stdClass;
 		foreach ($svgs as $svg) {
 			$name = $svg->GetName();
-			[$w, $h] = $this->resizeByPixelsCount($maxPixels, $svg->GetWidth(), $svg->GetHeight());
+			[$w, $h] = $svg->ResizeByPixelsCount($maxPixels);
 			$logotypes->{$name} = (object) [
 				'code'		=> $svg->GetHtmlCode(),
 				'width'		=> $w,
@@ -36,14 +36,4 @@ class References extends \App\Controllers\Fronts\Index {
 		$this->renderAction();
 	}
 
-	/** @return array<int> */
-	protected function resizeByPixelsCount (int $pixelsCount, float $w, float $h): array {
-		$targetSqrt = sqrt($pixelsCount);
-		$sourceSqrt = sqrt($w * $h);
-		$sqrtRatio = $targetSqrt / $sourceSqrt;
-		$newWidth = intval(round($w * $sqrtRatio));
-		$newHeight = intval(round($h * $sqrtRatio));
-		return [max(1, $newWidth), max(1, $newHeight)];
-	}
-	
 }

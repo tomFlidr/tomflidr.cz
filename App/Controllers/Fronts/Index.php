@@ -34,6 +34,28 @@ class Index extends \App\Controllers\Front {
 		$this->view->title = "{$name} | {$desc}";
 		$this->view->heading = $name;
 		$this->view->description = $desc;
+
+		$maxPixels = 60 * 45;
+		$logosFullPath = implode('/', [
+			$this->application->GetPathStatic(TRUE),
+			'img/content/logotypes',
+		]);
+		$svgs = \App\Models\Xml\Entities\Svg::GetByDirPath($logosFullPath);
+		$logotypes = new \stdClass;
+		foreach ($svgs as $svg) {
+			$name = $svg->GetName();
+			[$w, $h] = $svg->ResizeByPixelsCount($maxPixels);
+			$logotypes->{$name} = (object) [
+				'code'		=> $svg->GetHtmlCode(),
+				'width'		=> $w,
+				'height'	=> $h,
+				'styleAttr'	=> " style=\"width:{$w}px;height:{$h}px;\""
+			];
+		}
+		$this->view->logotypes = $logotypes;
+
+		$this->view->contacts = \App\Models\Contact::GetData();
+
 		$this->assets->Index();
 		$this->Render('index');
 	}

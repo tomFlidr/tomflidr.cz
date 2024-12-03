@@ -17,14 +17,168 @@
 	<doc:navigation-subtitle>so from beginning</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:body>
-		<h1>{$appName}</h1>
-	
-		<blockquote>
-			I love to create unusually specialized tools that make work-life easier for me, 
-			people around or people on my IT courses. Experience in IT has taught me, that time is money, 
-			therefore it decides about the developer quality, how well he can weigh these two things 
-			against his inappropriate precision of source code :-)
-		</blockquote>
+		
+		<section>
+
+			<div class="cols introduction">
+				<div class="col col-left">
+					<div class="portrait">
+						<img src="/static/img/content/cv/me.png" alt="Tomáš Flídr" />
+					</div>
+				</div>
+				<div class="col col-right">
+					<h1>{$appName}</h1>
+					<p>
+						I'm an experienced web developer with various overlaps. I&nbsp;like solutions<br />
+						with minimal dependencies and with focus on performance and longevity.<br />
+						I don't surf on dev fashion and carefully consider my decisions and time.
+					</p>
+					<p>
+						I create information systems, ecommerce applications, open source components <br />
+						and sometimes I&nbsp;make some training for&nbsp;professional programmers. <br />
+						I&nbsp;work both alone and in&nbsp;a&nbsp;team and I&nbsp;have experience in&nbsp;managing developers.
+					</p>
+					<p>
+						You can find out <a class="more" href="{url('document', ['path' => 'resume'])}">everything about me in resume.</a>.
+					</p>
+				</div>
+			</div>
+			
+		</section>
+
+		{hr()}
+		
+		<section>
+
+			<h2><a href="{url('document', ['path' => 'services'])}">Services</a></h2>
+			<div class="cols">
+				<div class="col">
+					<h3>Web and Desktop Development</h3>
+					<ul>
+						<li>Custom development of information systems, adapting market solutions.</li>
+						<li>Development in languages JS, TypeScript, PHP, C#, VB.NET.</li>
+						<li>Development and administration of MariaDB and Microsoft SQL Server databases.</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>IT Project Supervision</h3>
+					<ul>
+						<li>I will help you understand your development team and establish proper processes.</li>
+						<li>I will ensure your developers deliver what you are paying for.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="cols">
+				<div class="col">
+					<h3>Server Administration</h3>
+					<ul>
+						<li>I can assist you with server administration on Linux or Windows.</li>
+						<li>I will provide server monitoring and reporting.</li>
+						<li>I will ensure Long Term Support for your applications.</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>Graphic Design</h3>
+					<ul>
+						<li>I will prepare webdesign/redesign for your project.</li>
+						<li>I will prepare print or online advertising materials for you.</li>
+						<li>I will help you with post-production of photos or advertising spots.</li>
+					</ul>
+				</div>
+			</div>
+
+			<p>
+				<b>
+					If you are looking for precise work and a partner focused on your project, 
+					<a class="more" href="{url('document', ['path' => 'kontakty'])}">feel free to contact me</a>.
+				</b>
+			</p>
+
+		</section>
+
+		{hr()}
+		
+		<section>
+
+			<h3><a href="{url('document', ['path' => 'open-source'])}">Open Source projects</a></h3>
+			
+			<div class="cols">
+				<div class="col">
+					<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
+					<p>
+						PHP framework for both single-file tools and complex systems.
+					</p>
+					<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>
+					<p>
+						.NET debug utility for desktop and web applications.
+					</p>
+				</div>
+				<div class="col">
+					<h3><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></h3>
+					<p>
+						Comfortable development in Node.JS with "hot reload" feature.
+					</p>
+					<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
+					<p>
+						Transpiler for Ext.JS documentation to TypeScript.
+					</p>
+				</div>
+			</div>
+			<br />
+
+			<p>
+				I try to make my code help others, check out 
+				<a class="more" href="{url('document', ['path' => 'open-source'])}">all open source projects</a>.
+			</p>
+			
+		</section>
+
+		{hr()}
+		
+		<section>
+
+			<h3><a href="{url('document', ['path' => 'references'])}">References</a></h3>
+
+			<div class="logotypes">
+				{foreach $logotypes as $logotype}
+					<span {$logotype->styleAttr|noescape}>{$logotype->code|noescape}</span>
+				{/foreach}
+			</div>
+		
+			<p>
+				Here you'll know more about 
+					<a class="more" href="{url('document', ['path' => 'references'])}">
+						who chose me and why
+					</a>.
+			</p>
+		
+		</section>
+
+		{hr()}
+		
+		<section>
+
+			<h2><a href="{url('document', ['path' => 'contacts'])}">Contacts</a></h2>
+			
+			<div class="cols cols-1-3">
+				<div class="col">
+					<p>
+						Mobile: <b><a href="{$contacts->phone->link}">{$contacts->phone->text}</a></b>
+					</p>
+					<p>
+						Email: <b><a href="{$contacts->email->link}">{$contacts->email->text}</a></b>
+					</p>
+				</div>
+				<div class="col">
+					<p>It's best to reach me by phone or I'll call you back.</p>
+					<p>
+						<a class="more" href="{url('document', ['path' => 'contacts'])}">All contact information</a>.
+					</p>
+				</div>
+			</div>
+			
+		</section>
 		
 	</doc:body>
 </doc:data>

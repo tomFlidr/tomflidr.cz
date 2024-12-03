@@ -52,4 +52,17 @@ class Svg extends \App\Models\Xml\Entity {
 
 		return $this;
 	}
+
+	
+	/** @return array<int> */
+	public function ResizeByPixelsCount (int $pixelsCount): array {
+		[$w, $h] = [$this->width, $this->height];
+		$targetSqrt = sqrt($pixelsCount);
+		$sourceSqrt = sqrt($w * $h);
+		$sqrtRatio = $targetSqrt / $sourceSqrt;
+		$newWidth = intval(round($w * $sqrtRatio));
+		$newHeight = intval(round($h * $sqrtRatio));
+		return [max(1, $newWidth), max(1, $newHeight)];
+	}
+	
 }

@@ -39,3 +39,15 @@
 .valign-top{vertical-align:top;}
 .valign-middle{vertical-align:middle;}
 .valign-bottom{vertical-align:bottom;}
+
+.condensed-1{letter-spacing:-0.3pt !important;}
+.condensed-2{letter-spacing:-0.35pt !important;}
+.condensed-3{letter-spacing:-0.4pt !important;}
+.condensed-4{letter-spacing:-0.45pt !important;}
+.condensed-5{letter-spacing:-0.5pt !important;}
+.condensed-6{letter-spacing:-0.55pt !important;}
+.condensed-7{letter-spacing:-0.6pt !important;font-size:95% !important;}
+.condensed-8{letter-spacing:-0.65pt !important;font-size:95% !important;}
+.condensed-9{letter-spacing:-0.7pt !important;font-size:95% !important;}
+.condensed-10{letter-spacing:-0.7pt !important;font-size:90% !important;}
+.condensed-11{letter-spacing:-0.7pt !important;font-size:85% !important;}
