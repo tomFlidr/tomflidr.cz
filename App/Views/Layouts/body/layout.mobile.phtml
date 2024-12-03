@@ -10,8 +10,9 @@
 		</a>
 		<?=$this->RenderLayout('body/themes')?>
 		<strong class="position">
-			<?=$this->Translate('freelance web developer, trainer & consultant')?>,<br />
-			<?=$this->Translate('primary platforms')?>: JS/PHP/C#/VB.NET/MySQL/TSQL
+			<?=str_replace("\n", "<br />", $this->Translate('freelance web developer, trainer & consultant'))?>,<br />
+			<?=$this->Translate('primary platforms')?>:<br />
+			JS/PHP/C#/VB.NET/MySQL/TSQL
 		</strong>
 	</div>
 	<?=$this->navigationMain?>

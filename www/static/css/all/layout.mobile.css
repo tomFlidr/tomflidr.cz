@@ -23,7 +23,7 @@ html,body,
 	bottom:0;
 	left:0;
 	filter:blur(4px) contrast(0.7) hue-rotate(-10deg) saturate(6) brightness(30%);
-	transition:filter 0.5s ease-out;
+	/*transition:filter 0.5s ease-out; - too slow for mobile devices */
 	z-index:-1;
 }
 

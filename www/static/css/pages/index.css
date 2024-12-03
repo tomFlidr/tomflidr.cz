@@ -23,6 +23,9 @@ a.more::after{
 .full .introduction .col-right{
 	flex:unset;
 }
+.portrait img{
+	border-radius:50%;
+}
 .full .portrait{
 	position:relative;
 	height:0;
@@ -34,7 +37,6 @@ a.more::after{
 	width:100%;
 	top:0;
 	left:0;
-	border-radius:50%;
 }
 .mobile .portrait{
 	position:relative;
@@ -46,7 +48,6 @@ a.more::after{
 	display:inline-block;
 	width:var(--photo-size);
 	height:var(--photo-size);
-	border-radius:50%;
 }
 
 .logotypes{
@@ -58,13 +59,16 @@ a.more::after{
 	align-items:center;
 	align-content:center;
 	gap:2em;
-	margin-bottom:2em;
+	margin:2em 0;
 }
 .logotypes > span{
 	display:inline-block;
 }
 @media screen {
-	.dark .logotypes > span svg .white{fill:#ddd;}
+	.dark .logotypes > span svg .white{fill:#ccc;}
 	.dark .logotypes > span svg .black{fill:#000;}
 	.dark .logotypes > span svg .transparent{fill:transparent;}
+	.light .logotypes > span svg .white{fill:#666;}
+	.light .logotypes > span svg .black{fill:#fff;}
+	.light .logotypes > span svg .transparent{fill:transparent;}
 }

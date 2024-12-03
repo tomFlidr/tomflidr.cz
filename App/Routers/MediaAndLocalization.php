@@ -31,9 +31,9 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 
 	/** @var array */
 	protected $localizationEquivalents = [
-		'en-GB'    => ['en-US', 'en-CA', 'en-AU'],
-		'de-DE'    => ['de-AT'],
-		'cs-CZ'    => ['sk-SK'],
+		'en-GB'	=> ['en-US', 'en-CA', 'en-AU'],
+		'de-DE'	=> ['de-AT'],
+		'cs-CZ'	=> ['sk-SK'],
 	];
 
 	/** @var bool */
