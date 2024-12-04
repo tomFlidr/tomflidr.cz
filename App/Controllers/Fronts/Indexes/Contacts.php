@@ -18,7 +18,6 @@ class Contacts extends \App\Controllers\Fronts\Index {
 		$download = $this->request->HasParam('download');
 		$pgpFullPath = $this->application->GetPathVar(TRUE) . '/' . $contacts->pgpFileName;
 		$this->response->SetHeaders([
-			'Content-Type'				=> 'text/plain',
 			'Content-Length'			=> filesize($pgpFullPath),
 			'Expires'					=> '0',
 			'Cache-Control'				=> 'must-revalidate, post-check=0, pre-check=0'
@@ -33,6 +32,7 @@ class Contacts extends \App\Controllers\Fronts\Index {
 			$this->Terminate();
 		} else {
 			$this->response->SetHeaders([
+				'Content-Type'				=> 'text/plain',
 				'Content-Encoding'			=> 'utf-8',
 			]);
 			$this->TextResponse(file_get_contents($pgpFullPath));
