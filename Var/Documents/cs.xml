@@ -16,6 +16,7 @@
 	<doc:navigation-title>Úvod</doc:navigation-title>
 	<doc:navigation-subtitle>tak od začátku</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
+	<doc:sitemap change-freq="daily" priority="1.0" />
 	<doc:body>
 
 		<section>

@@ -119,6 +119,11 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	protected function setUpRoutesSystem (): static {
 		$this->AddRoutes([
 			new \MvcCore\Route([
+				'name'							=> 'sitemap',
+				'controllerAction'				=> 'Fronts\Sitemap:Index',
+				'pattern'						=> '/sitemap.xml',
+			]),
+			new \MvcCore\Route([
 				'name'							=> 'status',
 				'controllerAction'				=> 'Fronts\Index:Status',
 				'pattern'						=> '/status',
@@ -150,12 +155,12 @@ class MediaAndLocalization extends \MvcCore\Ext\Routers\MediaAndLocalization {
 	}
 	
 	protected function setUpRoutesVirtual (): static {
-		/*$this->AddRoutes([
-			'training'					=> [
-				'pattern'				=> "/training/<path>",
-				'controllerAction'		=> 'Fronts\Training:Index',
-			]
-		]);*/
+		$this->AddRoutes([
+			'document_nofilters'	=> new \MvcCore\Ext\Routers\Localizations\Route([
+				'match'					=> "#^/(?<path>.*)#",
+				'reverse'				=> '/<path>'
+			]),
+		]);
 		return $this;
 	}
 }

@@ -98,14 +98,14 @@ trait SetUp {
 				$member = $members[$nodeName];
 				$dataType = $member->GetDataType();
 				$propName = $member->GetPropName();
-				$rawNodeValue = $element->nodeValue;
-				static::setUpXmlMemberByXsd($this, $rawNodeValue, $propName, $dataType);
+				static::setUpXmlMemberByXsd($this, $element, $propName, $dataType);
 			}
 		}
 		return $this;
 	}
 	
-	protected static function setUpXmlMemberByXsd (Entity & $context, string $rawNodeValue, string $propertyName, string $dataType) {
+	protected static function setUpXmlMemberByXsd (Entity & $context, \DOMElement $element, string $propertyName, string $dataType): void {
+		$rawNodeValue = $element->nodeValue;
 		if ($dataType === 'code') {
 			$context->{$propertyName} = str_replace(
 				['%basePath'],

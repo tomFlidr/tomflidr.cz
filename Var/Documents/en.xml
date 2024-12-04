@@ -16,6 +16,7 @@
 	<doc:navigation-title>Home</doc:navigation-title>
 	<doc:navigation-subtitle>so from beginning</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
+	<doc:sitemap change-freq="daily" priority="1.0" />
 	<doc:body>
 		
 		<section>

@@ -153,6 +153,22 @@ trait GettersSetters {
 		return $this;
 	}
 
+	public function GetSitemapChangeFreq (): ?string {
+		return $this->sitemapChangeFreq;
+	}
+	public function SetSitemapChangeFreq (?string $sitemapChangeFreq): static {
+		$this->sitemapChangeFreq = $sitemapChangeFreq;
+		return $this;
+	}
+
+	public function GetSitemapPriority (): ?float {
+		return $this->sitemapPriority;
+	}
+	public function SetSitemapPriority (?float $sitemapPriority): static {
+		$this->sitemapPriority = $sitemapPriority;
+		return $this;
+	}
+
 	public function GetBody (): ?string {
 		return $this->body;
 	}

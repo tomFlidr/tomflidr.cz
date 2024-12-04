@@ -27,6 +27,8 @@ trait Props {
 	protected ?string	$navigationTitle;
 	protected ?string	$navigationSubtitle		= NULL;
 	protected ?string	$perex					= NULL;
+	protected ?string	$sitemapChangeFreq		= NULL;
+	protected ?float	$sitemapPriority		= NULL;
 	protected ?string	$body					= NULL;
 
 }

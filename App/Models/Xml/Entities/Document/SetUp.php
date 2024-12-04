@@ -2,6 +2,9 @@
 
 namespace App\Models\Xml\Entities\Document;
 
+use \App\Models\Xml\Entity;
+use \App\Models\Xml\Entities\Document;
+
 /**
  * @mixin \App\Models\Xml\Entities\Document
  */
@@ -36,6 +39,20 @@ trait SetUp {
 		$this->path = rtrim(mb_substr($path, $secondSlashPos + 1), '/');
 
 		return $this;
+	}
+
+	protected static function setUpXmlMemberByXsd (Entity & $context, \DOMElement $element, string $propertyName, string $dataType): void {
+		if ($element->nodeName !== 'doc:sitemap') {
+			parent::setUpXmlMemberByXsd($context, $element, $propertyName, $dataType);
+		} else {
+			/** @var Document $context */
+			/** @var array<string, \DOMAttr> $attrs */
+			$attrs = iterator_to_array($element->attributes);
+			if (isset($attrs['change-freq']))
+				$context->sitemapChangeFreq = $attrs['change-freq']->value;
+			if (isset($attrs['priority']))
+				$context->sitemapPriority = floatval($attrs['priority']->value);
+		}
 	}
 
 }

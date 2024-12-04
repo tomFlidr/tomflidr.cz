@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title><?=$title?></title>
+	</head>
+	<body>
+		<?php /** @var $this \MvcCore\View */ ?>
+		<code>
+			<table border="0" cellspacing="0" cellpadding="2"><tbody>
+				<tr><td>PHP version</td><td>: <?=$phpVersion?></td></tr>
+				<?php if ($gitSummary !== NULL): ?>
+					<tr><td colspan="2">&nbsp;</td></tr>
+					<tr><th colspan="2" align="left">GIT - Last Commit Summary:</th></tr>
+					<tr><td>Branch	</td><td>: "<?=$gitSummary->branchName?>"</td></tr>
+					<tr><td>Commit	</td><td>: "<?=$gitSummary->commitHash?>"</td></tr>
+					<tr><td>Author	</td><td>: <?=htmlspecialchars($gitSummary->authorName)?>&nbsp;&lt;<?=htmlspecialchars($gitSummary->authorEmail)?>&gt;</td></tr>
+					<tr><td>Date	</td><td>: <?=$gitSummary->dateTime->format('Y-m-d H:i:s (e)');?></td></tr>
+					<tr><td>Message	</td><td>: <?=htmlspecialchars($gitSummary->commitMessage)?></td></tr>
+					<?php if ($gitSummary->changedFiles): ?>
+						<tr><td valign="top">Files	</td><td>
+							<?php foreach ($gitSummary->changedFiles as $key => $changedFile): ?>
+								<?php echo ($key === 0) ? ':' : '&nbsp;'; ?>
+								<?=$changedFile?>
+								<?php if ($key + 1 < $gitSummary->changedFilesCount) echo '<br />'; ?>
+							<?php endforeach; ?>
+						</td></tr>
+					<?php endif; ?>	
+				<?php endif; ?>
+			</tbody></table>
+		</code>
+	</body>
+</html>

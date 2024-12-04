@@ -1,0 +1,16 @@
+<?php 
+	/**
+	 * @var \App\Views\Scripts\fronts\sitemap\index $this
+	 */
+	echo '<?xml version="1.0" encoding="UTF-8"?>';
+?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<?php foreach ($this->urls as $url): ?>
+		<url>
+			<loc><?=$url->GetLoc()?></loc>
+			<lastmod><?=$url->GetLastMod()?></lastmod>
+			<priority><?=$url->GetPriority()?></priority>
+			<changefreq><?=$url->GetChangeFreq()?></changefreq>
+		</url>
+	<?php endforeach; ?>
+</urlset>

@@ -16,6 +16,7 @@
 	<doc:navigation-title></doc:navigation-title>
 	<doc:navigation-subtitle>feel free to call</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
+	<doc:sitemap change-freq="daily" priority="1.0" />
 	<doc:body>
 		<h1>{$title}</h1>
 

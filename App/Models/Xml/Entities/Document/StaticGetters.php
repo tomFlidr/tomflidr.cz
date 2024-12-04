@@ -2,7 +2,12 @@
 
 namespace App\Models\Xml\Entities\Document;
 
+use \MvcCore\Router\IConstants as RouterConsts;
+use \MvcCore\Ext\Routers\IMedia;
+use \MvcCore\Ext\Routers\ILocalization;
+
 use \App\Models\Xml\Entities\Document;
+use \App\Models\SitemapUrl;
 
 /**
  * @mixin Document
@@ -103,6 +108,71 @@ trait StaticGetters {
 			}
 		}
 		return $result;
+	}
+
+	/** @return array<SitemapUrl> */
+	public static function GetSitemapUrls (): array {
+		return self::GetCache()->Load(
+			'documents_sitemap', 
+			function (\Mvccore\Ext\ICache $cache, string $cacheKey) {
+				/** @var ?Document $this */
+				$urls = static::completeSitemapUrls();
+				$cache->Save($cacheKey, $urls, NULL, static::CACHE_TAGS);
+				return $urls;
+			}
+		);
+	}
+	
+	/** @return array<SitemapUrl> */
+	protected static function completeSitemapUrls (): array {
+		/** @var array<string, Document> $docs */
+		$docs = [];
+		static::loadDocsRecursive($docs, '~/');
+		/** @var array<SitemapUrl> $urls */
+		$urls = [];
+		static::completeUrls($urls, $docs, IMedia::MEDIA_VERSION_FULL);
+		static::completeUrls($urls, $docs, IMedia::MEDIA_VERSION_MOBILE);
+		return $urls;
+	}
+
+	/** @param  array<string, Document> $docs  */
+	protected static function loadDocsRecursive (array & $docs, string $path): void {
+		$levelDocs = Document::GetByDirPath($path, FALSE, ['sequence' => 'asc'], TRUE);
+		$newPaths = [];
+		foreach ($levelDocs as $levelDoc) {
+			$originalPath = $levelDoc->GetOriginalPath();
+			if (!isset($docs[$originalPath])) {
+				$docs[$originalPath] = $levelDoc;
+				$newPaths[] = '~' . $originalPath;
+			}
+		}
+		foreach ($newPaths as $newPath)
+			static::loadDocsRecursive($docs, $newPath);
+	}
+
+	/**
+	 * @param array<SitemapUrl> $urls 
+	 * @param array<string, Document> $docs 
+	 */
+	protected static function completeUrls (array & $urls, array $docs, string $mediaSiteVersion): void {
+		$router = self::GetRouter();
+		$localizationEquivalents = $router->GetLocalizationEquivalents();
+		foreach ($docs as $doc) {
+			$dateTime = new \DateTime();
+			$dateTime->setTimestamp($doc->GetModTime());
+			$localization = $localizationEquivalents[$doc->GetLang()];
+			$urls[] = new SitemapUrl(
+				$router->Url(Document::ROUTE_NO_FITERS_NAME, [
+					'path'									=> $doc->GetPath(),
+					ILocalization::URL_PARAM_LOCALIZATION	=> $localization,
+					IMedia::URL_PARAM_MEDIA_VERSION			=> $mediaSiteVersion,
+					RouterConsts::URL_PARAM_ABSOLUTE		=> TRUE,
+				]),
+				$doc->GetModTime(),
+				$doc->GetSitemapPriority() ?? static::SITEMAP_PRIORITY_DEFAULT,
+				$doc->GetSitemapChangeFreq() ?? static::SITEMAP_CHANGE_FREQ_DEFAULT
+			);
+		}
 	}
 
 }

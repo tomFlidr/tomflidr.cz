@@ -8,6 +8,7 @@
 	targetNamespace="/doc" 
 	xmlns:pur="/doc"
 	attributeFormDefault="unqualified" 
+	version="1.1"
 	elementFormDefault="qualified" >
 	<xsd:element name="data">
 		<xsd:complexType>
@@ -28,6 +29,57 @@
 				<xsd:element name="navigation-title" type="xsd:string" />
 				<xsd:element name="navigation-subtitle" type="xsd:string" />
 				<xsd:element name="perex" type="xsd:string" />
+
+				<xsd:element name="sitemap" minOccurs="0">
+					<xsd:complexType>
+						<xsd:simpleContent>
+							<xsd:extension base="xsd:string">
+								<xsd:attribute name="change-freq">
+									<xsd:annotation>
+										<xsd:documentation>
+											OPTIONAL: Indicates how frequently the content at a particular URL is
+											likely to change. The value "always" should be used to describe
+											documents that change each time they are accessed. The value "never"
+											should be used to describe archived URLs. Please note that web
+											crawlers may not necessarily crawl pages marked "always" more often.
+											Consider this element as a friendly suggestion and not a command.
+										</xsd:documentation>
+									</xsd:annotation>
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:string">
+											<xsd:enumeration value="always"/>
+											<xsd:enumeration value="hourly"/>
+											<xsd:enumeration value="daily"/>
+											<xsd:enumeration value="weekly"/>
+											<xsd:enumeration value="monthly"/>
+											<xsd:enumeration value="yearly"/>
+											<xsd:enumeration value="never"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:attribute>
+								<xsd:attribute name="priority">
+									<xsd:annotation>
+										<xsd:documentation>
+											OPTIONAL: The priority of a particular URL relative to other pages
+											on the same site. The value for this element is a number between
+											0.0 and 1.0 where 0.0 identifies the lowest priority page(s).
+											The default priority of a page is 0.5. Priority is used to select
+											between pages on your site. Setting a priority of 1.0 for all URLs
+											will not help you, as the relative priority of pages on your site
+											is what will be considered.
+										</xsd:documentation>
+									</xsd:annotation>
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:decimal">
+											<xsd:minInclusive value="0.0"/>
+											<xsd:maxInclusive value="1.0"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:attribute>
+							</xsd:extension>
+						</xsd:simpleContent>
+					</xsd:complexType>
+				</xsd:element>
 				<xsd:element name="body">
 					<xsd:complexType>
 						<xsd:sequence>

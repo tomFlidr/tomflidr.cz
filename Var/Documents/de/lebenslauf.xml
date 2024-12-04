@@ -16,6 +16,7 @@
 	<doc:navigation-title></doc:navigation-title>
 	<doc:navigation-subtitle>alles über mich</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
+	<doc:sitemap change-freq="daily" priority="1.0" />
 	<doc:body>
 		
 		<div class="cols cols-5-2">

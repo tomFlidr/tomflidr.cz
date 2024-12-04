@@ -8,6 +8,11 @@ namespace App\Models\Xml\Entities;
 class Document extends \App\Models\Xml\Entity {
 	
 	public const ROUTE_NAME = 'document';
+	public const ROUTE_NO_FITERS_NAME = 'document_nofilters'; // to generate all sitemap urls
+	
+	public const SITEMAP_PRIORITY_DEFAULT		= 0.9;
+	public const SITEMAP_CHANGE_FREQ_DEFAULT	= "weekly";
+
 	public const META_ROBOTS_DEFAULT = 'index,follow,archive';
 
 	protected static string	$dataDir = '~/Var/Documents';
