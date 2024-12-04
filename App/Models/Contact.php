@@ -18,8 +18,8 @@ class Contact extends \App\Models\Base {
 		],
 		'pgpKey'		=> [
 			'fingerprint'	=> 'E909 20F0 CD62 5873 3E38 58FD 7470 2EA6 A301 417E',
-			'view'			=> [':PgpKey'],
-			'download'		=> [':PgpKey', ['download' => 1]],
+			'view'			=> ['Fronts\Indexes\Contacts:PgpKey'],
+			'download'		=> ['Fronts\Indexes\Contacts:PgpKey', ['download' => 1]],
 		],
 		'chats'			=> [
 			'whatsapp'		=> 'https://wa.me/00420724479802',
