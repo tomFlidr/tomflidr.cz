@@ -1,1 +1,2 @@
 User-agent: *
+Sitemap: https://tomflidr.cz/sitemap.xml
