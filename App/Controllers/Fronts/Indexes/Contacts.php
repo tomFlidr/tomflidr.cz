@@ -23,6 +23,7 @@ class Contacts extends \App\Controllers\Fronts\Index {
 			'Cache-Control'				=> 'must-revalidate, post-check=0, pre-check=0'
 		]);
 		if ($download) {
+			$this->response->RemoveHeader('Content-Type');
 			$this->response->SetHeaders([
 				'Content-Description'		=> 'File Transfer',
 				'Content-Transfer-Encoding'	=> 'binary',
