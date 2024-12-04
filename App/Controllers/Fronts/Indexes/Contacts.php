@@ -23,12 +23,13 @@ class Contacts extends \App\Controllers\Fronts\Index {
 			'Cache-Control'				=> 'must-revalidate, post-check=0, pre-check=0'
 		]);
 		if ($download) {
-			$this->response->RemoveHeader('Content-Type');
 			$this->response->SetHeaders([
 				'Content-Description'		=> 'File Transfer',
 				'Content-Transfer-Encoding'	=> 'binary',
-				'Content-Disposition'		=> 'filename="' . $contacts->pgpFileName . '"',
+				'Content-Disposition'		=> 'attachment; filename="' . $contacts->pgpFileName . '"',
 			]);
+			$this->response->SetDisabledHeaders(['Content-Security-Policy']);
+			$this->response->SendHeaders();
 			readfile($pgpFullPath);
 			$this->Terminate();
 		} else {
