@@ -74,9 +74,10 @@ class Front extends Base {
 			$translatedBcNavText = $translatedTitle;	
 		}
 		$this->view->title = $translatedTitle;
-		$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
-			text: $translatedBcNavText,
-		));
+		if ($this->renderNavigations)
+			$this->navigationBreadCrumbs->AddItem(new BreadCrumbItem(
+				text: $translatedBcNavText,
+			));
 		return $translatedTitle;
 	}
 
