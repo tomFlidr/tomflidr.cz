@@ -4,7 +4,9 @@ namespace App\Controllers;
 
 use \MvcCore\Ext\Tools\Csp,
 	\MvcCore\Ext\Tools\Csp\IConstants as CspConsts,
-	\MvcCore\Ext\Translators\Csv as CsvTranslator;
+	\MvcCore\Ext\Translators\Csv as CsvTranslator,
+	\MvcCore\Router\IConstants as RouterConsts,
+	\MvcCore\Ext\Routers\IMedia;
 
 use \App\Controllers\Common\Assets,
 	\App\Models\Xml\Entities\Document;
@@ -171,6 +173,23 @@ class Base extends \MvcCore\Controller {
 		$this->view->isDevelopment = $this->environment->IsDevelopment();
 		$this->view->isProduction = $this->environment->IsProduction();
 		$this->view->document = $this->document;
+		if ($mediaSiteVersion === IMedia::MEDIA_VERSION_FULL) {
+			$urlCanonical = $this->request->GetRequestUrl();
+			$urlAlternate = $this->Url('self', [
+				RouterConsts::URL_PARAM_ABSOLUTE	=> TRUE,
+				IMedia::URL_PARAM_MEDIA_VERSION		=> IMedia::MEDIA_VERSION_MOBILE,
+			]);
+		} else {
+			$urlCanonical = $this->Url('self', [
+				RouterConsts::URL_PARAM_ABSOLUTE	=> TRUE,
+				IMedia::URL_PARAM_MEDIA_VERSION		=> IMedia::MEDIA_VERSION_FULL,
+			]);
+			$urlAlternate = NULL;
+		}
+		$this->view->canonicalization = (object) [
+			'urlCanonical'	=> $urlCanonical,
+			'urlAlternate'	=> $urlAlternate,
+		];
 		$themeCurrent = $this->assets->GetThemeCurrent();
 		$themeCurrentParts = explode('/', $themeCurrent);
 		$this->view->theme = (object) [

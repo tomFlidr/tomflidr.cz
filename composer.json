@@ -10,7 +10,7 @@
 	}],
 	"require": {
 		"php": ">=8.2.0",
-		"mvccore/mvccore": "^5.3.1",
+		"mvccore/mvccore": "^5.3.2",
 		"mvccore/ext-cache-redis": "^5.3",
 		"mvccore/ext-config-cached": "^5.3",
 		"mvccore/ext-router-media": "^5.3.2",
@@ -21,10 +21,10 @@
 		"mvccore/ext-tool-cli-winfork": "^5.3",
 		"mvccore/ext-tool-collections": "^5.3",
 		"mvccore/ext-view-helper-assets": "^5.3.3",
-		"mvccore/ext-debug-tracy": "^5.3.1",
+		"mvccore/ext-debug-tracy": "^5.3.2",
 		"mvccore/ext-debug-tracy-mvccore": "^5.3",
-		"mvccore/ext-debug-tracy-routing": "^5.3",
-		"mvccore/ext-debug-tracy-session": "^5.3",
+		"mvccore/ext-debug-tracy-routing": "^5.3.1",
+		"mvccore/ext-debug-tracy-session": "^5.3.1",
 		"latte/latte": "^3.0.20"
 	},
 	"minimum-stability": "dev",

@@ -33,7 +33,15 @@ abstract class standard extends \MvcCore\View {
 	var bool $isProduction;
 
 	var ?Document $document;
-
+	
+	/**
+	 * @var object{
+	 *		"urlCanonical":?string,
+	 *		"urlAlternate":?string
+	 * }
+	 */
+	var ?\stdClass $canonicalization = NULL;
+	
 	/**
 	 * @var ?object{
 	 *		"current":string,

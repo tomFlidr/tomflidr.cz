@@ -15,4 +15,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="robots" content="index,follow,archive" />
+<?php if (isset($this->canonicalization->urlCanonical)): ?>
+	<link rel="canonical" href="<?=$this->canonicalization->urlCanonical?>" />
+<?endif; ?>
+<?php if (isset($this->canonicalization->urlAlternate)): ?>
+<link rel="alternate" media="only screen and (max-width: 640px)"  href="<?=$this->canonicalization->urlAlternate?>">
+<?endif; ?>
 <script nonce="<?=$nonce?>">var timestamp = +new Date;document.documentElement.setAttribute('data-browser',navigator.userAgent);</script>

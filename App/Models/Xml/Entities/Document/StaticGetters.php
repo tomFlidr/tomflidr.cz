@@ -131,7 +131,6 @@ trait StaticGetters {
 		/** @var array<SitemapUrl> $urls */
 		$urls = [];
 		static::completeUrls($urls, $docs, IMedia::MEDIA_VERSION_FULL);
-		static::completeUrls($urls, $docs, IMedia::MEDIA_VERSION_MOBILE);
 		return $urls;
 	}
 

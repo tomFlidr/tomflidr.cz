@@ -2,14 +2,17 @@
 
 namespace App\Controllers\Fronts;
 
-use \MvcCore\Router\IConstants as RouterConsts;
 use \MvcCore\Ext\Routers\IMedia;
-use \MvcCore\Ext\Routers\ILocalization;
 
 use \App\Models\Xml\Entities\Document;
 
 class Sitemap extends \App\Controllers\Front {
 	
+	public function Init (): void {
+		parent::Init();
+		$this->router->SetMediaSiteVersion(IMedia::MEDIA_VERSION_FULL);
+	}
+
 	public function IndexAction (): void {
 		$this->layout = NULL;
 		$this->view->urls = Document::GetSitemapUrls();
