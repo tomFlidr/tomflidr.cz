@@ -17,8 +17,8 @@
 <meta name="robots" content="index,follow,archive" />
 <?php if (isset($this->canonicalization->urlCanonical)): ?>
 	<link rel="canonical" href="<?=$this->canonicalization->urlCanonical?>" />
-<?endif; ?>
+<?php endif; ?>
 <?php if (isset($this->canonicalization->urlAlternate)): ?>
 <link rel="alternate" media="only screen and (max-width: 640px)"  href="<?=$this->canonicalization->urlAlternate?>">
-<?endif; ?>
+<?php endif; ?>
 <script nonce="<?=$nonce?>">var timestamp = +new Date;document.documentElement.setAttribute('data-browser',navigator.userAgent);</script>
