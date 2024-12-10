@@ -14,7 +14,7 @@
 	<doc:itemprop-name></doc:itemprop-name>
 	<doc:itemprop-description></doc:itemprop-description>
 	<doc:navigation-title></doc:navigation-title>
-	<doc:navigation-subtitle>vše o mě</doc:navigation-subtitle>
+	<doc:navigation-subtitle>vše o mně</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:sitemap change-freq="daily" priority="1.0" />
 	<doc:body>
@@ -34,7 +34,7 @@
 				<p class="profile">
 					Jsem zkušený vývojář webových aplikací s&nbsp;různými přesahy.<br />
 					Mám rád výkonná řešení s&nbsp;minimem závislostí a&nbsp;důrazem na&nbsp;životnost.<br />
-					Nejsem serfař po&nbsp;přechodných módách, pečlivě zvažuji svá rozhodnutí a čas.
+					Nejsem surfař po&nbsp;přechodných módách, pečlivě zvažuji svá rozhodnutí a čas.
 				</p>
 				
 				<h3>
@@ -90,7 +90,7 @@
 							Realizace TOP kurzů pro nejnáročnější klienty a firmy s profesionálními vývojářskými teamy:
 							IBM, Česká spořitelna, Komerční banka, Seznam.cz, Avast, ESET, Bosch, Foxconn, Quadient&hellip;
 						</li>
-						<li>Vzdělávání pro nadnárodní zahraniční korporace se spol. LearnQuest Inc v angličtině.</li>
+						<li>Vzdělávání pro nadnárodní korporace se společností LearnQuest Inc. v angličtině.</li>
 						<li>Za {$training->GetYears()} let přes {$training->GetCount()} kurzů, moje průměrné hodnocení od studentů je {$training->GetRating(5)|number: '0.00'}, vlastní kurzy na míru.</li>
 					</ul>
 				</div>

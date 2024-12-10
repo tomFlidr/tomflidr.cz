@@ -23,12 +23,12 @@
 		<ul>
 			<li>chci si svoji práci více usnadnit a zefektivnit,</li>
 			<li>jsem občas nespokojený s dostupnými řešeními a chci to jinak,</li>
-			<li>při přípravě IT kurzu narazím na zajímavý nápad nebo s ním přijde některý z účastníků.</li>
+			<li>při přípravě IT kurzů narazím na zajímavý nápad nebo ho přinese některý z účastníků.</li>
 		</ul>
 
 		<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
 		<p>
-			PHP framework pro vytváření webových aplikací, který pohání mé systémy nebo slouží k vyukovým účelům OOP. Prozatím největší projekt.
+			PHP framework pro vytváření webových aplikací, který pohání mé systémy nebo slouží k výukovým účelům OOP. Prozatím největší projekt.
 		</p>
 		<ul>
 			<li>
@@ -68,7 +68,7 @@
 
 		<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>
 		<p>
-			.NET utilita pro dumpování nebo logování proměnných, objektů, vyjímek, s trasováním volání a s mnoha dalšími funkcemi.
+			.NET utilita pro dumpování nebo logování proměnných, objektů, výjimek, s trasováním volání a s mnoha dalšími funkcemi.
 		</p>
 		<ul>
 			<li>Výstup lze zobrazit ve vývojovém okně výstupu nebo v CLI.</li>

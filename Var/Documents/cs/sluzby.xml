@@ -42,8 +42,8 @@
 				<ul>
 					<li>Pomohu Vám mít lepší orientaci ve Vašem rozsáhlém IT projektu a&nbsp;získáte lepší přehled o tom, kdy bude hotov.</li>
 					<li>Pomohu Vám porozumět procesům ve vývojovém teamu a&nbsp;nastavím správné postupy.</li>
-					<li>Dohlédnu, aby Vám vývojáři dávali tolik, za co platíte.</li>
-					<li>Pokud chcete, naučím Vás tolik, abyste po čase měli přehled i beze mne.</li>
+					<li>Dohlédnu, aby pro Vás vývojáři pracovali efektivně podle výše odměny.</li>
+					<li>Pokud chcete, naučím Vás tolik, abyste po čase měli přehled i beze mě.</li>
 				</ul>
 			</div>
 		</div>
@@ -74,16 +74,16 @@
 			Za tu dobu jsem viděl mnoho práce různých lidí a mnoho jsem se naučil.
 		</p>
 		<p>
-			Proto, pokud je Váš systém napsaný v nečem obskurnějším, co zde není uvedeno, <br />
+			Proto, pokud je Váš systém napsaný v něčem obskurnějším, co zde není uvedeno, <br />
 			zkuste mi zavolat a věřím, že spolu vymyslíme řešení.
 		</p>
 		<p>
-			Případně Vás odkáži na někoho, koho znám a kdo se zabývá Vaší technologií.
+			Případně Vás odkáži na důvěryhodného člověka, který se zabývá Vaší technologií.
 		</p>
 
 		<p>
 			<b>V případě, že hledáte pečlivou práci, společníka zaměřeného na Váš projekt, 
-			<a href="{url('document', ['path' => 'kontakty'])}">prosím kontaktujte mne zde</a>.</b>
+			<a href="{url('document', ['path' => 'kontakty'])}">prosím kontaktujte mě zde</a>.</b>
 		</p>
 		<br />
 

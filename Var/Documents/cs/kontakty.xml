@@ -14,7 +14,7 @@
 	<doc:itemprop-name></doc:itemprop-name>
 	<doc:itemprop-description></doc:itemprop-description>
 	<doc:navigation-title></doc:navigation-title>
-	<doc:navigation-subtitle>klidně mi zavolejte</doc:navigation-subtitle>
+	<doc:navigation-subtitle>kdykoliv zavolejte</doc:navigation-subtitle>
 	<doc:perex></doc:perex>
 	<doc:sitemap change-freq="daily" priority="1.0" />
 	<doc:body>
@@ -22,7 +22,10 @@
 
 		<div class="cols">
 			<div class="col">
-				<h4>Nejlépe mne zastihnete na telefonu, případně zavolám zpět.</h4>
+				<h4>
+					Nejlépe mne zastihnete na telefonu, <br />
+					v případě zaneprázdnění zavolám zpět.
+				</h4>
 				<br />
 				<dl class="personal">
 					<dt>mobil:</dt>
@@ -71,7 +74,7 @@ Více informací naleznete po klinutí na tento text.
 				<p>
 					IČ: <b><a href="{$contacts->invoicing->id->link}" target="_blank">{$contacts->invoicing->id->text}</a></b><br />
 					Tomáš Flídr<br />
-					Mělany 65<br />
+					Mělčany 65<br />
 					664 64, Mělčany
 				</p>
 				
@@ -106,7 +109,7 @@ Více informací naleznete po klinutí na tento text.
 			Pokud budete potřebovat širší zázemí, rád doporučím některé ověřené místo.
 		</p>
 		<p>
-			Pokud Vám stačí setkat se rovnou přes videochat, není problém. Domluvme si čas po telefonu.
+			Pokud Vám stačí setkat se poprvé i přes videochat, není to problém. Domluvme si čas po telefonu.
 		</p>
 		<br />
 		

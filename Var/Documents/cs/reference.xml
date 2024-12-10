@@ -43,7 +43,7 @@
 				</ul>
 				<p>
 					Dendera a.s. se zabývá výrobou z oceli, plechů a profilů, pomocí laserových a CNC technologií.<br />
-					Děkuji za přístup manželů Zatloukalových. Jako jeden z mála klientů přesně věděli co chtějí.
+					Děkuji za přístup manželů Zatloukalových, za technický vhled a vždy přesné stanovení cílů.
 				</p>
 			</dd>
 			
@@ -126,12 +126,12 @@
 						<b>IBM</b>, <b>Česká spořitelna</b>, <b>Komerční banka</b>, <b>Seznam.cz</b>, <b>Avast</b>, 
 						<b>ESET</b>, <b>Bosch</b>, <b>Foxconn</b>, <b>Quadient</b> a mnoho dalších.
 					</li>
-					<li>Kurzy vedené doma v českém jazyce nebo v zahraničí v anglickém jazyce.</li>
+					<li>Kurzy vedené v tuzemsku nebo v zahraničí v anglickém jazyce.</li>
 					<li>Realizace kurzů podle osnov nebo příprava na míru dle potřeb klientů.</li>
 					<li>Za {$training->GetYears()} let přes {$training->GetCount()} realizovaných kurzů, moje průměrné hodnocení od studentů je {$training->GetRating(5)|number: '0.00'}.</li>
 				</ul>
 				<p>
-					Se polečností ICTPro s.r.o. spolupracuji dlouhodobě. <br />
+					Se společností ICTPro s.r.o. spolupracuji dlouhodobě. <br />
 					V minulosti jsme také vyvíjeli jejich informační systém.
 				</p>
 			</dd>
@@ -150,7 +150,7 @@
 					<b>Vývoj webového portálu pro Výzkumný ústav veterinárního lékařství,</b>
 				</p>
 				<p>
-					pro oddělení farmakoligie, imunoterapie a nanotoxikologie (FIT).<br />
+					pro oddělení farmakologie, imunoterapie a nanotoxikologie (FIT).<br />
 					Portál jsem vyvíjel na publikačním systému Pimcore CMS.
 				</p>
 			</dd>
@@ -158,7 +158,7 @@
 			<dt>
 				<a
 					href="https://www.estheticon.cz/"
-					title="Estheticon, s.r.o."
+					title="Estheticon s.r.o."
 					target="_blank"
 					class="image"
 					{$logotypes->estheticon->styleAttr|noescape}
@@ -169,8 +169,9 @@
 					<b>Vývoj mezinárodního portálu pro plastické chirurgy a jejich klienty.</b>
 				</p>
 				<p>
-					Práce pro Estheticon pro mne byla výzvou. Firma se stará na svém portále Estheticon.com <br />
-					o velmi širokou škálu klientů a jeho vývoj je hlavní činností společnosti. Portál je ve 14 jazycích.
+					Práce pro Estheticon pro mě byla výzvou. Firma se stará na svém portále Estheticon.com <br />
+					o velmi širokou škálu klientů a vývoj systému pro plastické chirurky je hlavní činností 
+					společnosti. Portál je ve 14 jazycích.
 				</p>
 			</dd>
 			
@@ -215,21 +216,17 @@
 					<li>Programování JavaScriptových komponent a kódování HTML/CSS pro mnoho webů společnosti.</li>
 					<li>Návrh webdesignu/redesignu webů a kódování HTML šablon.</li>
 					<li>Příprava webové reklamy a tiskových materiálů.</li>
-					<li>Realizace reklamích videospotů, postprodukce.</li>
+					<li>Realizace reklamních videospotů, postprodukce.</li>
 				</ul>
 				<p>
-					Skvělá příležitost na začátku mé profese, kde jsem mohl díky tomuto zaměstnání <br />
-					získat mnoho zkušeností z mnoha různých odvětví - marketingu, grafiky a IT.
-				</p>
-				<p>
-					Dnes již nadnárodní společnost se zabývá mnoha odvětvími - prodejem letenek, autobusovou <br />
-					a vlakovou dopravou, zprostředkováváním pracovních, jazykových a au-pair pobytů a mnohým dalším.
+					Skvělá příležitost na začátku mé profesní dráhy, kde jsem mohl díky tomuto zaměstnání <br />
+					získat zkušenosti z mnoha různých odvětví - marketingu, grafiky a IT.
 				</p>
 			</dd>
 			
 		</dl>
 		
-		<p>Děkuji za spolupráci i mnoha dalším společnostem a jednotlivcům, kteří se zde nevešli.</p>
+		<p>Děkuji za spolupráci i mnoha dalším společnostem a jednotlivcům, které jsem zde neuvedl.</p>
 		<br />
 		
 	</doc:body>

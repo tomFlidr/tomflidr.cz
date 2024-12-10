@@ -34,7 +34,7 @@
 				<p class="profile">
 					Jsem zkušený vývojář webových aplikací s&nbsp;různými přesahy.<br />
 					Mám rád výkonná řešení s&nbsp;minimem závislostí a&nbsp;důrazem na&nbsp;životnost.<br />
-					Nejsem serfař po&nbsp;přechodných módách, pečlivě zvažuji svá rozhodnutí a čas.
+					Nejsem surfař po&nbsp;přechodných módách, pečlivě zvažuji svá rozhodnutí a čas.
 				</p>
 				<p class="profile screen-only">
 					Vytvářím informační systémy, ecommerce aplikace, open source komponenty a&nbsp;čas od času
@@ -96,8 +96,8 @@
 							Realizace TOP kurzů pro nejnáročnější klienty a firmy s profesionálními vývojářskými teamy:
 							IBM, Česká spořitelna, Komerční banka, Seznam.cz, Avast, ESET, Bosch, Foxconn, Quadient a mnoho dalších.
 						</li>
-						<li>Vzdělávání pro nadnárodní zahraniční korporace se spol. LearnQuest Inc.</li>
-						<li>Kurzy vedené doma v českém jazyce nebo v zahraničí v anglickém jazyce.</li>
+						<li>Vzdělávání pro nadnárodní korporace se společností LearnQuest Inc.</li>
+						<li>Kurzy vedené v tuzemsku nebo v zahraničí v anglickém jazyce.</li>
 						<li>Realizace kurzů podle osnov nebo příprava na míru dle potřeb klientů.</li>
 						<li>Za {$training->GetYears()} let přes {$training->GetCount()} realizovaných kurzů, moje průměrné hodnocení od studentů je {$training->GetRating(5)|number: '0.00'}.</li>
 					</ul>
