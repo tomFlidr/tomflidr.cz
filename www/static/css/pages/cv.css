@@ -1,5 +1,7 @@
 :root{
 	--cv-photo-size:348px;
+	--gray-dark:#aaa;
+	--gray-light:#555;
 }
 
 /* hide all not for screen */
@@ -48,8 +50,8 @@
 	margin-left:0 !important;
 }
 .widget .focus::after{content:']' !important;}
-.dark .focus{color:#aaa;}
-.light .focus{color:#555;}
+.dark .focus{color:var(--gray-dark);}
+.light .focus{color:var(--gray-light);}
 .widget ul li .focus{display:block;}
 .widget.lang-skills ul li .focus{display:inline-block;}
 
@@ -95,6 +97,25 @@
 	padding-left:3px;
 	padding-right:3px;
 }
+.widget.it-skills ul{
+	position:relative;
+}
+.widget.it-skills li.spacer-after{
+	content:' ';
+	padding-bottom:0.7em;
+	margin-bottom:0.7em;
+}
+.widget.it-skills li.spacer-after::after{
+	content:' ';
+	border-bottom:1px solid #fff;
+	display:block;
+	position:absolute;
+	width:100%;
+	left:0;
+	margin-top:0.7em;
+}
+.dark .widget.it-skills li.spacer-after::after{border-color:var(--gray-dark);}
+.light .widget.it-skills li.spacer-after::after{border-color:var(--gray-light);}
 
 /* content */
 .document h1 small,

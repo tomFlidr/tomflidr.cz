@@ -7,7 +7,9 @@
 		echo ' | ', $this->appName;
 	}
 ?></title>
+<?php if ($this->basePath !== ''): ?>
 <base href="<?=$this->basePath?>" />
+<?php endif; ?>
 <link rel="shortcut icon" href="<?=$this->basePath?>/favicon.ico" />
 <link rel="apple-touch-icon" href="<?=$this->basePath?>/static/img/favicons-apple/256.png" />
 <meta name="apple-mobile-web-app-title" content="tomflidr.cz" />

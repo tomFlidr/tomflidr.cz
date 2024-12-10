@@ -28,44 +28,10 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 		$xmlDirFp = str_replace('\\', '/', dirname($model::GetDataDirFullPath() . $path));
 		
 		unset($vars[$codeProp]);
-
+		
 		return $this->renderLatte(
 			$path, $code, $modTime, $vars, $xmlDirFp
 		);
-
-		/*
-		$tmpFullPath = $this->controller->GetApplication()->GetPathTmp(TRUE);
-		$templateName = 'latte_' . md5($path) . '.latte';
-		$tplFullPath = $tmpFullPath . '/' . $templateName;
-
-		clearstatcache(TRUE, $tplFullPath);
-		if (
-			!file_exists($tplFullPath) || 
-			$modTime > filemtime($tplFullPath)
-		) {
-			file_put_contents($tplFullPath, $code, LOCK_EX);
-		}
-		
-		$latte = new \Latte\Engine;
-		$latte->setTempDirectory($tmpFullPath);
-		$localization = \MvcCore\Ext\Tools\Locale::GetLocale(LC_ALL);
-		$latte->setLocale("{$localization->lang}_{$localization->locale}");
-		
-		$latte->addFunction('hr', fn () => new \Latte\Runtime\Html($this->view->Hr()));
-		$latte->addFunction('incl', function ($path) use ($xmlDirFullPath) {
-			$firstChars = mb_substr($path, 0, 2);
-			if ($firstChars === './') {
-				$fullPath = $xmlDirFullPath . mb_substr($path, 1) . '.latte';
-			} else {
-				$fullPath = $xmlDirFullPath . '/' . $path . '.latte';
-			}
-			x($fullPath);
-		});
-		$latte->addFunction('url', fn ($route, $params = [])  => $this->controller->Url($route, $params));
-		$latte->addExtension(new \Latte\Essential\RawPhpExtension);
-
-		return $latte->renderToString($tplFullPath, $vars);
-		*/
 	}
 	
 	protected function renderLatte (string $path, string $code, int $modTime, array $vars, string $xmlDirFp): string {
@@ -103,7 +69,6 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 		});
 		$latte->addFunction('url', fn ($route, $params = [])  => $this->controller->Url($route, $params));
 		$latte->addExtension(new \Latte\Essential\RawPhpExtension);
-
 		return $latte->renderToString($tplFullPath, $vars);
 	}
 

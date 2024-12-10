@@ -66,9 +66,9 @@ header{display:none;}
 .widget:first-of-type h5{
 	margin-top:0;
 }
-.widget dl{
-	margin:0;
-}
+.widget dl{margin:0;}
+.widget dl dd,
+.widget dl dt{line-height:1.38em;}
 .widget ul.skills li{margin-bottom:0.3em;}
 .widget ul.skills li .skill{font-family:'ssp_semibold';line-height:1.1em;}
 .widget ul.skills li .years{}
@@ -90,6 +90,7 @@ header{display:none;}
 .widget.lang-skills .focus{
 	display:inline-block;
 }
+.widget.it-skills li.spacer-after::after{border-color:#bfbfbf !important;}
 
 
 /* content */

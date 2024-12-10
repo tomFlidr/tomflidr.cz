@@ -11,7 +11,7 @@
 	<table>
 		<thead><tr>
 			<?php foreach ($items as $key1 => $itemLevel1): ?>
-				<th width="<?=$colPerc?>%"<?php
+				<th style="width:<?=$colPerc?>%;"<?php
 					$cssClasses = [];
 					if ($itemLevel1->GetCssClass() !== NULL)
 						$cssClasses[] = $itemLevel1->GetCssClass();
