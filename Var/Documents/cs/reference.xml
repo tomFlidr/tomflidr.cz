@@ -24,6 +24,35 @@
 		<dl class="references">
 			<dt>
 				<a
+					href="https://smart-con.cz/"
+					title="Smart-Con s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->smartcon->styleAttr|noescape}
+				>{$logotypes->smartcon->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Se společností Smart-CON spolupracujeme dlouhodobě a vyvíjeli jsme spolu více aplikací.</b>
+				</p>
+				<ul>
+					<li>
+						<b>XEROX</b> - supervize, vývoj a přesun mezinárodního B2B portálu na platformu Tabidoo.cloud.
+					</li>
+					<li>
+						<b>Teleagenda</b> - interní účtovací systém pro fakturaci SIM s správu smluv.
+					</li>
+					<li>
+						<b>R-WEBDOG</b> - klientský systém pro správu, vzdálený přístup a řízení reklam v mobilních routerech nasazených v autobusech a vlacích po Evropě.
+					</li>
+				</ul>
+				<p>
+					Smart-CON se specializuje na bezdrátovou komunikaci, průmyslové routery, 5G síť a obchod.
+				</p>
+			</dd>
+
+			<dt>
+				<a
 					href="https://www.dendera.cz/"
 					title="Dendera a.s." 
 					target="_blank" 
@@ -44,35 +73,6 @@
 				<p>
 					Dendera a.s. se zabývá výrobou z oceli, plechů a profilů, pomocí laserových a CNC technologií.<br />
 					Děkuji za přístup manželů Zatloukalových, za technický vhled a vždy přesné stanovení cílů.
-				</p>
-			</dd>
-			
-			<dt>
-				<a
-					href="https://smart-con.cz/"
-					title="Smart-Con s.r.o."
-					target="_blank"
-					class="image"
-					{$logotypes->smartcon->styleAttr|noescape}
-				>{$logotypes->smartcon->code|noescape}</a>
-			</dt>
-			<dd>
-				<p>
-					<b>Se společností Smart-CON spolupracujeme dlouhodobě a vyvíjeli jsme spolu více aplikací.</b>
-				</p>
-				<ul>
-					<li>
-						<b>R-WEBDOG</b> - klientský systém pro správu, vzdálený přístup a řízení reklam v mobilních routerech nasazených v autobusech a vlacích po Evropě.
-					</li>
-					<li>
-						<b>Teleagenda</b> - interní účtovací systém pro fakturaci SIM s správu smluv.
-					</li>
-					<li>
-						<b>XEROX</b> - dohled a vývoj klientského prodejního portálu speciálních nabídek pro český XEROX.
-					</li>
-				</ul>
-				<p>
-					Smart-CON se specializuje na bezdrátovou komunikaci, průmyslové routery a 5G síť.
 				</p>
 			</dd>
 			

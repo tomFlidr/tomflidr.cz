@@ -24,6 +24,35 @@
 		<dl class="references">
 			<dt>
 				<a
+					href="https://smart-con.cz/"
+					title="Smart-Con s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->smartcon->styleAttr|noescape}
+				>{$logotypes->smartcon->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Mit der Firma Smart-CON arbeite ich langfristig zusammen und wir haben gemeinsam mehrere Anwendungen entwickelt.</b>
+				</p>
+				<ul>
+					<li>
+						<b>XEROX</b> - Supervision, Entwicklung und Migration des internationalen B2B-Portals auf die Plattform Tabidoo.cloud.
+					</li>
+					<li>
+						<b>Teleagenda</b> - ein internes Abrechnungssystem für die Fakturierung von SIM-Karten und Vertragsverwaltung.
+					</li>
+					<li>
+						<b>R-WEBDOG</b> - ein Kundensystem für Verwaltung, Fernzugriff und Steuerung von Werbung in mobilen Routern, die in Bussen und Zügen in ganz Europa eingesetzt werden.
+					</li>
+				</ul>
+				<p>
+					Smart-CON ist spezialisiert auf drahtlose Kommunikation, Industrie-Router und 5G-Netzwerke.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
 					href="https://www.dendera.cz/"
 					title="Dendera a.s." 
 					target="_blank" 
@@ -44,35 +73,6 @@
 				<p>
 					Dendera a.s. ist spezialisiert auf die Verarbeitung von Stahl, Blechen und Profilen mittels Laser- und CNC-Technologien.<br />
 					Dank an die Familie Zatloukal für ihren Ansatz. Als einer der wenigen Kunden wussten sie genau, was sie wollten.
-				</p>
-			</dd>
-			
-			<dt>
-				<a
-					href="https://smart-con.cz/"
-					title="Smart-Con s.r.o."
-					target="_blank"
-					class="image"
-					{$logotypes->smartcon->styleAttr|noescape}
-				>{$logotypes->smartcon->code|noescape}</a>
-			</dt>
-			<dd>
-				<p>
-					<b>Mit der Firma Smart-CON arbeite ich langfristig zusammen und wir haben gemeinsam mehrere Anwendungen entwickelt.</b>
-				</p>
-				<ul>
-					<li>
-						<b>R-WEBDOG</b> - ein Kundensystem für Verwaltung, Fernzugriff und Steuerung von Werbung in mobilen Routern, die in Bussen und Zügen in ganz Europa eingesetzt werden.
-					</li>
-					<li>
-						<b>Teleagenda</b> - ein internes Abrechnungssystem für die Fakturierung von SIM-Karten und Vertragsverwaltung.
-					</li>
-					<li>
-						<b>XEROX</b> - Überwachung und Entwicklung eines Kundenportals für Sonderangebote des tschechischen XEROX.
-					</li>
-				</ul>
-				<p>
-					Smart-CON ist spezialisiert auf drahtlose Kommunikation, Industrie-Router und 5G-Netzwerke.
 				</p>
 			</dd>
 			

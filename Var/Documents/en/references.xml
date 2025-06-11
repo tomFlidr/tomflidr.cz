@@ -24,6 +24,35 @@
 		<dl class="references">
 			<dt>
 				<a
+					href="https://smart-con.cz/"
+					title="Smart-Con s.r.o."
+					target="_blank"
+					class="image"
+					{$logotypes->smartcon->styleAttr|noescape}
+				>{$logotypes->smartcon->code|noescape}</a>
+			</dt>
+			<dd>
+				<p>
+					<b>Long-term collaboration with Smart-CON, during which we developed multiple applications together.</b>
+				</p>
+				<ul>
+					<li>
+						<b>XEROX</b> - supervision, development and migration of international B2B system to Tabidoo.cloud.
+					</li>
+					<li>
+						<b>Teleagenda</b> - an internal billing system for invoicing SIM cards and managing contracts.
+					</li>
+					<li>
+						<b>R-WEBDOG</b> - a client system for management, remote access, and control of advertisements in mobile routers deployed in buses and trains around Europe.
+					</li>
+				</ul>
+				<p>
+					Smart-CON specializes in wireless communication, industrial routers, and 5G networks.
+				</p>
+			</dd>
+			
+			<dt>
+				<a
 					href="https://www.dendera.cz/"
 					title="Dendera a.s." 
 					target="_blank" 
@@ -44,35 +73,6 @@
 				<p>
 					Dendera a.s. specializes in steel, sheet metal, and profile manufacturing using laser and CNC technologies.<br />
 					Thanks to the Zatloukal family for their approach. As one of the few clients, they knew exactly what they wanted.
-				</p>
-			</dd>
-			
-			<dt>
-				<a
-					href="https://smart-con.cz/"
-					title="Smart-Con s.r.o."
-					target="_blank"
-					class="image"
-					{$logotypes->smartcon->styleAttr|noescape}
-				>{$logotypes->smartcon->code|noescape}</a>
-			</dt>
-			<dd>
-				<p>
-					<b>Long-term collaboration with Smart-CON, during which we developed multiple applications together.</b>
-				</p>
-				<ul>
-					<li>
-						<b>R-WEBDOG</b> - a client system for management, remote access, and control of advertisements in mobile routers deployed in buses and trains around Europe.
-					</li>
-					<li>
-						<b>Teleagenda</b> - an internal billing system for invoicing SIM cards and managing contracts.
-					</li>
-					<li>
-						<b>XEROX</b> - supervision and development of a client sales portal for special offers for Czech XEROX.
-					</li>
-				</ul>
-				<p>
-					Smart-CON specializes in wireless communication, industrial routers, and 5G networks.
 				</p>
 			</dd>
 			
