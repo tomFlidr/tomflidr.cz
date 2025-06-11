@@ -36,7 +36,7 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 	
 	protected function renderLatte (string $path, string $code, int $modTime, array $vars, string $xmlDirFp): string {
 		$tmpFullPath = $this->controller->GetApplication()->GetPathTmp(TRUE);
-		$templateName = 'latte_' . md5($path) . '.latte';
+		$templateName = 'latte_' . md5(serialize([$xmlDirFp, $path])) . '.latte';
 		$tplFullPath = $tmpFullPath . '/' . $templateName;
 
 		clearstatcache(TRUE, $tplFullPath);
