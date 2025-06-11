@@ -29,6 +29,7 @@
 					<span class="text">Tomas Flidr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">Kompletten Lebenslauf ansehen</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter', 'absolute' => TRUE])}">Kompletten Lebenslauf online ansehen</a>)</small>
+					<a class="screen-only icon-print print-link" href="#"><i>drucken</i></a>
 				</h1>
 
 

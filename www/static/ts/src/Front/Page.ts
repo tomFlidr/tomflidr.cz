@@ -7,6 +7,7 @@ namespace Front {
 			super();
 			this.initWindowScroll();
 			this.initInfoLinks();
+			this.initPrintLink();
 			var layout = this.Static.GetLayout(),
 				mediaVersion = this.Static.GetMediaSiteVersion();
 			if (layout.IsStandard() && mediaVersion.IsMobile()) {
@@ -45,6 +46,16 @@ namespace Front {
 					body.addClass(cls);
 			} else {
 				body.removeClass(cls);
+			}
+		}
+		protected initPrintLink (): void {
+			var sel = this.Static.SELECTORS.PRINT_LINK_SEL,
+				links = Array.from<HTMLAnchorElement>(document.querySelectorAll(sel));
+			for (var link of links) {
+				link.addEventListener('click', e => {
+					e.preventDefault();
+					window.print();
+				});
 			}
 		}
 	}

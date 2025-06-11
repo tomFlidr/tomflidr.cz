@@ -29,6 +29,7 @@
 					<span class="text">Tomas Flidr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'resume/complete'])}">view complete resume</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'resume/complete', 'absolute' => TRUE])}">view complete resume online</a>)</small>
+					<a class="screen-only icon-print print-link" href="#"><i>print</i></a>
 				</h1>
 				
 				

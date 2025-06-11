@@ -27,6 +27,7 @@
 					<span class="text">Tomáš Flídr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'zivotopis'])}">zobrazit stručné CV</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'zivotopis/kompletni', 'absolute' => TRUE])}">zobrazit CV na webu</a>)</small>
+					<a class="screen-only icon-print print-link" href="#"><i>vytisknout</i></a>
 				</h1>
 				
 				
