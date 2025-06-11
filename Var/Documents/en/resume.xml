@@ -100,45 +100,28 @@
 				</div>
 				
 				
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera plc</a> <small>(Freelancer)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Architecting a modular IS for resale to other clients, development in PHP/TS/MSSQL/C++.</li>
-						<li>Project planning, leading the development team, application server administration.</li>
-					</ul>
-				</div>
-				
-				
-				{* jipekokuchyne.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2021/01</span>
-						<span class="to">2021/02</span>
-						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens Ltd</a> <small>(Freelancer)</small>
-						</span>
-					</h5>
-					<p>Complete delivery - graphics, web design and company website without CMS (PHP/MariaDB).</p>
-				</div>
-				
-				
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">2021/12</span>
+						<span class="to">present</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON Ltd</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
 					<ul>
+						<li>
+							<h6>
+								<span class="from">2024/11</span>
+								<span class="to">2025/06</span>
+								<span class="subject">
+									<a href="https://xeroxportal.eu/" target="_blank">XEROX Indirect Sales Portal</a>
+								</span>
+							</h6>
+							<p class="condensed-9">
+								Supervision, development and migration of international B2B portal to <a href="https://tabidoo.cloud/en" target="_blank">Tabidoo.cloud</a>, PHP/MariaDB/TS, LTS.
+							</p>
+						</li>
 						<li>
 							<h6>
 								<span class="from">2021/02</span>
@@ -164,6 +147,22 @@
 								Live infrastructure migration, massive data aggregation, LTS 24/7 for IS and servers.
 							</p>
 						</li>
+					</ul>
+				</div>
+				
+				
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera plc</a> <small>(Freelancer)</small>
+						</span>
+					</h5>
+					<ul>
+						<li>Architecting a modular IS for resale to other clients, development in PHP/TS/MSSQL/C++.</li>
+						<li>Project planning, leading the development team, application server administration.</li>
 					</ul>
 				</div>
 				

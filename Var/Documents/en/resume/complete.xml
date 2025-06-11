@@ -105,52 +105,37 @@
 					</ul>
 				</div>
 
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera plc</a> <small>(Freelance)</small>
-						</span>
-					</h5>
-					<p>Role: development of the next-generation manufacturing IS, project management.</p>
-					<ul>
-						<li>Design of a modular system architecture for resale to other clients.</li>
-						<li>Development in PHP(MvcCore)/TypeScript/MSSQL/C++ based on detailed wireframes and text.</li>
-						<li>Resolving technical challenges - migration of old data from the 90's, merging new databases&hellip;</li>
-						<li>Project planning and leading the development team.</li>
-						<li>Installation and management of application servers and databases.</li>
-					</ul>
-				</div>
-
-				{* jipekokuchyne.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2021/01</span>
-						<span class="to">2021/02</span>
-						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens Ltd</a> <small>(Freelance)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Photo post-production and graphic work.</li>
-						<li>Web design and development of a small company website without CMS in PHP(MvcCore)/TypeScript/MariaDB.</li>
-						<li>Parsing catalogue data and creating Decodom kitchen offers on a custom website.</li>
-					</ul>
-				</div>
-
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">2021/12</span>
+						<span class="to">present</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON Ltd</a> <small>(Freelance)</small>
 						</span>
 					</h5>
 					<p>Role: development primarily in PHP/TypeScript/MariaDB/MSSQL, multiple projects:</p>
 					<ul>
+						<li>
+							<h6>
+								<span class="from">2024/11</span>
+								<span class="to">2025/06</span>
+								<span class="subject">
+									<a href="https://xeroxportal.eu/" target="_blank">XEROX Indirect Sales Portal</a>
+								</span>
+							</h6>
+							<ul>
+								<li>
+									Project planning, supervision and development of international B2B portal for Xerox CZ.
+								</li>
+								<li>
+									Manage the old system and move data via the API to the platform <a href="https://tabidoo.cloud/en" target="_blank">Tabidoo.cloud</a>.
+								</li>
+								<li>
+									Development in Shell/PHP/Mariadb/TypeScript and Tabidoo.cloud.
+								</li>
+							</ul>
+						</li>
 						<li>
 							<h6>
 								<span class="from">2021/02</span>
@@ -197,9 +182,44 @@
 						</li>
 					</ul>
 				</div>
+
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/" target="_blank">Dendera plc</a> <small>(Freelance)</small>
+						</span>
+					</h5>
+					<p>Role: development of the next-generation manufacturing IS, project management.</p>
+					<ul>
+						<li>Design of a modular system architecture for resale to other clients.</li>
+						<li>Development in PHP(MvcCore)/TypeScript/MSSQL/C++ based on detailed wireframes and text.</li>
+						<li>Resolving technical challenges - migration of old data from the 90's, merging new databases&hellip;</li>
+						<li>Project planning and leading the development team.</li>
+						<li>Installation and management of application servers and databases.</li>
+					</ul>
+				</div>
+
+				{* jipekokuchyne.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2021/01</span>
+						<span class="to">2021/02</span>
+						<span class="subject">
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens Ltd</a> <small>(Freelance)</small>
+						</span>
+					</h5>
+					<ul>
+						<li>Photo post-production and graphic work.</li>
+						<li>Web design and development of a small company website without CMS in PHP(MvcCore)/TypeScript/MariaDB.</li>
+						<li>Parsing catalogue data and creating Decodom kitchen offers on a custom website.</li>
+					</ul>
+				</div>
 				
 				{* FIT *}
-				<div class="experience">
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>
@@ -216,7 +236,7 @@
 				</div>
 
 				{* ictpro.cz development *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
@@ -390,7 +410,7 @@
 				</div>
 
 				{* twobits.cz *}
-				<div class="experience">
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>
@@ -426,7 +446,7 @@
 				</div>
 
 				{* webdesigneri.cz *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2009/07</span>
 						<span class="to">2009/11</span>

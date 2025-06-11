@@ -97,48 +97,28 @@
 				</div>
 				
 				
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					{*
-					<p>Vývoj výrobního informačního systému pro další prodej, management projektu, vedení teamu.</p>
-					*}
-					<ul>
-						<li>Návrh architektury modulárního IS pro prodej dalším klientům, vývoj v PHP/TS/MSSQL/C++.</li>
-						<li>Plánování projektu, vedení vývojového teamu, administrace aplikačních serverů.</li>
-					</ul>
-				</div>
-				
-				
-				{* jipekokuchyne.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2021/01</span>
-						<span class="to">2021/02</span>
-						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně s.r.o.</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Kompletní realizace - grafika, webdesign a firemní web bez CMS, přenesení nabídky Decodom.</p>
-				</div>
-				
-				
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">2021/12</span>
+						<span class="to">nyní</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<ul>
+						<li>
+							<h6>
+								<span class="from">2024/11</span>
+								<span class="to">2025/06</span>
+								<span class="subject">
+									<a href="https://xeroxportal.eu/" target="_blank">XEROX Indirect Sales Portal</a>
+								</span>
+							</h6>
+							<p class="condensed-4">
+								Supervize, vývoj a přesun mezinárodního B2B portálu na <a href="https://tabidoo.cloud/cs" target="_blank">Tabidoo.cloud</a>, PHP/MariaDB/TS, LTS.
+							</p>
+						</li>
 						<li>
 							<h6>
 								<span class="from">2021/02</span>
@@ -164,6 +144,25 @@
 								Přesun infrastruktury za běhu, agregace masivních dat, LTS 24/7, servery.
 							</p>
 						</li>
+					</ul>
+				</div>
+				
+				
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
+						</span>
+					</h5>
+					{*
+					<p>Vývoj výrobního informačního systému pro další prodej, management projektu, vedení teamu.</p>
+					*}
+					<ul>
+						<li>Návrh architektury modulárního IS pro prodej dalším klientům, vývoj v PHP/TS/MSSQL/C++.</li>
+						<li>Plánování projektu, vedení vývojového teamu, administrace aplikačních serverů.</li>
 					</ul>
 				</div>
 				

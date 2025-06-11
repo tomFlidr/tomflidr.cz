@@ -105,54 +105,37 @@
 				</div>
 				
 				
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Role: vývoj další generace výrobního informačního systému, management projektu.</p>
-					<ul>
-						<li>Návrh architektury modulárního systému pro prodej dalším klientům.</li>
-						<li>Vývoj v PHP(MvcCore)/TypeScript/MSSQL/C++ podle přesného popisu a wireframes.</li>
-						<li>Řešení technických výzev - migrace starých dat z 90' let, merge nových databází apod.</li>
-						<li>Plánování projektu a vedení vývojového teamu.</li>
-						<li>Instalace a management aplikačních serverů a databáze.</li>
-					</ul>
-				</div>
-				
-				
-				{* jipekokuchyne.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2021/01</span>
-						<span class="to">2021/02</span>
-						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně s.r.o.</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Postprodukce fotografií, grafické práce.</li>
-						<li>Webdesign a realizace malého firemního webu bez CMS v PHP(MvcCore)/TypeScript/MariaDB.</li>
-						<li>Parsování katalogových dat, tvorba nabídky Decodom kuchyní na vlastním webu.</li>
-					</ul>
-				</div>
-				
-				
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">2021/12</span>
+						<span class="to">nyní</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
 					<p>Role: vývoj především v PHP/TypeScript/MariaDB/MSSQL ale i jiných platformách, více projektů:</p>
 					<ul>
+						<li>
+							<h6>
+								<span class="from">2024/11</span>
+								<span class="to">2025/06</span>
+								<span class="subject">
+									<a href="https://xeroxportal.eu/" target="_blank">XEROX Indirect Sales Portal</a>
+								</span>
+							</h6>
+							<ul>
+								<li>
+									Plánování projektu, supervize a vývoj mezinárodního B2B portálu pro XEROX Czech republic.
+								</li>
+								<li>
+									Správa starého systému a přesun dat přes API na platformu <a href="https://tabidoo.cloud/cs" target="_blank">Tabidoo.cloud</a>.
+								</li>
+								<li>
+									Vývoj v Shell/PHP/MariaDB/TypeScript a Tabidoo.cloud.
+								</li>
+							</ul>
+						</li>
 						<li>
 							<h6>
 								<span class="from">2021/02</span>
@@ -207,8 +190,45 @@
 				</div>
 				
 				
-				{* FIT *}
+				{* dendera.cz *}
 				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
+						</span>
+					</h5>
+					<p>Role: vývoj další generace výrobního informačního systému, management projektu.</p>
+					<ul>
+						<li>Návrh architektury modulárního systému pro prodej dalším klientům.</li>
+						<li>Vývoj v PHP(MvcCore)/TypeScript/MSSQL/C++ podle přesného popisu a wireframes.</li>
+						<li>Řešení technických výzev - migrace starých dat z 90' let, merge nových databází apod.</li>
+						<li>Plánování projektu a vedení vývojového teamu.</li>
+						<li>Instalace a management aplikačních serverů a databáze.</li>
+					</ul>
+				</div>
+				
+				
+				{* jipekokuchyne.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2021/01</span>
+						<span class="to">2021/02</span>
+						<span class="subject">
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO kuchyně s.r.o.</a> <small>(OSVČ)</small>
+						</span>
+					</h5>
+					<ul>
+						<li>Postprodukce fotografií, grafické práce.</li>
+						<li>Webdesign a realizace malého firemního webu bez CMS v PHP(MvcCore)/TypeScript/MariaDB.</li>
+						<li>Parsování katalogových dat, tvorba nabídky Decodom kuchyní na vlastním webu.</li>
+					</ul>
+				</div>
+				
+				
+				{* FIT *}
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>
@@ -226,7 +246,7 @@
 				
 				
 				{* ictpro.cz development *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2015/09</span>
 						<span class="to">2016/06</span>
@@ -410,7 +430,7 @@
 				
 				
 				{* twobits.cz *}
-				<div class="experience">
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>
@@ -448,7 +468,7 @@
 				
 				
 				{* webdesigneri.cz *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2009/07</span>
 						<span class="to">2009/11</span>

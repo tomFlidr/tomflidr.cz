@@ -106,52 +106,37 @@
 					</ul>
 				</div>
 
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera AG</a> <small>(Freiberuflich)</small>
-						</span>
-					</h5>
-					<p>Rolle: Entwicklung des IS der nächsten Generation für die Fertigung, Projektmanagement.</p>
-					<ul>
-						<li>Entwurf einer modularen Systemarchitektur für den Wiederverkauf an andere Kunden.</li>
-						<li class="condensed-11">Entwicklung in PHP(MvcCore)/TypeScript/MSSQL/C++ basierend auf detaillierten Wireframes und Texten.</li>
-						<li>Lösung technischer Herausforderungen – Migration alter Daten aus den 90ern, Zusammenführung neuer Datenbanken&hellip;</li>
-						<li>Projektplanung und Leitung des Entwicklerteams.</li>
-						<li>Installation und Verwaltung von Anwendungsservern und Datenbanken.</li>
-					</ul>
-				</div>
-
-				{* jipekokuchyne.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2021/01</span>
-						<span class="to">2021/02</span>
-						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Küchen GmbH</a> <small>(Freiberuflich)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Bildnachbearbeitung und grafische Arbeiten.</li>
-						<li>Webdesign und Entwicklung einer kleinen Unternehmenswebsite ohne CMS in PHP(MvcCore)/TypeScript/MariaDB.</li>
-						<li>Parsing von Katalogdaten und Erstellung von Decodom-Küchenangeboten auf einer individuellen Website.</li>
-					</ul>
-				</div>
-
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">2021/12</span>
+						<span class="to">heute</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON GmbH</a> <small>(Freiberuflich)</small>
 						</span>
 					</h5>
 					<p>Rolle: Entwicklung hauptsächlich in PHP/TypeScript/MariaDB/MSSQL, mehrere Projekte:</p>
 					<ul>
+						<li>
+							<h6>
+								<span class="from">2024/11</span>
+								<span class="to">2025/06</span>
+								<span class="subject">
+									<a href="https://xeroxportal.eu/" target="_blank">XEROX Indirect Sales Portal</a>
+								</span>
+							</h6>
+							<ul>
+								<li class="condensed-4">
+									Projektplanung, Supervision und Entwicklung eines internationalen B2B-Portals für XEROX CZ.
+								</li>
+								<li>
+									Verwaltung des Altsystems und Datenmigration über API auf die Plattform <a href="https://tabidoo.cloud/de" target="_blank">Tabidoo.cloud</a>.
+								</li>
+								<li>
+									Entwicklung in Shell/PHP/MariaDB/TypeScript und Tabidoo.cloud.
+								</li>
+							</ul>
+						</li>
 						<li>
 							<h6>
 								<span class="from">2021/02</span>
@@ -199,8 +184,43 @@
 					</ul>
 				</div>
 
-				{* FIT *}
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/" target="_blank">Dendera AG</a> <small>(Freiberuflich)</small>
+						</span>
+					</h5>
+					<p>Rolle: Entwicklung des IS der nächsten Generation für die Fertigung, Projektmanagement.</p>
+					<ul>
+						<li>Entwurf einer modularen Systemarchitektur für den Wiederverkauf an andere Kunden.</li>
+						<li class="condensed-11">Entwicklung in PHP(MvcCore)/TypeScript/MSSQL/C++ basierend auf detaillierten Wireframes und Texten.</li>
+						<li>Lösung technischer Herausforderungen – Migration alter Daten aus den 90ern, Zusammenführung neuer Datenbanken&hellip;</li>
+						<li>Projektplanung und Leitung des Entwicklerteams.</li>
+						<li>Installation und Verwaltung von Anwendungsservern und Datenbanken.</li>
+					</ul>
+				</div>
+
+				{* jipekokuchyne.cz *}
 				<div class="experience page-break-before">
+					<h5>
+						<span class="from">2021/01</span>
+						<span class="to">2021/02</span>
+						<span class="subject">
+							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Küchen GmbH</a> <small>(Freiberuflich)</small>
+						</span>
+					</h5>
+					<ul>
+						<li>Bildnachbearbeitung und grafische Arbeiten.</li>
+						<li>Webdesign und Entwicklung einer kleinen Unternehmenswebsite ohne CMS in PHP(MvcCore)/TypeScript/MariaDB.</li>
+						<li>Parsing von Katalogdaten und Erstellung von Decodom-Küchenangeboten auf einer individuellen Website.</li>
+					</ul>
+				</div>
+
+				{* FIT *}
+				<div class="experience">
 					<h5>
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>
@@ -378,7 +398,7 @@
 				
 				
 				{* PORTA, MFDF *}
-				<div class="experience">
+				<div class="experience page-break-before">
 					<h5>
 						<span class="from">2011/07</span>
 						<span class="to">2011/10</span>
@@ -399,7 +419,7 @@
 				
 				
 				{* twobits.cz *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2010/09</span>
 						<span class="to">2011/07</span>

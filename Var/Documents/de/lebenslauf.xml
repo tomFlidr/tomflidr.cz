@@ -99,47 +99,30 @@
 						<li class="condensed-5">Mehr als {$training->GetCount()} Kurse über {$training->GetYears()} Jahre, einer durchschnittlichen Teilnehmerbewertung von {$training->GetRating(6)|number: '0.00'} <small>(von 6)</small>.</li>
 					</ul>
 				</div>
-
-
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera AG</a> <small>(Freiberufler)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Architektur eines modularen IS für den Weiterverkauf, Entwicklung in PHP/TS/MSSQL/C++.</li>
-						<li>Projektplanung, Leitung des Entwicklungsteams, Serveradministration von Anwendungen.</li>
-					</ul>
-				</div>
-
-
-				{* jipekokuchyne.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2021/01</span>
-						<span class="to">2021/02</span>
-						<span class="subject">
-							<a href="https://archive.jipeko-kuchyne.cz.tomflidr.cz/" target="_blank">JiPeKO Kitchens GmbH</a> <small>(Freiberufler)</small>
-						</span>
-					</h5>
-					<p>Komplettlösung - Grafik, Webdesign und Firmenwebsite ohne CMS (PHP(MvcCore)/MariaDB).</p>
-				</div>
 				
 				
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">2021/12</span>
+						<span class="to">heute</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON GmbH</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
 					<ul>
+						<li>
+							<h6>
+								<span class="from">2024/11</span>
+								<span class="to">2025/06</span>
+								<span class="subject">
+									<a href="https://xeroxportal.eu/" target="_blank">XEROX Indirect Sales Portal</a>
+								</span>
+							</h6>
+							<p class="condensed-6">
+								Supervision, Entwicklung &amp; Migration des internat. B2B-Portals auf <a href="https://tabidoo.cloud/de" target="_blank">Tabidoo</a>, PHP/MariaDB/TS, LTS.
+							</p>
+						</li>
 						<li>
 							<h6>
 								<span class="from">2021/02</span>
@@ -165,6 +148,22 @@
 								MariaDB DevOps. Live-Infrastruktur Migration, massive Datenaggregation, IS und Servern 24/7 LTS.
 							</p>
 						</li>
+					</ul>
+				</div>
+
+
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera AG</a> <small>(Freiberufler)</small>
+						</span>
+					</h5>
+					<ul>
+						<li>Architektur eines modularen IS für den Weiterverkauf, Entwicklung in PHP/TS/MSSQL/C++.</li>
+						<li>Projektplanung, Leitung des Entwicklungsteams, Serveradministration von Anwendungen.</li>
 					</ul>
 				</div>
 				
