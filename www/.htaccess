@@ -4,6 +4,13 @@ Options -Indexes
 Header unset Server
 ServerSignature Off
 
+
+# Redirect all requests to non WWW version (except Certbot verification requests):
+RewriteCond %{REQUEST_URI} /.well-known/acme-challenge/.*
+RewriteCond %{REQUEST_SCHEME} =http
+RewriteRule (.*) $1 [NC,L]
+
+
 # mod_expires:
 <IfModule mod_expires.c>
 	ExpiresActive on
