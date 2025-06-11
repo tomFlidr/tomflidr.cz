@@ -121,7 +121,7 @@
 .document h1 small,
 .document h3 small{font-family:'ssp_regular';margin-left:1em;line-height:1.3em;}
 .mobile .document h1 small.screen-only,
-.mobile .document h3 small{display:block;margin-left:0;font-size:50%;}
+.mobile .document h3 small{display:inline-block;margin-left:0;font-size:50%;}
 .document h1 small{font-size:70%;}
 .document h3 small{font-size:80%;}
 
@@ -147,6 +147,7 @@
 }
 .cols.open-source .col{width:0;flex:1 !important;display:block;}
 .mobile .cols.open-source .col{width:unset;flex:unset;}
+
 .open-source h6{
 	font-size:11pt;
 	margin-bottom:0;

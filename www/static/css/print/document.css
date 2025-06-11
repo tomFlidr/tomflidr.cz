@@ -15,6 +15,7 @@
 	display:inline-block;
 	font-size:14pt;
 }
+.document h1{margin-top:0;}
 .document p,
 .document dl dd,
 .document dl dt,

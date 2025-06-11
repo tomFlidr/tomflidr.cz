@@ -67,8 +67,9 @@ header{display:none;}
 	margin-top:0;
 }
 .widget dl{margin:0;}
+.document dl{display:grid;grid-template-columns:max-content 1fr;}
 .widget dl dd,
-.widget dl dt{line-height:1.38em;}
+.widget dl dt{line-height:1.38em;margin-left:0;flex-basis:unset;}
 .widget ul.skills li{margin-bottom:0.3em;}
 .widget ul.skills li .skill{font-family:'ssp_semibold';line-height:1.1em;}
 .widget ul.skills li .years{}
@@ -100,6 +101,9 @@ header{display:none;}
 .document h1 span.text,
 .document h3 span.text{display:inline-block;width:calc(55px + 70px);}
 .document h3{margin-bottom:0;margin-top:0.4em;line-height:1.2em;}
+.mobile .document h3 small{font-size:10pt;}
+.mobile .document dl dd{margin-left:0}
+
 .open-source .col:first-of-type{flex:1.0 !important;}
 .open-source .col:last-of-type{flex:0.9 !important;}
 .open-source p.os-item{margin:0;}
@@ -109,6 +113,16 @@ header{display:none;}
 	display:inline-block;
 	padding:0 2px 0 4px;
 }
+.open-source{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	gap:var(--layout-full-content-horizontal-padding);
+}
+.open-source > .col{flex:1;}
+.open-source > .col > *:first-child{margin-top:0;}
+
+
 .experience{margin:0 0 0.45em;}
 .experience:last-of-type{margin-bottom:0;}
 .experience h5{margin:0;font-size:100%;}

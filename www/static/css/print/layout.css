@@ -15,16 +15,22 @@ html,body{
 .glass{
 	padding:0 !important;
 	backdrop-filter:unset;
+	box-shadow:unset !important;
 	border:0;
 }
 .glass::before{
 	display:none;
 }
-.content{
-}
-
 header,
-main .nav-breadcrumbs,
+.nav-breadcrumbs,
+a.print-link,
+.left-panel,
 footer{
-	display:none;
+	display:none !important;
+}
+main{
+	top:0 !important;
+}
+main > .document{
+	padding:0 !important;
 }
