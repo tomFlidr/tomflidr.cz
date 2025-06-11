@@ -83,7 +83,7 @@
 
 		<p>
 			<b>V případě, že hledáte pečlivou práci, společníka zaměřeného na Váš projekt, 
-			<a href="{url('document', ['path' => 'kontakty'])}">prosím kontaktujte mě zde</a>.</b>
+			<a href="{url('document', ['path' => 'kontakty'])}">prosím kontaktujte mne</a>.</b>
 		</p>
 		<br />
 
