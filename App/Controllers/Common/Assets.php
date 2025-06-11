@@ -12,10 +12,12 @@ class Assets extends \MvcCore\Controller {
 	protected string $mediaSiteVersion;
 	protected array  $assignedLibraries = [];
 	protected ?string $theme = NULL;
+	protected string $printMedia = 'print';
 	
 	public function __construct (\App\Controllers\Base $controller) {
 		$this->parentController = $controller;
-		$this->mediaSiteVersion = $controller->GetRequest()->GetMediaSiteVersion();
+		$req = $controller->GetRequest();
+		$this->mediaSiteVersion = $req->GetMediaSiteVersion();
 		// setup theme
 		$session = $this->getSessionTheme();
 		if (isset($session->theme)) {
@@ -25,6 +27,8 @@ class Assets extends \MvcCore\Controller {
 			$this->theme = $sysCfg->app->themes->default;
 			$session->theme = $this->theme;
 		}
+		if ($req->HasParam(self::PRINT_PREVIEW_PARAM))
+			$this->printMedia = 'screen';
 	}
 	
 	public function GetThemeCurrent (): string {
@@ -86,11 +90,11 @@ class Assets extends \MvcCore\Controller {
 			->Append($static . "/css/all/themes/{$this->theme}/layout.{$this->mediaSiteVersion}.{$themeFullSuffix}.css");
 		
 		$this->view->Css('headAllPrint')
-			->Append(media: 'print', path: $static . '/css/print/fonts.css')
-			->Append(media: 'print', path: $static . '/css/print/common-rules.css')
-			->Append(media: 'print', path: $static . '/css/print/links.css')
-			->Append(media: 'print', path: $static . '/css/print/layout.css')
-			->Append(media: 'print', path: $static . '/css/print/document.css');
+			->Append(media: $this->printMedia, path: $static . '/css/print/fonts.css')
+			->Append(media: $this->printMedia, path: $static . '/css/print/common-rules.css')
+			->Append(media: $this->printMedia, path: $static . '/css/print/links.css')
+			->Append(media: $this->printMedia, path: $static . '/css/print/layout.css')
+			->Append(media: $this->printMedia, path: $static . '/css/print/document.css');
 		
 		if ($this->request->HasParam(self::PRINT_PREVIEW_PARAM)) {
 			$headAllBundle = $this->view->Css('headAllPrint');
@@ -141,9 +145,10 @@ class Assets extends \MvcCore\Controller {
 	public function Cv (): void {
 		/** @var $this \App\Controllers\Front */
 		$static = $this->application->GetPathStatic();
+		
 		$this->view->Css('headPage')
 			->Append($static . '/css/pages/cv.css')
-			->Append($static . '/css/pages/cv.print.css', media: 'print');
+			->Append($static . '/css/pages/cv.print.css', media: $this->printMedia);
 		if ($this->request->HasParam(self::PRINT_PREVIEW_PARAM)) {
 			$headPageBundle = $this->view->Css('headPage');
 			$printItems = & $headPageBundle->GetItems();
