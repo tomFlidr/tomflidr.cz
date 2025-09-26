@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doc:data xsi:schemaLocation="/doc ../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<doc:title>Ceník služeb</doc:title>
+	<doc:sequence>3</doc:sequence>
+	<doc:active>1</doc:active>
+	<doc:controller>Fronts\Indexes\Prices</doc:controller>
+	<doc:action></doc:action>
+	<doc:description></doc:description>
+	<doc:keywords></doc:keywords>
+	<doc:robots></doc:robots>
+	<doc:og-image></doc:og-image>
+	<doc:og-title></doc:og-title>
+	<doc:og-description></doc:og-description>
+	<doc:itemprop-name></doc:itemprop-name>
+	<doc:itemprop-description></doc:itemprop-description>
+	<doc:navigation-title>Ceny</doc:navigation-title>
+	<doc:navigation-subtitle>a jak to probíhá</doc:navigation-subtitle>
+	<doc:perex></doc:perex>
+	<doc:body>
+
+		<h1>{$title}</h1>
+
+		<h2>Jak spolupráce probíhá</h2>
+		<div class="cols">
+			<div class="col">
+				<h4>Úvodní konzultace</h4>
+				<p>
+					Nejprve se spojíme a vyjasníme si Vaše potřeby i cíle. 
+					Sdílím své zkušenosti a Vy se rozhodnete, zda nám spolupráce vzájemně dává smysl.
+				</p>
+				
+				<h4>Plán a odhad ceny</h4>
+				<p>
+					Společně sestavíme časový plán, podle kterého se odvíjí cena. 
+					U větších IT projektů nelze odhadnout vše přesně, proto vždy uvádím i procentuální 
+					míru nejistoty a průběžně – minimálně jednou týdně – informuji o postupu.
+				</p>
+			</div>
+			<div class="col">
+				<h4>Transparentní vývoj</h4>
+				<p>
+					Veškerou práci dokládám zdrojovým kódem (GIT), který je po dokončení  
+					Vaším majetkem a umožňuje průběžný dohled třetí strany.
+				</p>
+				<h4>Rozsah projektů</h4>
+				<p>
+					Soustředím se na rozsáhlejší projekty s dobou realizace v řádu měsíců. 
+					Menší zakázky (např. jednoduché firemní aplikace) oceňuji individuálně, 
+					jinak využívám následující hodinové sazby dle druhu činností.
+				</p>
+			</div>
+		</div>
+
+		{hr()}
+
+		<h2>Hodinové sazby</h2>
+		<p>V odhadovaném i fakturovaném čase vždy uvádím jednotlivé činnosti rozdělené podle těchto sazeb:</p>
+		<table class="prices-rates prices-rates-with-note">
+			<thead>
+				<tr>
+					<th align="left">Druh činnosti</th>
+					<th align="right">Cena vč. DPH/hod.</th>
+				</tr>
+			</thead>
+			<tbody>
+				{foreach $priceRates as $key => $priceRate}
+					<tr>
+						<td align="left">{__('priceRate' . ucfirst($key))}</td>
+						<td align="right">{money($priceRates[$key])}</td>
+					</tr>
+				{/foreach}
+			</tbody>
+		</table>
+		<p class="prices-note">
+			<small><i>Cenové sazby jsou každý rok aktualizovány o 
+			<a href="https://www.czso.cz/csu/czso/mira_inflace">inflaci podle ČSSÚ</a>.</i></small>
+		</p>
+		<p>
+			Hodinové sazby zahrnují i související podpůrné činnosti nad rámec samotného 
+			vývoje – díky tomu máte jasný a předvídatelný rozpočet bez drobných příplatků.
+		</p>
+
+	</doc:body>
+</doc:data>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doc:data xsi:schemaLocation="/doc ../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<doc:title>Services prices</doc:title>
+	<doc:sequence>3</doc:sequence>
+	<doc:active>1</doc:active>
+	<doc:controller>Fronts\Indexes\Prices</doc:controller>
+	<doc:action></doc:action>
+	<doc:description></doc:description>
+	<doc:keywords></doc:keywords>
+	<doc:robots></doc:robots>
+	<doc:og-image></doc:og-image>
+	<doc:og-title></doc:og-title>
+	<doc:og-description></doc:og-description>
+	<doc:itemprop-name></doc:itemprop-name>
+	<doc:itemprop-description></doc:itemprop-description>
+	<doc:navigation-title>Prices</doc:navigation-title>
+	<doc:navigation-subtitle>and how it works</doc:navigation-subtitle>
+	<doc:perex></doc:perex>
+	<doc:body>
+
+		<h1>{$title}</h1>
+
+		<h2>How the collaboration works</h2>
+		<div class="cols">
+			<div class="col">
+				<h4>Initial consultation</h4>
+				<p>
+					First, we will get in touch and clarify your needs and goals. 
+					I share my experience and you decide whether the collaboration makes sense for both sides.
+				</p>
+				
+				<h4>Plan and price estimate</h4>
+				<p>
+					Together we will create a timeline, on which the price depends. 
+					For larger IT projects, it is impossible to estimate everything precisely, so I always provide a percentage 
+					of uncertainty and keep you informed regularly – at least once a week – about the progress.
+				</p>
+			</div>
+			<div class="col">
+				<h4>Transparent development</h4>
+				<p>
+					All work is documented with source code (GIT), which becomes your property upon completion and allows 
+					for ongoing oversight by a third party.
+				</p>
+				<h4>Project scope</h4>
+				<p>
+					I focus on larger projects with a duration measured in months. 
+					Smaller tasks (e.g., simple company applications) are priced individually, 
+					otherwise I use the following hourly rates depending on the type of activity.
+				</p>
+			</div>
+		</div>
+
+		{hr()}
+
+		<h2>Hourly rates</h2>
+		<p>In both estimated and billed time, I always list individual activities divided according to these rates:</p>
+		<table class="prices-rates">
+			<thead>
+				<tr>
+					<th align="left">Type of activity</th>
+					<th align="right">Price incl. VAT/hour</th>
+				</tr>
+			</thead>
+			<tbody>
+				{foreach $priceRates as $key => $priceRate}
+					<tr>
+						<td align="left">{__('priceRate' . ucfirst($key))}</td>
+						<td align="right">{money($priceRates[$key])}</td>
+					</tr>
+				{/foreach}
+			</tbody>
+		</table>
+		<p>
+			Hourly rates also include related support activities beyond the development itself – 
+			this way you have a clear and predictable budget without small additional charges.
+		</p>
+
+	</doc:body>
+</doc:data>

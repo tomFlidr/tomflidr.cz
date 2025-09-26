@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doc:data xsi:schemaLocation="/doc ../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<doc:title>Servicepreise</doc:title>
+	<doc:sequence>3</doc:sequence>
+	<doc:active>1</doc:active>
+	<doc:controller>Fronts\Indexes\Prices</doc:controller>
+	<doc:action></doc:action>
+	<doc:description></doc:description>
+	<doc:keywords></doc:keywords>
+	<doc:robots></doc:robots>
+	<doc:og-image></doc:og-image>
+	<doc:og-title></doc:og-title>
+	<doc:og-description></doc:og-description>
+	<doc:itemprop-name></doc:itemprop-name>
+	<doc:itemprop-description></doc:itemprop-description>
+	<doc:navigation-title>Preise</doc:navigation-title>
+	<doc:navigation-subtitle>und wie es funktioniert</doc:navigation-subtitle>
+	<doc:perex></doc:perex>
+	<doc:body>
+
+		<h1>{$title}</h1>
+
+		<h2>Wie die Zusammenarbeit abläuft</h2>
+		<div class="cols">
+			<div class="col">
+				<h4>Erstberatung</h4>
+				<p>
+					Zunächst nehmen wir Kontakt auf und klären Ihre Bedürfnisse und Ziele.
+					Ich teile meine Erfahrungen, und Sie entscheiden, ob die Zusammenarbeit für beide Seiten sinnvoll ist.
+				</p>
+
+				<h4>Plan und Kostenschätzung</h4>
+				<p>
+					Gemeinsam erstellen wir einen Zeitplan, an dem sich der Preis orientiert.
+					Bei größeren IT-Projekten ist eine exakte Schätzung nicht möglich, daher gebe ich stets auch einen prozentualen
+					Unsicherheitsgrad an und informiere regelmäßig – mindestens einmal pro Woche – über den Fortschritt.
+				</p>
+			</div>
+			<div class="col">
+				<h4>Transparente Entwicklung</h4>
+				<p>
+					Alle Arbeiten werden durch Quellcode (GIT) dokumentiert, der nach Abschluss Ihr Eigentum wird und eine
+					fortlaufende Kontrolle durch Dritte ermöglicht.
+				</p>
+				<h4>Projektumfang</h4>
+				<p>
+					Ich konzentriere mich auf größere Projekte mit einer Realisierungsdauer von mehreren Monaten.
+					Kleinere Aufträge (z. B. einfache Unternehmensanwendungen) werden individuell bewertet,
+					ansonsten gelten die folgenden Stundensätze je nach Art der Tätigkeit.
+				</p>
+			</div>
+		</div>
+
+		{hr()}
+
+		<h2>Stundensätze</h2>
+		<p>Sowohl im geschätzten als auch im abgerechneten Zeitaufwand führe ich stets die einzelnen Tätigkeiten gemäß diesen Sätzen auf:</p>
+		<table class="prices-rates">
+			<thead>
+				<tr>
+					<th align="left">Art der Tätigkeit</th>
+					<th align="right">Preis inkl. MwSt./Stunde</th>
+				</tr>
+			</thead>
+			<tbody>
+				{foreach $priceRates as $key => $priceRate}
+				<tr>
+					<td align="left">{__('priceRate' . ucfirst($key))}</td>
+					<td align="right">{money($priceRates[$key])}</td>
+				</tr>
+				{/foreach}
+			</tbody>
+		</table>
+		<p>
+			Die Stundensätze beinhalten auch damit verbundene unterstützende Tätigkeiten über die reine
+			Entwicklung hinaus – so haben Sie ein klares und vorhersehbares Budget ohne kleine Zusatzkosten.
+		</p>
+
+	</doc:body>
+</doc:data>

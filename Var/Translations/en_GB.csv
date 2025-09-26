@@ -16,3 +16,8 @@ Fork my source code on Github.com;Fork my source code on Github.com
 Home;Home
 contact email subject;Request for IT services
 {0} year(s);{0, plural, =1 {# year} other {# years}}
+priceRateConsultation;Research and Consultation
+priceRateDatabases;Programming and Database Management (Microsoft SQL, MySQL, etc.)
+priceRateDevelopment;Programming in C#/VB.NET/PHP/JS/TS or Linux Shell
+priceRateAdministration;Server Administration (Installation, Updates, Configuration)
+priceRateAdditionalWork;Additional Work
