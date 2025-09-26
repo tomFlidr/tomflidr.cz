@@ -1,0 +1,14 @@
+table.prices-rates{
+	margin:1em auto;
+	border-top:1px solid var(--color-front);
+	border-bottom:1px solid var(--color-front);
+}
+table.prices-rates thead tr th{
+	border-bottom:1px solid var(--color-front);
+}
+table.prices-rates tbody tr td{
+	border-bottom:1px dotted var(--color-front);
+}
+table.prices-rates tbody tr:last-of-type td{
+	border-bottom:0;
+}

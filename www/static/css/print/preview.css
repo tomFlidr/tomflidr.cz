@@ -18,7 +18,7 @@ body > main{
 	/*outline:1px dotted #888;*/
 }
 
-body > main::before{
+/*body > .container::before{
 	content:' ';
 	position:absolute;
 	z-index:1000;
@@ -28,4 +28,4 @@ body > main::before{
 	width:calc(21cm - var(--margin-right) - var(--margin-left));
 	height:calc(29.7cm - var(--margin-top) - var(--margin-bottom));
 	outline:1px dotted #888;
-}
+}*/

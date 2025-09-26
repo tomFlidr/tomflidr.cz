@@ -164,6 +164,16 @@ class Assets extends \MvcCore\Controller {
 			->Append($static . '/css/pages/contacts.css');
 	}
 	
+	public function Prices (): void {
+		/** @var $this \App\Controllers\Front */
+		$static = $this->application->GetPathStatic();
+		$this->view->Css('headPage')
+			->Append($static . '/css/pages/prices.css');
+		if ($this->mediaSiteVersion === \MvcCore\Ext\Routers\IMedia::MEDIA_VERSION_MOBILE)
+			$this->view->Css('headPage')
+				->Append($static . "/css/pages/prices.{$this->mediaSiteVersion}.css");
+	}
+	
 	public function Projects (): void {
 		/** @var $this \App\Controllers\Front */
 		//$static = $this->application->GetPathStatic();

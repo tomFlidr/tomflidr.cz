@@ -2,8 +2,6 @@
 
 namespace App\Controllers\Fronts\Indexes;
 
-use \MvcCore\Request\IConstants as ReqConsts;
-
 class Contacts extends \App\Controllers\Fronts\Index {
 
 	public function IndexAction (): void {
