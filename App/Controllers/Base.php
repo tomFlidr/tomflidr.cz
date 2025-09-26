@@ -144,6 +144,12 @@ class Base extends \MvcCore\Controller {
 	protected function preDispatchSetUpViewHelpers (): void {
 		\App\Views\Helpers\TranslateHelper::GetInstance()
 			->SetTranslator($this->translator);
+		
+		[$lang, $locale] = $this->router->GetLocalization(FALSE);
+		$moneyHelper = \MvcCore\Ext\Views\Helpers\FormatMoneyHelper::GetInstance();
+		if ($lang === 'en') {
+			$moneyHelper->SetLangAndLocale('de', 'DE'); // EUR!
+		}
 	}
 	
 	private function _preDispatchSetUpBundles (): void {

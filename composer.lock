@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9af14a02801465feaca6208883c6eab",
+    "content-hash": "c601d264f6b3ae5b3fe2ed7cf22d19ed",
     "packages": [
         {
             "name": "civicrm/composer-compile-plugin",
@@ -1344,6 +1344,187 @@
                 "source": "https://github.com/mvccore/ext-view-helper-assets/tree/v5.3.5"
             },
             "time": "2025-06-26T15:20:13+00:00"
+        },
+        {
+            "name": "mvccore/ext-view-helper-formatmoney",
+            "version": "v5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-view-helper-formatmoney.git",
+                "reference": "9a779cac00007ee9fa64b92c11df84a23ac7c395"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-view-helper-formatmoney/zipball/9a779cac00007ee9fa64b92c11df84a23ac7c395",
+                "reference": "9a779cac00007ee9fa64b92c11df84a23ac7c395",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-view-helper-formatnumber": "^5.3",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - View - Helper - FormatMoney - format money by `Intl` extension or by locale formating conventions or by explicit or default arguments.",
+            "keywords": [
+                "conventions",
+                "ext",
+                "extension",
+                "float",
+                "format",
+                "framework",
+                "helper",
+                "integer",
+                "intl",
+                "locale",
+                "money",
+                "mvc",
+                "mvccore",
+                "number",
+                "plug-in",
+                "plugin",
+                "view",
+                "viewhelper"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-view-helper-formatmoney/issues",
+                "source": "https://github.com/mvccore/ext-view-helper-formatmoney/tree/v5.3.0"
+            },
+            "time": "2024-11-21T15:01:03+00:00"
+        },
+        {
+            "name": "mvccore/ext-view-helper-formatnumber",
+            "version": "v5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-view-helper-formatnumber.git",
+                "reference": "4bca93a4ef0a079641b9b840a930059a6644005b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-view-helper-formatnumber/zipball/4bca93a4ef0a079641b9b840a930059a6644005b",
+                "reference": "4bca93a4ef0a079641b9b840a930059a6644005b",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-view-helper-internationalized": "^5.3",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - View - Helper - FormatNumber - format number by `Intl` extension or by locale formating conventions or by explicit or default arguments.",
+            "keywords": [
+                "conventions",
+                "ext",
+                "extension",
+                "float",
+                "format",
+                "framework",
+                "helper",
+                "integer",
+                "intl",
+                "locale",
+                "mvc",
+                "mvccore",
+                "number",
+                "plug-in",
+                "plugin",
+                "view",
+                "viewhelper"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-view-helper-formatnumber/issues",
+                "source": "https://github.com/mvccore/ext-view-helper-formatnumber/tree/v5.3.0"
+            },
+            "time": "2024-11-21T15:01:03+00:00"
+        },
+        {
+            "name": "mvccore/ext-view-helper-internationalized",
+            "version": "v5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mvccore/ext-view-helper-internationalized.git",
+                "reference": "2800edd076923a5b64f229a92b19f37c34cb617b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mvccore/ext-view-helper-internationalized/zipball/2800edd076923a5b64f229a92b19f37c34cb617b",
+                "reference": "2800edd076923a5b64f229a92b19f37c34cb617b",
+                "shasum": ""
+            },
+            "require": {
+                "mvccore/ext-tool-locale": "^5.3",
+                "mvccore/ext-view-helper": "^5.3",
+                "mvccore/mvccore": "^5.3",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Flidr",
+                    "homepage": "https://github.com/tomFlidr"
+                }
+            ],
+            "description": "MvcCore - Extension - View - Helper - Internationalized - abstract class to process date, number or money formating by `Intl` extension or by locale formating conventions.",
+            "keywords": [
+                "abstract",
+                "ext",
+                "extension",
+                "framework",
+                "helper",
+                "internationalized",
+                "intl",
+                "localized",
+                "mvc",
+                "mvccore",
+                "parent",
+                "plug-in",
+                "plugin",
+                "view",
+                "viewhelper"
+            ],
+            "support": {
+                "issues": "https://github.com/mvccore/ext-view-helper-internationalized/issues",
+                "source": "https://github.com/mvccore/ext-view-helper-internationalized/tree/v5.3.0"
+            },
+            "time": "2024-11-21T15:01:03+00:00"
         },
         {
             "name": "mvccore/mvccore",

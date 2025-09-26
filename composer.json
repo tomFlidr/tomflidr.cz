@@ -20,6 +20,7 @@
 		"mvccore/ext-tool-csp": "^5.3.1",
 		"mvccore/ext-tool-cli-winfork": "^5.3",
 		"mvccore/ext-tool-collections": "^5.3",
+		"mvccore/ext-view-helper-formatmoney": "^5.3",
 		"mvccore/ext-view-helper-assets": "^5.3.3",
 		"mvccore/ext-debug-tracy": "^5.3.2",
 		"mvccore/ext-debug-tracy-mvccore": "^5.3",

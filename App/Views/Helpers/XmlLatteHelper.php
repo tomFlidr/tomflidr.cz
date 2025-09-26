@@ -68,6 +68,9 @@ class XmlLatteHelper extends \MvcCore\Ext\Views\Helpers\AbstractHelper {
 			return new \Latte\Runtime\Html($result);
 		});
 		$latte->addFunction('url', fn ($route, $params = [])  => $this->controller->Url($route, $params));
+		$latte->addFunction('money', function ($number = NULL, $decimalsCount = NULL, $currency = NULL): string {
+			return $this->view->FormatMoney($number, $decimalsCount, $currency);
+		});
 		$latte->addExtension(new \Latte\Essential\RawPhpExtension);
 		return $latte->renderToString($tplFullPath, $vars);
 	}
