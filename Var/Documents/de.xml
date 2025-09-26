@@ -107,21 +107,21 @@
 			
 			<div class="cols">
 				<div class="col">
-					<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
+					<h4><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h4>
 					<p class="condensed-5">
 						PHP-Framework für sowohl einfache Tools als auch komplexe Systeme.
 					</p>
-					<h3><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h3>
+					<h4><a href="https://github.com/debug-sharp" target="_blank">Desharp</a></h4>
 					<p>
 						.NET-Debug-Utility für Web und Desktop.
 					</p>
 				</div>
 				<div class="col">
-					<h3><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></h3>
+					<h4><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></h4>
 					<p>
 						Komfortable Entwicklung in Node.JS mit "Hot Reload" Besonderheit.
 					</p>
-					<h3><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h3>
+					<h4><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></h4>
 					<p>
 						Transpiler für Ext.JS Dokumentation zu TypeScript.
 					</p>
