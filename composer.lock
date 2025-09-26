@@ -1528,16 +1528,16 @@
         },
         {
             "name": "mvccore/mvccore",
-            "version": "v5.3.12",
+            "version": "v5.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mvccore/mvccore.git",
-                "reference": "6c25f323e20008415a4de25425a38dbfb316db35"
+                "reference": "f2347b824ed84917b34905eb3c987199aa95ce02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mvccore/mvccore/zipball/6c25f323e20008415a4de25425a38dbfb316db35",
-                "reference": "6c25f323e20008415a4de25425a38dbfb316db35",
+                "url": "https://api.github.com/repos/mvccore/mvccore/zipball/f2347b824ed84917b34905eb3c987199aa95ce02",
+                "reference": "f2347b824ed84917b34905eb3c987199aa95ce02",
                 "shasum": ""
             },
             "require": {
@@ -1596,9 +1596,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mvccore/mvccore/issues",
-                "source": "https://github.com/mvccore/mvccore/tree/v5.3.12"
+                "source": "https://github.com/mvccore/mvccore/tree/v5.3.13"
             },
-            "time": "2025-09-01T17:24:10+00:00"
+            "time": "2025-09-26T16:12:51+00:00"
         },
         {
             "name": "psr/cache",
