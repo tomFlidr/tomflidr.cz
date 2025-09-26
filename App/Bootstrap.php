@@ -19,7 +19,7 @@ class Bootstrap {
 		$app->SetAttributesAnotations(TRUE);
 
 		// for new browsers supporting cookie with SameSite=Strict:
-		$app->SetCsrfProtection(\MvcCore\Application\IConstants::CSRF_PROTECTION_COOKIE);
+		$app->SetSecurityProtection(\MvcCore\Application\IConstants::SECURITY_PROTECTION_COOKIE);
 
 		$cache = static::getCache($app);
 		

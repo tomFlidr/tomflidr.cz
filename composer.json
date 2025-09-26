@@ -27,6 +27,9 @@
 		"mvccore/ext-debug-tracy-session": "^5.3.1",
 		"latte/latte": "^3.0.20"
 	},
+	"require-dev": {
+		"phpmetrics/phpmetrics": "^2.8"
+	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"extra": {
