@@ -24,6 +24,8 @@
 				{incl('./zivotopis/left-panel')}
 			</div>
 			<div class="col col-left">
+
+
 				<h1>
 					<span class="text">Tomáš Flídr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'zivotopis/kompletni'])}">zobrazit kompletní CV</a>)</small>
@@ -64,11 +66,24 @@
 						</p>
 					</div>
 				</div>
-				
-				
+
+
 				<h3>Profesní praxe</h3>
-				
-				
+
+
+				{* Icontio *}
+				<div class="experience">
+					<h5>
+						<span class="from">2025/07</span>
+						<span class="to">nyní</span>
+						<span class="subject">
+							<a href="https://www.icontio.com/" target="_blank">Icontio Ltd.</a> <small>(OSVČ)</small>
+						</span>
+					</h5>
+					<p>Vývoj nových nebo stávajících systémů pro veřejný a soukromý sektor, C#, TypeScript, MSSQL.</p>
+				</div>
+
+
 				{* lecturing *}
 				<div class="experience">
 					<h5>
@@ -95,13 +110,32 @@
 						<li>Za {$training->GetYears()} let přes {$training->GetCount()} kurzů, moje průměrné hodnocení od studentů je {$training->GetRating(5)|number: '0.00'}, vlastní kurzy na míru.</li>
 					</ul>
 				</div>
-				
-				
+
+
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
+						</span>
+					</h5>
+					{*
+					<p>Vývoj výrobního informačního systému pro další prodej, management projektu, vedení teamu.</p>
+					*}
+					<ul>
+						<li>Návrh architektury modulárního IS pro prodej dalším klientům, vývoj v PHP/TS/MSSQL/C++.</li>
+						<li>Plánování projektu, vedení vývojového teamu, administrace aplikačních serverů.</li>
+					</ul>
+				</div>
+
+
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">nyní</span>
+						<span class="to">2025/06</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a> <small>(OSVČ)</small>
 						</span>
@@ -146,40 +180,8 @@
 						</li>
 					</ul>
 				</div>
-				
-				
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					{*
-					<p>Vývoj výrobního informačního systému pro další prodej, management projektu, vedení teamu.</p>
-					*}
-					<ul>
-						<li>Návrh architektury modulárního IS pro prodej dalším klientům, vývoj v PHP/TS/MSSQL/C++.</li>
-						<li>Plánování projektu, vedení vývojového teamu, administrace aplikačních serverů.</li>
-					</ul>
-				</div>
-				
-				
-				{* FIT *}
-				<div class="experience">
-					<h5>
-						<span class="from">2018/03</span>
-						<span class="to">2018/05</span>
-						<span class="subject">
-							<a href="https://www.archive.fit.tomflidr.cz/" target="_blank">Výzkumný ústav veterinárního lékařství v.v.i.</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Kompletní realizace grafiky, webdesignu a mezinárodního portálu na Pimcore CMS, projekt EU.</p>
-				</div>
-				
-				
+
+
 				{* ictpro.cz development *}
 				<div class="experience">
 					<h5>
@@ -191,8 +193,8 @@
 					</h5>
 					<p>Nová generace IS - návrh struktury, domén, webdesignu, přesun dat, vývoj v C#.NET/MSSQL.</p>
 				</div>
-				
-				
+
+
 				{* estheticon.com *}
 				<div class="experience">
 					<h5>
@@ -204,34 +206,8 @@
 					</h5>
 					<p>Práce ve 4-členném teamu, vývoj dle ticketů v PHP(Zend)/JS/MySQL, vlastní CMS, 14 jazyků.</p>
 				</div>
-				
-				
-				{* janaflidrova.cz *}
-				{*<div class="experience">
-					<h5>
-						<span class="from">2015/04</span>
-						<span class="to">2015/05</span>
-						<span class="subject">
-							<a href="https://www.janaflidrova.cz/" target="_blank">Janaflidrova.cz</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Kompletní realizace malé designová prezentace na Pimcore CMS.</p>
-				</div>*}
-				
-				
-				{* ssosz.cz *}
-				{*<div class="experience">
-					<h5>
-						<span class="from">2013/08</span>
-						<span class="to">2013/10</span>
-						<span class="subject">
-							<a href="https://www.archive.ssosz.tomflidr.cz/" target="_blank">Soukromá střední odborná škola živnostenská</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Kompletní redesign webu, zparsování starého statického HTML obsahu do Pimcore CMS.</p>
-				</div>*}
-				
-				
+
+
 				{* OMNES PRODUCTS *}
 				<div class="experience">
 					<h5>
@@ -253,8 +229,8 @@
 						</dd>
 					</dl>
 				</div>
-				
-				
+
+
 				{* Photoshop CS6 *}
 				<div class="experience">
 					<h5>
@@ -266,8 +242,8 @@
 					</h5>
 					<p>Texty a grafika pro témata: maskování a výměna pozadí, vanishing point, efekty, HDR, pluginy&hellip;</p>
 				</div>
-				
-				
+
+
 				{* choka.cz, floormax.cz, imperastyl.cz *}
 				<div class="experience">
 					<h5>
@@ -285,8 +261,8 @@
 						Imperastyl - práce ve 2-členném teamu, webdesign, kódování.
 					</p>
 				</div>
-				
-				
+
+
 				{* PORTA, MFDF *}
 				<div class="experience">
 					<h5>
@@ -302,8 +278,8 @@
 						Správa VPS s Linux CentOS.
 					</p>
 				</div>
-				
-				
+
+
 				{* twobits.cz *}
 				<div class="experience">
 					<h5>
@@ -315,8 +291,8 @@
 					</h5>
 					<p>Front-end vývoj v teamu s 2 programátory, webdesign, grafika, vyhledávač <a href="https://web.archive.org/web/20110209010501/http://www.whichairline.com/" target="_blank">whichairline.com</a>.</p>
 				</div>
-				
-				
+
+
 				{* webdesigneri.cz, exreals.cz *}
 				<div class="experience">
 					<h5>
@@ -332,8 +308,8 @@
 						Komplet. real., vlastní CMS, správa realit.
 					</p>
 				</div>
-				
-				
+
+
 				{* STUDENT AGENCY *}
 				<div class="experience">
 					<h5>
@@ -353,10 +329,12 @@
 					</p>
 				</div>
 
+
 				<p class="screen-only">
 					Tato verze životopisu je stručnější, <a href="{url('document', ['path' => 'zivotopis/kompletni'])}">zobrazit celý životopis</a>.
 				</p>
-				
+
+
 			</div>
 		</div>
 

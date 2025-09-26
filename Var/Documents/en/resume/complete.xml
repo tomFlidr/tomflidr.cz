@@ -23,14 +23,16 @@
 				{incl('./left-panel')}
 			</div>
 			<div class="col col-left">
+
+
 				<h1>
 					<span class="text">Tomas Flidr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'resume'])}">view short resume</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'resume/complete', 'absolute' => TRUE])}">view complete resume online</a>)</small>
 					<a class="screen-only icon-print print-link" href="#"><i>print</i></a>
 				</h1>
-				
-				
+
+
 				<h3 class="screen-only">Profile</h3>
 				<p class="profile">
 					I'm an experienced web developer with various overlaps. I&nbsp;like solutions<br />
@@ -42,8 +44,8 @@
 					and sometimes I&nbsp;make some training for&nbsp;professional programmers. <br />
 					I&nbsp;work both alone and in&nbsp;a&nbsp;team and I&nbsp;have experience in&nbsp;managing developers.
 				</p>
-				
-				
+
+
 				<h3>
 					<span class="text">Open source</span>
 					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">view all</a>)</small>
@@ -73,8 +75,21 @@
 				
 				
 				<h3>Professional Experience</h3>
-				
-				
+
+
+				{* Icontio *}
+				<div class="experience">
+					<h5>
+						<span class="from">2025/07</span>
+						<span class="to">present</span>
+						<span class="subject">
+							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(Freelancer)</small>
+						</span>
+					</h5>
+					<p>Programming of new or existing systems for the public and private sector, C#, TypeScript, MSSQL.</p>
+				</div>
+
+
 				{* lecturing *}
 				<div class="experience">
 					<h5>
@@ -105,11 +120,12 @@
 					</ul>
 				</div>
 
+
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">present</span>
+						<span class="to">2025/06</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON Ltd</a> <small>(Freelance)</small>
 						</span>
@@ -183,6 +199,7 @@
 					</ul>
 				</div>
 
+
 				{* dendera.cz *}
 				<div class="experience">
 					<h5>
@@ -202,6 +219,7 @@
 					</ul>
 				</div>
 
+
 				{* jipekokuchyne.cz *}
 				<div class="experience">
 					<h5>
@@ -217,7 +235,8 @@
 						<li>Parsing catalogue data and creating Decodom kitchen offers on a custom website.</li>
 					</ul>
 				</div>
-				
+
+
 				{* FIT *}
 				<div class="experience page-break-before">
 					<h5>
@@ -234,6 +253,7 @@
 						<li>Development of an international web portal with administration in Pimcore CMS (PHP/MySQL).</li>
 					</ul>
 				</div>
+
 
 				{* ictpro.cz development *}
 				<div class="experience">
@@ -252,6 +272,7 @@
 					</ul>
 				</div>
 
+
 				{* estheticon.com *}
 				<div class="experience">
 					<h5>
@@ -268,6 +289,7 @@
 					</ul>
 				</div>
 
+
 				{* janaflidrova.cz *}
 				<div class="experience">
 					<h5>
@@ -279,6 +301,7 @@
 					</h5>
 					<p>Role: Small design website presentation on Pimcore CMS (PHP/MySQL), complete delivery.</p>
 				</div>
+
 
 				{* ssosz.cz *}
 				<div class="experience">
@@ -294,6 +317,7 @@
 						<li>Parsing the old static HTML website including the photo gallery into a new database.</li>
 					</ul>
 				</div>
+
 
 				{* OMNES PRODUCTS *}
 				<div class="experience">
@@ -329,6 +353,7 @@
 					</ul>
 				</div>
 
+
 				{* Photoshop CS6 *}
 				<div class="experience">
 					<h5>
@@ -344,6 +369,7 @@
 					</ul>
 				</div>
 
+
 				{* imperastyl.cz *}
 				<div class="experience">
 					<h5>
@@ -355,6 +381,7 @@
 					</h5>
 					<p>Role: 2-member team work, web design, and coding templates into HTML and CSS.</p>
 				</div>
+
 
 				{* floormax.cz *}
 				<div class="experience">
@@ -372,6 +399,7 @@
 					</ul>
 				</div>
 
+
 				{* choka.cz *}
 				<div class="experience">
 					<h5>
@@ -388,7 +416,8 @@
 						<li>Admin features: sales settings, editable invoices, exports to price comparison sites and more.</li>
 					</ul>
 				</div>
-				
+
+
 				{* PORTA, MFDF *}
 				<div class="experience">
 					<h5>
@@ -408,6 +437,7 @@
 						<li>Administration of a VPS on CentOS hosting approximately 30 company websites and projects of similar size.</li>
 					</ul>
 				</div>
+
 
 				{* twobits.cz *}
 				<div class="experience page-break-before">
@@ -433,6 +463,7 @@
 					</ul>
 				</div>
 
+
 				{* exreals.cz *}
 				<div class="experience">
 					<h5>
@@ -445,6 +476,7 @@
 					<p>Complete delivery of a website with a custom CMS for content and real estate management (PHP/MySQL, Nette).</p>
 				</div>
 
+
 				{* webdesigneri.cz *}
 				<div class="experience">
 					<h5>
@@ -456,6 +488,7 @@
 					</h5>
 					<p>Role: 2-member team work, designed web layouts, coded templates, and developed in jQuery.</p>
 				</div>
+
 
 				{* first freelance cooperations *}
 				<div class="experience">
@@ -473,6 +506,7 @@
 						<dt>dkproduction.cz</dt> <dd>Advertising graphics, animations.</dd>
 					</dl>
 				</div>
+
 
 				{* STUDENT AGENCY *}
 				<div class="experience">
@@ -511,10 +545,12 @@
 					</ul>
 				</div>
 
+
 				<p class="screen-only">
 					Freelance work is various, this list does not cover 100% of all the smaller websites <br  />and graphics I've ever handled.
 				</p>
-				
+
+
 			</div>
 		</div>
 

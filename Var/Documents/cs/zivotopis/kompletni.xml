@@ -23,14 +23,16 @@
 				{incl('./left-panel')}
 			</div>
 			<div class="col col-left">
+
+
 				<h1>
 					<span class="text">Tomáš Flídr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'zivotopis'])}">zobrazit stručné CV</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'zivotopis/kompletni', 'absolute' => TRUE])}">zobrazit CV na webu</a>)</small>
 					<a class="screen-only icon-print print-link" href="#"><i>vytisknout</i></a>
 				</h1>
-				
-				
+
+
 				<h3 class="screen-only">Profil</h3>
 				<p class="profile">
 					Jsem zkušený vývojář webových aplikací s&nbsp;různými přesahy.<br />
@@ -69,11 +71,24 @@
 						</p>
 					</div>
 				</div>
-				
-				
+
+
 				<h3>Profesní praxe</h3>
-				
-				
+
+
+				{* Icontio *}
+				<div class="experience">
+					<h5>
+						<span class="from">2025/07</span>
+						<span class="to">nyní</span>
+						<span class="subject">
+							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(OSVČ)</small>
+						</span>
+					</h5>
+					<p>Vývoj nových nebo stávajících systémů pro veřejný a soukromý sektor, C#, TypeScript, MSSQL.</p>
+				</div>
+
+
 				{* lecturing *}
 				<div class="experience">
 					<h5>
@@ -103,13 +118,33 @@
 						<li>Za {$training->GetYears()} let přes {$training->GetCount()} realizovaných kurzů, moje průměrné hodnocení od studentů je {$training->GetRating(5)|number: '0.00'}.</li>
 					</ul>
 				</div>
-				
-				
+
+
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
+						</span>
+					</h5>
+					<p>Role: vývoj další generace výrobního informačního systému, management projektu.</p>
+					<ul>
+						<li>Návrh architektury modulárního systému pro prodej dalším klientům.</li>
+						<li>Vývoj v PHP(MvcCore)/TypeScript/MSSQL/C++ podle přesného popisu a wireframes.</li>
+						<li>Řešení technických výzev - migrace starých dat z 90' let, merge nových databází apod.</li>
+						<li>Plánování projektu a vedení vývojového teamu.</li>
+						<li>Instalace a management aplikačních serverů a databáze.</li>
+					</ul>
+				</div>
+
+
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">nyní</span>
+						<span class="to">2025/06</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON s.r.o.</a> <small>(OSVČ)</small>
 						</span>
@@ -188,28 +223,8 @@
 					</ul>
 					
 				</div>
-				
-				
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera a.s.</a> <small>(OSVČ)</small>
-						</span>
-					</h5>
-					<p>Role: vývoj další generace výrobního informačního systému, management projektu.</p>
-					<ul>
-						<li>Návrh architektury modulárního systému pro prodej dalším klientům.</li>
-						<li>Vývoj v PHP(MvcCore)/TypeScript/MSSQL/C++ podle přesného popisu a wireframes.</li>
-						<li>Řešení technických výzev - migrace starých dat z 90' let, merge nových databází apod.</li>
-						<li>Plánování projektu a vedení vývojového teamu.</li>
-						<li>Instalace a management aplikačních serverů a databáze.</li>
-					</ul>
-				</div>
-				
-				
+
+
 				{* jipekokuchyne.cz *}
 				<div class="experience">
 					<h5>
@@ -225,8 +240,8 @@
 						<li>Parsování katalogových dat, tvorba nabídky Decodom kuchyní na vlastním webu.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* FIT *}
 				<div class="experience page-break-before">
 					<h5>
@@ -243,8 +258,8 @@
 						<li>Realizace mezinárodního portálu webu s administrací v Pimcore CMS (PHP/MySQL).</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* ictpro.cz development *}
 				<div class="experience">
 					<h5>
@@ -261,8 +276,8 @@
 						<li>Vývoj aplikace pro synchronizaci a přesun dat ze starého systému ve VB6 a ASP.NET.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* estheticon.com *}
 				<div class="experience">
 					<h5>
@@ -278,8 +293,8 @@
 						<li>Estheticon má rozsáhlý codebase, mobilní verzi, vlastní CMS a mnoho dalšího.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* janaflidrova.cz *}
 				<div class="experience">
 					<h5>
@@ -291,8 +306,8 @@
 					</h5>
 					<p>Role: malá designová prezentace na Pimcore CMS (PHP/MySQL), kompletní realizace.</p>
 				</div>
-				
-				
+
+
 				{* ssosz.cz *}
 				<div class="experience">
 					<h5>
@@ -307,8 +322,8 @@
 						<li>Zparsování starého HTML statického webu vč. fotogalerie do nové databáze.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* OMNES PRODUCTS *}
 				<div class="experience">
 					<h5>
@@ -342,8 +357,8 @@
 						</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* Photoshop CS6 *}
 				<div class="experience">
 					<h5>
@@ -358,8 +373,8 @@
 						<li>Témata: maskování a background changing, content-aware, vanishing point, displacement map <br />a podobné efekty, HDR merge, pokročilé transformace, zásuvné moduly&hellip;</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* imperastyl.cz *}
 				<div class="experience">
 					<h5>
@@ -371,8 +386,8 @@
 					</h5>
 					<p>Role: práce ve 2-členném teamu, webdesign a kódování šablon do HTML a CSS.</p>
 				</div>
-				
-				
+
+
 				{* floormax.cz *}
 				<div class="experience">
 					<h5>
@@ -388,8 +403,8 @@
 						<li>Nové e-shop features: výpočty váhy objednávek, speciální přepravci, doručovací matice cen&hellip;</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* choka.cz *}
 				<div class="experience">
 					<h5>
@@ -406,8 +421,8 @@
 						<li>Admin features: prodejní nastavení, editovatelné faktury, exporty na srovnávače cen apod.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* PORTA, MFDF *}
 				<div class="experience">
 					<h5>
@@ -427,8 +442,8 @@
 						<li>Administrace VPS na CentOS s cca 30ti firemními weby a projekty podobné velikosti.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* twobits.cz *}
 				<div class="experience page-break-before">
 					<h5>
@@ -452,8 +467,8 @@
 						</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* exreals.cz *}
 				<div class="experience">
 					<h5>
@@ -465,8 +480,8 @@
 					</h5>
 					<p>Kompletní realizace webu s vlastním CMS pro správu obsahu a realit (PHP/MySQL, Nette).</p>
 				</div>
-				
-				
+
+
 				{* webdesigneri.cz *}
 				<div class="experience">
 					<h5>
@@ -478,8 +493,8 @@
 					</h5>
 					<p>Role: práce ve 2-členném teamu, návrh webdesignu, kódování šablon a programování v jQuery.</p>
 				</div>
-				
-				
+
+
 				{* first freelance cooperations *}
 				<div class="experience">
 					<h5>
@@ -496,8 +511,8 @@
 						<dt>dkproduction.cz</dt>	<dd>Reklamní grafika, animace.</dd>
 					</dl>
 				</div>
-				
-				
+
+
 				{* STUDENT AGENCY *}
 				<div class="experience">
 					<h5>
@@ -535,11 +550,13 @@
 					</ul>
 				</div>
 
+
 				<p class="screen-only">
 					Freelance práce je různorodá, seznam nepokrývá 100% vše, <br />
 					co&nbsp;jsem kdy&nbsp;realizoval i&nbsp;za&nbsp;menší weby a&nbsp;grafické práce.
 				</p>
-				
+
+
 			</div>
 		</div>
 

@@ -23,15 +23,16 @@
 				{incl('./left-panel')}
 			</div>
 			<div class="col col-left">
-				
+
+
 				<h1>
 					<span class="text">Tomas Flidr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf'])}">Kurzen Lebenslauf ansehen</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter', 'absolute' => TRUE])}">Lebenslauf online ansehen</a>)</small>
 					<a class="screen-only icon-print print-link" href="#"><i>drucken</i></a>
 				</h1>
-				
-				
+
+
 				<h3 class="screen-only">Profil</h3>
 				<p class="profile">
 					Ich bin ein erfahrener Webentwickler mit verschiedenen Überschneidungen. <br />
@@ -44,7 +45,7 @@
 					und führe manchmal Schulungen für professionelle Programmierer durch. <br />
 					Ich arbeite sowohl allein als auch im Team und habe Erfahrung in der Leitung von Entwicklern.
 				</p>
-				
+
 				<h3>
 					<span class="text">Open Source</span>
 					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">Alle anzeigen</a>)</small>
@@ -74,8 +75,21 @@
 
 
 				<h3>Berufserfahrung</h3>
-				
-				
+
+
+				{* Icontio *}
+				<div class="experience">
+					<h5>
+						<span class="from">2025/07</span>
+						<span class="to">heute</span>
+						<span class="subject">
+							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(Freiberufler)</small>
+						</span>
+					</h5>
+					<p class="condensed-10">Entwicklung neuer oder bestehender Systeme für den öffentlichen und privaten Sektor, C#/TS/MSSQL.</p>
+				</div>
+
+
 				{* Vorträge *}
 				<div class="experience">
 					<h5>
@@ -106,11 +120,32 @@
 					</ul>
 				</div>
 
+
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/" target="_blank">Dendera AG</a> <small>(Freiberuflich)</small>
+						</span>
+					</h5>
+					<p>Rolle: Entwicklung des IS der nächsten Generation für die Fertigung, Projektmanagement.</p>
+					<ul>
+						<li>Entwurf einer modularen Systemarchitektur für den Wiederverkauf an andere Kunden.</li>
+						<li class="condensed-11">Entwicklung in PHP(MvcCore)/TypeScript/MSSQL/C++ basierend auf detaillierten Wireframes und Texten.</li>
+						<li>Lösung technischer Herausforderungen – Migration alter Daten aus den 90ern, Zusammenführung neuer Datenbanken&hellip;</li>
+						<li>Projektplanung und Leitung des Entwicklerteams.</li>
+						<li>Installation und Verwaltung von Anwendungsservern und Datenbanken.</li>
+					</ul>
+				</div>
+
+
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">heute</span>
+						<span class="to">2025/06</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON GmbH</a> <small>(Freiberuflich)</small>
 						</span>
@@ -184,24 +219,6 @@
 					</ul>
 				</div>
 
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/" target="_blank">Dendera AG</a> <small>(Freiberuflich)</small>
-						</span>
-					</h5>
-					<p>Rolle: Entwicklung des IS der nächsten Generation für die Fertigung, Projektmanagement.</p>
-					<ul>
-						<li>Entwurf einer modularen Systemarchitektur für den Wiederverkauf an andere Kunden.</li>
-						<li class="condensed-11">Entwicklung in PHP(MvcCore)/TypeScript/MSSQL/C++ basierend auf detaillierten Wireframes und Texten.</li>
-						<li>Lösung technischer Herausforderungen – Migration alter Daten aus den 90ern, Zusammenführung neuer Datenbanken&hellip;</li>
-						<li>Projektplanung und Leitung des Entwicklerteams.</li>
-						<li>Installation und Verwaltung von Anwendungsservern und Datenbanken.</li>
-					</ul>
-				</div>
 
 				{* jipekokuchyne.cz *}
 				<div class="experience page-break-before">
@@ -218,6 +235,7 @@
 						<li>Parsing von Katalogdaten und Erstellung von Decodom-Küchenangeboten auf einer individuellen Website.</li>
 					</ul>
 				</div>
+
 
 				{* FIT *}
 				<div class="experience">
@@ -236,6 +254,7 @@
 					</ul>
 				</div>
 
+
 				{* ictpro.cz Entwicklung *}
 				<div class="experience">
 					<h5>
@@ -253,6 +272,7 @@
 					</ul>
 				</div>
 
+
 				{* estheticon.com *}
 				<div class="experience">
 					<h5>
@@ -268,7 +288,8 @@
 						<li>Estheticon hat eine umfangreiche Codebasis, eine mobile Version, ein eigenes CMS und mehr.</li>
 					</ul>
 				</div>
-				
+
+
 				{* janaflidrova.cz *}
 				<div class="experience">
 					<h5>
@@ -280,8 +301,8 @@
 					</h5>
 					<p>Rolle: Kleine Design-Webseitenpräsentation auf Pimcore CMS (PHP/MySQL), vollständige Lieferung.</p>
 				</div>
-				
-				
+
+
 				{* ssosz.cz *}
 				<div class="experience">
 					<h5>
@@ -296,8 +317,8 @@
 						<li>Parsing der alten statischen HTML-Website, einschließlich Fotogalerie, in eine neue Datenbank.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* OMNES PRODUCTS *}
 				<div class="experience">
 					<h5>
@@ -331,8 +352,8 @@
 						</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* Photoshop CS6 *}
 				<div class="experience">
 					<h5>
@@ -347,8 +368,8 @@
 						<li>Themen: Maskierung und Hintergrundänderungen, Inhaltsbasierte Füllung, Fluchtpunkt, Displacement Map und ähnliche Effekte, HDR-Zusammenführung, erweiterte Transformationen, Plug-Ins&hellip;</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* imperastyl.cz *}
 				<div class="experience">
 					<h5>
@@ -360,8 +381,8 @@
 					</h5>
 					<p>Rolle: 2-köpfiges Team, Webdesign und Umsetzung von Templates in HTML und CSS.</p>
 				</div>
-				
-				
+
+
 				{* floormax.cz *}
 				<div class="experience">
 					<h5>
@@ -377,8 +398,8 @@
 						<li>Neue E-Shop-Funktionen: Berechnung des Bestellgewichts, spezielle Spediteure, Preismatrizen für Lieferungen&hellip;</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* choka.cz *}
 				<div class="experience">
 					<h5>
@@ -395,8 +416,8 @@
 						<li>Admin-Funktionen: Verkaufseinstellungen, bearbeitbare Rechnungen, Exporte zu Preisvergleichsseiten und mehr.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* PORTA, MFDF *}
 				<div class="experience page-break-before">
 					<h5>
@@ -416,8 +437,8 @@
 						<li>Administration eines VPS auf CentOS, das etwa 30 Unternehmenswebsites und Projekte ähnlicher Größe hostete.</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* twobits.cz *}
 				<div class="experience">
 					<h5>
@@ -442,8 +463,8 @@
 						</li>
 					</ul>
 				</div>
-				
-				
+
+
 				{* exreals.cz *}
 				<div class="experience">
 					<h5>
@@ -455,8 +476,8 @@
 					</h5>
 					<p>Komplette Erstellung einer Website mit einem benutzerdefinierten CMS für Inhalts- und Immobilienverwaltung (PHP/MySQL, Nette).</p>
 				</div>
-				
-				
+
+
 				{* webdesigneri.cz *}
 				<div class="experience">
 					<h5>
@@ -468,8 +489,8 @@
 					</h5>
 					<p>Rolle: Arbeit im 2-köpfigen Team, Gestaltung von Weblayouts, Codierung von Templates und Entwicklung mit jQuery.</p>
 				</div>
-				
-				
+
+
 				{* first freelance cooperations *}
 				<div class="experience">
 					<h5>
@@ -499,8 +520,8 @@
 						<dd>Werbegrafiken, Animationen.</dd>
 					</dl>
 				</div>
-				
-				
+
+
 				{* STUDENT AGENCY *}
 				<div class="experience">
 					<h5>
@@ -538,11 +559,13 @@
 					</ul>
 				</div>
 
+
 				<p class="screen-only">
 					Freiberufliche Arbeit ist vielfältig, diese Liste deckt nicht 100 % aller<br />
 					kleineren Websites und Grafiken ab, die ich je arbeitet habe.
 				</p>
-				
+
+
 			</div>
 		</div>
 

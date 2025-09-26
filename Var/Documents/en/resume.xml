@@ -25,22 +25,23 @@
 			</div>
 			<div class="col col-left">
 
+
 				<h1>
 					<span class="text">Tomas Flidr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'resume/complete'])}">view complete resume</a>)</small>
 					<small class="print-only">(<a href="{url('document', ['path' => 'resume/complete', 'absolute' => TRUE])}">view complete resume online</a>)</small>
 					<a class="screen-only icon-print print-link" href="#"><i>print</i></a>
 				</h1>
-				
-				
+
+
 				<h3 class="screen-only">Profile</h3>
 				<p class="profile">
 					I'm an experienced web developer with various overlaps. I like solutions<br />
 					with minimal dependencies and with focus on performance and longevity.<br />
 					I don't surf on dev fashion and carefully consider my decisions and time.
 				</p>
-				
-				
+
+
 				<h3>
 					<span class="text">Open source</span>
 					<small>(<a href="{url('document', ['path' => 'open-source', 'absolute' => TRUE])}">view all</a>)</small>
@@ -67,11 +68,24 @@
 						</p>
 					</div>
 				</div>
-				
-				
+
+
 				<h3>Professional Experience</h3>
-				
-				
+
+
+				{* Icontio *}
+				<div class="experience">
+					<h5>
+						<span class="from">2025/07</span>
+						<span class="to">present</span>
+						<span class="subject">
+							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(Freelancer)</small>
+						</span>
+					</h5>
+					<p>Programming of new or existing systems for the public and private sector, C#, TypeScript, MSSQL.</p>
+				</div>
+
+
 				{* lecturing *}
 				<div class="experience">
 					<h5>
@@ -98,13 +112,29 @@
 						<li>More than {$training->GetCount()} courses delivered over {$training->GetYears()} years, with average student rating {$training->GetRating(5)|number: '0.00'} (of 5).</li>
 					</ul>
 				</div>
-				
-				
+
+
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera plc</a> <small>(Freelancer)</small>
+						</span>
+					</h5>
+					<ul>
+						<li>Architecting a modular IS for resale to other clients, development in PHP/TS/MSSQL/C++.</li>
+						<li>Project planning, leading the development team, application server administration.</li>
+					</ul>
+				</div>
+
+
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">present</span>
+						<span class="to">2025/06</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON Ltd</a> <small>(Freelancer)</small>
 						</span>
@@ -148,35 +178,6 @@
 							</p>
 						</li>
 					</ul>
-				</div>
-				
-				
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera plc</a> <small>(Freelancer)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Architecting a modular IS for resale to other clients, development in PHP/TS/MSSQL/C++.</li>
-						<li>Project planning, leading the development team, application server administration.</li>
-					</ul>
-				</div>
-				
-				
-				{* FIT *}
-				<div class="experience">
-					<h5>
-						<span class="from">2018/03</span>
-						<span class="to">2018/05</span>
-						<span class="subject">
-							<a href="https://www.archive.fit.tomflidr.cz/en/" target="_blank">Veterinary Research Institute</a> <small>(Freelancer)</small>
-						</span>
-					</h5>
-					<p>Complete delivery of graphics, web design and international portal on Pimcore CMS, EU project.</p>
 				</div>
 
 
@@ -328,11 +329,13 @@
 						<a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a> and more.
 					</p>
 				</div>
-				
+
+
 				<p class="screen-only">
 					This version of the resume is shorter, <a href="{url('document', ['path' => 'resume/complete'])}">view the full resume</a>.
 				</p>
-				
+
+
 			</div>
 		</div>
 		

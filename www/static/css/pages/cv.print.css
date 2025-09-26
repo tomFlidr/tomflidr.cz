@@ -122,8 +122,8 @@ header{display:none;}
 .open-source > .col{flex:1;}
 .open-source > .col > *:first-child{margin-top:0;}
 
-
-.experience{margin:0 0 0.45em;}
+/* fine-tuning the bottom edge of the single A4 page */
+.experience{margin:0 0 0.50em;}
 .experience:last-of-type{margin-bottom:0;}
 .experience h5{margin:0;font-size:100%;}
 .experience h6{margin:0;}

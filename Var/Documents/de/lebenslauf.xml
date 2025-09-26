@@ -25,6 +25,7 @@
 			</div>
 			<div class="col col-left">
 
+
 				<h1>
 					<span class="text">Tomas Flidr</span>
 					<small class="screen-only">(<a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">Kompletten Lebenslauf ansehen</a>)</small>
@@ -73,6 +74,19 @@
 				<h3>Berufserfahrung</h3>
 
 
+				{* Icontio *}
+				<div class="experience">
+					<h5>
+						<span class="from">2025/07</span>
+						<span class="to">heute</span>
+						<span class="subject">
+							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(Freiberufler)</small>
+						</span>
+					</h5>
+					<p class="condensed-10">Entwicklung neuer oder bestehender Systeme für den öffentlichen und privaten Sektor, C#/TS/MSSQL.</p>
+				</div>
+
+
 				{* Vorlesungen *}
 				<div class="experience">
 					<h5>
@@ -99,13 +113,29 @@
 						<li class="condensed-5">Mehr als {$training->GetCount()} Kurse über {$training->GetYears()} Jahre, einer durchschnittlichen Teilnehmerbewertung von {$training->GetRating(6)|number: '0.00'} <small>(von 6)</small>.</li>
 					</ul>
 				</div>
-				
-				
+
+
+				{* dendera.cz *}
+				<div class="experience">
+					<h5>
+						<span class="from">2022/03</span>
+						<span class="to">2024/11</span>
+						<span class="subject">
+							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera AG</a> <small>(Freiberufler)</small>
+						</span>
+					</h5>
+					<ul>
+						<li>Architektur eines modularen IS für den Weiterverkauf, Entwicklung in PHP/TS/MSSQL/C++.</li>
+						<li>Projektplanung, Leitung des Entwicklungsteams, Serveradministration von Anwendungen.</li>
+					</ul>
+				</div>
+
+
 				{* Smart-CON *}
 				<div class="experience">
 					<h5>
 						<span class="from">2018/11</span>
-						<span class="to">heute</span>
+						<span class="to">2025/06</span>
 						<span class="subject">
 							<a href="https://smart-con.cz/" target="_blank">Smart-CON GmbH</a> <small>(Freiberufler)</small>
 						</span>
@@ -149,37 +179,6 @@
 							</p>
 						</li>
 					</ul>
-				</div>
-
-
-				{* dendera.cz *}
-				<div class="experience">
-					<h5>
-						<span class="from">2022/03</span>
-						<span class="to">2024/11</span>
-						<span class="subject">
-							<a href="https://www.dendera.cz/en/home" target="_blank">Dendera AG</a> <small>(Freiberufler)</small>
-						</span>
-					</h5>
-					<ul>
-						<li>Architektur eines modularen IS für den Weiterverkauf, Entwicklung in PHP/TS/MSSQL/C++.</li>
-						<li>Projektplanung, Leitung des Entwicklungsteams, Serveradministration von Anwendungen.</li>
-					</ul>
-				</div>
-				
-				
-				{* FIT *}
-				<div class="experience">
-					<h5>
-						<span class="from">2018/03</span>
-						<span class="to">2018/05</span>
-						<span class="subject">
-							<a href="https://www.archive.fit.tomflidr.cz/en/" target="_blank">Veterinärforschungsinstitut</a> <small>(Freiberufler)</small>
-						</span>
-					</h5>
-					<p class="condensed-4">
-						Komplettlieferung, Grafiken, Webdesign und internationales Portal auf Pimcore CMS, EU-Projekt.
-					</p>
 				</div>
 
 
@@ -331,11 +330,13 @@
 						<a href="https://web.archive.org/web/20130831045914/http://www.dpl.cz/" target="_blank">dpl.cz</a> und mehr.
 					</p>
 				</div>
-				
+
+
 				<p class="screen-only">
 					Diese Version des Lebenslaufs ist kürzer. <a href="{url('document', ['path' => 'lebenslauf/kompletter'])}">Vollständigen Lebenslauf ansehen</a>.
 				</p>
-				
+
+
 			</div>
 		</div>
 		
