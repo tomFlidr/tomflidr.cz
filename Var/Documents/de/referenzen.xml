@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <doc:data xsi:schemaLocation="/doc ../../Document.xsd" xmlns:doc="/doc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<doc:title>Referenzen</doc:title>
-	<doc:sequence>3</doc:sequence>
+	<doc:sequence>5</doc:sequence>
 	<doc:active>1</doc:active>
 	<doc:controller>Fronts\Indexes\References</doc:controller>
 	<doc:action></doc:action>
