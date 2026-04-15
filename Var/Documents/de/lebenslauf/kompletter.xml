@@ -62,10 +62,10 @@
 						</p>
 					</div>
 					<div class="col">
-						<p class="os-item">
-							<b><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></b>
-							Komfortable Entwicklung in Node.JS mit "Hot Reload".
-						</p>
+					<p class="os-item">
+						<b><a href="https://github.com/tomFlidr/whisper-writer" target="_blank">WhisperWriter</a></b>
+						Lokale Push-to-Talk-Sprachtranskription via Whisper AI, 100% offline, .NET 8 / C#.
+					</p>
 						<p class="os-item">
 							<b><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></b>
 							Transpiler für Ext.JS Docs zu TS.

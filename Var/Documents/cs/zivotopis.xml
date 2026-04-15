@@ -56,10 +56,10 @@
 						</p>
 					</div>
 					<div class="col">
-						<p class="os-item">
-							<b><a href="https://github.com/web-dev-server/web-dev-server" target="_blank">Web Dev Server</a></b>
-							Pohodlnější vývoj aplikací v Node.JS s feature "hot realod".
-						</p>
+					<p class="os-item">
+						<b><a href="https://github.com/tomFlidr/whisper-writer" target="_blank">WhisperWriter</a></b>
+						Push-to-talk přepis hlasu pomocí AI, 100% offline, C# .NET 8.
+					</p>
 						<p class="os-item">
 							<b><a href="https://github.com/ExtTS" target="_blank">Ext.TS</a></b>
 							Transpiller Ext.JS docs do TS.
