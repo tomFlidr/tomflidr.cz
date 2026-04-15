@@ -128,11 +128,12 @@ trait SetUp {
 		return $this->xml?->saveXML() ?? '';
 	}
 	
-	public function __serialize () {
+	public function __serialize (): array {
 		if (!isset($this->xmlCode)) 
 			$this->xmlCode = (string) $this->xml?->saveXML();
 		$toolsClass = \MvcCore\Application::GetInstance()->GetToolClass();
-		return $toolsClass::SerializeGetData($this, ['xml']);
+		$data = $toolsClass::SerializeGetData($this, ['xml']);
+		return $data;
 	}
 
 }

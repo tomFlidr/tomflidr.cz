@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9c2a13ff9fe740c156062b217b458c9",
+    "content-hash": "d4334636558b251036233f75b23f8c67",
     "packages": [
         {
             "name": "civicrm/composer-compile-plugin",
@@ -1529,16 +1529,16 @@
         },
         {
             "name": "mvccore/mvccore",
-            "version": "v5.3.14",
+            "version": "v5.3.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mvccore/mvccore.git",
-                "reference": "f3fa5fd0f77b09649987f7b86827dd45b4d019a7"
+                "reference": "90dc5f432fe921516634f545a47b2c2408d11a83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mvccore/mvccore/zipball/f3fa5fd0f77b09649987f7b86827dd45b4d019a7",
-                "reference": "f3fa5fd0f77b09649987f7b86827dd45b4d019a7",
+                "url": "https://api.github.com/repos/mvccore/mvccore/zipball/90dc5f432fe921516634f545a47b2c2408d11a83",
+                "reference": "90dc5f432fe921516634f545a47b2c2408d11a83",
                 "shasum": ""
             },
             "require": {
@@ -1597,9 +1597,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mvccore/mvccore/issues",
-                "source": "https://github.com/mvccore/mvccore/tree/v5.3.14"
+                "source": "https://github.com/mvccore/mvccore/tree/v5.3.16"
             },
-            "time": "2026-04-01T13:22:50+00:00"
+            "time": "2026-04-15T04:33:10+00:00"
         },
         {
             "name": "psr/simple-cache",
