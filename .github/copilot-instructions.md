@@ -244,6 +244,34 @@ Exception: files outside the project (`.editorconfig`, `.md`) may be written via
 If you need PowerShell only for **reading or searching**, use it, but add `-Encoding UTF8` and run the command as a single line, not as a block script.
 Line endings in PHP files are **LF** – do not fix them manually, `replace_string_in_file` will preserve them.
 
+## Portfolio content state
+
+### Open Source page (`{locale}/open-source.xml`)
+
+Projects are listed in this order (first = top):
+
+1. **WhisperWriter** — Windows desktop app (.NET 8 / C# / WPF), local push-to-talk voice
+   transcription via Whisper AI (whisper.cpp), 100% offline, CUDA GPU acceleration, 57 languages.
+   GitHub: `https://github.com/tomFlidr/whisper-writer`
+2. **MvcCore** — PHP MVC framework (author's own), used as the backbone of this site.
+3. … (remaining projects follow)
+
+### CV / Resume pages
+
+The **Open Source** section in the CV (standard and complete variants) lists WhisperWriter in
+the second column. Web Dev Server was replaced by WhisperWriter in all six CV files:
+
+| File | Variant | Description used |
+|---|---|---|
+| `cs/zivotopis.xml` | standard | `Push-to-talk přepis hlasu pomocí AI, 100% offline, C# .NET 8.` |
+| `en/resume.xml` | standard | `Push-to-talk voice transcription via AI, 100% offline, C# .NET 8.` |
+| `de/lebenslauf.xml` | standard | `Push-to-Talk-Sprachtranskription via AI, 100% offline, C# .NET 8.` |
+| `cs/zivotopis/kompletni.xml` | complete | `Lokální push-to-talk transkripce hlasu přes Whisper AI, 100% offline, .NET 8 / C#.` |
+| `en/resume/complete.xml` | complete | `Local push-to-talk voice transcription via Whisper AI, 100% offline, .NET 8 / C#.` |
+| `de/lebenslauf/kompletter.xml` | complete | `Lokale Push-to-Talk-Sprachtranskription via Whisper AI, 100% offline, .NET 8 / C#.` |
+
+---
+
 ### Updating the instruction file after completing a task
 After every successfully completed task, you MUST update this file (`.github/copilot-instructions.md`) to reflect the current state of the application.
 I'll always tell you when it's done. This file is the primary source of context for future AI sessions – keep it accurate and up to date.
