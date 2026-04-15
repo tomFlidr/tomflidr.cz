@@ -26,6 +26,26 @@
 			<li>při přípravě IT kurzů narazím na zajímavý nápad nebo ho přinese některý z účastníků.</li>
 		</ul>
 
+		<h3><a href="https://github.com/tomFlidr/whisper-writer" target="_blank">WhisperWriter</a></h3>
+		<p>
+			Windows desktopová aplikace pro lokální hlasovou transkripci s využitím AI <a href="https://huggingface.co/ggerganov/whisper.cpp" target="_blank">modelu Whisper</a> — bez cloudu, bez API klíče, 100% offline.
+			Drž klávesovou zkratku, mluv, pusť — přepsaný text se okamžitě zapíše do libovolného okna, které mělo focus.
+		</p>
+		<ul>
+			<li><b>Push-to-talk</b> zkratkou <code>Left Ctrl + Left Win</code> — drž pro nahrávání, pusť pro transkripci.</li>
+			<li><b>Lokální AI transkripce</b> přes <a href="https://github.com/sandrohanea/whisper.net" target="_blank">Whisper.net</a> (whisper.cpp backend) — žádný cloud, žádný API klíč.</li>
+			<li><b>CUDA GPU akcelerace</b> — automatická při přítomnosti NVIDIA GPU.</li>
+			<li><b>57 jazyků</b> včetně automatické detekce.</li>
+			<li><b>Floating pill widget</b> — přetahovatelný, zůstává vždy navrchu, pamatuje si pozici.</li>
+			<li><b>Historie transkripcí</b> — procházení, výběr a kopírování minulých záznamů.</li>
+			<li><b>System tray</b> — běží tiše na pozadí.</li>
+			<li><b>100% offline</b> — hlasová data nikdy neopustí počítač.</li>
+		</ul>
+		<p>
+			Napsáno v C# / .NET 8, WPF, s balíčky Whisper.net, NAudio a Serilog.
+			K dispozici jako ready-to-use release (x64 s CUDA i x86 CPU-only) nebo ke kompilaci ze zdrojů.
+		</p>
+
 		<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
 		<p>
 			PHP framework pro vytváření webových aplikací, který pohání mé systémy nebo slouží k výukovým účelům OOP. Prozatím největší projekt.

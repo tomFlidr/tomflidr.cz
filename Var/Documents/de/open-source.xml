@@ -26,6 +26,26 @@
 			<li>bei der Vorbereitung eines IT-Kurses stoße ich auf eine interessante Idee oder sie wird von einem der Teilnehmer eingebracht.</li>
 		</ul>
 
+		<h3><a href="https://github.com/tomFlidr/whisper-writer" target="_blank">WhisperWriter</a></h3>
+		<p>
+			Eine Windows-Desktop-App für lokale KI-Sprachtranskription mit dem KI-<a href="https://huggingface.co/ggerganov/whisper.cpp" target="_blank">Whisper-Modell</a> — kein Cloud, kein API-Schlüssel, 100% offline.
+			Tastenkombination halten, sprechen, loslassen — der transkribierte Text wird sofort in das Fenster getippt, das den Fokus hatte.
+		</p>
+		<ul>
+			<li><b>Push-to-Talk</b> mit <code>Left Ctrl + Left Win</code> — halten zum Aufnehmen, loslassen zum Transkribieren.</li>
+			<li><b>Lokale KI-Transkription</b> über <a href="https://github.com/sandrohanea/whisper.net" target="_blank">Whisper.net</a> (whisper.cpp Backend) — kein Cloud, kein API-Schlüssel.</li>
+			<li><b>CUDA-GPU-Beschleunigung</b> — automatisch bei vorhandener NVIDIA GPU.</li>
+			<li><b>57 Sprachen</b> inkl. automatischer Spracherkennung.</li>
+			<li><b>Floating Pill Widget</b> — verschiebbar, immer im Vordergrund, merkt sich die Position.</li>
+			<li><b>Transkriptionsverlauf</b> — bisherige Transkriptionen durchsuchen, auswählen und kopieren.</li>
+			<li><b>System Tray</b> — läuft still im Hintergrund.</li>
+			<li><b>100% offline</b> — Audiodaten verlassen den Computer nie.</li>
+		</ul>
+		<p>
+			Geschrieben in C# / .NET 8, WPF, mit Whisper.net, NAudio und Serilog.
+			Als fertiges Release verfügbar (x64 mit CUDA und x86 CPU-only) oder aus dem Quellcode kompilierbar.
+		</p>
+
 		<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
 		<p>
 			PHP-Framework zur Erstellung von Webanwendungen, das meine Systeme antreibt oder zu Schulungszwecken in OOP verwendet wird. Bislang das größte Projekt.

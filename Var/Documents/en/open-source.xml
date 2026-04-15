@@ -26,6 +26,26 @@
 			<li>While preparing an IT course, I come across an interesting idea or one is suggested by a participant.</li>
 		</ul>
 
+		<h3><a href="https://github.com/tomFlidr/whisper-writer" target="_blank">WhisperWriter</a></h3>
+		<p>
+			A Windows desktop app for local AI voice transcription using the AI <a href="https://huggingface.co/ggerganov/whisper.cpp" target="_blank">Whisper model</a> — no cloud, no API key, 100% offline.
+			Hold a keyboard shortcut, speak, release — the transcribed text is instantly typed into whatever window had focus.
+		</p>
+		<ul>
+			<li><b>Push-to-talk</b> with <code>Left Ctrl + Left Win</code> — hold to record, release to transcribe.</li>
+			<li><b>Local AI transcription</b> via <a href="https://github.com/sandrohanea/whisper.net" target="_blank">Whisper.net</a> (whisper.cpp backend) — no cloud, no API key.</li>
+			<li><b>CUDA GPU acceleration</b> — automatic when an NVIDIA GPU is present.</li>
+			<li><b>57 languages</b> supported, including automatic detection.</li>
+			<li><b>Floating pill widget</b> — draggable, always-on-top, remembers position.</li>
+			<li><b>Transcription history</b> — browse, select and copy past transcriptions.</li>
+			<li><b>System tray</b> — runs silently in the background.</li>
+			<li><b>100% offline</b> — your voice data never leaves the machine.</li>
+		</ul>
+		<p>
+			Written in C# / .NET 8, WPF, using Whisper.net, NAudio and Serilog.
+			Available as a ready-to-use release (x64 with CUDA and x86 CPU-only) or buildable from source.
+		</p>
+
 		<h3><a href="https://github.com/mvccore/mvccore" target="_blank">MvcCore</a></h3>
 		<p>
 			A PHP framework for building web applications that powers my systems or serves educational purposes for OOP. So far, my biggest project.
