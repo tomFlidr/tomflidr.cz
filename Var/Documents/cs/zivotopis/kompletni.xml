@@ -85,7 +85,10 @@
 							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(OSVČ)</small>
 						</span>
 					</h5>
-					<p>Vývoj nových nebo stávajících systémů pro veřejný a soukromý sektor, C#, TypeScript, MSSQL.</p>
+					<p>
+						Vývoj nových nebo stávajících systémů pro veřejný a soukromý sektor, <br />
+						technologický stack: C# .NET, MSSQL, MS SharePoint, TypeScript, Angular, React.
+					</p>
 				</div>
 
 
@@ -236,14 +239,14 @@
 					</h5>
 					<ul>
 						<li>Postprodukce fotografií, grafické práce.</li>
-						<li>Webdesign a realizace malého firemního webu bez CMS v PHP(MvcCore)/TypeScript/MariaDB.</li>
+						<li class="page-break-before">Webdesign a realizace malého firemního webu bez CMS v PHP(MvcCore)/TypeScript/MariaDB.</li>
 						<li>Parsování katalogových dat, tvorba nabídky Decodom kuchyní na vlastním webu.</li>
 					</ul>
 				</div>
 
 
 				{* FIT *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>

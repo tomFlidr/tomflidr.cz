@@ -86,7 +86,10 @@
 							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(Freelancer)</small>
 						</span>
 					</h5>
-					<p>Programming of new or existing systems for the public and private sector, C#, TypeScript, MSSQL.</p>
+					<p>
+						Programming of new or existing systems for the public and private sector, <br />
+						technology stack: C# .NET, MSSQL, MS SharePoint, TypeScript, Angular, React.
+					</p>
 				</div>
 
 
@@ -231,14 +234,14 @@
 					</h5>
 					<ul>
 						<li>Photo post-production and graphic work.</li>
-						<li>Web design and development of a small company website without CMS in PHP(MvcCore)/TypeScript/MariaDB.</li>
+						<li class="page-break-before">Web design and development of a small company website without CMS in PHP(MvcCore)/TypeScript/MariaDB.</li>
 						<li>Parsing catalogue data and creating Decodom kitchen offers on a custom website.</li>
 					</ul>
 				</div>
 
 
 				{* FIT *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2018/03</span>
 						<span class="to">2018/05</span>

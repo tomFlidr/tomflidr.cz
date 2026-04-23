@@ -86,7 +86,10 @@
 							<a href="https://www.icontio.com/en" target="_blank">Icontio Ltd.</a> <small>(Freiberufler)</small>
 						</span>
 					</h5>
-					<p class="condensed-10">Entwicklung neuer oder bestehender Systeme für den öffentlichen und privaten Sektor, C#/TS/MSSQL.</p>
+					<p>
+						Entwicklung neuer oder bestehender Systeme für den öffentlichen und privaten Sektor, 
+						Technologie-Stack: C# .NET, MSSQL, MS SharePoint, TypeScript, Angular, React.
+					</p>
 				</div>
 
 
@@ -208,7 +211,7 @@
 								<li>
 									Vollständige Entwicklung in PHP/TypeScript(Ext.JS)/MariaDB.
 								</li>
-								<li>
+								<li class="page-break-before">
 									Vorberechnung und Aggregation umfangreicher Daten, dynamische Berichte, Diagramme und PDFs.
 								</li>
 								<li>
@@ -221,7 +224,7 @@
 
 
 				{* jipekokuchyne.cz *}
-				<div class="experience page-break-before">
+				<div class="experience">
 					<h5>
 						<span class="from">2021/01</span>
 						<span class="to">2021/02</span>
